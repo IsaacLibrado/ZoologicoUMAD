@@ -36,6 +36,9 @@
             this.lblUserName = new System.Windows.Forms.Label();
             this.pbPerfil = new System.Windows.Forms.PictureBox();
             this.panelSubMenus = new System.Windows.Forms.Panel();
+            this.panelComprasSubMenu = new System.Windows.Forms.Panel();
+            this.btnSMOrdenCompra = new System.Windows.Forms.Button();
+            this.btnCompras = new System.Windows.Forms.Button();
             this.panelVentasSubMenu = new System.Windows.Forms.Panel();
             this.btnSMApartarBoletos = new System.Windows.Forms.Button();
             this.btnSMVender = new System.Windows.Forms.Button();
@@ -60,6 +63,7 @@
             this.panelUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerfil)).BeginInit();
             this.panelSubMenus.SuspendLayout();
+            this.panelComprasSubMenu.SuspendLayout();
             this.panelVentasSubMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -128,7 +132,6 @@
             // 
             // pbPerfil
             // 
-            this.pbPerfil.Image = global::UserInterfaceZoo.Properties.Resources._123590648_3624396227619682_4109671073264463743_o;
             this.pbPerfil.Location = new System.Drawing.Point(4, 18);
             this.pbPerfil.Name = "pbPerfil";
             this.pbPerfil.Size = new System.Drawing.Size(59, 53);
@@ -139,6 +142,8 @@
             // panelSubMenus
             // 
             this.panelSubMenus.AutoScroll = true;
+            this.panelSubMenus.Controls.Add(this.panelComprasSubMenu);
+            this.panelSubMenus.Controls.Add(this.btnCompras);
             this.panelSubMenus.Controls.Add(this.panelVentasSubMenu);
             this.panelSubMenus.Controls.Add(this.btnVentas);
             this.panelSubMenus.Dock = System.Windows.Forms.DockStyle.Top;
@@ -146,6 +151,48 @@
             this.panelSubMenus.Name = "panelSubMenus";
             this.panelSubMenus.Size = new System.Drawing.Size(234, 357);
             this.panelSubMenus.TabIndex = 3;
+            // 
+            // panelComprasSubMenu
+            // 
+            this.panelComprasSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelComprasSubMenu.Controls.Add(this.btnSMOrdenCompra);
+            this.panelComprasSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelComprasSubMenu.Location = new System.Drawing.Point(0, 253);
+            this.panelComprasSubMenu.Name = "panelComprasSubMenu";
+            this.panelComprasSubMenu.Size = new System.Drawing.Size(234, 45);
+            this.panelComprasSubMenu.TabIndex = 4;
+            // 
+            // btnSMOrdenCompra
+            // 
+            this.btnSMOrdenCompra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSMOrdenCompra.FlatAppearance.BorderSize = 0;
+            this.btnSMOrdenCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSMOrdenCompra.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSMOrdenCompra.Location = new System.Drawing.Point(0, 0);
+            this.btnSMOrdenCompra.Name = "btnSMOrdenCompra";
+            this.btnSMOrdenCompra.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSMOrdenCompra.Size = new System.Drawing.Size(234, 40);
+            this.btnSMOrdenCompra.TabIndex = 0;
+            this.btnSMOrdenCompra.Text = "OrdenCompra";
+            this.btnSMOrdenCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSMOrdenCompra.UseVisualStyleBackColor = true;
+            this.btnSMOrdenCompra.Click += new System.EventHandler(this.btnSMOrdenCompra_Click);
+            // 
+            // btnCompras
+            // 
+            this.btnCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCompras.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCompras.FlatAppearance.BorderSize = 0;
+            this.btnCompras.ForeColor = System.Drawing.Color.White;
+            this.btnCompras.Location = new System.Drawing.Point(0, 208);
+            this.btnCompras.Name = "btnCompras";
+            this.btnCompras.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCompras.Size = new System.Drawing.Size(234, 45);
+            this.btnCompras.TabIndex = 3;
+            this.btnCompras.Text = "Compras";
+            this.btnCompras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCompras.UseVisualStyleBackColor = false;
+            this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
             // 
             // panelVentasSubMenu
             // 
@@ -373,13 +420,14 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.LogoPNGAscendantProyects;
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.e5ba79334133d2cb362dd639f755a392;
             this.pictureBox1.Location = new System.Drawing.Point(154, 24);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(377, 301);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // horaFecha
             // 
@@ -400,12 +448,13 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "MenuPrincipal";
-            this.Text = "Form1";
+            this.Text = "SIstema Administrador Zootopia";
             this.panelSideMenu.ResumeLayout(false);
             this.panelUsuario.ResumeLayout(false);
             this.panelUsuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerfil)).EndInit();
             this.panelSubMenus.ResumeLayout(false);
+            this.panelComprasSubMenu.ResumeLayout(false);
             this.panelVentasSubMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
@@ -450,6 +499,9 @@
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Timer horaFecha;
+        private System.Windows.Forms.Panel panelComprasSubMenu;
+        private System.Windows.Forms.Button btnSMOrdenCompra;
+        private System.Windows.Forms.Button btnCompras;
     }
 }
 

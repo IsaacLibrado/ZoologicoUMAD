@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
+using System.Xml.Linq;
 
 namespace UserInterfaceZoo
 {
@@ -19,6 +20,7 @@ namespace UserInterfaceZoo
     /// Creador Isaac Librado
     public partial class MenuPrincipal : Form
     {
+        //La pantalla que se muestra en el contenedor central
         private Form pantallaActiva = null;
 
         public MenuPrincipal()
@@ -26,7 +28,6 @@ namespace UserInterfaceZoo
             //inicializamos lo básico
             InitializeComponent();
             PersonalizarDisenio();
-            
         }
 
         #region disenio
@@ -40,16 +41,17 @@ namespace UserInterfaceZoo
         private void PersonalizarDisenio()
         {
             //hacemos invisibles a los sub menus
+            panelComprasSubMenu.Visible = false;
             panelVentasSubMenu.Visible = false;
-
-            //Obtenemos la direccion IP actual del dispositivo
-            ObtenerDireccionIp();
 
             //Inicializamos textos
             lblMensajes.Text = " ";
-            lblTitulo.Text = "Menu Principal";
-            //.....
+            lblTitulo.Text = "";
+
+            //Ocultamos los botones
+            panelSideMenu.Visible = false;
         }
+
 
         /// <summary>
         /// Obtiene la direccion ip del dispositivo actual
@@ -83,6 +85,7 @@ namespace UserInterfaceZoo
             lblFecha.Text = DateTime.Now.ToShortDateString();
         }
 
+
         #endregion
 
         #region subMenuVentas
@@ -101,6 +104,33 @@ namespace UserInterfaceZoo
         }
 
         /// <summary>
+        /// Evento que se realizar al presionar el boton compras
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 07 de Marzo 2021
+        /// Creador Isaac Librado
+        private void btnCompras_Click(object sender, EventArgs e)
+        {
+            mostrarSubMenu(panelComprasSubMenu);
+        }
+
+        /// <summary>
+        /// Evento que se realizar al presionar el boton orden de compra
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 07 de Marzo 2021
+        /// Creador Isaac Librado
+        private void btnSMOrdenCompra_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+            AsignarTitulo("Orden de Compra");
+        }
+
+        /// <summary>
         /// Evento que se realizar al presionar el boton abrir cajas
         /// </summary>
         /// <param name="sender"></param>
@@ -112,7 +142,6 @@ namespace UserInterfaceZoo
         {
             //Ocultamos el submenu y mostramos la pantalla con su respectivo titulo
             ocultarSubMenu();
-            abrirPantallas(new Prueba1());
             AsignarTitulo("Abrir Caja");
         }
 
@@ -128,7 +157,6 @@ namespace UserInterfaceZoo
         {
             //Ocultamos el submenu y mostramos la pantalla con su respectivo titulo
             ocultarSubMenu();
-            abrirPantallas(new Prueba2());
             AsignarTitulo("Cerrar Caja");
         }
 
@@ -143,8 +171,8 @@ namespace UserInterfaceZoo
         private void btnSMVender_Click(object sender, EventArgs e)
         {
             ocultarSubMenu();
+            AsignarTitulo("Vender");
         }
-
 
         /// <summary>
         /// Evento que se realizar al presionar el boton apartar
@@ -157,10 +185,70 @@ namespace UserInterfaceZoo
         private void btnSMApartarBoletos_Click(object sender, EventArgs e)
         {
             ocultarSubMenu();
+            AsignarTitulo("Apartar Boletos");
         }
         #endregion
 
         #region funcionalidades
+
+        /// <summary>
+        /// Obtiene los datos del user que ha iniciado sesión
+        /// </summary>
+        /// <param name="pUserName">el username del usuario</param>
+        /// Version 1.0
+        /// Fecha de creacion 13/03/21
+        /// Creador Isaac Librado
+        public static void ValidarLogIn(bool pValidado, string pUserName)
+        {
+            //DOcumento XML con los datos del user
+            XElement usuarios = LogIn.ObtenerDocumentoXML();
+            MenuPrincipal formActual = (MenuPrincipal)ActiveForm;
+
+            if (pValidado)
+            {
+                string userValidar;
+
+                //obtenemos todos los elementos user
+                IEnumerable<XElement> usuariosTag = usuarios.Elements("User");
+
+                //por cada user obtenemos sus datos
+                foreach (XElement usuario in usuariosTag)
+                {
+                    IEnumerable<string> datosUser = from datos in usuario.Elements()
+                                                    select datos.Value;
+
+                    //guardamos el username del usuario
+                    userValidar = datosUser.ElementAt(0);
+
+                    //si es el mismo se obtienen sus datos
+                    if (userValidar == pUserName)
+                    {
+                        //colocamos los datos del usuario
+                        formActual.lblUserName.Text = userValidar;
+                        formActual.lblCargo.Text = datosUser.ElementAt(2);
+                        formActual.pbPerfil.Image = Properties.Resources.LogoPNGAscendantProyects;
+
+                        //mostramos datos en el menú
+                        formActual.panelSideMenu.Visible = true;
+                        formActual.ObtenerDireccionIp();
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Metodo para pasar a la pantalla de inicio de sesión
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 20/03/21
+        /// Creador Isaac Librado
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            abrirPantallas(new LogIn());
+            AsignarTitulo("Inicio de Sesión");
+        }
 
         /// <summary>
         /// Metodo para ocultar los submenus
@@ -172,6 +260,8 @@ namespace UserInterfaceZoo
         {
             if (panelVentasSubMenu.Visible == true)
                 panelVentasSubMenu.Visible = false;
+            if (panelComprasSubMenu.Visible == true)
+                panelComprasSubMenu.Visible = false;
         }
 
         /// <summary>
@@ -233,6 +323,8 @@ namespace UserInterfaceZoo
 
             //mostramos la pantalla activa
             pantallaActiva.Show();
+
+            MostrarMensaje("");
         }
 
         /// <summary>
@@ -271,6 +363,9 @@ namespace UserInterfaceZoo
             formActual.lblMensajes.Text = pMensaje;
         }
 
+
         #endregion
+
+        
     }
 }

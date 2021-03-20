@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LogoPNGAscendantProyects" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoPNGAscendantProyects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo zootopia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo zootopia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="123590648_3624396227619682_4109671073264463743_o" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\123590648_3624396227619682_4109671073264463743_o.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LogoPNGAscendantProyects" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoPNGAscendantProyects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e5ba79334133d2cb362dd639f755a392" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e5ba79334133d2cb362dd639f755a392.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -1,6 +1,6 @@
 ﻿namespace UserInterfaceZoo
 {
-    partial class Prueba1
+    partial class Inicio
     {
         /// <summary>
         /// Required designer variable.
@@ -35,20 +35,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(267, 93);
+            this.label1.Location = new System.Drawing.Point(-2, 50);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 23, 0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 63);
+            this.label1.Size = new System.Drawing.Size(691, 63);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Ayuda";
+            this.label1.Text = "BIENVENIDO AL SISTEMA";
             // 
-            // Prueba1
+            // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 390);
+            this.ClientSize = new System.Drawing.Size(875, 487);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Prueba1";
+            this.Name = "Inicio";
             this.Text = "Prueba1";
             this.ResumeLayout(false);
             this.PerformLayout();
