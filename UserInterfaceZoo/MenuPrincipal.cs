@@ -50,6 +50,10 @@ namespace UserInterfaceZoo
 
             //Ocultamos los botones
             panelSideMenu.Visible = false;
+
+            //evitamos que se pueda cambiar el tamaño
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MaximizeBox = false;
         }
 
 
