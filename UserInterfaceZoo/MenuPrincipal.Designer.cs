@@ -449,6 +449,7 @@
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "MenuPrincipal";
             this.Text = "SIstema Administrador Zootopia";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuPrincipal_FormClosing);
             this.panelSideMenu.ResumeLayout(false);
             this.panelUsuario.ResumeLayout(false);
             this.panelUsuario.PerformLayout();

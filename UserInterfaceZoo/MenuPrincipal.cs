@@ -23,6 +23,9 @@ namespace UserInterfaceZoo
         //La pantalla que se muestra en el contenedor central
         private Form pantallaActiva = null;
 
+        //Archivo xml que funge como bitacora
+        private XElement bitacora;
+
         public MenuPrincipal()
         {
             //inicializamos lo básico
@@ -54,6 +57,8 @@ namespace UserInterfaceZoo
             //evitamos que se pueda cambiar el tamaño
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.MaximizeBox = false;
+
+            CrearBitacora();
         }
 
 
@@ -132,6 +137,7 @@ namespace UserInterfaceZoo
         {
             ocultarSubMenu();
             AsignarTitulo("Orden de Compra");
+            RegistroBitacora("Generada orden de compra");
         }
 
         /// <summary>
@@ -147,6 +153,7 @@ namespace UserInterfaceZoo
             //Ocultamos el submenu y mostramos la pantalla con su respectivo titulo
             ocultarSubMenu();
             AsignarTitulo("Abrir Caja");
+            RegistroBitacora("Realizada la apertura de la caja");
         }
 
         /// <summary>
@@ -162,6 +169,7 @@ namespace UserInterfaceZoo
             //Ocultamos el submenu y mostramos la pantalla con su respectivo titulo
             ocultarSubMenu();
             AsignarTitulo("Cerrar Caja");
+            RegistroBitacora("Realizado el cierre de caja");
         }
 
         /// <summary>
@@ -194,6 +202,57 @@ namespace UserInterfaceZoo
         #endregion
 
         #region funcionalidades
+
+        /// <summary>
+        /// Metodo para crear la bitacora del sistema
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 21/03/2021
+        /// Creador Isaac librado
+        private void CrearBitacora()
+        {
+            // Creamos la estructura del archivo
+            bitacora= new XElement("Bitacora",
+                                    new XElement("FechaHoraInicio"),
+                                    new XElement("FechaHoraFin"),
+                                    new XElement("IP"),
+                                    new XElement("Username"),
+                                    new XElement("Bitacora")
+                                    );
+        }
+
+        /// <summary>
+        /// Metodo para guardar la bitacora al cerrar el programa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //creamos el formato del nombre del archivo
+            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+                + "-" + DateTime.Now.Year.ToString() + "_" + DateTime.Now.Hour.ToString()
+                + "_" + DateTime.Now.Minute.ToString();
+
+            //guardamos la hora actual y guardamos el archivo
+            ((XElement)bitacora.FirstNode.NextNode).Add(DateTime.Now);
+            bitacora.Save(string.Format("bitacora{0}.xml", nombrearch));
+        }
+
+        /// <summary>
+        /// Metodo para guardar en la bitacora los registros
+        /// </summary>
+        /// <param name="pRegistro">El registro a guardar en la bitacora</param>
+        /// Version 1.0
+        /// Fecha de creacion 21/03/21
+        /// Creador Isaac Librado
+        public static void RegistroBitacora(string pRegistro)
+        {
+            //obenemos el form actual, su bitacora y su nodo de registro,
+            //añadimos el registro
+            MenuPrincipal formActual = (MenuPrincipal)ActiveForm;
+
+            ((XElement)formActual.bitacora.LastNode).Add(string.Format("{1} : {0}\n",pRegistro,DateTime.Now));
+        }
 
         /// <summary>
         /// Obtiene los datos del user que ha iniciado sesión
@@ -235,6 +294,12 @@ namespace UserInterfaceZoo
                         //mostramos datos en el menú
                         formActual.panelSideMenu.Visible = true;
                         formActual.ObtenerDireccionIp();
+
+                        //Agregamos datos a la bitacora
+                        ((XElement)formActual.bitacora.FirstNode).Add(DateTime.Now);
+                        ((XElement)formActual.bitacora.FirstNode.NextNode.NextNode).Add(formActual.lblIp.Text);
+                        ((XElement)formActual.bitacora.LastNode.PreviousNode).Add(pUserName);
+
                     }
                 }
             }
@@ -366,6 +431,7 @@ namespace UserInterfaceZoo
             MenuPrincipal formActual = (MenuPrincipal)ActiveForm;
             formActual.lblMensajes.Text = pMensaje;
         }
+
 
 
         #endregion
