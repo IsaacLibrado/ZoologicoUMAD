@@ -137,19 +137,33 @@ namespace UserInterfaceZoo
             }
             else
             {
-                //obtenemos la imagen que tendrá el usuario inicial
-                Uri fileUri = null;
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.ShowDialog();
-                fileUri = new Uri(openFileDialog.FileName);
 
                 // Si no existe, se crea un archivo con datos default
                 usuariosTexto = new XElement("Usuarios",
                                         new XElement("User", new XAttribute("userid", "1"),
-                                            new XElement("Username", "2006006723"),
+                                            new XElement("Username", "20182023"),
                                             new XElement("Password", "admin123"),
-                                            new XElement("Cargo", "Administrador"),
-                                            new XElement("ImagenURI", fileUri)
+                                            new XElement("Cargo", "Admin")
+                                            ),
+                                        new XElement("User", new XAttribute("userid", "2"),
+                                            new XElement("Username", "20060001"),
+                                            new XElement("Password", "admin123"),
+                                            new XElement("Cargo", "Administrador")
+                                            ),
+                                        new XElement("User", new XAttribute("userid", "3"),
+                                            new XElement("Username", "20060002"),
+                                            new XElement("Password", "admin123"),
+                                            new XElement("Cargo", "Cajero")
+                                            ),
+                                        new XElement("User", new XAttribute("userid", "4"),
+                                            new XElement("Username", "20060003"),
+                                            new XElement("Password", "admin123"),
+                                            new XElement("Cargo", "GerenteCompras")
+                                            ),
+                                        new XElement("User", new XAttribute("userid", "5"),
+                                            new XElement("Username", "20060004"),
+                                            new XElement("Password", "admin123"),
+                                            new XElement("Cargo", "Mantenimiento")
                                             )
                                         );
 

@@ -46,6 +46,8 @@ namespace UserInterfaceZoo
             //hacemos invisibles a los sub menus
             panelComprasSubMenu.Visible = false;
             panelVentasSubMenu.Visible = false;
+            panelGestionSubMenu.Visible = false;
+            panelInteractivoSubMenu.Visible = false;
 
             //Inicializamos textos
             lblMensajes.Text = " ";
@@ -126,6 +128,32 @@ namespace UserInterfaceZoo
         }
 
         /// <summary>
+        /// Evento que se realizar al presionar el boton gestion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        private void btnGestion_Click(object sender, EventArgs e)
+        {
+            mostrarSubMenu(panelGestionSubMenu);
+        }
+
+        /// <summary>
+        /// Evento que se realizar al presionar el boton interactivo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        private void btnInteractivo_Click(object sender, EventArgs e)
+        {
+            mostrarSubMenu(panelInteractivoSubMenu);
+        }
+
+        /// <summary>
         /// Evento que se realizar al presionar el boton orden de compra
         /// </summary>
         /// <param name="sender"></param>
@@ -184,6 +212,7 @@ namespace UserInterfaceZoo
         {
             ocultarSubMenu();
             AsignarTitulo("Vender");
+            RegistroBitacora("Realizada venta");
         }
 
         /// <summary>
@@ -198,7 +227,114 @@ namespace UserInterfaceZoo
         {
             ocultarSubMenu();
             AsignarTitulo("Apartar Boletos");
+            RegistroBitacora("Realizado el apartado de boleto");
         }
+
+        /// <summary>
+        /// Evento que se realizar al presionar el boton mostrar inventario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        private void btnSMInventario_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+            AsignarTitulo("Inventario");
+            RegistroBitacora("Mostrado el inventario en pantalla");
+        }
+
+        /// <summary>
+        /// Evento que se realizar al presionar el boton comprar alimento
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        private void btnSMAlimento_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+            AsignarTitulo("Compra de alimento");
+            RegistroBitacora("Comprado alimento para animales");
+        }
+
+        /// <summary>
+        /// Evento que se realizar al presionar el boton gestion maquina expendedora
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        private void btnSMMaquinaExp_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+            AsignarTitulo("Maquina expendedora");
+            RegistroBitacora("Realizada la gestion a la maquina expendedora");
+        }
+
+        /// <summary>
+        /// Evento que se realizar al presionar el boton gestion de reciclado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        private void btnSMReciclado_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+            AsignarTitulo("Reciclado");
+            RegistroBitacora("Realizada la gestion del reciclado");
+        }
+
+        /// <summary>
+        /// Evento que se realizar al presionar el boton gestion de sanitizacion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        private void btnSMSanitizar_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+            AsignarTitulo("Sanitizacion");
+            RegistroBitacora("Realizado el control de sanitizacion");
+        }
+
+        /// <summary>
+        /// Evento que se realizar al presionar el boton mostrar informacion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        private void btnSMInformacion_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+            AsignarTitulo("Información interactiva");
+            RegistroBitacora("Mostrada la infomacion interactiva del zoologico");
+        }
+
+        /// <summary>
+        /// Evento que se realizar al presionar el boton videojuego
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        private void btnSMVideojuego_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+            AsignarTitulo("Videojuego");
+            RegistroBitacora("Abierto el videojuego");
+        }
+
         #endregion
 
         #region funcionalidades
@@ -231,7 +367,7 @@ namespace UserInterfaceZoo
             //creamos el formato del nombre del archivo
             string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
                 + "-" + DateTime.Now.Year.ToString() + "_" + DateTime.Now.Hour.ToString()
-                + "_" + DateTime.Now.Minute.ToString();
+                + "_" + DateTime.Now.Minute.ToString()+"_"+DateTime.Now.Second.ToString();
 
             //guardamos la hora actual y guardamos el archivo
             ((XElement)bitacora.FirstNode.NextNode).Add(DateTime.Now);
@@ -300,6 +436,38 @@ namespace UserInterfaceZoo
                         ((XElement)formActual.bitacora.FirstNode.NextNode.NextNode).Add(formActual.lblIp.Text);
                         ((XElement)formActual.bitacora.LastNode.PreviousNode).Add(pUserName);
 
+
+                        //validamos el tipo de usuario para saber qué mostrar
+                        if(datosUser.ElementAt(2)=="Administrador" || datosUser.ElementAt(2) == "Cajero")
+                        {
+                            formActual.btnCompras.Visible = false;
+                            formActual.btnGestion.Visible = false;
+                            formActual.panelVentasSubMenu.Height = 80;
+
+                            if (datosUser.ElementAt(2) == "Administrador")
+                            {
+                                formActual.btnSMApartarBoletos.Visible = false;
+                                formActual.btnSMVender.Visible = false;
+                            }
+                            else
+                            {
+                                formActual.btnSMCerrarCaja.Visible = false;
+                                formActual.btnSMAbrirCaja.Visible = false;
+                            }
+                        }
+                        else if(datosUser.ElementAt(2) == "GerenteCompras" || datosUser.ElementAt(2) == "Mantenimiento")
+                        {
+                            formActual.btnGestion.Visible = false;
+                            formActual.btnVentas.Visible = false;
+
+                            if (datosUser.ElementAt(2) == "Mantenimiento")
+                            {
+                                formActual.panelComprasSubMenu.Height = 40;
+                                formActual.btnSMOrdenCompra.Visible = false;
+                                formActual.btnSMAlimento.Visible = false;
+                            }
+                        }
+
                     }
                 }
             }
@@ -319,6 +487,8 @@ namespace UserInterfaceZoo
             AsignarTitulo("Inicio de Sesión");
         }
 
+        
+
         /// <summary>
         /// Metodo para ocultar los submenus
         /// </summary>
@@ -331,6 +501,10 @@ namespace UserInterfaceZoo
                 panelVentasSubMenu.Visible = false;
             if (panelComprasSubMenu.Visible == true)
                 panelComprasSubMenu.Visible = false;
+            if (panelGestionSubMenu.Visible == true)
+                panelGestionSubMenu.Visible = false;
+            if (panelInteractivoSubMenu.Visible == true)
+                panelInteractivoSubMenu.Visible = false;
         }
 
         /// <summary>
@@ -431,8 +605,6 @@ namespace UserInterfaceZoo
             MenuPrincipal formActual = (MenuPrincipal)ActiveForm;
             formActual.lblMensajes.Text = pMensaje;
         }
-
-
 
         #endregion
 

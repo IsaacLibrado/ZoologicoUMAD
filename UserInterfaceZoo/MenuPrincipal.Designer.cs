@@ -36,7 +36,18 @@
             this.lblUserName = new System.Windows.Forms.Label();
             this.pbPerfil = new System.Windows.Forms.PictureBox();
             this.panelSubMenus = new System.Windows.Forms.Panel();
+            this.panelInteractivoSubMenu = new System.Windows.Forms.Panel();
+            this.btnSMVideojuego = new System.Windows.Forms.Button();
+            this.btnSMInformacion = new System.Windows.Forms.Button();
+            this.btnInteractivo = new System.Windows.Forms.Button();
+            this.panelGestionSubMenu = new System.Windows.Forms.Panel();
+            this.btnSMSanitizar = new System.Windows.Forms.Button();
+            this.btnSMReciclado = new System.Windows.Forms.Button();
+            this.btnSMMaquinaExp = new System.Windows.Forms.Button();
+            this.btnGestion = new System.Windows.Forms.Button();
             this.panelComprasSubMenu = new System.Windows.Forms.Panel();
+            this.btnSMAlimento = new System.Windows.Forms.Button();
+            this.btnSMInventario = new System.Windows.Forms.Button();
             this.btnSMOrdenCompra = new System.Windows.Forms.Button();
             this.btnCompras = new System.Windows.Forms.Button();
             this.panelVentasSubMenu = new System.Windows.Forms.Panel();
@@ -63,6 +74,8 @@
             this.panelUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerfil)).BeginInit();
             this.panelSubMenus.SuspendLayout();
+            this.panelInteractivoSubMenu.SuspendLayout();
+            this.panelGestionSubMenu.SuspendLayout();
             this.panelComprasSubMenu.SuspendLayout();
             this.panelVentasSubMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -142,6 +155,10 @@
             // panelSubMenus
             // 
             this.panelSubMenus.AutoScroll = true;
+            this.panelSubMenus.Controls.Add(this.panelInteractivoSubMenu);
+            this.panelSubMenus.Controls.Add(this.btnInteractivo);
+            this.panelSubMenus.Controls.Add(this.panelGestionSubMenu);
+            this.panelSubMenus.Controls.Add(this.btnGestion);
             this.panelSubMenus.Controls.Add(this.panelComprasSubMenu);
             this.panelSubMenus.Controls.Add(this.btnCompras);
             this.panelSubMenus.Controls.Add(this.panelVentasSubMenu);
@@ -152,15 +169,184 @@
             this.panelSubMenus.Size = new System.Drawing.Size(234, 357);
             this.panelSubMenus.TabIndex = 3;
             // 
+            // panelInteractivoSubMenu
+            // 
+            this.panelInteractivoSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelInteractivoSubMenu.Controls.Add(this.btnSMVideojuego);
+            this.panelInteractivoSubMenu.Controls.Add(this.btnSMInformacion);
+            this.panelInteractivoSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelInteractivoSubMenu.Location = new System.Drawing.Point(0, 595);
+            this.panelInteractivoSubMenu.Name = "panelInteractivoSubMenu";
+            this.panelInteractivoSubMenu.Size = new System.Drawing.Size(217, 89);
+            this.panelInteractivoSubMenu.TabIndex = 8;
+            // 
+            // btnSMVideojuego
+            // 
+            this.btnSMVideojuego.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSMVideojuego.FlatAppearance.BorderSize = 0;
+            this.btnSMVideojuego.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSMVideojuego.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSMVideojuego.Location = new System.Drawing.Point(0, 43);
+            this.btnSMVideojuego.Name = "btnSMVideojuego";
+            this.btnSMVideojuego.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSMVideojuego.Size = new System.Drawing.Size(217, 40);
+            this.btnSMVideojuego.TabIndex = 1;
+            this.btnSMVideojuego.Text = "Videojuego";
+            this.btnSMVideojuego.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSMVideojuego.UseVisualStyleBackColor = true;
+            this.btnSMVideojuego.Click += new System.EventHandler(this.btnSMVideojuego_Click);
+            // 
+            // btnSMInformacion
+            // 
+            this.btnSMInformacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSMInformacion.FlatAppearance.BorderSize = 0;
+            this.btnSMInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSMInformacion.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSMInformacion.Location = new System.Drawing.Point(0, 0);
+            this.btnSMInformacion.Name = "btnSMInformacion";
+            this.btnSMInformacion.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSMInformacion.Size = new System.Drawing.Size(217, 43);
+            this.btnSMInformacion.TabIndex = 0;
+            this.btnSMInformacion.Text = "Mostrar Información";
+            this.btnSMInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSMInformacion.UseVisualStyleBackColor = true;
+            this.btnSMInformacion.Click += new System.EventHandler(this.btnSMInformacion_Click);
+            // 
+            // btnInteractivo
+            // 
+            this.btnInteractivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnInteractivo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInteractivo.FlatAppearance.BorderSize = 0;
+            this.btnInteractivo.ForeColor = System.Drawing.Color.White;
+            this.btnInteractivo.Location = new System.Drawing.Point(0, 550);
+            this.btnInteractivo.Name = "btnInteractivo";
+            this.btnInteractivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnInteractivo.Size = new System.Drawing.Size(217, 45);
+            this.btnInteractivo.TabIndex = 7;
+            this.btnInteractivo.Text = "Interactivo";
+            this.btnInteractivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInteractivo.UseVisualStyleBackColor = false;
+            this.btnInteractivo.Click += new System.EventHandler(this.btnInteractivo_Click);
+            // 
+            // panelGestionSubMenu
+            // 
+            this.panelGestionSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelGestionSubMenu.Controls.Add(this.btnSMSanitizar);
+            this.panelGestionSubMenu.Controls.Add(this.btnSMReciclado);
+            this.panelGestionSubMenu.Controls.Add(this.btnSMMaquinaExp);
+            this.panelGestionSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelGestionSubMenu.Location = new System.Drawing.Point(0, 420);
+            this.panelGestionSubMenu.Name = "panelGestionSubMenu";
+            this.panelGestionSubMenu.Size = new System.Drawing.Size(217, 130);
+            this.panelGestionSubMenu.TabIndex = 6;
+            // 
+            // btnSMSanitizar
+            // 
+            this.btnSMSanitizar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSMSanitizar.FlatAppearance.BorderSize = 0;
+            this.btnSMSanitizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSMSanitizar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSMSanitizar.Location = new System.Drawing.Point(0, 83);
+            this.btnSMSanitizar.Name = "btnSMSanitizar";
+            this.btnSMSanitizar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSMSanitizar.Size = new System.Drawing.Size(217, 40);
+            this.btnSMSanitizar.TabIndex = 2;
+            this.btnSMSanitizar.Text = "Sanitizar";
+            this.btnSMSanitizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSMSanitizar.UseVisualStyleBackColor = true;
+            this.btnSMSanitizar.Click += new System.EventHandler(this.btnSMSanitizar_Click);
+            // 
+            // btnSMReciclado
+            // 
+            this.btnSMReciclado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSMReciclado.FlatAppearance.BorderSize = 0;
+            this.btnSMReciclado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSMReciclado.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSMReciclado.Location = new System.Drawing.Point(0, 43);
+            this.btnSMReciclado.Name = "btnSMReciclado";
+            this.btnSMReciclado.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSMReciclado.Size = new System.Drawing.Size(217, 40);
+            this.btnSMReciclado.TabIndex = 1;
+            this.btnSMReciclado.Text = "Reciclado";
+            this.btnSMReciclado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSMReciclado.UseVisualStyleBackColor = true;
+            this.btnSMReciclado.Click += new System.EventHandler(this.btnSMReciclado_Click);
+            // 
+            // btnSMMaquinaExp
+            // 
+            this.btnSMMaquinaExp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSMMaquinaExp.FlatAppearance.BorderSize = 0;
+            this.btnSMMaquinaExp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSMMaquinaExp.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSMMaquinaExp.Location = new System.Drawing.Point(0, 0);
+            this.btnSMMaquinaExp.Name = "btnSMMaquinaExp";
+            this.btnSMMaquinaExp.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSMMaquinaExp.Size = new System.Drawing.Size(217, 43);
+            this.btnSMMaquinaExp.TabIndex = 0;
+            this.btnSMMaquinaExp.Text = "Maquina Expendedora";
+            this.btnSMMaquinaExp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSMMaquinaExp.UseVisualStyleBackColor = true;
+            this.btnSMMaquinaExp.Click += new System.EventHandler(this.btnSMMaquinaExp_Click);
+            // 
+            // btnGestion
+            // 
+            this.btnGestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnGestion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGestion.FlatAppearance.BorderSize = 0;
+            this.btnGestion.ForeColor = System.Drawing.Color.White;
+            this.btnGestion.Location = new System.Drawing.Point(0, 375);
+            this.btnGestion.Name = "btnGestion";
+            this.btnGestion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnGestion.Size = new System.Drawing.Size(217, 45);
+            this.btnGestion.TabIndex = 5;
+            this.btnGestion.Text = "Gestion";
+            this.btnGestion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGestion.UseVisualStyleBackColor = false;
+            this.btnGestion.Click += new System.EventHandler(this.btnGestion_Click);
+            // 
             // panelComprasSubMenu
             // 
             this.panelComprasSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelComprasSubMenu.Controls.Add(this.btnSMAlimento);
+            this.panelComprasSubMenu.Controls.Add(this.btnSMInventario);
             this.panelComprasSubMenu.Controls.Add(this.btnSMOrdenCompra);
             this.panelComprasSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelComprasSubMenu.Location = new System.Drawing.Point(0, 253);
+            this.panelComprasSubMenu.Location = new System.Drawing.Point(0, 250);
             this.panelComprasSubMenu.Name = "panelComprasSubMenu";
-            this.panelComprasSubMenu.Size = new System.Drawing.Size(234, 45);
+            this.panelComprasSubMenu.Size = new System.Drawing.Size(217, 125);
             this.panelComprasSubMenu.TabIndex = 4;
+            // 
+            // btnSMAlimento
+            // 
+            this.btnSMAlimento.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSMAlimento.FlatAppearance.BorderSize = 0;
+            this.btnSMAlimento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSMAlimento.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSMAlimento.Location = new System.Drawing.Point(0, 80);
+            this.btnSMAlimento.Name = "btnSMAlimento";
+            this.btnSMAlimento.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSMAlimento.Size = new System.Drawing.Size(217, 40);
+            this.btnSMAlimento.TabIndex = 2;
+            this.btnSMAlimento.Text = "Comprar alimento";
+            this.btnSMAlimento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSMAlimento.UseVisualStyleBackColor = true;
+            this.btnSMAlimento.Click += new System.EventHandler(this.btnSMAlimento_Click);
+            // 
+            // btnSMInventario
+            // 
+            this.btnSMInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSMInventario.FlatAppearance.BorderSize = 0;
+            this.btnSMInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSMInventario.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSMInventario.Location = new System.Drawing.Point(0, 40);
+            this.btnSMInventario.Name = "btnSMInventario";
+            this.btnSMInventario.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSMInventario.Size = new System.Drawing.Size(217, 40);
+            this.btnSMInventario.TabIndex = 1;
+            this.btnSMInventario.Text = "Mostrar Inventario";
+            this.btnSMInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSMInventario.UseVisualStyleBackColor = true;
+            this.btnSMInventario.Click += new System.EventHandler(this.btnSMInventario_Click);
             // 
             // btnSMOrdenCompra
             // 
@@ -171,7 +357,7 @@
             this.btnSMOrdenCompra.Location = new System.Drawing.Point(0, 0);
             this.btnSMOrdenCompra.Name = "btnSMOrdenCompra";
             this.btnSMOrdenCompra.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMOrdenCompra.Size = new System.Drawing.Size(234, 40);
+            this.btnSMOrdenCompra.Size = new System.Drawing.Size(217, 40);
             this.btnSMOrdenCompra.TabIndex = 0;
             this.btnSMOrdenCompra.Text = "OrdenCompra";
             this.btnSMOrdenCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -184,10 +370,10 @@
             this.btnCompras.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCompras.FlatAppearance.BorderSize = 0;
             this.btnCompras.ForeColor = System.Drawing.Color.White;
-            this.btnCompras.Location = new System.Drawing.Point(0, 208);
+            this.btnCompras.Location = new System.Drawing.Point(0, 205);
             this.btnCompras.Name = "btnCompras";
             this.btnCompras.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCompras.Size = new System.Drawing.Size(234, 45);
+            this.btnCompras.Size = new System.Drawing.Size(217, 45);
             this.btnCompras.TabIndex = 3;
             this.btnCompras.Text = "Compras";
             this.btnCompras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -204,7 +390,7 @@
             this.panelVentasSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelVentasSubMenu.Location = new System.Drawing.Point(0, 45);
             this.panelVentasSubMenu.Name = "panelVentasSubMenu";
-            this.panelVentasSubMenu.Size = new System.Drawing.Size(234, 163);
+            this.panelVentasSubMenu.Size = new System.Drawing.Size(217, 160);
             this.panelVentasSubMenu.TabIndex = 2;
             // 
             // btnSMApartarBoletos
@@ -216,7 +402,7 @@
             this.btnSMApartarBoletos.Location = new System.Drawing.Point(0, 120);
             this.btnSMApartarBoletos.Name = "btnSMApartarBoletos";
             this.btnSMApartarBoletos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMApartarBoletos.Size = new System.Drawing.Size(234, 40);
+            this.btnSMApartarBoletos.Size = new System.Drawing.Size(217, 40);
             this.btnSMApartarBoletos.TabIndex = 3;
             this.btnSMApartarBoletos.Text = "Apartar Boletos";
             this.btnSMApartarBoletos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -232,7 +418,7 @@
             this.btnSMVender.Location = new System.Drawing.Point(0, 80);
             this.btnSMVender.Name = "btnSMVender";
             this.btnSMVender.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMVender.Size = new System.Drawing.Size(234, 40);
+            this.btnSMVender.Size = new System.Drawing.Size(217, 40);
             this.btnSMVender.TabIndex = 2;
             this.btnSMVender.Text = "Vender";
             this.btnSMVender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -248,7 +434,7 @@
             this.btnSMCerrarCaja.Location = new System.Drawing.Point(0, 40);
             this.btnSMCerrarCaja.Name = "btnSMCerrarCaja";
             this.btnSMCerrarCaja.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMCerrarCaja.Size = new System.Drawing.Size(234, 40);
+            this.btnSMCerrarCaja.Size = new System.Drawing.Size(217, 40);
             this.btnSMCerrarCaja.TabIndex = 1;
             this.btnSMCerrarCaja.Text = "Cerrar Caja";
             this.btnSMCerrarCaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -264,7 +450,7 @@
             this.btnSMAbrirCaja.Location = new System.Drawing.Point(0, 0);
             this.btnSMAbrirCaja.Name = "btnSMAbrirCaja";
             this.btnSMAbrirCaja.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMAbrirCaja.Size = new System.Drawing.Size(234, 40);
+            this.btnSMAbrirCaja.Size = new System.Drawing.Size(217, 40);
             this.btnSMAbrirCaja.TabIndex = 0;
             this.btnSMAbrirCaja.Text = "Abrir Caja";
             this.btnSMAbrirCaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -280,7 +466,7 @@
             this.btnVentas.Location = new System.Drawing.Point(0, 0);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnVentas.Size = new System.Drawing.Size(234, 45);
+            this.btnVentas.Size = new System.Drawing.Size(217, 45);
             this.btnVentas.TabIndex = 1;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -455,6 +641,8 @@
             this.panelUsuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerfil)).EndInit();
             this.panelSubMenus.ResumeLayout(false);
+            this.panelInteractivoSubMenu.ResumeLayout(false);
+            this.panelGestionSubMenu.ResumeLayout(false);
             this.panelComprasSubMenu.ResumeLayout(false);
             this.panelVentasSubMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
@@ -503,6 +691,17 @@
         private System.Windows.Forms.Panel panelComprasSubMenu;
         private System.Windows.Forms.Button btnSMOrdenCompra;
         private System.Windows.Forms.Button btnCompras;
+        private System.Windows.Forms.Button btnSMInventario;
+        private System.Windows.Forms.Panel panelGestionSubMenu;
+        private System.Windows.Forms.Button btnSMSanitizar;
+        private System.Windows.Forms.Button btnSMReciclado;
+        private System.Windows.Forms.Button btnSMMaquinaExp;
+        private System.Windows.Forms.Button btnGestion;
+        private System.Windows.Forms.Button btnSMAlimento;
+        private System.Windows.Forms.Panel panelInteractivoSubMenu;
+        private System.Windows.Forms.Button btnSMVideojuego;
+        private System.Windows.Forms.Button btnSMInformacion;
+        private System.Windows.Forms.Button btnInteractivo;
     }
 }
 
