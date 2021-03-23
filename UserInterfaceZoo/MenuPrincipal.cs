@@ -607,8 +607,12 @@ namespace UserInterfaceZoo
             formActual.lblMensajes.Text = pMensaje;
         }
 
+
         #endregion
 
-        
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+            //Aqui agregamos el CU_05
+        }
     }
 }
