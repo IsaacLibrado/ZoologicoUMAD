@@ -607,12 +607,20 @@ namespace UserInterfaceZoo
             formActual.lblMensajes.Text = pMensaje;
         }
 
-
-        #endregion
-
+        /// <summary>
+        /// Metodo para mostrar al cargar el cu_05
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23/03/21
+        /// Creador Isaac Librado
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
             //Aqui agregamos el CU_05
         }
+        #endregion
+
+
     }
 }

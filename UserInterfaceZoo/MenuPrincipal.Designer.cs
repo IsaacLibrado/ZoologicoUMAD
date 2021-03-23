@@ -59,6 +59,7 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panelDatos = new System.Windows.Forms.Panel();
+            this.pbLogoTemp = new System.Windows.Forms.PictureBox();
             this.panelFecha = new System.Windows.Forms.Panel();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
@@ -70,7 +71,6 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
-            this.pbLogoTemp = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
             this.panelUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerfil)).BeginInit();
@@ -82,12 +82,12 @@
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoTemp)).BeginInit();
             this.panelFecha.SuspendLayout();
             this.panelBase.SuspendLayout();
             this.panelTitulo.SuspendLayout();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoTemp)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -507,6 +507,17 @@
             this.panelDatos.Size = new System.Drawing.Size(700, 100);
             this.panelDatos.TabIndex = 1;
             // 
+            // pbLogoTemp
+            // 
+            this.pbLogoTemp.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbLogoTemp.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
+            this.pbLogoTemp.Location = new System.Drawing.Point(0, 0);
+            this.pbLogoTemp.Name = "pbLogoTemp";
+            this.pbLogoTemp.Size = new System.Drawing.Size(142, 100);
+            this.pbLogoTemp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogoTemp.TabIndex = 2;
+            this.pbLogoTemp.TabStop = false;
+            // 
             // panelFecha
             // 
             this.panelFecha.Controls.Add(this.lblFecha);
@@ -620,17 +631,6 @@
             this.horaFecha.Enabled = true;
             this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
             // 
-            // pbLogoTemp
-            // 
-            this.pbLogoTemp.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbLogoTemp.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
-            this.pbLogoTemp.Location = new System.Drawing.Point(0, 0);
-            this.pbLogoTemp.Name = "pbLogoTemp";
-            this.pbLogoTemp.Size = new System.Drawing.Size(142, 100);
-            this.pbLogoTemp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogoTemp.TabIndex = 2;
-            this.pbLogoTemp.TabStop = false;
-            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -661,13 +661,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoTemp)).EndInit();
             this.panelFecha.ResumeLayout(false);
             this.panelFecha.PerformLayout();
             this.panelBase.ResumeLayout(false);
             this.panelTitulo.ResumeLayout(false);
             this.panelContenedor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoTemp)).EndInit();
             this.ResumeLayout(false);
 
         }
