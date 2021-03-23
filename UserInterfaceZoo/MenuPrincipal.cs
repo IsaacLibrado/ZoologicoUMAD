@@ -619,6 +619,19 @@ namespace UserInterfaceZoo
         {
             //Aqui agregamos el CU_05
         }
+
+        /// <summary>
+        /// Metodo para el boton salir
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23/03/21
+        /// Creador Isaac Librado
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         #endregion
 
 
