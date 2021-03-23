@@ -6,3 +6,4 @@
 # Usar el método: MenuPrincipal.AsignarTitulo("Titulo") para mostrar el titulo de sus pantallas
 # Usar el método: MenuPrincipal.MostrarMensaje("Mensaje") para mostrar un mensaje de error en la interfaz
 # Usar el método: MenuPrincipal.RegistroBitacora("Registro") para guardar las acciones en la bitacora
+# El usuario para acceder es 2006006723 y su contraseña es admin123
