@@ -436,6 +436,7 @@ namespace UserInterfaceZoo
                         ((XElement)formActual.bitacora.FirstNode.NextNode.NextNode).Add(formActual.lblIp.Text);
                         ((XElement)formActual.bitacora.LastNode.PreviousNode).Add(pUserName);
 
+                        formActual.pbLogoTemp.Visible = false;
 
                         //validamos el tipo de usuario para saber qué mostrar
                         if(datosUser.ElementAt(2)=="Administrador" || datosUser.ElementAt(2) == "Cajero")

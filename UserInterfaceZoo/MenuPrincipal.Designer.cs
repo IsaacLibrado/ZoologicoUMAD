@@ -70,6 +70,7 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
+            this.pbLogoTemp = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
             this.panelUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerfil)).BeginInit();
@@ -86,6 +87,7 @@
             this.panelTitulo.SuspendLayout();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoTemp)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -496,6 +498,7 @@
             // panelDatos
             // 
             this.panelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelDatos.Controls.Add(this.pbLogoTemp);
             this.panelDatos.Controls.Add(this.panelFecha);
             this.panelDatos.Controls.Add(this.lblNombreZoo);
             this.panelDatos.Dock = System.Windows.Forms.DockStyle.Top;
@@ -538,15 +541,12 @@
             // 
             // lblNombreZoo
             // 
-            this.lblNombreZoo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNombreZoo.AutoSize = true;
-            this.lblNombreZoo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreZoo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreZoo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNombreZoo.Location = new System.Drawing.Point(28, 31);
+            this.lblNombreZoo.Location = new System.Drawing.Point(162, 36);
             this.lblNombreZoo.Name = "lblNombreZoo";
-            this.lblNombreZoo.Size = new System.Drawing.Size(277, 31);
+            this.lblNombreZoo.Size = new System.Drawing.Size(350, 39);
             this.lblNombreZoo.TabIndex = 0;
             this.lblNombreZoo.Text = "Zootopia S.A. de C.V.";
             // 
@@ -620,6 +620,17 @@
             this.horaFecha.Enabled = true;
             this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
             // 
+            // pbLogoTemp
+            // 
+            this.pbLogoTemp.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbLogoTemp.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
+            this.pbLogoTemp.Location = new System.Drawing.Point(0, 0);
+            this.pbLogoTemp.Name = "pbLogoTemp";
+            this.pbLogoTemp.Size = new System.Drawing.Size(142, 100);
+            this.pbLogoTemp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogoTemp.TabIndex = 2;
+            this.pbLogoTemp.TabStop = false;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -655,6 +666,7 @@
             this.panelTitulo.ResumeLayout(false);
             this.panelContenedor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoTemp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -702,6 +714,7 @@
         private System.Windows.Forms.Button btnSMVideojuego;
         private System.Windows.Forms.Button btnSMInformacion;
         private System.Windows.Forms.Button btnInteractivo;
+        private System.Windows.Forms.PictureBox pbLogoTemp;
     }
 }
 
