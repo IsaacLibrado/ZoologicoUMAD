@@ -62,6 +62,7 @@ namespace UserInterfaceZoo
             this.txbContra.Name = "txbContra";
             this.txbContra.Size = new System.Drawing.Size(146, 20);
             this.txbContra.TabIndex = 2;
+            this.txbContra.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbContra_KeyDown);
             // 
             // txbUsuario
             // 
@@ -89,7 +90,7 @@ namespace UserInterfaceZoo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 390);
+            this.ClientSize = new System.Drawing.Size(875, 487);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txbUsuario);
             this.Controls.Add(this.txbContra);

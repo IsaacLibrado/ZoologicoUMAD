@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.panelUsuario = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.lblIp = new System.Windows.Forms.Label();
             this.lblCargo = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
@@ -71,7 +72,6 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
-            this.btnSalir = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerfil)).BeginInit();
@@ -116,6 +116,20 @@
             this.panelUsuario.Name = "panelUsuario";
             this.panelUsuario.Size = new System.Drawing.Size(234, 98);
             this.panelUsuario.TabIndex = 4;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Location = new System.Drawing.Point(172, 62);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSalir.Size = new System.Drawing.Size(55, 29);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // lblIp
             // 
@@ -632,20 +646,6 @@
             // 
             this.horaFecha.Enabled = true;
             this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(172, 62);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSalir.Size = new System.Drawing.Size(55, 29);
-            this.btnSalir.TabIndex = 4;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // MenuPrincipal
             // 

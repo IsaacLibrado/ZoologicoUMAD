@@ -56,28 +56,7 @@ namespace UserInterfaceZoo
         /// Creador Isaac Librado
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            //Variables para obtener los datos de login
-            string user = txbUsuario.Text;
-            string password = txbContra.Text;
-
-            bool validado = ValidarLogIn(user, password);
-
-            //Si la validacion de los datos es correcta se manda a la pantalla principal y si no
-            //se indica con un mensaje y se limpian los text box
-            if (validado)
-            {
-                usuarioPasar = user;
-
-                MenuPrincipal.AsignarTitulo("Menú Principal");
-                MenuPrincipal.abrirPantallas(new Inicio(user));
-            }
-            else
-            {
-                MenuPrincipal.MostrarMensaje("DATOS INCORRECTOS INTENTE OTRA VEZ");
-                txbUsuario.Clear();
-                txbContra.Clear();
-                txbUsuario.Focus();
-            }
+            Entrar();
         }
 
         /// <summary>
@@ -185,6 +164,54 @@ namespace UserInterfaceZoo
         private void txbUsuario_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        /// <summary>
+        /// Metodo para validar cuando se presione enter en el campo de contrasenia
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 25/03/21
+        /// Creador Isaac Librado
+        private void txbContra_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode==Keys.Enter)
+            {
+                Entrar();
+            }
+        }
+
+        /// <summary>
+        /// Metodo para validar la entrada al sistema despues del login
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 25/03/21
+        /// Creador Isaac Librado
+        private void Entrar()
+        {
+            //Variables para obtener los datos de login
+            string user = txbUsuario.Text;
+            string password = txbContra.Text;
+
+            bool validado = ValidarLogIn(user, password);
+
+            //Si la validacion de los datos es correcta se manda a la pantalla principal y si no
+            //se indica con un mensaje y se limpian los text box
+            if (validado)
+            {
+                usuarioPasar = user;
+
+                MenuPrincipal.AsignarTitulo("Menú Principal");
+                MenuPrincipal.abrirPantallas(new Inicio(user));
+            }
+            else
+            {
+                MenuPrincipal.MostrarMensaje("DATOS INCORRECTOS INTENTE OTRA VEZ");
+                txbUsuario.Clear();
+                txbContra.Clear();
+                txbUsuario.Focus();
+            }
         }
     }
 }
