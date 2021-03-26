@@ -51,7 +51,7 @@ namespace UserInterfaceZoo
 
             //Inicializamos textos
             lblMensajes.Text = " ";
-            lblTitulo.Text = "";
+            lblTitulo.Text = "Presiona el icono para iniciar sesión";
 
             //Ocultamos los botones
             panelSideMenu.Visible = false;
