@@ -70,7 +70,6 @@ namespace UserInterfaceZoo
             this.txbUsuario.Name = "txbUsuario";
             this.txbUsuario.Size = new System.Drawing.Size(146, 20);
             this.txbUsuario.TabIndex = 3;
-            this.txbUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbUsuario_KeyPress);
             // 
             // btnEntrar
             // 

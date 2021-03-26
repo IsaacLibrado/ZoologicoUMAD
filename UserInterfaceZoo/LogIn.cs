@@ -120,7 +120,7 @@ namespace UserInterfaceZoo
                 // Si no existe, se crea un archivo con datos default
                 usuariosTexto = new XElement("Usuarios",
                                         new XElement("User", new XAttribute("userid", "1"),
-                                            new XElement("Username", "20182023"),
+                                            new XElement("Username", "system"),
                                             new XElement("Password", "admin123"),
                                             new XElement("Cargo", "Admin")
                                             ),
@@ -153,18 +153,6 @@ namespace UserInterfaceZoo
             return usuariosTexto;
         }
 
-        /// <summary>
-        /// Metodo para validar que los datos ingresados al textbox sean números
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// Version 1.0
-        /// Fecha de creacion 20/03/21
-        /// Creador Isaac Librado
-        private void txbUsuario_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
-        }
 
         /// <summary>
         /// Metodo para validar cuando se presione enter en el campo de contrasenia
