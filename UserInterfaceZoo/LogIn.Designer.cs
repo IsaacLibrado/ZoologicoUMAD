@@ -69,7 +69,7 @@ namespace UserInterfaceZoo
             this.txbUsuario.Location = new System.Drawing.Point(246, 84);
             this.txbUsuario.Name = "txbUsuario";
             this.txbUsuario.Size = new System.Drawing.Size(146, 20);
-            this.txbUsuario.TabIndex = 3;
+            this.txbUsuario.TabIndex = 1;
             // 
             // btnEntrar
             // 
@@ -80,7 +80,7 @@ namespace UserInterfaceZoo
             this.btnEntrar.Location = new System.Drawing.Point(397, 219);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(110, 34);
-            this.btnEntrar.TabIndex = 4;
+            this.btnEntrar.TabIndex = 3;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
