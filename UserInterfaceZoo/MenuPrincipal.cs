@@ -215,6 +215,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Vender");
             RegistroBitacora("Realizada venta");
+            MenuPrincipal.abrirPantallas(new PA_02_01_Vender_Boletos_Entrada()); 
         }
 
         /// <summary>
