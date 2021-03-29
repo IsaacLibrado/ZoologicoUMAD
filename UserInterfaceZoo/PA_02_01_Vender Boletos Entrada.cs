@@ -29,7 +29,8 @@ namespace UserInterfaceZoo
         {
             boletosAdultos = Convert.ToInt32(txtBoletosAdultos.Text); 
             boletosNinios = Convert.ToInt32(txtBoletosNinios.Text);
-            boletosAdultosMayores = Convert.ToInt32(txtBoletosAdultosMayores.Text); 
+            boletosAdultosMayores = Convert.ToInt32(txtBoletosAdultosMayores.Text);
+            this.Close();
             MenuPrincipal.abrirPantallas(new PA_02_02_Pagar_Boletos());
         }
 
