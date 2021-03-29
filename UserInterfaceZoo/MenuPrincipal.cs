@@ -199,6 +199,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Cerrar Caja");
             RegistroBitacora("Realizado el cierre de caja");
+            MenuPrincipal.abrirPantallas(new PA_02_04_Cerrar_Caja());
         }
 
         /// <summary>

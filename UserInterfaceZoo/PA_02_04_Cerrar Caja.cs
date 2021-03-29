@@ -10,21 +10,23 @@ using System.Windows.Forms;
 
 namespace UserInterfaceZoo
 {
-    public partial class PA_02_03_Apertura_Caja : Form
+    public partial class PA_02_04_Cerrar_Caja : Form
     {
         int idCajas;
-        int idCajero;
-        int montoApertura;
         bool rdbBoleto;
         bool rsbSouvenir;
+        double ganancias;
+        double montoCaja;
+        double faltaSobra;
 
-        public int MontoApertura { get => montoApertura; set => montoApertura = value; }
         public int IdCajas { get => idCajas; set => idCajas = value; }
-        public int IdCajero { get => idCajero; set => idCajero = value; }
         public bool RdbBoleto { get => rdbBoleto; set => rdbBoleto = value; }
         public bool RsbSouvenir { get => rsbSouvenir; set => rsbSouvenir = value; }
+        public double Ganancias { get => ganancias; set => ganancias = value; }
+        public double MontoCaja { get => montoCaja; set => montoCaja = value; }
+        public double FaltaSobra { get => faltaSobra; set => faltaSobra = value; }
 
-        public PA_02_03_Apertura_Caja()
+        public PA_02_04_Cerrar_Caja()
         {
             InitializeComponent();
         }
@@ -43,22 +45,15 @@ namespace UserInterfaceZoo
             this.Close();
         }
 
-        /// <summary>
-        /// Evento que se realizar al presionar el boton abrir cajas
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// Version 1.0
-        /// Fecha de creacion 29 de Marzo 2021
-        /// Creador Arturo Villegas
-        private void btnAperturar_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
             //Asignación de variables
-            IdCajas = Convert.ToInt32(cmbCaja.Text);
-            IdCajero = Convert.ToInt32(cmbCajero.Text);
-            MontoApertura = Convert.ToInt32(txbMontoInicial.Text);
-            RdbBoleto = rbBoleto.Checked;
-            RsbSouvenir = rbSouvenir.Checked;
+            idCajas = Convert.ToInt32(cmbCaja.Text);
+            rdbBoleto = rbBoleto.Checked;
+            rsbSouvenir = rbSouvenir.Checked;
+            ganancias = Convert.ToDouble(lblGanancias.Text);
+            montoCaja = Convert.ToDouble(lblMonto.Text);
+            faltaSobra = Convert.ToDouble(txbFaltaSobra.Text);
 
             //Se completa el proceso y regresa al menu
             this.Close();
