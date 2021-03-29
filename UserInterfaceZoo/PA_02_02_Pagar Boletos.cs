@@ -41,5 +41,6 @@ namespace UserInterfaceZoo
             //total = (adultos*200) + (ninios*150) + (mayores*100);
             //lbTotal.Text = total.ToString(); 
         }
+
     }
 }

@@ -53,6 +53,7 @@ namespace UserInterfaceZoo
             this.btnAnimFelpa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAnimFelpa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnimFelpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnimFelpa.ForeColor = System.Drawing.SystemColors.Control;
             this.btnAnimFelpa.Location = new System.Drawing.Point(12, 47);
             this.btnAnimFelpa.Name = "btnAnimFelpa";
             this.btnAnimFelpa.Size = new System.Drawing.Size(112, 26);
@@ -65,6 +66,7 @@ namespace UserInterfaceZoo
             this.btnGorras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnGorras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGorras.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGorras.ForeColor = System.Drawing.SystemColors.Control;
             this.btnGorras.Location = new System.Drawing.Point(130, 47);
             this.btnGorras.Name = "btnGorras";
             this.btnGorras.Size = new System.Drawing.Size(125, 26);
@@ -77,6 +79,7 @@ namespace UserInterfaceZoo
             this.btnCubrebocas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnCubrebocas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCubrebocas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCubrebocas.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCubrebocas.Location = new System.Drawing.Point(261, 47);
             this.btnCubrebocas.Name = "btnCubrebocas";
             this.btnCubrebocas.Size = new System.Drawing.Size(94, 26);
@@ -89,6 +92,7 @@ namespace UserInterfaceZoo
             this.btnLlaveros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnLlaveros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLlaveros.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLlaveros.ForeColor = System.Drawing.SystemColors.Control;
             this.btnLlaveros.Location = new System.Drawing.Point(363, 48);
             this.btnLlaveros.Name = "btnLlaveros";
             this.btnLlaveros.Size = new System.Drawing.Size(74, 25);
@@ -101,6 +105,7 @@ namespace UserInterfaceZoo
             this.btnTazas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnTazas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTazas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTazas.ForeColor = System.Drawing.SystemColors.Control;
             this.btnTazas.Location = new System.Drawing.Point(443, 48);
             this.btnTazas.Name = "btnTazas";
             this.btnTazas.Size = new System.Drawing.Size(58, 25);
@@ -113,6 +118,7 @@ namespace UserInterfaceZoo
             this.btnPlayeras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnPlayeras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayeras.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayeras.ForeColor = System.Drawing.SystemColors.Control;
             this.btnPlayeras.Location = new System.Drawing.Point(513, 48);
             this.btnPlayeras.Name = "btnPlayeras";
             this.btnPlayeras.Size = new System.Drawing.Size(78, 25);
@@ -125,6 +131,7 @@ namespace UserInterfaceZoo
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(601, 48);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 25);
@@ -185,6 +192,7 @@ namespace UserInterfaceZoo
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnAgregar.Location = new System.Drawing.Point(347, 271);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(90, 28);
@@ -198,6 +206,7 @@ namespace UserInterfaceZoo
             this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnRegresar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRegresar.Location = new System.Drawing.Point(563, 313);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(122, 28);
@@ -211,6 +220,7 @@ namespace UserInterfaceZoo
             this.btnCarrito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnCarrito.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCarrito.Location = new System.Drawing.Point(563, 356);
             this.btnCarrito.Name = "btnCarrito";
             this.btnCarrito.Size = new System.Drawing.Size(122, 28);

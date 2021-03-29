@@ -128,6 +128,12 @@
     <Compile Include="PA_02_07 Carrito Souvenirs.Designer.cs">
       <DependentUpon>PA_02_07 Carrito Souvenirs.cs</DependentUpon>
     </Compile>
+    <Compile Include="PA_02_08_Pago Souvenirs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PA_02_08_Pago Souvenirs.Designer.cs">
+      <DependentUpon>PA_02_08_Pago Souvenirs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Inicio.cs">
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PA_02_07 Carrito Souvenirs.resx">
       <DependentUpon>PA_02_07 Carrito Souvenirs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PA_02_08_Pago Souvenirs.resx">
+      <DependentUpon>PA_02_08_Pago Souvenirs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -17,5 +17,16 @@ namespace UserInterfaceZoo
             InitializeComponent();
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
+        }
+
+        private void btnPagar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_02_08_Pago_Souvenirs());
+        }
     }
 }
