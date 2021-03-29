@@ -182,6 +182,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Abrir Caja");
             RegistroBitacora("Realizada la apertura de la caja");
+            MenuPrincipal.abrirPantallas(new PA_02_03_Apertura_Caja());
         }
 
         /// <summary>
