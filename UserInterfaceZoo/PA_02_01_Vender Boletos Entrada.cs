@@ -36,7 +36,8 @@ namespace UserInterfaceZoo
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_01_02_Menu_Cajero());
         }
     }
 }

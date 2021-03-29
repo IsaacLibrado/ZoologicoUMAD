@@ -86,6 +86,12 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="PA_01_02 Menu Cajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PA_01_02 Menu Cajero.Designer.cs">
+      <DependentUpon>PA_01_02 Menu Cajero.cs</DependentUpon>
+    </Compile>
     <Compile Include="PA_02_01_Vender Boletos Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,18 @@
     <Compile Include="PA_02_04_Cerrar Caja.Designer.cs">
       <DependentUpon>PA_02_04_Cerrar Caja.cs</DependentUpon>
     </Compile>
+    <Compile Include="PA_02_06_Membresia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PA_02_06_Membresia.Designer.cs">
+      <DependentUpon>PA_02_06_Membresia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PA_02_07 Carrito Souvenirs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PA_02_07 Carrito Souvenirs.Designer.cs">
+      <DependentUpon>PA_02_07 Carrito Souvenirs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Inicio.cs">
@@ -124,6 +142,9 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PA_01_02 Menu Cajero.resx">
+      <DependentUpon>PA_01_02 Menu Cajero.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PA_02_01_Vender Boletos Entrada.resx">
       <DependentUpon>PA_02_01_Vender Boletos Entrada.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +156,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PA_02_04_Cerrar Caja.resx">
       <DependentUpon>PA_02_04_Cerrar Caja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PA_02_06_Membresia.resx">
+      <DependentUpon>PA_02_06_Membresia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PA_02_07 Carrito Souvenirs.resx">
+      <DependentUpon>PA_02_07 Carrito Souvenirs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
