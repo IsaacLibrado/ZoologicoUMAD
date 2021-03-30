@@ -37,7 +37,7 @@ namespace UserInterfaceZoo
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnCarrito = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMembresia = new System.Windows.Forms.Button();
             this.btnPlayeras = new System.Windows.Forms.Button();
             this.btnTazas = new System.Windows.Forms.Button();
             this.btnLlaveros = new System.Windows.Forms.Button();
@@ -51,44 +51,40 @@ namespace UserInterfaceZoo
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(257, 192);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label2.Location = new System.Drawing.Point(401, 246);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 17);
+            this.label2.Size = new System.Drawing.Size(106, 29);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Precio";
+            this.label2.Text = "Precio $";
             // 
             // lbPrecio
             // 
             this.lbPrecio.AutoSize = true;
-            this.lbPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbPrecio.Location = new System.Drawing.Point(304, 192);
-            this.lbPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lbPrecio.Location = new System.Drawing.Point(513, 246);
             this.lbPrecio.Name = "lbPrecio";
-            this.lbPrecio.Size = new System.Drawing.Size(16, 17);
+            this.lbPrecio.Size = new System.Drawing.Size(21, 29);
             this.lbPrecio.TabIndex = 9;
-            this.lbPrecio.Text = "$";
+            this.lbPrecio.Text = "-";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(257, 168);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label4.Location = new System.Drawing.Point(401, 217);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 17);
+            this.label4.Size = new System.Drawing.Size(93, 29);
             this.label4.TabIndex = 10;
             this.label4.Text = "Codigo";
             // 
             // lbCodigo
             // 
             this.lbCodigo.AutoSize = true;
-            this.lbCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbCodigo.Location = new System.Drawing.Point(304, 168);
-            this.lbCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lbCodigo.Location = new System.Drawing.Point(500, 217);
             this.lbCodigo.Name = "lbCodigo";
-            this.lbCodigo.Size = new System.Drawing.Size(40, 17);
+            this.lbCodigo.Size = new System.Drawing.Size(69, 29);
             this.lbCodigo.TabIndex = 11;
             this.lbCodigo.Text = "0000";
             // 
@@ -96,12 +92,12 @@ namespace UserInterfaceZoo
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAgregar.Location = new System.Drawing.Point(260, 220);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregar.Location = new System.Drawing.Point(405, 281);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(68, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(102, 34);
             this.btnAgregar.TabIndex = 13;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -111,12 +107,12 @@ namespace UserInterfaceZoo
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRegresar.Location = new System.Drawing.Point(422, 254);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegresar.Location = new System.Drawing.Point(726, 355);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(92, 23);
+            this.btnRegresar.Size = new System.Drawing.Size(130, 34);
             this.btnRegresar.TabIndex = 14;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -126,12 +122,12 @@ namespace UserInterfaceZoo
             // 
             this.btnCarrito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnCarrito.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCarrito.Location = new System.Drawing.Point(422, 289);
-            this.btnCarrito.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCarrito.Location = new System.Drawing.Point(726, 398);
+            this.btnCarrito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCarrito.Name = "btnCarrito";
-            this.btnCarrito.Size = new System.Drawing.Size(92, 23);
+            this.btnCarrito.Size = new System.Drawing.Size(130, 34);
             this.btnCarrito.TabIndex = 15;
             this.btnCarrito.Text = "Mostrar Carrito";
             this.btnCarrito.UseVisualStyleBackColor = false;
@@ -140,38 +136,38 @@ namespace UserInterfaceZoo
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
-            this.pictureBox1.Location = new System.Drawing.Point(112, 133);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(146, 174);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 75);
+            this.pictureBox1.Size = new System.Drawing.Size(222, 141);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnMembresia
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(454, 46);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 23);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Membresia";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnMembresia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnMembresia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMembresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btnMembresia.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMembresia.Location = new System.Drawing.Point(801, 57);
+            this.btnMembresia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMembresia.Name = "btnMembresia";
+            this.btnMembresia.Size = new System.Drawing.Size(120, 31);
+            this.btnMembresia.TabIndex = 33;
+            this.btnMembresia.Text = "Membresia";
+            this.btnMembresia.UseVisualStyleBackColor = false;
             // 
             // btnPlayeras
             // 
             this.btnPlayeras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnPlayeras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlayeras.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayeras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnPlayeras.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPlayeras.Location = new System.Drawing.Point(388, 46);
-            this.btnPlayeras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPlayeras.Location = new System.Drawing.Point(688, 57);
+            this.btnPlayeras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPlayeras.Name = "btnPlayeras";
-            this.btnPlayeras.Size = new System.Drawing.Size(58, 23);
+            this.btnPlayeras.Size = new System.Drawing.Size(107, 31);
             this.btnPlayeras.TabIndex = 32;
             this.btnPlayeras.Text = "Playeras";
             this.btnPlayeras.UseVisualStyleBackColor = false;
@@ -180,12 +176,12 @@ namespace UserInterfaceZoo
             // 
             this.btnTazas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnTazas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTazas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTazas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnTazas.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnTazas.Location = new System.Drawing.Point(335, 46);
-            this.btnTazas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTazas.Location = new System.Drawing.Point(577, 57);
+            this.btnTazas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTazas.Name = "btnTazas";
-            this.btnTazas.Size = new System.Drawing.Size(44, 23);
+            this.btnTazas.Size = new System.Drawing.Size(105, 31);
             this.btnTazas.TabIndex = 31;
             this.btnTazas.Text = "Tazas";
             this.btnTazas.UseVisualStyleBackColor = false;
@@ -194,12 +190,12 @@ namespace UserInterfaceZoo
             // 
             this.btnLlaveros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnLlaveros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLlaveros.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLlaveros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnLlaveros.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLlaveros.Location = new System.Drawing.Point(273, 46);
-            this.btnLlaveros.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLlaveros.Location = new System.Drawing.Point(449, 57);
+            this.btnLlaveros.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLlaveros.Name = "btnLlaveros";
-            this.btnLlaveros.Size = new System.Drawing.Size(58, 23);
+            this.btnLlaveros.Size = new System.Drawing.Size(120, 31);
             this.btnLlaveros.TabIndex = 30;
             this.btnLlaveros.Text = "Llaveros";
             this.btnLlaveros.UseVisualStyleBackColor = false;
@@ -208,12 +204,12 @@ namespace UserInterfaceZoo
             // 
             this.btnCubrebocas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnCubrebocas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCubrebocas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCubrebocas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnCubrebocas.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCubrebocas.Location = new System.Drawing.Point(199, 46);
-            this.btnCubrebocas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCubrebocas.Location = new System.Drawing.Point(322, 57);
+            this.btnCubrebocas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCubrebocas.Name = "btnCubrebocas";
-            this.btnCubrebocas.Size = new System.Drawing.Size(70, 23);
+            this.btnCubrebocas.Size = new System.Drawing.Size(117, 31);
             this.btnCubrebocas.TabIndex = 29;
             this.btnCubrebocas.Text = "Cubrebocas";
             this.btnCubrebocas.UseVisualStyleBackColor = false;
@@ -222,12 +218,12 @@ namespace UserInterfaceZoo
             // 
             this.btnGorras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnGorras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGorras.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGorras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnGorras.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGorras.Location = new System.Drawing.Point(100, 46);
-            this.btnGorras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGorras.Location = new System.Drawing.Point(161, 57);
+            this.btnGorras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGorras.Name = "btnGorras";
-            this.btnGorras.Size = new System.Drawing.Size(94, 23);
+            this.btnGorras.Size = new System.Drawing.Size(155, 31);
             this.btnGorras.TabIndex = 28;
             this.btnGorras.Text = "Gorras-Bufandas";
             this.btnGorras.UseVisualStyleBackColor = false;
@@ -236,12 +232,12 @@ namespace UserInterfaceZoo
             // 
             this.btnAnimFelpa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAnimFelpa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnimFelpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnimFelpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnAnimFelpa.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAnimFelpa.Location = new System.Drawing.Point(3, 46);
-            this.btnAnimFelpa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnimFelpa.Location = new System.Drawing.Point(4, 57);
+            this.btnAnimFelpa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAnimFelpa.Name = "btnAnimFelpa";
-            this.btnAnimFelpa.Size = new System.Drawing.Size(93, 23);
+            this.btnAnimFelpa.Size = new System.Drawing.Size(151, 31);
             this.btnAnimFelpa.TabIndex = 27;
             this.btnAnimFelpa.Text = "Animales Felpa";
             this.btnAnimFelpa.UseVisualStyleBackColor = false;
@@ -249,19 +245,18 @@ namespace UserInterfaceZoo
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(0, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(0, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(536, 54);
+            this.label1.Size = new System.Drawing.Size(932, 66);
             this.label1.TabIndex = 34;
             // 
             // PA_02_06_Membresia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(700, 390);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(933, 480);
+            this.Controls.Add(this.btnMembresia);
             this.Controls.Add(this.btnPlayeras);
             this.Controls.Add(this.btnTazas);
             this.Controls.Add(this.btnLlaveros);
@@ -278,7 +273,7 @@ namespace UserInterfaceZoo
             this.Controls.Add(this.lbPrecio);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PA_02_06_Membresia";
             this.Text = "PA_02_06_Membresia";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -296,7 +291,7 @@ namespace UserInterfaceZoo
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnCarrito;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMembresia;
         private System.Windows.Forms.Button btnPlayeras;
         private System.Windows.Forms.Button btnTazas;
         private System.Windows.Forms.Button btnLlaveros;

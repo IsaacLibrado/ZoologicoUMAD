@@ -33,7 +33,7 @@ namespace UserInterfaceZoo
         }
 
         /// <summary>
-        /// Evento que se realizar al presionar el boton Menu cajero
+        /// Evento que se realizar al presionar el boton Regresar
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -47,7 +47,7 @@ namespace UserInterfaceZoo
         }
 
         /// <summary>
-        /// Evento que se realizar al presionar el boton abrir cajas
+        /// Evento que se realizar al presionar el boton Mostrar Carrito
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
