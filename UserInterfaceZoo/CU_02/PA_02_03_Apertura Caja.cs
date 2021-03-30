@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace UserInterfaceZoo
 {
@@ -16,7 +17,10 @@ namespace UserInterfaceZoo
         int idCajero;
         int montoApertura;
         bool rdbBoleto;
-        bool rsbSouvenir;
+        bool rsbSouvenir; 
+        //No se toma folio
+        //int folio;
+        XDocument apertura = new XDocument();
 
         public int MontoApertura { get => montoApertura; set => montoApertura = value; }
         public int IdCajas { get => idCajas; set => idCajas = value; }
@@ -59,7 +63,38 @@ namespace UserInterfaceZoo
             MontoApertura = Convert.ToInt32(txbMontoInicial.Text);
             RdbBoleto = rbBoleto.Checked;
             RsbSouvenir = rbSouvenir.Checked;
+            //Validación de campos
+            if ((MontoApertura > 9999 || MontoApertura < 7500) || (RdbBoleto == false && rsbSouvenir == false) || (idCajas < 1 || idCajas > 3) || (idCajero < 1 || idCajero > 5))
+                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+            else
+            {
+                apertura = XDocument.Load("apertura.xml");
+                //Asignación de las variables
+                if (rdbBoleto == true)
+                {
+                    XElement temp = new XElement("AbrirCajaBoleto",
+                            //new XElement("Folio", folio),
+                            new XElement("Caja", IdCajas),
+                            new XElement("Cajero", IdCajero),
+                             new XElement("MontoApertura", MontoApertura));
+                    apertura.Descendants("AperturaDeCaja").First().Add(temp);
+                }
+                else
+                {
+                    XElement temp = new XElement("AbrirCajaSouvenir",
+                            //new XElement("Folio", folio),
+                            new XElement("Caja", IdCajas),
+                            new XElement("Cajero", IdCajero),
+                             new XElement("MontoApertura", MontoApertura));
+                    apertura.Descendants("AperturaDeCaja").First().Add(temp);
+                }
+                //Guardado en XML
 
+                apertura.Save("apertura.XML");
+                //folio++;
+                //Confirmación de exito
+                MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+            }
             //Se completa el proceso y regresa al menu
             this.Close();
         }

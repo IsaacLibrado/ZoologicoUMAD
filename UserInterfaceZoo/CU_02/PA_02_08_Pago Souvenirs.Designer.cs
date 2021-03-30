@@ -41,6 +41,8 @@ namespace UserInterfaceZoo
             this.lbTotal = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.cmbCaja = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // rbTarjeta
@@ -48,7 +50,7 @@ namespace UserInterfaceZoo
             this.rbTarjeta.AutoSize = true;
             this.rbTarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbTarjeta.Location = new System.Drawing.Point(399, 144);
-            this.rbTarjeta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbTarjeta.Margin = new System.Windows.Forms.Padding(4);
             this.rbTarjeta.Name = "rbTarjeta";
             this.rbTarjeta.Size = new System.Drawing.Size(112, 33);
             this.rbTarjeta.TabIndex = 17;
@@ -61,7 +63,7 @@ namespace UserInterfaceZoo
             this.rbMembresia.AutoSize = true;
             this.rbMembresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbMembresia.Location = new System.Drawing.Point(399, 229);
-            this.rbMembresia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbMembresia.Margin = new System.Windows.Forms.Padding(4);
             this.rbMembresia.Name = "rbMembresia";
             this.rbMembresia.Size = new System.Drawing.Size(160, 33);
             this.rbMembresia.TabIndex = 32;
@@ -77,7 +79,7 @@ namespace UserInterfaceZoo
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRegresar.Location = new System.Drawing.Point(752, 373);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(139, 37);
             this.btnRegresar.TabIndex = 31;
@@ -93,7 +95,7 @@ namespace UserInterfaceZoo
             this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnPagar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnPagar.Location = new System.Drawing.Point(752, 328);
-            this.btnPagar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPagar.Margin = new System.Windows.Forms.Padding(4);
             this.btnPagar.Name = "btnPagar";
             this.btnPagar.Size = new System.Drawing.Size(139, 37);
             this.btnPagar.TabIndex = 30;
@@ -106,7 +108,7 @@ namespace UserInterfaceZoo
             this.rbEfectivo.AutoSize = true;
             this.rbEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbEfectivo.Location = new System.Drawing.Point(399, 187);
-            this.rbEfectivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbEfectivo.Margin = new System.Windows.Forms.Padding(4);
             this.rbEfectivo.Name = "rbEfectivo";
             this.rbEfectivo.Size = new System.Drawing.Size(125, 33);
             this.rbEfectivo.TabIndex = 29;
@@ -118,7 +120,7 @@ namespace UserInterfaceZoo
             // 
             this.txtPagado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPagado.Location = new System.Drawing.Point(35, 341);
-            this.txtPagado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPagado.Margin = new System.Windows.Forms.Padding(4);
             this.txtPagado.Name = "txtPagado";
             this.txtPagado.Size = new System.Drawing.Size(132, 36);
             this.txtPagado.TabIndex = 27;
@@ -191,11 +193,37 @@ namespace UserInterfaceZoo
             this.label7.TabIndex = 21;
             this.label7.Text = "Información de Productos";
             // 
+            // cmbCaja
+            // 
+            this.cmbCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmbCaja.FormattingEnabled = true;
+            this.cmbCaja.Items.AddRange(new object[] {
+            "03",
+            "04"});
+            this.cmbCaja.Location = new System.Drawing.Point(35, 229);
+            this.cmbCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbCaja.Name = "cmbCaja";
+            this.cmbCaja.Size = new System.Drawing.Size(160, 28);
+            this.cmbCaja.TabIndex = 34;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.Location = new System.Drawing.Point(28, 195);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 29);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Caja:";
+            // 
             // PA_02_08_Pago_Souvenirs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 480);
+            this.Controls.Add(this.cmbCaja);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.rbMembresia);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnPagar);
@@ -230,5 +258,7 @@ namespace UserInterfaceZoo
         private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmbCaja;
+        private System.Windows.Forms.Label label1;
     }
 }
