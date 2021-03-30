@@ -37,7 +37,7 @@ namespace UserInterfaceZoo
         private void btnSouvenirs_Click(object sender, EventArgs e)
         {
             this.Close();
-            MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
+            MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
         }
     }
 }

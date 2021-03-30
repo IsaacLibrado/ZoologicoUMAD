@@ -46,10 +46,9 @@ namespace UserInterfaceZoo
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 85);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(13, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 29);
+            this.label2.Size = new System.Drawing.Size(72, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Total $";
             // 
@@ -57,10 +56,9 @@ namespace UserInterfaceZoo
             // 
             this.lbTotal.AutoSize = true;
             this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTotal.Location = new System.Drawing.Point(121, 85);
-            this.lbTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTotal.Location = new System.Drawing.Point(91, 69);
             this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(21, 29);
+            this.lbTotal.Size = new System.Drawing.Size(19, 25);
             this.lbTotal.TabIndex = 2;
             this.lbTotal.Text = "-";
             // 
@@ -68,10 +66,9 @@ namespace UserInterfaceZoo
             // 
             this.lbDinero.AutoSize = true;
             this.lbDinero.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDinero.Location = new System.Drawing.Point(13, 198);
-            this.lbDinero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbDinero.Location = new System.Drawing.Point(10, 161);
             this.lbDinero.Name = "lbDinero";
-            this.lbDinero.Size = new System.Drawing.Size(181, 29);
+            this.lbDinero.Size = new System.Drawing.Size(142, 25);
             this.lbDinero.TabIndex = 3;
             this.lbDinero.Text = "Dinero Pagado";
             // 
@@ -79,10 +76,9 @@ namespace UserInterfaceZoo
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(256, 258);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(261, 210);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 29);
+            this.label5.Size = new System.Drawing.Size(96, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Cambio $";
             // 
@@ -90,20 +86,18 @@ namespace UserInterfaceZoo
             // 
             this.lbCambio.AutoSize = true;
             this.lbCambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCambio.Location = new System.Drawing.Point(392, 258);
-            this.lbCambio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCambio.Location = new System.Drawing.Point(363, 210);
             this.lbCambio.Name = "lbCambio";
-            this.lbCambio.Size = new System.Drawing.Size(21, 29);
+            this.lbCambio.Size = new System.Drawing.Size(19, 25);
             this.lbCambio.TabIndex = 5;
             this.lbCambio.Text = "-";
             // 
             // txtDineroPagado
             // 
             this.txtDineroPagado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDineroPagado.Location = new System.Drawing.Point(18, 231);
-            this.txtDineroPagado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDineroPagado.Location = new System.Drawing.Point(14, 188);
             this.txtDineroPagado.Name = "txtDineroPagado";
-            this.txtDineroPagado.Size = new System.Drawing.Size(132, 36);
+            this.txtDineroPagado.Size = new System.Drawing.Size(100, 30);
             this.txtDineroPagado.TabIndex = 6;
             this.txtDineroPagado.Text = "0";
             this.txtDineroPagado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -112,10 +106,9 @@ namespace UserInterfaceZoo
             // 
             this.rbTarjeta.AutoSize = true;
             this.rbTarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbTarjeta.Location = new System.Drawing.Point(316, 83);
-            this.rbTarjeta.Margin = new System.Windows.Forms.Padding(4);
+            this.rbTarjeta.Location = new System.Drawing.Point(306, 67);
             this.rbTarjeta.Name = "rbTarjeta";
-            this.rbTarjeta.Size = new System.Drawing.Size(112, 33);
+            this.rbTarjeta.Size = new System.Drawing.Size(91, 29);
             this.rbTarjeta.TabIndex = 7;
             this.rbTarjeta.TabStop = true;
             this.rbTarjeta.Text = "Tarjeta";
@@ -125,10 +118,9 @@ namespace UserInterfaceZoo
             // 
             this.rbEfectivo.AutoSize = true;
             this.rbEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbEfectivo.Location = new System.Drawing.Point(316, 124);
-            this.rbEfectivo.Margin = new System.Windows.Forms.Padding(4);
+            this.rbEfectivo.Location = new System.Drawing.Point(306, 101);
             this.rbEfectivo.Name = "rbEfectivo";
-            this.rbEfectivo.Size = new System.Drawing.Size(125, 33);
+            this.rbEfectivo.Size = new System.Drawing.Size(99, 29);
             this.rbEfectivo.TabIndex = 8;
             this.rbEfectivo.TabStop = true;
             this.rbEfectivo.Text = "Efectivo";
@@ -139,12 +131,11 @@ namespace UserInterfaceZoo
             this.btnPagar.AutoSize = true;
             this.btnPagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPagar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPagar.Location = new System.Drawing.Point(533, 233);
-            this.btnPagar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPagar.Location = new System.Drawing.Point(548, 190);
             this.btnPagar.Name = "btnPagar";
-            this.btnPagar.Size = new System.Drawing.Size(139, 36);
+            this.btnPagar.Size = new System.Drawing.Size(117, 37);
             this.btnPagar.TabIndex = 9;
             this.btnPagar.Text = "Pagar";
             this.btnPagar.UseVisualStyleBackColor = false;
@@ -155,12 +146,11 @@ namespace UserInterfaceZoo
             this.btnRegresar.AutoSize = true;
             this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRegresar.Location = new System.Drawing.Point(533, 293);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegresar.Location = new System.Drawing.Point(548, 239);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(139, 36);
+            this.btnRegresar.Size = new System.Drawing.Size(117, 37);
             this.btnRegresar.TabIndex = 10;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -170,19 +160,18 @@ namespace UserInterfaceZoo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(10, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(272, 29);
+            this.label1.Size = new System.Drawing.Size(210, 25);
             this.label1.TabIndex = 12;
             this.label1.Text = "Información de Boletos";
             // 
             // PA_02_02_Pagar_Boletos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(711, 436);
+            this.ClientSize = new System.Drawing.Size(700, 390);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnPagar);
@@ -195,7 +184,6 @@ namespace UserInterfaceZoo
             this.Controls.Add(this.lbTotal);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PA_02_02_Pagar_Boletos";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "PA_02_02_Pagar_Boletos";

@@ -116,6 +116,12 @@
     <Compile Include="PA_02_04_Cerrar Caja.Designer.cs">
       <DependentUpon>PA_02_04_Cerrar Caja.cs</DependentUpon>
     </Compile>
+    <Compile Include="PA_02_05_Souvenirs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PA_02_05_Souvenirs.Designer.cs">
+      <DependentUpon>PA_02_05_Souvenirs.cs</DependentUpon>
+    </Compile>
     <Compile Include="PA_02_06_Membresia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PA_02_04_Cerrar Caja.resx">
       <DependentUpon>PA_02_04_Cerrar Caja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PA_02_05_Souvenirs.resx">
+      <DependentUpon>PA_02_05_Souvenirs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PA_02_06_Membresia.resx">
       <DependentUpon>PA_02_06_Membresia.cs</DependentUpon>

@@ -57,8 +57,8 @@ namespace UserInterfaceZoo
             panelSideMenu.Visible = false;
 
             //evitamos que se pueda cambiar el tamaño
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.MaximizeBox = false;
+            //this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            //this.MaximizeBox = false;
 
             CrearBitacora();
         }

@@ -74,7 +74,7 @@
             this.btnVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVender.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnVender.Location = new System.Drawing.Point(379, 31);
+            this.btnVender.Location = new System.Drawing.Point(520, 31);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(133, 30);
             this.btnVender.TabIndex = 3;
@@ -87,7 +87,7 @@
             this.txtBoletosAdultos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoletosAdultos.Location = new System.Drawing.Point(249, 31);
             this.txtBoletosAdultos.Name = "txtBoletosAdultos";
-            this.txtBoletosAdultos.Size = new System.Drawing.Size(100, 30);
+            this.txtBoletosAdultos.Size = new System.Drawing.Size(143, 30);
             this.txtBoletosAdultos.TabIndex = 5;
             this.txtBoletosAdultos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -96,7 +96,7 @@
             this.txtBoletosNinios.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoletosNinios.Location = new System.Drawing.Point(249, 73);
             this.txtBoletosNinios.Name = "txtBoletosNinios";
-            this.txtBoletosNinios.Size = new System.Drawing.Size(100, 30);
+            this.txtBoletosNinios.Size = new System.Drawing.Size(143, 30);
             this.txtBoletosNinios.TabIndex = 6;
             this.txtBoletosNinios.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -105,7 +105,7 @@
             this.txtBoletosAdultosMayores.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoletosAdultosMayores.Location = new System.Drawing.Point(249, 116);
             this.txtBoletosAdultosMayores.Name = "txtBoletosAdultosMayores";
-            this.txtBoletosAdultosMayores.Size = new System.Drawing.Size(100, 30);
+            this.txtBoletosAdultosMayores.Size = new System.Drawing.Size(143, 30);
             this.txtBoletosAdultosMayores.TabIndex = 7;
             this.txtBoletosAdultosMayores.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -115,7 +115,7 @@
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRegresar.Location = new System.Drawing.Point(379, 116);
+            this.btnRegresar.Location = new System.Drawing.Point(520, 116);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(133, 30);
             this.btnRegresar.TabIndex = 8;
@@ -128,7 +128,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(533, 354);
+            this.ClientSize = new System.Drawing.Size(700, 390);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.txtBoletosAdultosMayores);
             this.Controls.Add(this.txtBoletosNinios);
