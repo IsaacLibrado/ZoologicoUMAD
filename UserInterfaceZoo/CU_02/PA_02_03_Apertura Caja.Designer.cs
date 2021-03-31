@@ -189,7 +189,6 @@
             this.Name = "PA_02_03_Apertura_Caja";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "PA_02_03_Apertura_Caja";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PA_02_03_Apertura_Caja_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

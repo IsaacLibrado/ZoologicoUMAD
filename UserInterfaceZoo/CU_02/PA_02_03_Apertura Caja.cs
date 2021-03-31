@@ -16,7 +16,7 @@ namespace UserInterfaceZoo
     {
         int idCajas;
         int idCajero;
-        int montoApertura;
+        double montoApertura;
         bool rdbBoleto;
         bool rsbSouvenir; 
         //No se toma folio
@@ -24,7 +24,7 @@ namespace UserInterfaceZoo
 
         private XElement apertura;
 
-        public int MontoApertura { get => montoApertura; set => montoApertura = value; }
+        public double MontoApertura { get => montoApertura; set => montoApertura = value; }
         public int IdCajas { get => idCajas; set => idCajas = value; }
         public int IdCajero { get => idCajero; set => idCajero = value; }
         public bool RdbBoleto { get => rdbBoleto; set => rdbBoleto = value; }
@@ -60,10 +60,11 @@ namespace UserInterfaceZoo
         private void btnAperturar_Click(object sender, EventArgs e)
         {
             CrearRegistro();
+            
             //Asignación de variables
             IdCajas = Convert.ToInt32(cmbCaja.Text);
             IdCajero = Convert.ToInt32(cmbCajero.Text);
-            MontoApertura = Convert.ToInt32(txbMontoInicial.Text);
+            MontoApertura = Convert.ToDouble(txbMontoInicial.Text);
             RdbBoleto = rbBoleto.Checked;
             RsbSouvenir = rbSouvenir.Checked;
             //Validación de campos
@@ -71,9 +72,10 @@ namespace UserInterfaceZoo
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
             else
             {
+                Cajas.AsignarApertura(IdCajas, MontoApertura);
                 //Agregamos los datos a la bitacora
                 ((XElement)apertura.FirstNode.NextNode).Add(DateTime.Now);
-                ((XElement)apertura.FirstNode.NextNode.NextNode).Add(IdCajas);
+                //((XElement)apertura.FirstNode.NextNode.NextNode).Add(IdCajas);
                 ((XElement)apertura.FirstNode.NextNode.NextNode.NextNode).Add(IdCajero);
                 ((XElement)apertura.LastNode).Add(MontoApertura);
                 if (rdbBoleto == true)
@@ -88,10 +90,11 @@ namespace UserInterfaceZoo
                     ((XElement)apertura.FirstNode).Add("Souvenir");
 
                 }
+                GuardarApertura();
                 //Confirmación de exito
                 MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
             }
-            //Se completa el proceso y regresa al menu
+            //Se completa el proceso y regresa al menu0
             this.Close();
         }
 
@@ -119,12 +122,12 @@ namespace UserInterfaceZoo
         /// Version 1.0
         /// Fecha de creacion 31/03/2021
         /// Creador Arturo Villegas apartir de Isaac Librado
-        private void PA_02_03_Apertura_Caja_FormClosing(object sender, FormClosingEventArgs e)
+        private void GuardarApertura()
         {
             //creamos el formato del nombre del archivo
             string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
                 + "-" + DateTime.Now.Year.ToString() + "_" + DateTime.Now.Hour.ToString()
-                + "_" + DateTime.Now.Minute.ToString() + "_" + DateTime.Now.Second.ToString();
+                + "_" + DateTime.Now.Minute.ToString();
 
             //guardamos la hora actual y guardamos el archivo
             apertura.Save(string.Format("apertura{0}.xml", nombrearch));
