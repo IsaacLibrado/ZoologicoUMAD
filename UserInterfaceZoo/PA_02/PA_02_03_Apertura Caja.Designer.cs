@@ -120,8 +120,7 @@
             this.cmbCaja.Items.AddRange(new object[] {
             "01",
             "02",
-            "03",
-            "04"});
+            "03"});
             this.cmbCaja.Location = new System.Drawing.Point(188, 96);
             this.cmbCaja.Name = "cmbCaja";
             this.cmbCaja.Size = new System.Drawing.Size(121, 24);
@@ -189,7 +188,6 @@
             this.Name = "PA_02_03_Apertura_Caja";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "PA_02_03_Apertura_Caja";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PA_02_03_Apertura_Caja_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

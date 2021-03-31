@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using System.Net;
 
 namespace UserInterfaceZoo
 {
@@ -18,11 +17,9 @@ namespace UserInterfaceZoo
         int idCajero;
         int montoApertura;
         bool rdbBoleto;
-        bool rsbSouvenir; 
-        //No se toma folio
-        //int folio;
-
-        private XElement apertura;
+        bool rsbSouvenir;
+        int folio;
+        XDocument apertura = new XDocument();
 
         public int MontoApertura { get => montoApertura; set => montoApertura = value; }
         public int IdCajas { get => idCajas; set => idCajas = value; }
@@ -59,7 +56,6 @@ namespace UserInterfaceZoo
         /// Creador Arturo Villegas
         private void btnAperturar_Click(object sender, EventArgs e)
         {
-            CrearRegistro();
             //Asignación de variables
             IdCajas = Convert.ToInt32(cmbCaja.Text);
             IdCajero = Convert.ToInt32(cmbCajero.Text);
@@ -71,63 +67,35 @@ namespace UserInterfaceZoo
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
             else
             {
-                //Agregamos los datos a la bitacora
-                ((XElement)apertura.FirstNode.NextNode).Add(DateTime.Now);
-                ((XElement)apertura.FirstNode.NextNode.NextNode).Add(IdCajas);
-                ((XElement)apertura.FirstNode.NextNode.NextNode.NextNode).Add(IdCajero);
-                ((XElement)apertura.LastNode).Add(MontoApertura);
+                folio++;
+                apertura = XDocument.Load("apertura.xml");
+                //Asignación de las variables
                 if (rdbBoleto == true)
                 {
-                    //Agregamos datos a la bitacora
-                    ((XElement)apertura.FirstNode).Add("Boleto");
-
+                    XElement temp = new XElement("AbrirCajaBoleto",
+                            new XElement("Folio", folio),
+                            new XElement("Caja", IdCajas),
+                            new XElement("Cajero", IdCajero),
+                             new XElement("MontoApertura", MontoApertura));
+                    apertura.Descendants("AperturaDeCaja").First().Add(temp);
                 }
                 else
                 {
-                    //Agregamos datos a la bitacora
-                    ((XElement)apertura.FirstNode).Add("Souvenir");
-
+                    XElement temp = new XElement("AbrirCajaSouvenir",
+                            new XElement("Folio", folio),
+                            new XElement("Caja", IdCajas),
+                            new XElement("Cajero", IdCajero),
+                             new XElement("MontoApertura", MontoApertura));
+                    apertura.Descendants("AperturaDeCaja").First().Add(temp);
                 }
+                //Guardado en XML
+
+                apertura.Save("apertura.XML");
                 //Confirmación de exito
                 MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
             }
             //Se completa el proceso y regresa al menu
             this.Close();
-        }
-
-        /// <summary>
-        /// Metodo para crear la bitacora del sistema
-        /// </summary>
-        /// Version 1.0
-        /// Fecha de creacion 21/03/2021
-        /// Creador Isaac librado
-        private void CrearRegistro()
-        {
-            // Creamos la estructura del archivo
-            apertura = new XElement("AbrirCaja",
-                                    new XElement("Tipo"),
-                                    new XElement("FechaHora"),
-                                    new XElement("Caja"),
-                                    new XElement("Cajero"),
-                                    new XElement("MontoApertura")
-                                    );
-        }
-
-        /// <summary>
-        /// Metodo para crear la bitacora del sistema
-        /// </summary>
-        /// Version 1.0
-        /// Fecha de creacion 31/03/2021
-        /// Creador Arturo Villegas apartir de Isaac Librado
-        private void PA_02_03_Apertura_Caja_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            //creamos el formato del nombre del archivo
-            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
-                + "-" + DateTime.Now.Year.ToString() + "_" + DateTime.Now.Hour.ToString()
-                + "_" + DateTime.Now.Minute.ToString() + "_" + DateTime.Now.Second.ToString();
-
-            //guardamos la hora actual y guardamos el archivo
-            apertura.Save(string.Format("apertura{0}.xml", nombrearch));
         }
     }
 }
