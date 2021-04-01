@@ -74,6 +74,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CU_02\Boletos.cs" />
     <Compile Include="CU_02\Cajas.cs" />
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
@@ -90,55 +91,55 @@
     <Compile Include="CU_02\PA_01_02 Menu Cajero.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_02\PA_01_02 Menu Cajero.Designer.cs">
+    <Compile Include="CU_02\PA_01_02 Menu Cajero.designer.cs">
       <DependentUpon>PA_01_02 Menu Cajero.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\PA_02_01_Vender Boletos Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_02\PA_02_01_Vender Boletos Entrada.Designer.cs">
+    <Compile Include="CU_02\PA_02_01_Vender Boletos Entrada.designer.cs">
       <DependentUpon>PA_02_01_Vender Boletos Entrada.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\PA_02_02_Pagar Boletos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_02\PA_02_02_Pagar Boletos.Designer.cs">
+    <Compile Include="CU_02\PA_02_02_Pagar Boletos.designer.cs">
       <DependentUpon>PA_02_02_Pagar Boletos.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\PA_02_03_Apertura Caja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_02\PA_02_03_Apertura Caja.Designer.cs">
+    <Compile Include="CU_02\PA_02_03_Apertura Caja.designer.cs">
       <DependentUpon>PA_02_03_Apertura Caja.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\PA_02_04_Cerrar Caja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_02\PA_02_04_Cerrar Caja.Designer.cs">
+    <Compile Include="CU_02\PA_02_04_Cerrar Caja.designer.cs">
       <DependentUpon>PA_02_04_Cerrar Caja.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\PA_02_05_Souvenirs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_02\PA_02_05_Souvenirs.Designer.cs">
+    <Compile Include="CU_02\PA_02_05_Souvenirs.designer.cs">
       <DependentUpon>PA_02_05_Souvenirs.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\PA_02_06_Membresia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_02\PA_02_06_Membresia.Designer.cs">
+    <Compile Include="CU_02\PA_02_06_Membresia.designer.cs">
       <DependentUpon>PA_02_06_Membresia.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\PA_02_07 Carrito Souvenirs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_02\PA_02_07 Carrito Souvenirs.Designer.cs">
+    <Compile Include="CU_02\PA_02_07 Carrito Souvenirs.designer.cs">
       <DependentUpon>PA_02_07 Carrito Souvenirs.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\PA_02_08_Pago Souvenirs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_02\PA_02_08_Pago Souvenirs.Designer.cs">
+    <Compile Include="CU_02\PA_02_08_Pago Souvenirs.designer.cs">
       <DependentUpon>PA_02_08_Pago Souvenirs.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
