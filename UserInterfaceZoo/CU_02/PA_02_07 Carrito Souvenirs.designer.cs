@@ -29,93 +29,24 @@ namespace UserInterfaceZoo
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.lbTotal = new System.Windows.Forms.Label();
             this.btnPagar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtArchivo = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(-1, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(931, 53);
-            this.label1.TabIndex = 8;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(12, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 29);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Código";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(154, 53);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 29);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Descripción";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(486, 53);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 29);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Cantidad";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(665, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 29);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Precio";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(825, 53);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 29);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Total";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label7.Location = new System.Drawing.Point(31, 359);
+            this.label7.Location = new System.Drawing.Point(23, 292);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 29);
+            this.label7.Size = new System.Drawing.Size(72, 25);
             this.label7.TabIndex = 14;
             this.label7.Text = "Total $";
             // 
@@ -123,9 +54,10 @@ namespace UserInterfaceZoo
             // 
             this.lbTotal.AutoSize = true;
             this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lbTotal.Location = new System.Drawing.Point(127, 359);
+            this.lbTotal.Location = new System.Drawing.Point(95, 292);
+            this.lbTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(21, 29);
+            this.lbTotal.Size = new System.Drawing.Size(19, 25);
             this.lbTotal.TabIndex = 15;
             this.lbTotal.Text = "-";
             // 
@@ -135,10 +67,10 @@ namespace UserInterfaceZoo
             this.btnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.btnPagar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPagar.Location = new System.Drawing.Point(751, 349);
-            this.btnPagar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPagar.Location = new System.Drawing.Point(563, 284);
+            this.btnPagar.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagar.Name = "btnPagar";
-            this.btnPagar.Size = new System.Drawing.Size(121, 37);
+            this.btnPagar.Size = new System.Drawing.Size(108, 33);
             this.btnPagar.TabIndex = 16;
             this.btnPagar.Text = "Pagar";
             this.btnPagar.UseVisualStyleBackColor = false;
@@ -150,50 +82,77 @@ namespace UserInterfaceZoo
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCancelar.Location = new System.Drawing.Point(751, 396);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancelar.Location = new System.Drawing.Point(563, 322);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(121, 37);
+            this.btnCancelar.Size = new System.Drawing.Size(108, 34);
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(2, 79);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(695, 150);
+            this.dataGridView1.TabIndex = 18;
+            // 
+            // txtArchivo
+            // 
+            this.txtArchivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArchivo.Location = new System.Drawing.Point(404, 21);
+            this.txtArchivo.Name = "txtArchivo";
+            this.txtArchivo.Size = new System.Drawing.Size(284, 30);
+            this.txtArchivo.TabIndex = 19;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnBuscar.Location = new System.Drawing.Point(308, 18);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(91, 33);
+            this.btnBuscar.TabIndex = 20;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // PA_02_07_Carrito_Souvenirs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 480);
+            this.ClientSize = new System.Drawing.Size(700, 390);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtArchivo);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnPagar);
             this.Controls.Add(this.lbTotal);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PA_02_07_Carrito_Souvenirs";
             this.Text = "PA_02_07_Carrito_Souvenirs";
+            this.Load += new System.EventHandler(this.PA_02_07_Carrito_Souvenirs_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.Button btnPagar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtArchivo;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

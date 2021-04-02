@@ -22,7 +22,6 @@ namespace UserInterfaceZoo
         //int boletosAdultosMayoresV;
         //double totalV; 
         List<Boletos> Boletos = new List<Boletos>();
-
         //public int BoletosAdultos { get => boletosAdultosV; set => boletosAdultosV = value; }
         //public int BoletosNinios { get => boletosNiniosV; set => boletosNiniosV = value; }
         //public int BoletosAdultosMayores { get => boletosAdultosMayoresV; set => boletosAdultosMayoresV = value; }

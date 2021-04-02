@@ -74,6 +74,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CU_02\Carrito.cs" />
+    <Compile Include="CU_02\ComprasSouvenirs.cs" />
     <Compile Include="CU_02\Boletos.cs" />
     <Compile Include="CU_02\Cajas.cs" />
     <Compile Include="LogIn.cs">
@@ -150,6 +152,7 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="CU_02\Souvenirs.cs" />
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>

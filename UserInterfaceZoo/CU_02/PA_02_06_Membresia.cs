@@ -17,7 +17,7 @@ namespace UserInterfaceZoo
             InitializeComponent();
         }
 
-        int codigoProducto;
+        //int codigoProducto;
 
         /// <summary>
         /// Evento que se realizar al presionar el boton de agregar productos
