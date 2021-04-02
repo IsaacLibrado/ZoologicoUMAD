@@ -40,10 +40,7 @@ namespace UserInterfaceZoo
             this.btnGorras = new System.Windows.Forms.Button();
             this.btnAnimFelpa = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,9 +51,12 @@ namespace UserInterfaceZoo
             this.des = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtFolio = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCarrito
@@ -221,17 +221,6 @@ namespace UserInterfaceZoo
             this.label1.Size = new System.Drawing.Size(700, 54);
             this.label1.TabIndex = 26;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 103);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(95, 75);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -239,28 +228,6 @@ namespace UserInterfaceZoo
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(154, 22);
             this.txtCodigo.TabIndex = 35;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
-            this.pictureBox2.Location = new System.Drawing.Point(147, 103);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(95, 75);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 36;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
-            this.pictureBox3.Location = new System.Drawing.Point(284, 103);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(95, 75);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 37;
-            this.pictureBox3.TabStop = false;
             // 
             // label2
             // 
@@ -358,6 +325,39 @@ namespace UserInterfaceZoo
             this.txtFolio.Size = new System.Drawing.Size(154, 22);
             this.txtFolio.TabIndex = 49;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
+            this.pictureBox3.Location = new System.Drawing.Point(284, 103);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(95, 75);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 37;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
+            this.pictureBox2.Location = new System.Drawing.Point(147, 103);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(95, 75);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 36;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 103);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(95, 75);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
             // PA_02_05_Souvenirs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -393,9 +393,9 @@ namespace UserInterfaceZoo
             this.Name = "PA_02_05_Souvenirs";
             this.Text = "PA_02_05_Souvenirs";
             this.Load += new System.EventHandler(this.PA_02_05_Souvenirs_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

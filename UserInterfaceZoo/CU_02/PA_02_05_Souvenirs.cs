@@ -126,18 +126,21 @@ namespace UserInterfaceZoo
         {
             this.Close();
             MenuPrincipal.abrirPantallas(new PA_01_02_Menu_Cajero());
+            MenuPrincipal.AsignarTitulo("Menu de cajero");
         }
 
         private void btnCarrito_Click(object sender, EventArgs e)
         {
             this.Close();
             MenuPrincipal.abrirPantallas(new PA_02_07_Carrito_Souvenirs());
+            MenuPrincipal.AsignarTitulo("Carrito de souvenirs");
         }
 
         private void btnMembresia_Click(object sender, EventArgs e)
         {
             this.Close();
-            MenuPrincipal.abrirPantallas(new PA_02_06_Membresia()); 
+            MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
+            MenuPrincipal.AsignarTitulo("Membresia");
         }
 
         public static XElement ObtenerDocumentoXML()
@@ -277,32 +280,62 @@ namespace UserInterfaceZoo
 
         private void btnPlayeras_Click(object sender, EventArgs e)
         {
-
+            pictureBox1.Image = UserInterfaceZoo.Properties.Resources.playera_tigreblanco;
+            pictureBox2.Image = UserInterfaceZoo.Properties.Resources.playera_tiburon;
+            pictureBox3.Image = UserInterfaceZoo.Properties.Resources.playera_aves;
+            label2.Text = "16";
+            label3.Text = "17";
+            label4.Text = "18";
         }
 
         private void btnAnimFelpa_Click(object sender, EventArgs e)
         {
-
+            pictureBox1.Image = UserInterfaceZoo.Properties.Resources.peluche_tucan;
+            pictureBox2.Image = UserInterfaceZoo.Properties.Resources.peluche_leon;
+            pictureBox3.Image = UserInterfaceZoo.Properties.Resources.peluche_oso;
+            label2.Text = "01";
+            label3.Text = "02";
+            label4.Text = "03";
         }
 
         private void btnGorras_Click(object sender, EventArgs e)
         {
-
+            pictureBox1.Image = UserInterfaceZoo.Properties.Resources.gorra_panda;
+            pictureBox2.Image = UserInterfaceZoo.Properties.Resources.gorra_jirafa;
+            pictureBox3.Image = UserInterfaceZoo.Properties.Resources.bufanda_leopardo;
+            label2.Text = "04";
+            label3.Text = "05";
+            label4.Text = "06";
         }
 
         private void btnCubrebocas_Click(object sender, EventArgs e)
         {
-
+            pictureBox1.Image = UserInterfaceZoo.Properties.Resources.cubre_leopardo;
+            pictureBox2.Image = UserInterfaceZoo.Properties.Resources.cubre_gorila;
+            pictureBox3.Image = UserInterfaceZoo.Properties.Resources.cubre_zoo;
+            label2.Text = "07";
+            label3.Text = "08";
+            label4.Text = "09";
         }
 
         private void btnLlaveros_Click(object sender, EventArgs e)
         {
-
+            pictureBox1.Image = UserInterfaceZoo.Properties.Resources.llave_aguila;
+            pictureBox2.Image = UserInterfaceZoo.Properties.Resources.llave_flamenco;
+            pictureBox3.Image = UserInterfaceZoo.Properties.Resources.llavero_serpiente;
+            label2.Text = "10";
+            label3.Text = "11";
+            label4.Text = "12";
         }
 
         private void btnTazas_Click(object sender, EventArgs e)
         {
-
+            pictureBox1.Image = UserInterfaceZoo.Properties.Resources.taza_zoo;
+            pictureBox2.Image = UserInterfaceZoo.Properties.Resources.taza_elefante;
+            pictureBox3.Image = UserInterfaceZoo.Properties.Resources.taza_puma;
+            label2.Text = "13";
+            label3.Text = "14";
+            label4.Text = "15";
         }
     }
 }

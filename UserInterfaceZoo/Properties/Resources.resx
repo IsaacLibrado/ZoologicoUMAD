@@ -118,13 +118,70 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="logo zootopia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo zootopia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="llave_aguila" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\llave_aguila.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="taza_elefante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taza_elefante.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playera_aves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playera_aves.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cubre_gorila" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cubre_gorila.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogoPNGAscendantProyects" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoPNGAscendantProyects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e5ba79334133d2cb362dd639f755a392" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e5ba79334133d2cb362dd639f755a392.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="peluche_leon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\peluche_leon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="peluche_tucan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\peluche_tucan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playera_tiburon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playera_tiburon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gorra_jirafa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gorra_jirafa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="membresia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\membresia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bufanda_leopardo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bufanda_leopardo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="llavero_serpiente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\llavero_serpiente.webp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playera_tigreblanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playera_tigreblanco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cubre_leopardo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cubre_leopardo.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="peluche_oso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\peluche_oso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gorra_panda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gorra_panda.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="taza_puma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taza_puma.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo zootopia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo zootopia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="llave_flamenco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\llave_flamenco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cubre_zoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cubre_zoo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="taza_zoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taza_zoo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

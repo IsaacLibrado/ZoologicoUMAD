@@ -122,6 +122,7 @@ namespace UserInterfaceZoo
 
             this.Close();
             MenuPrincipal.abrirPantallas(new PA_02_08_Pago_Souvenirs());
+            MenuPrincipal.AsignarTitulo("Pago de souvenirs");
         }
 
         private void PA_02_07_Carrito_Souvenirs_Load(object sender, EventArgs e)

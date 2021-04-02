@@ -59,5 +59,41 @@ namespace UserInterfaceZoo
             this.Close();
             MenuPrincipal.abrirPantallas(new PA_02_07_Carrito_Souvenirs());
         }
+
+        private void btnAnimFelpa_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
+        }
+
+        private void btnGorras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
+        }
+
+        private void btnCubrebocas_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
+        }
+
+        private void btnLlaveros_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
+        }
+
+        private void btnTazas_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
+        }
+
+        private void btnPlayeras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
+        }
     }
 }

@@ -208,6 +208,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\llavero_serpiente.webp" />
     <None Include="UserInterfaceZoo_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -233,6 +234,60 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubre_leopardo.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gorra_panda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llave_aguila.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peluche_tucan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playera_tigreblanco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bufanda_leopardo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubre_gorila.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gorra_jirafa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llave_flamenco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\membresia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peluche_leon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peluche_oso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playera_aves.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playera_tiburon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taza_elefante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taza_puma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubre_zoo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taza_zoo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
