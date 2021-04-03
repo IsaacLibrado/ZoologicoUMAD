@@ -78,7 +78,7 @@ namespace UserInterfaceZoo
         /// Creador Karla Garcia
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            File.Delete(txtArchivo.Text); 
+            txtArchivo.Text = "";
             this.Close();
             MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
         }
