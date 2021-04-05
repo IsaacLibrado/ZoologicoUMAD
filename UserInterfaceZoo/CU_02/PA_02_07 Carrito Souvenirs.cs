@@ -78,7 +78,10 @@ namespace UserInterfaceZoo
         /// Creador Karla Garcia
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            txtArchivo.Text = "";
+            //Código de seguridad para eliminar el archivo de texto solo si este existe
+            if (File.Exists(txtArchivo.Text))
+                File.Delete(txtArchivo.Text);
+
             this.Close();
             MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
         }
