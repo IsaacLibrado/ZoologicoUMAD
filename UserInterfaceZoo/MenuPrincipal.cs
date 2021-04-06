@@ -166,6 +166,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Orden de Compra");
             RegistroBitacora("Generada orden de compra");
+            MenuPrincipal.abrirPantallas(new PA_06_01_Orden_de_compra_informacion());
         }
 
         /// <summary>

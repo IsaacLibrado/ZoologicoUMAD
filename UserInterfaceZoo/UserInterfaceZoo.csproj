@@ -144,6 +144,24 @@
     <Compile Include="CU_02\PA_02_08_Pago Souvenirs.designer.cs">
       <DependentUpon>PA_02_08_Pago Souvenirs.cs</DependentUpon>
     </Compile>
+    <Compile Include="CU_06\PA_06_01_Orden_de_compra_informacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_06\PA_06_01_Orden_de_compra_informacion.Designer.cs">
+      <DependentUpon>PA_06_01_Orden_de_compra_informacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_06\PA_06_02_Orden_de_compra_registro_articulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_06\PA_06_02_Orden_de_compra_registro_articulos.Designer.cs">
+      <DependentUpon>PA_06_02_Orden_de_compra_registro_articulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_06\PA_06_03_Orden_de_compra_totales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_06\PA_06_03_Orden_de_compra_totales.Designer.cs">
+      <DependentUpon>PA_06_03_Orden_de_compra_totales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Inicio.cs">
@@ -185,6 +203,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CU_02\PA_02_08_Pago Souvenirs.resx">
       <DependentUpon>PA_02_08_Pago Souvenirs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_06\PA_06_01_Orden_de_compra_informacion.resx">
+      <DependentUpon>PA_06_01_Orden_de_compra_informacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_06\PA_06_02_Orden_de_compra_registro_articulos.resx">
+      <DependentUpon>PA_06_02_Orden_de_compra_registro_articulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_06\PA_06_03_Orden_de_compra_totales.resx">
+      <DependentUpon>PA_06_03_Orden_de_compra_totales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -289,5 +316,6 @@
   <ItemGroup>
     <None Include="Resources\taza_zoo.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
