@@ -106,6 +106,7 @@ namespace UserInterfaceZoo
         /// Creador Karla Garcia
         private void btnPagar_Click(object sender, EventArgs e)
         {
+            DeserializarConfrimacion(); 
             string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
     + "-" + DateTime.Now.Year.ToString();
             string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtArchivo.Text + ".xml";
@@ -152,11 +153,19 @@ namespace UserInterfaceZoo
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            DeserializarConfrimacion();
             //creamos el formato del nombre del archivo
             string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
                 + "-" + DateTime.Now.Year.ToString();
             string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtArchivo.Text + ".xml";
-            
+            ComprasSouvenirs miConfirmacion = GetID(archivo);
+
+            if (miConfirmacion != null)
+            {
+                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                return;
+            }
+
             DataSet ds = new DataSet();
             ds.ReadXml(archivo);
             dataGridView1.DataSource = ds.Tables[0];
@@ -174,5 +183,10 @@ namespace UserInterfaceZoo
             return confirmacion.Find(x => x.Archivo == archivo);
         }
 
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
+        }
     }
 }
