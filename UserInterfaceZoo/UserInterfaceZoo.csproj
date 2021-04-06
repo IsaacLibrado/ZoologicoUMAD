@@ -78,6 +78,12 @@
     <Compile Include="CU_02\ComprasSouvenirs.cs" />
     <Compile Include="CU_02\Boletos.cs" />
     <Compile Include="CU_02\Cajas.cs" />
+    <Compile Include="CU_05\PA_05_01_Menú_Mapa_interactivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_01_Menú_Mapa_interactivo.Designer.cs">
+      <DependentUpon>PA_05_01_Menú_Mapa_interactivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\Souvenirs.cs" />
+    <EmbeddedResource Include="CU_05\PA_05_01_Menú_Mapa_interactivo.resx">
+      <DependentUpon>PA_05_01_Menú_Mapa_interactivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,5 +298,6 @@
   <ItemGroup>
     <None Include="Resources\taza_zoo.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
