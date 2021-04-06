@@ -84,6 +84,12 @@
     <Compile Include="CU_05\PA_05_01_Menú_Mapa_interactivo.Designer.cs">
       <DependentUpon>PA_05_01_Menú_Mapa_interactivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="CU_05\PA_05_02_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_02_Animales.Designer.cs">
+      <DependentUpon>PA_05_02_Animales.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
