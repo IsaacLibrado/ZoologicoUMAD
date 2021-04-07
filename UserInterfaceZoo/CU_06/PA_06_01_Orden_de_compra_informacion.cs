@@ -12,6 +12,7 @@ namespace UserInterfaceZoo
 {
     public partial class PA_06_01_Orden_de_compra_informacion : Form
     {
+        
         public PA_06_01_Orden_de_compra_informacion()
         {
             InitializeComponent();
@@ -22,21 +23,22 @@ namespace UserInterfaceZoo
            
             this.Close();
             MenuPrincipal.abrirPantallas(new PA_06_02_Orden_de_compra_registro_articulos());
-            MenuPrincipal.AsignarTitulo("Orden de compra registro artículos");          
+            MenuPrincipal.AsignarTitulo("Orden de compra registro artículos");
+
+            
+
 
         }
 
         private void PA_06_01_Orden_de_compra_informacion_Load(object sender, EventArgs e)
         {
-            //int folio = 0;
-            //lblNoOrden.Text = "0";
-            //folio = Convert.ToInt32(this.lblNoOrden.Text);
-            //folio++;
-            //lblNoOrden.Text = folio.ToString();
-
+ 
             //Se adicionan los elementos
             listClaveProveedor.Items.Add("PetsFood");
             listClaveProveedor.Items.Add("AnimalPet");
+
+            GenerarNumeroOrden();
+           
            
         }
 
@@ -77,6 +79,57 @@ namespace UserInterfaceZoo
             //int folio = int.Parse(lblNoOrden.Text);
             //folio++;
             //lblNoOrden.Text = folio.ToString();
+            int contador = 0;
+            int folio = 0;
+            int folio2 = 0;
+
+            contador++;
+            lblNoOrden.Text = Convert.ToString(contador);
+            folio += Convert.ToInt32(lblNoOrden.Text);
+
+
+
+            folio++;
+            folio2 = folio;
+
+            MessageBox.Show(folio2.ToString());
+        }
+
+        private void listBoxDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBoxDepartamento.SelectedItem=="Almacen")
+            {
+                lblDomicilioDepartamento.Text = "Calle 5 Sur Col Centro";
+                lblTelefonoDepartamento.Text = "2231231200";
+
+            }
+            if (listBoxDepartamento.SelectedItem == "Repartidor")
+            {
+                lblDomicilioDepartamento.Text = "Calle 9 Norte";
+                lblTelefonoDepartamento.Text = "9816299715";
+
+            }
+            if (listBoxDepartamento.SelectedItem == "Compras")
+            {
+                lblDomicilioDepartamento.Text = "Av 5 Norte";
+                lblTelefonoDepartamento.Text = "518264212";
+
+            }
+            if (listBoxDepartamento.SelectedItem == "Encargado")
+            {
+                lblDomicilioDepartamento.Text = "Bugambilias 2 sur";
+                lblTelefonoDepartamento.Text = "82622773";
+
+            }
+
+        }
+
+        private void listBoxCompañia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBoxCompañia.SelectedItem == "Zootopia SA de CV")
+            {
+                listBoxDepartamento.SelectedIndex=1;
+            }         
         }
     }
 }
