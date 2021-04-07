@@ -25,7 +25,10 @@ namespace UserInterfaceZoo
 
         private void SerializarConfirmacion()
         {
-            string archivo = txtArchivo.Text;
+            //creamos el formato del nombre del archivo
+            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+                + "-" + DateTime.Now.Year.ToString();
+            string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtArchivo.Text + ".xml";
             XmlSerializer serializarequipo = new XmlSerializer(typeof(List<ComprasSouvenirs>));
             Stream miStreamxml = new FileStream("Compra-" + archivo, FileMode.Create, FileAccess.Write, FileShare.None);
             serializarequipo.Serialize(miStreamxml, confirmacion);
@@ -36,7 +39,10 @@ namespace UserInterfaceZoo
         //Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
         private void DeserializarConfrimacion()
         {
-            string archivo = txtArchivo.Text;
+            //creamos el formato del nombre del archivo
+            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+                + "-" + DateTime.Now.Year.ToString();
+            string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtArchivo.Text + ".xml";
             if (File.Exists("Compra-" + archivo))
             {
                 XmlSerializer deserializarequipo = new XmlSerializer(typeof(List<ComprasSouvenirs>));
@@ -78,9 +84,13 @@ namespace UserInterfaceZoo
         /// Creador Karla Garcia
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+                + "-" + DateTime.Now.Year.ToString();
+            string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtArchivo.Text + ".xml";
+
             //Código de seguridad para eliminar el archivo de texto solo si este existe
-            if (File.Exists(txtArchivo.Text))
-                File.Delete(txtArchivo.Text);
+            if (File.Exists(archivo))
+                File.Delete(archivo);
 
             this.Close();
             MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
@@ -96,7 +106,10 @@ namespace UserInterfaceZoo
         /// Creador Karla Garcia
         private void btnPagar_Click(object sender, EventArgs e)
         {
-            string archivo = txtArchivo.Text;
+            DeserializarConfrimacion(); 
+            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+    + "-" + DateTime.Now.Year.ToString();
+            string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtArchivo.Text + ".xml";
             ComprasSouvenirs miConfirmacion = GetID(archivo);
 
             if (miConfirmacion != null)
@@ -112,8 +125,9 @@ namespace UserInterfaceZoo
             //    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
             //    return;
             //}
+
             miConfirmacion = new ComprasSouvenirs();
-            miConfirmacion.Archivo = txtArchivo.Text;
+            miConfirmacion.Archivo = archivo;
             miConfirmacion.Total = suma;
             miConfirmacion.IdCaja = 0;
             miConfirmacion.Efectivo = false;
@@ -139,11 +153,19 @@ namespace UserInterfaceZoo
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            DeserializarConfrimacion();
             //creamos el formato del nombre del archivo
             string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
                 + "-" + DateTime.Now.Year.ToString();
             string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtArchivo.Text + ".xml";
-            
+            ComprasSouvenirs miConfirmacion = GetID(archivo);
+
+            if (miConfirmacion != null)
+            {
+                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                return;
+            }
+
             DataSet ds = new DataSet();
             ds.ReadXml(archivo);
             dataGridView1.DataSource = ds.Tables[0];
@@ -161,5 +183,10 @@ namespace UserInterfaceZoo
             return confirmacion.Find(x => x.Archivo == archivo);
         }
 
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
+        }
     }
 }

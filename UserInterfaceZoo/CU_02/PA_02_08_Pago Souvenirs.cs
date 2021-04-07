@@ -154,7 +154,7 @@ namespace UserInterfaceZoo
             Deserializar();
             string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
                 + "-" + DateTime.Now.Year.ToString();
-            string archivo = "VentaSouvenirs"+ nombrearch + "-folio" + txtCompra.Text + ".xml";
+            string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtCompra.Text + ".xml";
             //lbCambio.Text = archivo; 
 
             ComprasSouvenirs miCompra = GetID(archivo);
