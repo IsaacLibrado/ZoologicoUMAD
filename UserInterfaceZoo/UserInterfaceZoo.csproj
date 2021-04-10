@@ -186,6 +186,9 @@
     <EmbeddedResource Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.resx">
       <DependentUpon>PA_05_01_Menú_Mapa_Interactivo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_02_Animales.resx">
+      <DependentUpon>PA_05_02_Animales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -331,6 +334,8 @@
   <ItemGroup>
     <None Include="Resources\taza_zoo.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\aguila.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
