@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UserInterfaceZoo.CU_05
 {
-    public partial class PA_05_01_Menú_Mapa_interactivo : Form
+    public partial class PA_05_01_Menú_Mapa_Interactivo : Form
     {
-        public PA_05_01_Menú_Mapa_interactivo()
+        public PA_05_01_Menú_Mapa_Interactivo()
         {
             InitializeComponent();
         }

@@ -78,11 +78,11 @@
     <Compile Include="CU_02\ComprasSouvenirs.cs" />
     <Compile Include="CU_02\Boletos.cs" />
     <Compile Include="CU_02\Cajas.cs" />
-    <Compile Include="CU_05\PA_05_01_Menú_Mapa_interactivo.cs">
+    <Compile Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_01_Menú_Mapa_interactivo.Designer.cs">
-      <DependentUpon>PA_05_01_Menú_Mapa_interactivo.cs</DependentUpon>
+    <Compile Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.Designer.cs">
+      <DependentUpon>PA_05_01_Menú_Mapa_Interactivo.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_02_Animales.cs">
       <SubType>Form</SubType>
@@ -183,9 +183,6 @@
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\Souvenirs.cs" />
-    <EmbeddedResource Include="CU_05\PA_05_01_Menú_Mapa_interactivo.resx">
-      <DependentUpon>PA_05_01_Menú_Mapa_interactivo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
