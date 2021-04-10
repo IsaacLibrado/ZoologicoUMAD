@@ -183,6 +183,9 @@
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\Souvenirs.cs" />
+    <EmbeddedResource Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.resx">
+      <DependentUpon>PA_05_01_Menú_Mapa_Interactivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
