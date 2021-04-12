@@ -26,9 +26,22 @@ namespace UserInterfaceZoo
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            this.Close();
-            MenuPrincipal.abrirPantallas(new PA_06_03_Orden_de_compra_totales());
+
+
+
+
+            
+            MenuPrincipal.abrirPantallas(new PA_06_03_Orden_de_compra_totales(lblTotal.Text));
             MenuPrincipal.AsignarTitulo("Orden de compra Totales");
+
+            string texto = lblTotal.Text;
+            PA_06_03_Orden_de_compra_totales m = new PA_06_03_Orden_de_compra_totales(texto);
+            m.Show();
+            this.Close();
+            //
+            //PA_06_02_Orden_de_compra_registro_articulos total = new PA_06_02_Orden_de_compra_registro_articulos(Convert.ToInt32( lblTotal.Text));
+
+
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
