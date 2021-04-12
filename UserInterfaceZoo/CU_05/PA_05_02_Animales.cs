@@ -16,5 +16,18 @@ namespace UserInterfaceZoo.CU_05
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            PA_05_01_Menú_Mapa_Interactivo mapa = new PA_05_01_Menú_Mapa_Interactivo();
+            mapa.Show();
+            this.Hide();
+
+        }
     }
 }
