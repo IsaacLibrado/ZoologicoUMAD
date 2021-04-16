@@ -344,22 +344,8 @@ namespace UserInterfaceZoo
             AsignarTitulo("Videojuego");
             RegistroBitacora("Abierto el videojuego");
 
-            //creamos el proceso
-            Process programa = null;
-
-            //la información del proceso
-            ProcessStartInfo info = null;
-
-            //indicamos cuál proceso debe iniciar
-            //para pruebas
-            info = new ProcessStartInfo("C:\\VideojuegoZoo\\VideojuegoZoo.exe");
-
-            ////para cuando esté en ejecutable
-            //string direccion= Directory.GetCurrentDirectory()+ "\\VideojuegoZoo\\VideojuegoZoo.exe";
-            //info  = new ProcessStartInfo(direccion);
-
-            //inciamos el proceso
-            programa = Process.Start(info);
+            //iniciamos el proceso
+            Process programa = Process.Start(@"CU_09\VideojuegoZoo.exe");
         }
 
         #endregion
@@ -576,6 +562,8 @@ namespace UserInterfaceZoo
             //si tenemos una pantalla activa la cerramos
             if (pantallaActiva != null)
                 pantallaActiva.Close();
+
+            panelContenedor.Controls.Clear();
 
             //asignamos la pantalla activa 
             pantallaActiva = pPantalla;
