@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Xml.Linq;
+using System.Diagnostics;
+using System.IO;
 
 namespace UserInterfaceZoo
 {
@@ -331,14 +333,33 @@ namespace UserInterfaceZoo
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        /// Version 1.0
+        /// Version 2.0
         /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        /// Fecha de modificacion 16/04/21
         /// Creador Isaac Librado
         private void btnSMVideojuego_Click(object sender, EventArgs e)
         {
             ocultarSubMenu();
             AsignarTitulo("Videojuego");
             RegistroBitacora("Abierto el videojuego");
+
+            //creamos el proceso
+            Process programa = null;
+
+            //la información del proceso
+            ProcessStartInfo info = null;
+
+            //indicamos cuál proceso debe iniciar
+            //para pruebas
+            info = new ProcessStartInfo("C:\\VideojuegoZoo\\VideojuegoZoo.exe");
+
+            ////para cuando esté en ejecutable
+            //string direccion= Directory.GetCurrentDirectory()+ "\\VideojuegoZoo\\VideojuegoZoo.exe";
+            //info  = new ProcessStartInfo(direccion);
+
+            //inciamos el proceso
+            programa = Process.Start(info);
         }
 
         #endregion

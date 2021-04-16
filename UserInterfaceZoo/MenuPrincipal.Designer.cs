@@ -135,9 +135,9 @@
             // 
             this.lblIp.AutoSize = true;
             this.lblIp.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblIp.Location = new System.Drawing.Point(0, 76);
+            this.lblIp.Location = new System.Drawing.Point(0, 79);
             this.lblIp.Name = "lblIp";
-            this.lblIp.Size = new System.Drawing.Size(101, 20);
+            this.lblIp.Size = new System.Drawing.Size(83, 17);
             this.lblIp.TabIndex = 3;
             this.lblIp.Text = "Dirección IP";
             // 
@@ -147,7 +147,7 @@
             this.lblCargo.ForeColor = System.Drawing.Color.White;
             this.lblCargo.Location = new System.Drawing.Point(69, 54);
             this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(54, 20);
+            this.lblCargo.Size = new System.Drawing.Size(46, 17);
             this.lblCargo.TabIndex = 2;
             this.lblCargo.Text = "Cargo";
             // 
@@ -157,7 +157,7 @@
             this.lblUserName.ForeColor = System.Drawing.Color.White;
             this.lblUserName.Location = new System.Drawing.Point(70, 18);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(89, 20);
+            this.lblUserName.Size = new System.Drawing.Size(75, 17);
             this.lblUserName.TabIndex = 1;
             this.lblUserName.Text = "UserName";
             // 
@@ -195,7 +195,7 @@
             this.panelInteractivoSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelInteractivoSubMenu.Location = new System.Drawing.Point(0, 595);
             this.panelInteractivoSubMenu.Name = "panelInteractivoSubMenu";
-            this.panelInteractivoSubMenu.Size = new System.Drawing.Size(213, 89);
+            this.panelInteractivoSubMenu.Size = new System.Drawing.Size(217, 89);
             this.panelInteractivoSubMenu.TabIndex = 8;
             // 
             // btnSMVideojuego
@@ -207,7 +207,7 @@
             this.btnSMVideojuego.Location = new System.Drawing.Point(0, 43);
             this.btnSMVideojuego.Name = "btnSMVideojuego";
             this.btnSMVideojuego.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMVideojuego.Size = new System.Drawing.Size(213, 40);
+            this.btnSMVideojuego.Size = new System.Drawing.Size(217, 40);
             this.btnSMVideojuego.TabIndex = 1;
             this.btnSMVideojuego.Text = "Videojuego";
             this.btnSMVideojuego.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -223,7 +223,7 @@
             this.btnSMInformacion.Location = new System.Drawing.Point(0, 0);
             this.btnSMInformacion.Name = "btnSMInformacion";
             this.btnSMInformacion.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMInformacion.Size = new System.Drawing.Size(213, 43);
+            this.btnSMInformacion.Size = new System.Drawing.Size(217, 43);
             this.btnSMInformacion.TabIndex = 0;
             this.btnSMInformacion.Text = "Mostrar Información";
             this.btnSMInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -239,7 +239,7 @@
             this.btnInteractivo.Location = new System.Drawing.Point(0, 550);
             this.btnInteractivo.Name = "btnInteractivo";
             this.btnInteractivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInteractivo.Size = new System.Drawing.Size(213, 45);
+            this.btnInteractivo.Size = new System.Drawing.Size(217, 45);
             this.btnInteractivo.TabIndex = 7;
             this.btnInteractivo.Text = "Interactivo";
             this.btnInteractivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -255,7 +255,7 @@
             this.panelGestionSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelGestionSubMenu.Location = new System.Drawing.Point(0, 420);
             this.panelGestionSubMenu.Name = "panelGestionSubMenu";
-            this.panelGestionSubMenu.Size = new System.Drawing.Size(213, 130);
+            this.panelGestionSubMenu.Size = new System.Drawing.Size(217, 130);
             this.panelGestionSubMenu.TabIndex = 6;
             // 
             // btnSMSanitizar
@@ -267,7 +267,7 @@
             this.btnSMSanitizar.Location = new System.Drawing.Point(0, 83);
             this.btnSMSanitizar.Name = "btnSMSanitizar";
             this.btnSMSanitizar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMSanitizar.Size = new System.Drawing.Size(213, 40);
+            this.btnSMSanitizar.Size = new System.Drawing.Size(217, 40);
             this.btnSMSanitizar.TabIndex = 2;
             this.btnSMSanitizar.Text = "Sanitizar";
             this.btnSMSanitizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,7 +283,7 @@
             this.btnSMReciclado.Location = new System.Drawing.Point(0, 43);
             this.btnSMReciclado.Name = "btnSMReciclado";
             this.btnSMReciclado.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMReciclado.Size = new System.Drawing.Size(213, 40);
+            this.btnSMReciclado.Size = new System.Drawing.Size(217, 40);
             this.btnSMReciclado.TabIndex = 1;
             this.btnSMReciclado.Text = "Reciclado";
             this.btnSMReciclado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -299,7 +299,7 @@
             this.btnSMMaquinaExp.Location = new System.Drawing.Point(0, 0);
             this.btnSMMaquinaExp.Name = "btnSMMaquinaExp";
             this.btnSMMaquinaExp.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMMaquinaExp.Size = new System.Drawing.Size(213, 43);
+            this.btnSMMaquinaExp.Size = new System.Drawing.Size(217, 43);
             this.btnSMMaquinaExp.TabIndex = 0;
             this.btnSMMaquinaExp.Text = "Maquina Expendedora";
             this.btnSMMaquinaExp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -315,7 +315,7 @@
             this.btnGestion.Location = new System.Drawing.Point(0, 375);
             this.btnGestion.Name = "btnGestion";
             this.btnGestion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnGestion.Size = new System.Drawing.Size(213, 45);
+            this.btnGestion.Size = new System.Drawing.Size(217, 45);
             this.btnGestion.TabIndex = 5;
             this.btnGestion.Text = "Gestion";
             this.btnGestion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -331,7 +331,7 @@
             this.panelComprasSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelComprasSubMenu.Location = new System.Drawing.Point(0, 250);
             this.panelComprasSubMenu.Name = "panelComprasSubMenu";
-            this.panelComprasSubMenu.Size = new System.Drawing.Size(213, 125);
+            this.panelComprasSubMenu.Size = new System.Drawing.Size(217, 125);
             this.panelComprasSubMenu.TabIndex = 4;
             // 
             // btnSMAlimento
@@ -343,7 +343,7 @@
             this.btnSMAlimento.Location = new System.Drawing.Point(0, 80);
             this.btnSMAlimento.Name = "btnSMAlimento";
             this.btnSMAlimento.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMAlimento.Size = new System.Drawing.Size(213, 40);
+            this.btnSMAlimento.Size = new System.Drawing.Size(217, 40);
             this.btnSMAlimento.TabIndex = 2;
             this.btnSMAlimento.Text = "Comprar alimento";
             this.btnSMAlimento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -359,7 +359,7 @@
             this.btnSMInventario.Location = new System.Drawing.Point(0, 40);
             this.btnSMInventario.Name = "btnSMInventario";
             this.btnSMInventario.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMInventario.Size = new System.Drawing.Size(213, 40);
+            this.btnSMInventario.Size = new System.Drawing.Size(217, 40);
             this.btnSMInventario.TabIndex = 1;
             this.btnSMInventario.Text = "Mostrar Inventario";
             this.btnSMInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -375,7 +375,7 @@
             this.btnSMOrdenCompra.Location = new System.Drawing.Point(0, 0);
             this.btnSMOrdenCompra.Name = "btnSMOrdenCompra";
             this.btnSMOrdenCompra.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMOrdenCompra.Size = new System.Drawing.Size(213, 40);
+            this.btnSMOrdenCompra.Size = new System.Drawing.Size(217, 40);
             this.btnSMOrdenCompra.TabIndex = 0;
             this.btnSMOrdenCompra.Text = "OrdenCompra";
             this.btnSMOrdenCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -391,7 +391,7 @@
             this.btnCompras.Location = new System.Drawing.Point(0, 205);
             this.btnCompras.Name = "btnCompras";
             this.btnCompras.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCompras.Size = new System.Drawing.Size(213, 45);
+            this.btnCompras.Size = new System.Drawing.Size(217, 45);
             this.btnCompras.TabIndex = 3;
             this.btnCompras.Text = "Compras";
             this.btnCompras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -408,7 +408,7 @@
             this.panelVentasSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelVentasSubMenu.Location = new System.Drawing.Point(0, 45);
             this.panelVentasSubMenu.Name = "panelVentasSubMenu";
-            this.panelVentasSubMenu.Size = new System.Drawing.Size(213, 160);
+            this.panelVentasSubMenu.Size = new System.Drawing.Size(217, 160);
             this.panelVentasSubMenu.TabIndex = 2;
             // 
             // btnSMApartarBoletos
@@ -420,7 +420,7 @@
             this.btnSMApartarBoletos.Location = new System.Drawing.Point(0, 120);
             this.btnSMApartarBoletos.Name = "btnSMApartarBoletos";
             this.btnSMApartarBoletos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMApartarBoletos.Size = new System.Drawing.Size(213, 40);
+            this.btnSMApartarBoletos.Size = new System.Drawing.Size(217, 40);
             this.btnSMApartarBoletos.TabIndex = 3;
             this.btnSMApartarBoletos.Text = "Apartar Boletos";
             this.btnSMApartarBoletos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -436,7 +436,7 @@
             this.btnSMVender.Location = new System.Drawing.Point(0, 80);
             this.btnSMVender.Name = "btnSMVender";
             this.btnSMVender.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMVender.Size = new System.Drawing.Size(213, 40);
+            this.btnSMVender.Size = new System.Drawing.Size(217, 40);
             this.btnSMVender.TabIndex = 2;
             this.btnSMVender.Text = "Vender";
             this.btnSMVender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -452,7 +452,7 @@
             this.btnSMCerrarCaja.Location = new System.Drawing.Point(0, 40);
             this.btnSMCerrarCaja.Name = "btnSMCerrarCaja";
             this.btnSMCerrarCaja.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMCerrarCaja.Size = new System.Drawing.Size(213, 40);
+            this.btnSMCerrarCaja.Size = new System.Drawing.Size(217, 40);
             this.btnSMCerrarCaja.TabIndex = 1;
             this.btnSMCerrarCaja.Text = "Cerrar Caja";
             this.btnSMCerrarCaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -468,7 +468,7 @@
             this.btnSMAbrirCaja.Location = new System.Drawing.Point(0, 0);
             this.btnSMAbrirCaja.Name = "btnSMAbrirCaja";
             this.btnSMAbrirCaja.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSMAbrirCaja.Size = new System.Drawing.Size(213, 40);
+            this.btnSMAbrirCaja.Size = new System.Drawing.Size(217, 40);
             this.btnSMAbrirCaja.TabIndex = 0;
             this.btnSMAbrirCaja.Text = "Abrir Caja";
             this.btnSMAbrirCaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -484,7 +484,7 @@
             this.btnVentas.Location = new System.Drawing.Point(0, 0);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnVentas.Size = new System.Drawing.Size(213, 45);
+            this.btnVentas.Size = new System.Drawing.Size(217, 45);
             this.btnVentas.TabIndex = 1;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -549,9 +549,9 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(0, 42);
+            this.lblFecha.Location = new System.Drawing.Point(0, 50);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(83, 29);
+            this.lblFecha.Size = new System.Drawing.Size(67, 25);
             this.lblFecha.TabIndex = 1;
             this.lblFecha.Text = "Fecha";
             // 
@@ -560,9 +560,9 @@
             this.lblHora.AutoSize = true;
             this.lblHora.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(0, 71);
+            this.lblHora.Location = new System.Drawing.Point(0, 75);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(67, 29);
+            this.lblHora.Size = new System.Drawing.Size(54, 25);
             this.lblHora.TabIndex = 0;
             this.lblHora.Text = "Hora";
             // 
@@ -573,7 +573,7 @@
             this.lblNombreZoo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblNombreZoo.Location = new System.Drawing.Point(162, 36);
             this.lblNombreZoo.Name = "lblNombreZoo";
-            this.lblNombreZoo.Size = new System.Drawing.Size(443, 52);
+            this.lblNombreZoo.Size = new System.Drawing.Size(350, 39);
             this.lblNombreZoo.TabIndex = 0;
             this.lblNombreZoo.Text = "Zootopia S.A. de C.V.";
             // 
@@ -649,7 +649,7 @@
             // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
             this.Controls.Add(this.panelContenedor);
