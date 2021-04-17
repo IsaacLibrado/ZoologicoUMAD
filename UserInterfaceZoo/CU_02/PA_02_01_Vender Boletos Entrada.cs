@@ -73,40 +73,49 @@ namespace UserInterfaceZoo
 
         private void btnVender_Click(object sender, EventArgs e)
         {
-            int folio = Convert.ToInt32(txtFolio.Text);
-            Boletos miBoleto = GetID(folio);
-
-            if (miBoleto != null)
+            if (txtBoletosAdultos.Text == "" || txtBoletosAdultosMayores.Text == "" || txtBoletosNinios.Text == "" || txtFolio.Text == "")
             {
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
                 return;
             }
-
-            miBoleto = new Boletos();
-            //Asignación de variables
-            miBoleto.Folio = Convert.ToInt32(txtFolio.Text);
-            miBoleto.IdCaja = 0;
-            miBoleto.BoletosAdultos = Convert.ToInt32(txtBoletosAdultos.Text);
-            miBoleto.BoletosNinios = Convert.ToInt32(txtBoletosNinios.Text);
-            miBoleto.BoletosAdultosMayores = Convert.ToInt32(txtBoletosAdultosMayores.Text);
-            miBoleto.Efectivo = false;
-            miBoleto.Tarjeta = false;
-            miBoleto.Total = (miBoleto.BoletosAdultos * 200 + miBoleto.BoletosNinios * 150 + miBoleto.BoletosAdultosMayores * 100);
-
-            //Validación de campos
-            if (miBoleto.BoletosAdultos < 0 || miBoleto.BoletosNinios < 0  || miBoleto.BoletosAdultosMayores < 0 || miBoleto.Folio < 0)
-                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
             else
             {
-                //Confirmación de exito
-                MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
-                Boletos.Add(miBoleto);
-                Serializar();
+                int folio = Convert.ToInt32(txtFolio.Text);
+                Boletos miBoleto = GetID(folio);
 
-                //MenuPrincipal.abrirPantallas(new PA_02_02_Pagar_Boletos());
-                //MenuPrincipal.AsignarTitulo("Pagar Boletos");
-                this.Close();
-                MenuPrincipal.abrirPantallas(new PA_02_02_Pagar_Boletos());
+                if (miBoleto != null)
+                {
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    return;
+                }
+
+                miBoleto = new Boletos();
+                //Asignación de variables
+                miBoleto.Folio = Convert.ToInt32(txtFolio.Text);
+                miBoleto.IdCaja = 0;
+                miBoleto.BoletosAdultos = Convert.ToInt32(txtBoletosAdultos.Text);
+                miBoleto.BoletosNinios = Convert.ToInt32(txtBoletosNinios.Text);
+                miBoleto.BoletosAdultosMayores = Convert.ToInt32(txtBoletosAdultosMayores.Text);
+                miBoleto.Efectivo = false;
+                miBoleto.Tarjeta = false;
+                miBoleto.Total = (miBoleto.BoletosAdultos * 200 + miBoleto.BoletosNinios * 150 + miBoleto.BoletosAdultosMayores * 100);
+
+                //Validación de campos
+                if (miBoleto.BoletosAdultos < 0 || miBoleto.BoletosNinios < 0 || miBoleto.BoletosAdultosMayores < 0 || miBoleto.Folio < 0)
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                else
+                {
+                    //Confirmación de exito
+                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                    Boletos.Add(miBoleto);
+                    Serializar();
+
+                    //MenuPrincipal.abrirPantallas(new PA_02_02_Pagar_Boletos());
+                    //MenuPrincipal.AsignarTitulo("Pagar Boletos");
+                    this.Close();
+                    MenuPrincipal.abrirPantallas(new PA_02_02_Pagar_Boletos());
+                    MenuPrincipal.AsignarTitulo("Pagar Boletos");
+                }
             }
         }
 
@@ -124,6 +133,11 @@ namespace UserInterfaceZoo
         private void PA_02_01_Vender_Boletos_Entrada_Load(object sender, EventArgs e)
         {
             Deserializar();
+        }
+
+        private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back);
         }
     }
 }

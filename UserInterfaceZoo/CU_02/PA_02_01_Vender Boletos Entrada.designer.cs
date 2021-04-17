@@ -93,6 +93,7 @@
             this.txtBoletosAdultos.TabIndex = 5;
             this.txtBoletosAdultos.Text = "0";
             this.txtBoletosAdultos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoletosAdultos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // txtBoletosNinios
             // 
@@ -103,6 +104,7 @@
             this.txtBoletosNinios.TabIndex = 6;
             this.txtBoletosNinios.Text = "0";
             this.txtBoletosNinios.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoletosNinios.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // txtBoletosAdultosMayores
             // 
@@ -113,6 +115,7 @@
             this.txtBoletosAdultosMayores.TabIndex = 7;
             this.txtBoletosAdultosMayores.Text = "0";
             this.txtBoletosAdultosMayores.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoletosAdultosMayores.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // btnRegresar
             // 
@@ -137,6 +140,7 @@
             this.txtFolio.TabIndex = 10;
             this.txtFolio.Text = "0";
             this.txtFolio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFolio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // label4
             // 
