@@ -54,6 +54,8 @@ namespace UserInterfaceZoo
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -228,6 +230,7 @@ namespace UserInterfaceZoo
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(154, 22);
             this.txtCodigo.TabIndex = 35;
+            this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numero_KeyPress);
             // 
             // label2
             // 
@@ -266,6 +269,7 @@ namespace UserInterfaceZoo
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(154, 22);
             this.txtCantidad.TabIndex = 43;
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numero_KeyPress);
             // 
             // label5
             // 
@@ -291,21 +295,21 @@ namespace UserInterfaceZoo
             // 
             this.precio.AutoSize = true;
             this.precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precio.Location = new System.Drawing.Point(348, 344);
+            this.precio.Location = new System.Drawing.Point(348, 312);
             this.precio.Name = "precio";
-            this.precio.Size = new System.Drawing.Size(47, 16);
+            this.precio.Size = new System.Drawing.Size(12, 16);
             this.precio.TabIndex = 47;
-            this.precio.Text = "Precio";
+            this.precio.Text = "-";
             // 
             // des
             // 
             this.des.AutoSize = true;
             this.des.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.des.Location = new System.Drawing.Point(254, 344);
+            this.des.Location = new System.Drawing.Point(254, 312);
             this.des.Name = "des";
-            this.des.Size = new System.Drawing.Size(80, 16);
+            this.des.Size = new System.Drawing.Size(12, 16);
             this.des.TabIndex = 48;
-            this.des.Text = "Descripción";
+            this.des.Text = "-";
             // 
             // label7
             // 
@@ -324,6 +328,7 @@ namespace UserInterfaceZoo
             this.txtFolio.Name = "txtFolio";
             this.txtFolio.Size = new System.Drawing.Size(154, 22);
             this.txtFolio.TabIndex = 49;
+            this.txtFolio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numero_KeyPress);
             // 
             // pictureBox3
             // 
@@ -358,12 +363,34 @@ namespace UserInterfaceZoo
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(254, 287);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(80, 16);
+            this.label8.TabIndex = 52;
+            this.label8.Text = "Descripción";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(348, 287);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(47, 16);
+            this.label9.TabIndex = 51;
+            this.label9.Text = "Precio";
+            // 
             // PA_02_05_Souvenirs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(700, 390);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtFolio);
             this.Controls.Add(this.des);
@@ -428,5 +455,7 @@ namespace UserInterfaceZoo
         private System.Windows.Forms.Label des;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtFolio;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

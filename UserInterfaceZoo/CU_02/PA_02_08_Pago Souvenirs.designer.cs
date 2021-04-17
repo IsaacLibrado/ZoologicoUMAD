@@ -31,7 +31,6 @@ namespace UserInterfaceZoo
         {
             this.rbTarjeta = new System.Windows.Forms.RadioButton();
             this.rbMembresia = new System.Windows.Forms.RadioButton();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.btnPagar = new System.Windows.Forms.Button();
             this.rbEfectivo = new System.Windows.Forms.RadioButton();
             this.txtPagado = new System.Windows.Forms.TextBox();
@@ -72,21 +71,6 @@ namespace UserInterfaceZoo
             this.rbMembresia.Text = "Membresía";
             this.rbMembresia.UseVisualStyleBackColor = true;
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.AutoSize = true;
-            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.btnRegresar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRegresar.Location = new System.Drawing.Point(564, 303);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(104, 30);
-            this.btnRegresar.TabIndex = 31;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
             // btnPagar
             // 
             this.btnPagar.AutoSize = true;
@@ -123,6 +107,7 @@ namespace UserInterfaceZoo
             this.txtPagado.TabIndex = 27;
             this.txtPagado.Text = "0";
             this.txtPagado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPagado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Dinero_KeyPress);
             // 
             // lbCambio
             // 
@@ -195,6 +180,7 @@ namespace UserInterfaceZoo
             this.cmbCaja.Name = "cmbCaja";
             this.cmbCaja.Size = new System.Drawing.Size(121, 24);
             this.cmbCaja.TabIndex = 34;
+            this.cmbCaja.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // label1
             // 
@@ -229,6 +215,7 @@ namespace UserInterfaceZoo
             this.txtCompra.Size = new System.Drawing.Size(159, 30);
             this.txtCompra.TabIndex = 41;
             this.txtCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // label4
             // 
@@ -251,7 +238,6 @@ namespace UserInterfaceZoo
             this.Controls.Add(this.cmbCaja);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rbMembresia);
-            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnPagar);
             this.Controls.Add(this.rbEfectivo);
             this.Controls.Add(this.txtPagado);
@@ -263,7 +249,7 @@ namespace UserInterfaceZoo
             this.Controls.Add(this.label7);
             this.Controls.Add(this.rbTarjeta);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PA_02_08_Pago_Souvenirs";
             this.Text = "PA_02_08_Pago_Souvenirs";
             this.Load += new System.EventHandler(this.PA_02_08_Pago_Souvenirs_Load);
@@ -275,7 +261,6 @@ namespace UserInterfaceZoo
         #endregion
         private System.Windows.Forms.RadioButton rbTarjeta;
         private System.Windows.Forms.RadioButton rbMembresia;
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnPagar;
         private System.Windows.Forms.RadioButton rbEfectivo;
         private System.Windows.Forms.TextBox txtPagado;

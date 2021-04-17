@@ -102,9 +102,11 @@ namespace UserInterfaceZoo
                 MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
                 Boletos.Add(miBoleto);
                 Serializar();
-                MenuPrincipal.abrirPantallas(new PA_02_02_Pagar_Boletos());
-                MenuPrincipal.AsignarTitulo("Pagar Boletos");
+
+                //MenuPrincipal.abrirPantallas(new PA_02_02_Pagar_Boletos());
+                //MenuPrincipal.AsignarTitulo("Pagar Boletos");
                 this.Close();
+                MenuPrincipal.abrirPantallas(new PA_02_02_Pagar_Boletos());
             }
         }
 

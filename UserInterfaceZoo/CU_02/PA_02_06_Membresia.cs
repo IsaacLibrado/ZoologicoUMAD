@@ -20,19 +20,6 @@ namespace UserInterfaceZoo
         //int codigoProducto;
 
         /// <summary>
-        /// Evento que se realizar al presionar el boton de agregar productos
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// Version 1.0
-        /// Fecha de creacion 29 de Marzo 2021
-        /// Creador Karla Garcia
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        /// <summary>
         /// Evento que se realizar al presionar el boton Regresar
         /// </summary>
         /// <param name="sender"></param>
@@ -58,6 +45,7 @@ namespace UserInterfaceZoo
         {
             this.Close();
             MenuPrincipal.abrirPantallas(new PA_02_07_Carrito_Souvenirs());
+            MenuPrincipal.AsignarTitulo("Carrito de souvenirs");
         }
 
         private void btnAnimFelpa_Click(object sender, EventArgs e)

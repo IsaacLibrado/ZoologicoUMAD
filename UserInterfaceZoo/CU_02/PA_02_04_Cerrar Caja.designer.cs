@@ -84,6 +84,7 @@
             this.cmbCaja.Name = "cmbCaja";
             this.cmbCaja.Size = new System.Drawing.Size(121, 33);
             this.cmbCaja.TabIndex = 18;
+            this.cmbCaja.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // label4
             // 
@@ -112,6 +113,7 @@
             this.txbFaltaSobra.Name = "txbFaltaSobra";
             this.txbFaltaSobra.Size = new System.Drawing.Size(108, 30);
             this.txbFaltaSobra.TabIndex = 15;
+            this.txbFaltaSobra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // label2
             // 

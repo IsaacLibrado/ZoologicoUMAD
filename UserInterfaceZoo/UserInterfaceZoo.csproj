@@ -114,12 +114,6 @@
     <Compile Include="CU_02\PA_02_01_Vender Boletos Entrada.designer.cs">
       <DependentUpon>PA_02_01_Vender Boletos Entrada.cs</DependentUpon>
     </Compile>
-    <Compile Include="CU_02\PA_02_02_Pagar Boletos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CU_02\PA_02_02_Pagar Boletos.designer.cs">
-      <DependentUpon>PA_02_02_Pagar Boletos.cs</DependentUpon>
-    </Compile>
     <Compile Include="CU_02\PA_02_03_Apertura Caja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +168,12 @@
     <Compile Include="CU_06\PA_06_03_Orden_de_compra_totales.Designer.cs">
       <DependentUpon>PA_06_03_Orden_de_compra_totales.cs</DependentUpon>
     </Compile>
+    <Compile Include="CU_02\PA_02_02_Pagar Boletos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_02\PA_02_02_Pagar Boletos.designer.cs">
+      <DependentUpon>PA_02_02_Pagar Boletos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Inicio.cs">
@@ -201,9 +201,6 @@
     <EmbeddedResource Include="CU_02\PA_02_01_Vender Boletos Entrada.resx">
       <DependentUpon>PA_02_01_Vender Boletos Entrada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CU_02\PA_02_02_Pagar Boletos.resx">
-      <DependentUpon>PA_02_02_Pagar Boletos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CU_02\PA_02_03_Apertura Caja.resx">
       <DependentUpon>PA_02_03_Apertura Caja.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CU_06\PA_06_03_Orden_de_compra_totales.resx">
       <DependentUpon>PA_06_03_Orden_de_compra_totales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_02\PA_02_02_Pagar Boletos.resx">
+      <DependentUpon>PA_02_02_Pagar Boletos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
