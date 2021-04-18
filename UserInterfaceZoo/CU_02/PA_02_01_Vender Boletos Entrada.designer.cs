@@ -76,7 +76,7 @@
             this.btnVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVender.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnVender.Location = new System.Drawing.Point(520, 31);
+            this.btnVender.Location = new System.Drawing.Point(38, 217);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(133, 30);
             this.btnVender.TabIndex = 3;
@@ -123,7 +123,7 @@
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRegresar.Location = new System.Drawing.Point(520, 116);
+            this.btnRegresar.Location = new System.Drawing.Point(249, 217);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(133, 30);
             this.btnRegresar.TabIndex = 8;

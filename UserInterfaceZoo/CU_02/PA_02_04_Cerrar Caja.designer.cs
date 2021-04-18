@@ -50,7 +50,7 @@
             this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnRegresar.Location = new System.Drawing.Point(506, 184);
+            this.btnRegresar.Location = new System.Drawing.Point(412, 184);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(102, 36);
             this.btnRegresar.TabIndex = 21;
@@ -63,7 +63,7 @@
             this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnCerrar.Location = new System.Drawing.Point(506, 120);
+            this.btnCerrar.Location = new System.Drawing.Point(412, 120);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(102, 36);
             this.btnCerrar.TabIndex = 20;
@@ -90,7 +90,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label4.Location = new System.Drawing.Point(273, 106);
+            this.label4.Location = new System.Drawing.Point(230, 106);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 25);
             this.label4.TabIndex = 17;
@@ -129,7 +129,7 @@
             // 
             this.lblGanancias.AutoSize = true;
             this.lblGanancias.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblGanancias.Location = new System.Drawing.Point(290, 131);
+            this.lblGanancias.Location = new System.Drawing.Point(247, 131);
             this.lblGanancias.Name = "lblGanancias";
             this.lblGanancias.Size = new System.Drawing.Size(39, 25);
             this.lblGanancias.TabIndex = 22;
@@ -139,7 +139,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label5.Location = new System.Drawing.Point(261, 131);
+            this.label5.Location = new System.Drawing.Point(218, 131);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(23, 25);
             this.label5.TabIndex = 23;
@@ -149,7 +149,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label6.Location = new System.Drawing.Point(261, 220);
+            this.label6.Location = new System.Drawing.Point(218, 220);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(23, 25);
             this.label6.TabIndex = 26;
@@ -159,7 +159,7 @@
             // 
             this.lblMonto.AutoSize = true;
             this.lblMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblMonto.Location = new System.Drawing.Point(290, 220);
+            this.lblMonto.Location = new System.Drawing.Point(247, 220);
             this.lblMonto.Name = "lblMonto";
             this.lblMonto.Size = new System.Drawing.Size(39, 25);
             this.lblMonto.TabIndex = 25;
@@ -169,7 +169,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label8.Location = new System.Drawing.Point(273, 195);
+            this.label8.Location = new System.Drawing.Point(230, 195);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 25);
             this.label8.TabIndex = 24;

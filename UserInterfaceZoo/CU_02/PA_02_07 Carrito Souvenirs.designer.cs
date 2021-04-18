@@ -43,7 +43,7 @@ namespace UserInterfaceZoo
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label7.Location = new System.Drawing.Point(23, 292);
+            this.label7.Location = new System.Drawing.Point(24, 253);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 25);
@@ -54,7 +54,7 @@ namespace UserInterfaceZoo
             // 
             this.lbTotal.AutoSize = true;
             this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lbTotal.Location = new System.Drawing.Point(95, 292);
+            this.lbTotal.Location = new System.Drawing.Point(96, 253);
             this.lbTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(19, 25);
@@ -67,7 +67,7 @@ namespace UserInterfaceZoo
             this.btnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.btnPagar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPagar.Location = new System.Drawing.Point(489, 268);
+            this.btnPagar.Location = new System.Drawing.Point(322, 212);
             this.btnPagar.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagar.Name = "btnPagar";
             this.btnPagar.Size = new System.Drawing.Size(180, 33);
@@ -82,7 +82,7 @@ namespace UserInterfaceZoo
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCancelar.Location = new System.Drawing.Point(489, 306);
+            this.btnCancelar.Location = new System.Drawing.Point(322, 250);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(180, 34);
@@ -95,17 +95,17 @@ namespace UserInterfaceZoo
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 79);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 57);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(695, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(500, 150);
             this.dataGridView1.TabIndex = 18;
             // 
             // txtArchivo
             // 
             this.txtArchivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArchivo.Location = new System.Drawing.Point(404, 21);
+            this.txtArchivo.Location = new System.Drawing.Point(271, 21);
             this.txtArchivo.Name = "txtArchivo";
-            this.txtArchivo.Size = new System.Drawing.Size(284, 30);
+            this.txtArchivo.Size = new System.Drawing.Size(231, 30);
             this.txtArchivo.TabIndex = 19;
             // 
             // btnBuscar
@@ -114,7 +114,7 @@ namespace UserInterfaceZoo
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBuscar.Location = new System.Drawing.Point(308, 18);
+            this.btnBuscar.Location = new System.Drawing.Point(175, 18);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(91, 33);

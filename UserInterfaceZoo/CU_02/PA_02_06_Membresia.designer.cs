@@ -51,7 +51,7 @@ namespace UserInterfaceZoo
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label2.Location = new System.Drawing.Point(301, 200);
+            this.label2.Location = new System.Drawing.Point(291, 163);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 25);
@@ -62,7 +62,7 @@ namespace UserInterfaceZoo
             // 
             this.lbPrecio.AutoSize = true;
             this.lbPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lbPrecio.Location = new System.Drawing.Point(380, 200);
+            this.lbPrecio.Location = new System.Drawing.Point(370, 163);
             this.lbPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPrecio.Name = "lbPrecio";
             this.lbPrecio.Size = new System.Drawing.Size(45, 25);
@@ -73,7 +73,7 @@ namespace UserInterfaceZoo
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label4.Location = new System.Drawing.Point(301, 176);
+            this.label4.Location = new System.Drawing.Point(291, 139);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 25);
@@ -84,7 +84,7 @@ namespace UserInterfaceZoo
             // 
             this.lbCodigo.AutoSize = true;
             this.lbCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lbCodigo.Location = new System.Drawing.Point(380, 176);
+            this.lbCodigo.Location = new System.Drawing.Point(370, 139);
             this.lbCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCodigo.Name = "lbCodigo";
             this.lbCodigo.Size = new System.Drawing.Size(34, 25);
@@ -97,7 +97,7 @@ namespace UserInterfaceZoo
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRegresar.Location = new System.Drawing.Point(516, 284);
+            this.btnRegresar.Location = new System.Drawing.Point(377, 221);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(126, 32);
@@ -112,7 +112,7 @@ namespace UserInterfaceZoo
             this.btnCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnCarrito.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCarrito.Location = new System.Drawing.Point(516, 320);
+            this.btnCarrito.Location = new System.Drawing.Point(377, 257);
             this.btnCarrito.Margin = new System.Windows.Forms.Padding(2);
             this.btnCarrito.Name = "btnCarrito";
             this.btnCarrito.Size = new System.Drawing.Size(126, 32);
@@ -124,7 +124,7 @@ namespace UserInterfaceZoo
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.membresia;
-            this.pictureBox1.Location = new System.Drawing.Point(110, 141);
+            this.pictureBox1.Location = new System.Drawing.Point(100, 104);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(166, 115);
@@ -138,7 +138,7 @@ namespace UserInterfaceZoo
             this.btnMembresia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMembresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnMembresia.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMembresia.Location = new System.Drawing.Point(601, 46);
+            this.btnMembresia.Location = new System.Drawing.Point(377, 37);
             this.btnMembresia.Margin = new System.Windows.Forms.Padding(2);
             this.btnMembresia.Name = "btnMembresia";
             this.btnMembresia.Size = new System.Drawing.Size(90, 25);
@@ -152,7 +152,7 @@ namespace UserInterfaceZoo
             this.btnPlayeras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayeras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnPlayeras.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPlayeras.Location = new System.Drawing.Point(516, 46);
+            this.btnPlayeras.Location = new System.Drawing.Point(251, 37);
             this.btnPlayeras.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlayeras.Name = "btnPlayeras";
             this.btnPlayeras.Size = new System.Drawing.Size(80, 25);
@@ -167,10 +167,10 @@ namespace UserInterfaceZoo
             this.btnTazas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTazas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnTazas.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnTazas.Location = new System.Drawing.Point(433, 46);
+            this.btnTazas.Location = new System.Drawing.Point(96, 37);
             this.btnTazas.Margin = new System.Windows.Forms.Padding(2);
             this.btnTazas.Name = "btnTazas";
-            this.btnTazas.Size = new System.Drawing.Size(79, 25);
+            this.btnTazas.Size = new System.Drawing.Size(70, 26);
             this.btnTazas.TabIndex = 31;
             this.btnTazas.Text = "Tazas";
             this.btnTazas.UseVisualStyleBackColor = false;
@@ -182,7 +182,7 @@ namespace UserInterfaceZoo
             this.btnLlaveros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLlaveros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnLlaveros.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLlaveros.Location = new System.Drawing.Point(337, 46);
+            this.btnLlaveros.Location = new System.Drawing.Point(431, 7);
             this.btnLlaveros.Margin = new System.Windows.Forms.Padding(2);
             this.btnLlaveros.Name = "btnLlaveros";
             this.btnLlaveros.Size = new System.Drawing.Size(90, 25);
@@ -197,7 +197,7 @@ namespace UserInterfaceZoo
             this.btnCubrebocas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCubrebocas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnCubrebocas.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCubrebocas.Location = new System.Drawing.Point(242, 46);
+            this.btnCubrebocas.Location = new System.Drawing.Point(309, 7);
             this.btnCubrebocas.Margin = new System.Windows.Forms.Padding(2);
             this.btnCubrebocas.Name = "btnCubrebocas";
             this.btnCubrebocas.Size = new System.Drawing.Size(88, 25);
@@ -212,7 +212,7 @@ namespace UserInterfaceZoo
             this.btnGorras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGorras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnGorras.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGorras.Location = new System.Drawing.Point(121, 46);
+            this.btnGorras.Location = new System.Drawing.Point(150, 7);
             this.btnGorras.Margin = new System.Windows.Forms.Padding(2);
             this.btnGorras.Name = "btnGorras";
             this.btnGorras.Size = new System.Drawing.Size(116, 25);
@@ -227,7 +227,7 @@ namespace UserInterfaceZoo
             this.btnAnimFelpa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnimFelpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnAnimFelpa.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAnimFelpa.Location = new System.Drawing.Point(3, 46);
+            this.btnAnimFelpa.Location = new System.Drawing.Point(3, 7);
             this.btnAnimFelpa.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnimFelpa.Name = "btnAnimFelpa";
             this.btnAnimFelpa.Size = new System.Drawing.Size(113, 25);
@@ -239,10 +239,10 @@ namespace UserInterfaceZoo
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(0, 30);
+            this.label1.Location = new System.Drawing.Point(0, -1);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(699, 54);
+            this.label1.Size = new System.Drawing.Size(700, 79);
             this.label1.TabIndex = 34;
             // 
             // PA_02_06_Membresia

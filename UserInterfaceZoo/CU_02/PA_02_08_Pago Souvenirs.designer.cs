@@ -51,7 +51,7 @@ namespace UserInterfaceZoo
             // 
             this.rbTarjeta.AutoSize = true;
             this.rbTarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbTarjeta.Location = new System.Drawing.Point(299, 117);
+            this.rbTarjeta.Location = new System.Drawing.Point(169, 50);
             this.rbTarjeta.Name = "rbTarjeta";
             this.rbTarjeta.Size = new System.Drawing.Size(91, 29);
             this.rbTarjeta.TabIndex = 17;
@@ -63,7 +63,7 @@ namespace UserInterfaceZoo
             // 
             this.rbMembresia.AutoSize = true;
             this.rbMembresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMembresia.Location = new System.Drawing.Point(299, 186);
+            this.rbMembresia.Location = new System.Drawing.Point(169, 119);
             this.rbMembresia.Name = "rbMembresia";
             this.rbMembresia.Size = new System.Drawing.Size(127, 29);
             this.rbMembresia.TabIndex = 32;
@@ -78,7 +78,7 @@ namespace UserInterfaceZoo
             this.btnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnPagar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPagar.Location = new System.Drawing.Point(564, 266);
+            this.btnPagar.Location = new System.Drawing.Point(377, 198);
             this.btnPagar.Name = "btnPagar";
             this.btnPagar.Size = new System.Drawing.Size(104, 30);
             this.btnPagar.TabIndex = 30;
@@ -90,7 +90,7 @@ namespace UserInterfaceZoo
             // 
             this.rbEfectivo.AutoSize = true;
             this.rbEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbEfectivo.Location = new System.Drawing.Point(299, 152);
+            this.rbEfectivo.Location = new System.Drawing.Point(169, 85);
             this.rbEfectivo.Name = "rbEfectivo";
             this.rbEfectivo.Size = new System.Drawing.Size(99, 29);
             this.rbEfectivo.TabIndex = 29;
@@ -101,7 +101,7 @@ namespace UserInterfaceZoo
             // txtPagado
             // 
             this.txtPagado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPagado.Location = new System.Drawing.Point(26, 277);
+            this.txtPagado.Location = new System.Drawing.Point(18, 216);
             this.txtPagado.Name = "txtPagado";
             this.txtPagado.Size = new System.Drawing.Size(100, 30);
             this.txtPagado.TabIndex = 27;
@@ -113,7 +113,7 @@ namespace UserInterfaceZoo
             // 
             this.lbCambio.AutoSize = true;
             this.lbCambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCambio.Location = new System.Drawing.Point(358, 303);
+            this.lbCambio.Location = new System.Drawing.Point(282, 189);
             this.lbCambio.Name = "lbCambio";
             this.lbCambio.Size = new System.Drawing.Size(12, 16);
             this.lbCambio.TabIndex = 26;
@@ -123,7 +123,7 @@ namespace UserInterfaceZoo
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(256, 303);
+            this.label2.Location = new System.Drawing.Point(180, 189);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 25);
             this.label2.TabIndex = 25;
@@ -133,7 +133,7 @@ namespace UserInterfaceZoo
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 250);
+            this.label3.Location = new System.Drawing.Point(12, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(142, 25);
             this.label3.TabIndex = 24;
@@ -143,7 +143,7 @@ namespace UserInterfaceZoo
             // 
             this.lbTotal.AutoSize = true;
             this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTotal.Location = new System.Drawing.Point(98, 110);
+            this.lbTotal.Location = new System.Drawing.Point(90, 49);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(19, 25);
             this.lbTotal.TabIndex = 23;
@@ -153,7 +153,7 @@ namespace UserInterfaceZoo
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(20, 110);
+            this.label6.Location = new System.Drawing.Point(12, 49);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 25);
             this.label6.TabIndex = 22;
@@ -163,7 +163,7 @@ namespace UserInterfaceZoo
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(20, 49);
+            this.label7.Location = new System.Drawing.Point(12, 9);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(233, 25);
             this.label7.TabIndex = 21;
@@ -176,7 +176,7 @@ namespace UserInterfaceZoo
             this.cmbCaja.Items.AddRange(new object[] {
             "03",
             "04"});
-            this.cmbCaja.Location = new System.Drawing.Point(26, 186);
+            this.cmbCaja.Location = new System.Drawing.Point(18, 125);
             this.cmbCaja.Name = "cmbCaja";
             this.cmbCaja.Size = new System.Drawing.Size(121, 24);
             this.cmbCaja.TabIndex = 34;
@@ -186,7 +186,7 @@ namespace UserInterfaceZoo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.Location = new System.Drawing.Point(21, 158);
+            this.label1.Location = new System.Drawing.Point(13, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 25);
             this.label1.TabIndex = 33;
@@ -199,7 +199,7 @@ namespace UserInterfaceZoo
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBuscar.Location = new System.Drawing.Point(538, 85);
+            this.btnBuscar.Location = new System.Drawing.Point(364, 80);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(117, 37);
             this.btnBuscar.TabIndex = 42;
@@ -210,7 +210,7 @@ namespace UserInterfaceZoo
             // txtCompra
             // 
             this.txtCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCompra.Location = new System.Drawing.Point(519, 49);
+            this.txtCompra.Location = new System.Drawing.Point(345, 44);
             this.txtCompra.Name = "txtCompra";
             this.txtCompra.Size = new System.Drawing.Size(159, 30);
             this.txtCompra.TabIndex = 41;
@@ -221,7 +221,7 @@ namespace UserInterfaceZoo
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(459, 49);
+            this.label4.Location = new System.Drawing.Point(285, 44);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 25);
             this.label4.TabIndex = 40;

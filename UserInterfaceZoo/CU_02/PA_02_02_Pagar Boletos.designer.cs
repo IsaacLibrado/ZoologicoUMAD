@@ -81,7 +81,7 @@ namespace UserInterfaceZoo
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(261, 210);
+            this.label5.Location = new System.Drawing.Point(185, 210);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 25);
             this.label5.TabIndex = 4;
@@ -91,7 +91,7 @@ namespace UserInterfaceZoo
             // 
             this.lbCambio.AutoSize = true;
             this.lbCambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCambio.Location = new System.Drawing.Point(363, 210);
+            this.lbCambio.Location = new System.Drawing.Point(287, 210);
             this.lbCambio.Name = "lbCambio";
             this.lbCambio.Size = new System.Drawing.Size(19, 25);
             this.lbCambio.TabIndex = 5;
@@ -111,7 +111,7 @@ namespace UserInterfaceZoo
             // 
             this.rbTarjeta.AutoSize = true;
             this.rbTarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbTarjeta.Location = new System.Drawing.Point(306, 67);
+            this.rbTarjeta.Location = new System.Drawing.Point(230, 68);
             this.rbTarjeta.Name = "rbTarjeta";
             this.rbTarjeta.Size = new System.Drawing.Size(91, 29);
             this.rbTarjeta.TabIndex = 7;
@@ -123,7 +123,7 @@ namespace UserInterfaceZoo
             // 
             this.rbEfectivo.AutoSize = true;
             this.rbEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbEfectivo.Location = new System.Drawing.Point(306, 101);
+            this.rbEfectivo.Location = new System.Drawing.Point(230, 102);
             this.rbEfectivo.Name = "rbEfectivo";
             this.rbEfectivo.Size = new System.Drawing.Size(99, 29);
             this.rbEfectivo.TabIndex = 8;
@@ -138,7 +138,7 @@ namespace UserInterfaceZoo
             this.btnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPagar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPagar.Location = new System.Drawing.Point(548, 190);
+            this.btnPagar.Location = new System.Drawing.Point(388, 198);
             this.btnPagar.Name = "btnPagar";
             this.btnPagar.Size = new System.Drawing.Size(117, 37);
             this.btnPagar.TabIndex = 9;
@@ -153,7 +153,7 @@ namespace UserInterfaceZoo
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRegresar.Location = new System.Drawing.Point(548, 239);
+            this.btnRegresar.Location = new System.Drawing.Point(388, 247);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(117, 37);
             this.btnRegresar.TabIndex = 10;
@@ -196,7 +196,7 @@ namespace UserInterfaceZoo
             // txtFolio
             // 
             this.txtFolio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFolio.Location = new System.Drawing.Point(535, 24);
+            this.txtFolio.Location = new System.Drawing.Point(375, 32);
             this.txtFolio.Name = "txtFolio";
             this.txtFolio.Size = new System.Drawing.Size(143, 30);
             this.txtFolio.TabIndex = 38;
@@ -207,7 +207,7 @@ namespace UserInterfaceZoo
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(465, 24);
+            this.label4.Location = new System.Drawing.Point(305, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 25);
             this.label4.TabIndex = 37;
@@ -220,7 +220,7 @@ namespace UserInterfaceZoo
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBuscar.Location = new System.Drawing.Point(548, 60);
+            this.btnBuscar.Location = new System.Drawing.Point(388, 68);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(117, 37);
             this.btnBuscar.TabIndex = 39;
