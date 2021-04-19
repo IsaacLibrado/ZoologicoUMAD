@@ -10,12 +10,13 @@ using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-
+using System.Xml.Linq; 
 namespace UserInterfaceZoo
 {
     public partial class PA_02_02_Pagar_Boletos : Form
     {
-        
+
+        XDocument documento;
         List<Boletos> Boletos = new List<Boletos>();
         List<Cajas> Cajas = new List<Cajas>();
 
@@ -26,7 +27,7 @@ namespace UserInterfaceZoo
             InitializeComponent();
             //CalculoTotal(); 
         }
-        
+
         private void Serializar()
         {
             //creamos el formato del nombre del archivo
@@ -92,6 +93,50 @@ namespace UserInterfaceZoo
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
+            if (txtDineroPagado.Text == "" || txtFolio.Text == "" || cmbCaja.Text == "" || ((rbEfectivo.Checked == false && rbTarjeta.Checked == false)))
+            {
+                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+            }
+            else
+            {
+                int folio = Convert.ToInt32(txtFolio.Text);
+                Boletos miBoleto = GetID(folio);
+
+                if (miBoleto == null)
+                {
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    return;
+                }
+                miBoleto.IdCaja = Convert.ToInt32(cmbCaja.Text);
+                miBoleto.Tarjeta = rbTarjeta.Checked;
+                miBoleto.Efectivo = rbEfectivo.Checked;
+
+                double dineropagado = Convert.ToDouble(txtDineroPagado.Text);
+                double total = Convert.ToDouble(lbTotal.Text);
+
+                //Validación de campos
+                if (miBoleto.IdCaja < 1 || miBoleto.IdCaja > 2 || dineropagado < total || (miBoleto.Tarjeta == false && miBoleto.Efectivo == false))
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                else
+                {
+                    int idcaja = Convert.ToInt32(cmbCaja.Text);
+                    Cajas miCaja = GetIDCaja(idcaja);
+
+                    double montoTotal = miCaja.MontoCierre + miBoleto.Total;
+                    miCaja.MontoCierre = montoTotal;
+                    double cambio = Convert.ToDouble(txtDineroPagado.Text) - Convert.ToDouble(lbTotal.Text);
+                    lbCambio.Text = cambio.ToString();
+                    Serializar();
+                    SerializarCajas();
+                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                }
+                this.Close();
+                MenuPrincipal.abrirPantallas(new PA_02_01_Vender_Boletos_Entrada());
+            }
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
             int folio = Convert.ToInt32(txtFolio.Text);
             Boletos miBoleto = GetID(folio);
 
@@ -100,33 +145,16 @@ namespace UserInterfaceZoo
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
                 return;
             }
-            miBoleto.IdCaja = Convert.ToInt32(cmbCaja.Text);
-            miBoleto.Tarjeta = rbTarjeta.Checked;
-            miBoleto.Efectivo = rbEfectivo.Checked;
+            Boletos.Remove(miBoleto);
+            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+                + "-" + DateTime.Now.Year.ToString();
 
-            double dineropagado = Convert.ToDouble(txtDineroPagado.Text); 
-            double total = Convert.ToDouble(lbTotal.Text);
+            documento = XDocument.Load("VentaBoletos" + nombrearch + ".xml");
+            documento.Descendants("Boletos")
+                    .Where(nodo => (string)nodo.Element("Folio") == txtFolio.Text)
+                    .Remove();
 
-            //Validación de campos
-            if (miBoleto.IdCaja  < 1 || miBoleto.IdCaja > 2 || dineropagado < total || (miBoleto.Tarjeta == false && miBoleto.Efectivo == false))
-                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-            else
-            {
-                int idcaja = Convert.ToInt32(cmbCaja.Text);
-                Cajas miCaja = GetIDCaja(idcaja);
-
-                double montoTotal = miCaja.MontoCierre + miBoleto.Total;
-                miCaja.MontoCierre = montoTotal;
-                double cambio = Convert.ToDouble(txtDineroPagado.Text) - Convert.ToDouble(lbTotal.Text);
-                lbCambio.Text = cambio.ToString();
-                Serializar();
-                SerializarCajas();
-                MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
-            } 
-        }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
+            documento.Save("VentaBoletos" + nombrearch + ".xml"); //Se guarda en el documento
             this.Close();
             MenuPrincipal.abrirPantallas(new PA_02_01_Vender_Boletos_Entrada());
         }
@@ -157,7 +185,7 @@ namespace UserInterfaceZoo
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
                 return;
             }
-            lbTotal.Text = miBoleto.Total.ToString(); 
+            lbTotal.Text = miBoleto.Total.ToString();
         }
     }
 }

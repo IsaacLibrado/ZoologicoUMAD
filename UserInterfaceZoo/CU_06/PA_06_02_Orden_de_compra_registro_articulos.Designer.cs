@@ -92,11 +92,11 @@
             this.PrecioUnitario,
             this.Total});
             this.dataGridViewArticulos.Location = new System.Drawing.Point(243, 46);
-            this.dataGridViewArticulos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewArticulos.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewArticulos.Name = "dataGridViewArticulos";
             this.dataGridViewArticulos.RowHeadersWidth = 51;
             this.dataGridViewArticulos.RowTemplate.Height = 24;
-            this.dataGridViewArticulos.Size = new System.Drawing.Size(273, 152);
+            this.dataGridViewArticulos.Size = new System.Drawing.Size(346, 152);
             this.dataGridViewArticulos.TabIndex = 4;
             // 
             // Numero
@@ -137,7 +137,7 @@
             // txtNumeroArticulo
             // 
             this.txtNumeroArticulo.Location = new System.Drawing.Point(154, 46);
-            this.txtNumeroArticulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumeroArticulo.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumeroArticulo.Name = "txtNumeroArticulo";
             this.txtNumeroArticulo.Size = new System.Drawing.Size(86, 20);
             this.txtNumeroArticulo.TabIndex = 5;
@@ -156,7 +156,7 @@
             // txtCantidad
             // 
             this.txtCantidad.Location = new System.Drawing.Point(62, 104);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(155, 20);
             this.txtCantidad.TabIndex = 7;
@@ -165,7 +165,7 @@
             // txtUnidadPeso
             // 
             this.txtUnidadPeso.Location = new System.Drawing.Point(94, 127);
-            this.txtUnidadPeso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUnidadPeso.Margin = new System.Windows.Forms.Padding(2);
             this.txtUnidadPeso.Name = "txtUnidadPeso";
             this.txtUnidadPeso.Size = new System.Drawing.Size(123, 20);
             this.txtUnidadPeso.TabIndex = 8;
@@ -187,14 +187,14 @@
             this.lblTotal.Location = new System.Drawing.Point(50, 184);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(35, 13);
+            this.lblTotal.Size = new System.Drawing.Size(29, 13);
             this.lblTotal.TabIndex = 10;
-            this.lblTotal.Text = "label6";
+            this.lblTotal.Text = "label";
             // 
             // btnAgregar
             // 
             this.btnAgregar.Location = new System.Drawing.Point(62, 214);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(100, 31);
             this.btnAgregar.TabIndex = 11;
@@ -205,7 +205,7 @@
             // btnRegresar
             // 
             this.btnRegresar.Location = new System.Drawing.Point(28, 270);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(75, 31);
             this.btnRegresar.TabIndex = 12;
@@ -216,7 +216,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Location = new System.Drawing.Point(134, 270);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(68, 31);
             this.btnSiguiente.TabIndex = 13;
@@ -228,7 +228,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 317);
+            this.ClientSize = new System.Drawing.Size(611, 317);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnAgregar);
@@ -243,7 +243,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PA_06_02_Orden_de_compra_registro_articulos";
             this.Text = "PA_06_02_Orden_de_compra_registro_articulos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArticulos)).EndInit();

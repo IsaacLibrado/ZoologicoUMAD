@@ -92,33 +92,47 @@ namespace UserInterfaceZoo
         /// Creador Arturo Villegas
         private void btnAperturar_Click(object sender, EventArgs e)
         {
-            int idCajas = Convert.ToInt32(cmbCaja.Text);
-            Cajas miCaja = GetID(idCajas);
+            //e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back); 
 
-            miCaja = new Cajas(); 
-            //Asignación de variables
-            miCaja.IdCajas = Convert.ToInt32(cmbCaja.Text);
-            miCaja.IdCajero = Convert.ToInt32(cmbCajero.Text);
-            miCaja.MontoApertura = Convert.ToInt32(txbMontoInicial.Text);
-            miCaja.MontoCierre = Convert.ToInt32(txbMontoInicial.Text);
-            miCaja.RdbBoleto = rbBoleto.Checked;
-            miCaja.RsbSouvenir = rbSouvenir.Checked;
-            miCaja.Ganancias = 0;
-            miCaja.FaltSobra = 0; 
-            //Cajas.Add(miCaja);
-            //Serializar();
-
-            //Validación de campos
-            if ((miCaja.MontoApertura > 9999 || miCaja.MontoApertura < 7500) || (miCaja.RdbBoleto == false && miCaja.RsbSouvenir == false) || (miCaja.IdCajas < 1 || miCaja.IdCajas > 4) || (miCaja.IdCajero < 1 || miCaja.IdCajero > 5))
+            if (cmbCaja.Text == "" || cmbCajero.Text == "" || (rbBoleto.Checked == false && rbSouvenir.Checked == false) || txbMontoInicial.Text == "")
+            {
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+            }
             else
             {
-                //Confirmación de exito
-                MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
-                Cajas.Add(miCaja);
-                Serializar();
+                int idCajas = Convert.ToInt32(cmbCaja.Text);
+                Cajas miCaja = GetID(idCajas);
+
+                if (miCaja != null)
+                {
+                    MenuPrincipal.MostrarMensaje("LA CAJA SELECCIONADA YA HA SIDO ABIERTA");
+                    return;
+                }
+                miCaja = new Cajas();
+                //Asignación de variables
+                miCaja.IdCajas = Convert.ToInt32(cmbCaja.Text);
+                miCaja.IdCajero = Convert.ToInt32(cmbCajero.Text);
+                miCaja.MontoApertura = Convert.ToInt32(txbMontoInicial.Text);
+                miCaja.MontoCierre = Convert.ToInt32(txbMontoInicial.Text);
+                miCaja.RdbBoleto = rbBoleto.Checked;
+                miCaja.RsbSouvenir = rbSouvenir.Checked;
+                miCaja.Ganancias = 0;
+                miCaja.FaltSobra = 0;
+                //Cajas.Add(miCaja);
+                //Serializar();
+
+                //Validación de campos
+                if ((miCaja.MontoApertura > 9999 || miCaja.MontoApertura < 7500) || (miCaja.RdbBoleto == false && miCaja.RsbSouvenir == false) || (miCaja.IdCajas < 1 || miCaja.IdCajas > 4) || (miCaja.IdCajero < 1 || miCaja.IdCajero > 5) || ((miCaja.IdCajas == 1 || miCaja.IdCajas == 2) && miCaja.RsbSouvenir == true) || ((miCaja.IdCajas == 3 || miCaja.IdCajas == 4) && miCaja.RdbBoleto == true))
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                else
+                {
+                    //Confirmación de exito
+                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                    Cajas.Add(miCaja);
+                    Serializar();
+                }
+                //Se completa el proceso y regresa al menu
             }
-            //Se completa el proceso y regresa al menu
         }
 
         private Cajas GetID(int id)
@@ -130,6 +144,12 @@ namespace UserInterfaceZoo
             //string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
             //+ "-" + DateTime.Now.Year.ToString();
             Deserializar();
+        }
+
+        //Método para que solo ingrese numeros
+        private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back);
         }
     }
 }

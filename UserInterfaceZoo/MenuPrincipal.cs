@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Xml.Linq;
+using System.Diagnostics;
+using System.IO;
 
 namespace UserInterfaceZoo
 {
@@ -332,14 +334,19 @@ namespace UserInterfaceZoo
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        /// Version 1.0
+        /// Version 2.0
         /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        /// Fecha de modificacion 16/04/21
         /// Creador Isaac Librado
         private void btnSMVideojuego_Click(object sender, EventArgs e)
         {
             ocultarSubMenu();
             AsignarTitulo("Videojuego");
             RegistroBitacora("Abierto el videojuego");
+
+            //iniciamos el proceso
+            Process programa = Process.Start(@"CU_09\VideojuegoZoo.exe");
         }
 
         #endregion
@@ -556,6 +563,8 @@ namespace UserInterfaceZoo
             //si tenemos una pantalla activa la cerramos
             if (pantallaActiva != null)
                 pantallaActiva.Close();
+
+            panelContenedor.Controls.Clear();
 
             //asignamos la pantalla activa 
             pantallaActiva = pPantalla;

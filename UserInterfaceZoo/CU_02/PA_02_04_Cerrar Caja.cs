@@ -85,39 +85,46 @@ namespace UserInterfaceZoo
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            int idcaja = Convert.ToInt32(cmbCaja.Text);
-            Cajas miCaja = GetID(idcaja);
-
-            if (miCaja == null)
+            if (cmbCaja.Text == "")
             {
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-                return;
             }
-            //lblMonto.Text = miCaja.MontoCierre.ToString();
-            //double monto = miCaja.MontoCierre - miCaja.MontoApertura;
-            //lblGanancias.Text = monto.ToString();
-
-            //miCaja.FaltSobra = Convert.ToDouble(txbFaltaSobra.Text);
-            //miCaja.Ganancias = monto; 
-            if ((miCaja.IdCajas < 1 || miCaja.IdCajas > 4))
-                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
             else
             {
+                int idcaja = Convert.ToInt32(cmbCaja.Text);
+                Cajas miCaja = GetID(idcaja);
 
-
-                if (miCaja.RdbBoleto == true)
-                    lbTipo.Text = "Boleto";
-                else
-                    lbTipo.Text = "Souvenirs";
-
-                lblMonto.Text = miCaja.MontoCierre.ToString();
-                double monto = miCaja.MontoCierre - miCaja.MontoApertura;
-                lblGanancias.Text = monto.ToString();
+                if (miCaja == null)
+                {
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    return;
+                }
+                //lblMonto.Text = miCaja.MontoCierre.ToString();
+                //double monto = miCaja.MontoCierre - miCaja.MontoApertura;
+                //lblGanancias.Text = monto.ToString();
 
                 //miCaja.FaltSobra = Convert.ToDouble(txbFaltaSobra.Text);
-                //miCaja.Ganancias = monto;
-                //Serializar();
-                MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                //miCaja.Ganancias = monto; 
+                if ((miCaja.IdCajas < 1 || miCaja.IdCajas > 4))
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                else
+                {
+
+
+                    if (miCaja.RdbBoleto == true)
+                        label1.Text = "Boleto";
+                    else
+                        label1.Text = "Souvenirs";
+
+                    lblMonto.Text = miCaja.MontoCierre.ToString();
+                    double monto = miCaja.MontoCierre - miCaja.MontoApertura;
+                    lblGanancias.Text = monto.ToString();
+
+                    //miCaja.FaltSobra = Convert.ToDouble(txbFaltaSobra.Text);
+                    //miCaja.Ganancias = monto;
+                    //Serializar();
+                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                }
             }
         }
 
@@ -133,28 +140,59 @@ namespace UserInterfaceZoo
 
         private void btnCerrar_Click_1(object sender, EventArgs e)
         {
-            int idcaja = Convert.ToInt32(cmbCaja.Text);
-            Cajas miCaja = GetID(idcaja);
-
-
-            if (miCaja == null)
+            if (cmbCaja.Text == "")
             {
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-                return;
             }
-
-            miCaja.FaltSobra = Convert.ToDouble(txbFaltaSobra.Text);
-
-            if (miCaja.IdCajas < 1 || miCaja.IdCajas > 4)
-                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
             else
             {
-                lblMonto.Text = miCaja.MontoCierre.ToString();
-                double monto = miCaja.MontoCierre - miCaja.MontoApertura;
-                lblGanancias.Text = monto.ToString();
+                int idcaja = Convert.ToInt32(cmbCaja.Text);
+                Cajas miCaja = GetID(idcaja);
 
-                miCaja.Ganancias = Convert.ToDouble(lblGanancias.Text);
-                Serializar();
+
+                if (miCaja == null)
+                {
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    return;
+                }
+                if (miCaja.Ganancias == 0)
+                {
+                    miCaja.FaltSobra = Convert.ToDouble(txbFaltaSobra.Text);
+
+                    if (miCaja.IdCajas < 1 || miCaja.IdCajas > 4)
+                        MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    else
+                    {
+                        lblMonto.Text = miCaja.MontoCierre.ToString();
+                        double monto = miCaja.MontoCierre - miCaja.MontoApertura;
+                        lblGanancias.Text = monto.ToString();
+
+                        miCaja.Ganancias = Convert.ToDouble(lblGanancias.Text);
+                        Serializar();
+                    }
+                }
+                else
+                    MenuPrincipal.MostrarMensaje("LA CAJA YA SE CERRÓ");
+            }
+        }
+
+        private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.') && (e.KeyChar != '-'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+
+            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('-') > -1))
+            {
+                e.Handled = true;
             }
         }
     }

@@ -93,7 +93,7 @@ namespace UserInterfaceZoo
                 File.Delete(archivo);
 
             this.Close();
-            MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
+            MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
         }
 
         /// <summary>
@@ -181,12 +181,6 @@ namespace UserInterfaceZoo
         private ComprasSouvenirs GetID(string archivo)
         {
             return confirmacion.Find(x => x.Archivo == archivo);
-        }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
         }
     }
 }

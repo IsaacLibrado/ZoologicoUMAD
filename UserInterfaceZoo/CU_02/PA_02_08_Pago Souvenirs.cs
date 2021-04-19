@@ -98,55 +98,53 @@ namespace UserInterfaceZoo
         /// Creador Karla Garcia
         private void btnPagar_Click(object sender, EventArgs e)
         {
-            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
-    + "-" + DateTime.Now.Year.ToString();
-            string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtCompra.Text + ".xml";
-            double dineropagado = Convert.ToDouble(txtPagado.Text);
-            double total = Convert.ToDouble(lbTotal.Text);
-
-            ComprasSouvenirs miCompra = GetID(archivo);
-
-            if (miCompra == null)
+            if (txtCompra.Text == "" || txtPagado.Text == "" || cmbCaja.Text == "" || ((rbEfectivo.Checked == false && rbMembresia.Checked == false && rbTarjeta.Checked == false)))
             {
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-                return;
             }
-            miCompra.IdCaja = Convert.ToInt32(cmbCaja.Text); 
-            miCompra.Efectivo = rbEfectivo.Checked;
-            miCompra.Mebresia = rbMembresia.Checked;
-            miCompra.Tarjeta = rbTarjeta.Checked;
-
-            //Validación de campos miCompra.IdCaja < 3 || miCompra.IdCaja > 4 || 
-            if (miCompra.IdCaja < 3 || miCompra.IdCaja > 4 || dineropagado < total || (miCompra.Tarjeta == false && miCompra.Efectivo == false && miCompra.Mebresia == false))
-                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
             else
             {
-                int idcaja = Convert.ToInt32(cmbCaja.Text);
-                Cajas miCaja = GetIDCaja(idcaja);
+                string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+        + "-" + DateTime.Now.Year.ToString();
+                string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtCompra.Text + ".xml";
+                double dineropagado = Convert.ToDouble(txtPagado.Text);
+                double total = Convert.ToDouble(lbTotal.Text);
 
-                double montoTotal = miCaja.MontoCierre + miCompra.Total;
-                miCaja.MontoCierre = montoTotal;
-                double cambio = Convert.ToDouble(txtPagado.Text) - Convert.ToDouble(lbTotal.Text);
-                lbCambio.Text = cambio.ToString();
-                Serializar();
-                SerializarCajas();
-                MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                ComprasSouvenirs miCompra = GetID(archivo);
+
+                if (miCompra == null)
+                {
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    return;
+                }
+                miCompra.IdCaja = Convert.ToInt32(cmbCaja.Text);
+                miCompra.Efectivo = rbEfectivo.Checked;
+                miCompra.Mebresia = rbMembresia.Checked;
+                miCompra.Tarjeta = rbTarjeta.Checked;
+
+                //Validación de campos miCompra.IdCaja < 3 || miCompra.IdCaja > 4 || 
+                if (miCompra.IdCaja < 3 || miCompra.IdCaja > 4 || dineropagado < total || (miCompra.Tarjeta == false && miCompra.Efectivo == false && miCompra.Mebresia == false))
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                else
+                {
+                    int idcaja = Convert.ToInt32(cmbCaja.Text);
+                    Cajas miCaja = GetIDCaja(idcaja);
+
+                    double montoTotal = miCaja.MontoCierre + miCompra.Total;
+                    miCaja.MontoCierre = montoTotal;
+                    double cambio = Convert.ToDouble(txtPagado.Text) - Convert.ToDouble(lbTotal.Text);
+                    lbCambio.Text = cambio.ToString();
+                    Serializar();
+                    SerializarCajas();
+                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                }
+                if (MessageBox.Show("Compra", "Compra ya pagada\n Su cambio: $" + lbCambio.Text, MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    this.Close();
+                    MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
+                }
             }
-
-        }
-
-        /// <summary>
-        /// Evento que se realizar al presionar el boton regresar
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// Version 1.0
-        /// Fecha de creacion 29 de Marzo 2021
-        /// Creador Karla Garcia
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
+            
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -185,5 +183,24 @@ namespace UserInterfaceZoo
             return cajas.Find(x => x.IdCajas == id);
         }
 
+        private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back);
+        }
+
+        private void Dinero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

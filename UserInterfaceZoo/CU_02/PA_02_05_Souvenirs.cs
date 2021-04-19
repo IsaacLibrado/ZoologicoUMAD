@@ -19,6 +19,8 @@ namespace UserInterfaceZoo
         private XElement souvenirsx;
         List<Carrito> carrito = new List<Carrito>();
         List<Souvenirs> documento = new List<Souvenirs>();
+        List<ComprasSouvenirs> confirmacion = new List<ComprasSouvenirs>();
+
         int folio; 
 
         public PA_02_05_Souvenirs()
@@ -80,6 +82,25 @@ namespace UserInterfaceZoo
             }
         }
 
+        //Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        private void DeserializarConfrimacion()
+        {
+            //creamos el formato del nombre del archivo
+            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+                + "-" + DateTime.Now.Year.ToString();
+            string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtFolio.Text + ".xml";
+            if (File.Exists("Compra-" + archivo))
+            {
+                XmlSerializer deserializarequipo = new XmlSerializer(typeof(List<ComprasSouvenirs>));
+
+                Stream miStream = new FileStream("Compra-" + archivo, FileMode.Open, FileAccess.Read, FileShare.None);
+
+                confirmacion = (List<ComprasSouvenirs>)deserializarequipo.Deserialize(miStream);
+                miStream.Close();
+            }
+        }
+
+
         private Souvenirs GetID(int codigo)
         {
             return documento.Find(x => x.Codigo == codigo);
@@ -90,36 +111,63 @@ namespace UserInterfaceZoo
             return carrito.Find(x => x.Folio == folio);
         }
 
+        private ComprasSouvenirs GetID(string archivo)
+        {
+            return confirmacion.Find(x => x.Archivo == archivo);
+        }
+
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            int codigo = Convert.ToInt32(txtCodigo.Text);
-            Souvenirs miSouvenir = GetID(codigo);
-
-            if (miSouvenir == null)
+            if(txtFolio.Text == "" || txtCodigo.Text == "" || txtCantidad.Text == "")
             {
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-                return;
             }
+            else
+            { 
+            DeserializarConfrimacion();
+            //creamos el formato del nombre del archivo
+            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+                + "-" + DateTime.Now.Year.ToString();
+            string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtFolio.Text + ".xml";
+            ComprasSouvenirs miConfirmacion = GetID(archivo);
 
-            folio = Convert.ToInt32(txtFolio.Text);
-            Carrito miCarrito = GetFolio(folio);
-            //if (miCarrito != null)
-            //{
-            //    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-            //    return;
-            //}
-            miCarrito = new Carrito(); 
-            miCarrito.Codigo = Convert.ToInt32(txtCodigo.Text); 
-            miCarrito.Folio = Convert.ToInt32(txtFolio.Text);
-            miCarrito.Cantidad = Convert.ToInt32(txtCantidad.Text);
-            des.Text = miSouvenir.Descripcion.ToString();
-            precio.Text = miSouvenir.Precio.ToString();
-            miCarrito.Descripcion = des.Text;
-            miCarrito.Precio = Convert.ToDouble(precio.Text);
-            miCarrito.Total = miCarrito.Precio * miCarrito.Cantidad;
-            carrito.Add(miCarrito); 
-            Serializar();
-            MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                if (miConfirmacion != null)
+                {
+                    MenuPrincipal.MostrarMensaje("YA FUE PAGADO EL FOLIO");
+                }
+                else
+                {
+                    int codigo = Convert.ToInt32(txtCodigo.Text);
+                    Souvenirs miSouvenir = GetID(codigo);
+
+                    if (miSouvenir == null)
+                    {
+                        MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                        return;
+                    }
+
+                    folio = Convert.ToInt32(txtFolio.Text);
+                    Carrito miCarrito = GetFolio(folio);
+                    //if (miCarrito != null)
+                    //{
+                    //    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    //    return;
+                    //}
+                    miCarrito = new Carrito();
+                    miCarrito.Codigo = Convert.ToInt32(txtCodigo.Text);
+                    miCarrito.Folio = Convert.ToInt32(txtFolio.Text);
+                    miCarrito.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                    des.Text = miSouvenir.Descripcion.ToString();
+                    precio.Text = miSouvenir.Precio.ToString();
+                    miCarrito.Descripcion = des.Text;
+                    miCarrito.Precio = Convert.ToDouble(precio.Text);
+                    miCarrito.Total = miCarrito.Precio * miCarrito.Cantidad;
+                    carrito.Add(miCarrito);
+                    Serializar();
+                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                }
+            }
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -336,6 +384,11 @@ namespace UserInterfaceZoo
             label2.Text = "13";
             label3.Text = "14";
             label4.Text = "15";
+        }
+
+        private void Numero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back);
         }
     }
 }
