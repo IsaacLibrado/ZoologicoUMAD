@@ -496,5 +496,10 @@
   <ItemGroup>
     <None Include="Resources\Leon.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="CU_09\AxInterop.WMPLib.dll" />
+    <Content Include="CU_09\Interop.WMPLib.dll" />
+    <Content Include="CU_09\VideojuegoZoo.exe" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

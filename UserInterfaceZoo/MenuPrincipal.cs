@@ -346,7 +346,7 @@ namespace UserInterfaceZoo
             RegistroBitacora("Abierto el videojuego");
 
             //iniciamos el proceso
-            Process programa = Process.Start(@"CU_09\VideojuegoZoo.exe");
+            Process programa = Process.Start(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\UserInterfaceZoo\CU_09\VideojuegoZoo.exe");
         }
 
         #endregion
