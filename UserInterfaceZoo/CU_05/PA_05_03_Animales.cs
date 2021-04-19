@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace UserInterfaceZoo.CU_05
 {
-    public partial class PA_05_02_Animales : Form
+    public partial class PA_05_03_Animales : Form
     {
-        public PA_05_02_Animales()
+        public PA_05_03_Animales()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
@@ -29,7 +24,7 @@ namespace UserInterfaceZoo.CU_05
 
         private void BtnSiguiente_Click(object sender, EventArgs e)
         {
-            MenuPrincipal.abrirPantallas(new CU_05.PA_05_03_Animales());
+            MenuPrincipal.abrirPantallas(new CU_05.PA_05_04_Animales());
         }
     }
 }

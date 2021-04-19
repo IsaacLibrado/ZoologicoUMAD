@@ -90,6 +90,84 @@
     <Compile Include="CU_05\PA_05_02_Animales.Designer.cs">
       <DependentUpon>PA_05_02_Animales.cs</DependentUpon>
     </Compile>
+    <Compile Include="CU_05\PA_05_03_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_03_Animales.Designer.cs">
+      <DependentUpon>PA_05_03_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_04_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_04_Animales.Designer.cs">
+      <DependentUpon>PA_05_04_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_05_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_05_Animales.Designer.cs">
+      <DependentUpon>PA_05_05_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_06_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_06_Animales.Designer.cs">
+      <DependentUpon>PA_05_06_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_07_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_07_Animales.Designer.cs">
+      <DependentUpon>PA_05_07_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_08_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_08_Animales.Designer.cs">
+      <DependentUpon>PA_05_08_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_09_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_09_Animales.Designer.cs">
+      <DependentUpon>PA_05_09_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_10_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_10_Animales.Designer.cs">
+      <DependentUpon>PA_05_10_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_11_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_11_Animales.Designer.cs">
+      <DependentUpon>PA_05_11_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_12_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_12_Animales.Designer.cs">
+      <DependentUpon>PA_05_12_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_13_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_13_Animales.Designer.cs">
+      <DependentUpon>PA_05_13_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_14_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_14_Animales.Designer.cs">
+      <DependentUpon>PA_05_14_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_15_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_15_Animales.Designer.cs">
+      <DependentUpon>PA_05_15_Animales.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +266,45 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CU_05\PA_05_02_Animales.resx">
       <DependentUpon>PA_05_02_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_03_Animales.resx">
+      <DependentUpon>PA_05_03_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_04_Animales.resx">
+      <DependentUpon>PA_05_04_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_05_Animales.resx">
+      <DependentUpon>PA_05_05_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_06_Animales.resx">
+      <DependentUpon>PA_05_06_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_07_Animales.resx">
+      <DependentUpon>PA_05_07_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_08_Animales.resx">
+      <DependentUpon>PA_05_08_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_09_Animales.resx">
+      <DependentUpon>PA_05_09_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_10_Animales.resx">
+      <DependentUpon>PA_05_10_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_11_Animales.resx">
+      <DependentUpon>PA_05_11_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_12_Animales.resx">
+      <DependentUpon>PA_05_12_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_13_Animales.resx">
+      <DependentUpon>PA_05_13_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_14_Animales.resx">
+      <DependentUpon>PA_05_14_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_15_Animales.resx">
+      <DependentUpon>PA_05_15_Animales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
@@ -336,6 +453,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\aguila.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa del zoológico.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guacamaya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tucan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jirafas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elefantes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cebra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tigre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pingüino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flamenco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Puma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jaguar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
