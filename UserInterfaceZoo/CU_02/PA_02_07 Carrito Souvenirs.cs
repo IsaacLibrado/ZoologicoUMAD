@@ -14,6 +14,13 @@ namespace UserInterfaceZoo
 {
     public partial class PA_02_07_Carrito_Souvenirs : Form
     {
+        /// <summary>
+        /// Esta clase permite consultar los souvenir en le carrito antes de pagarlos
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        
         List<Carrito> carrito = new List<Carrito>();
         List<ComprasSouvenirs> confirmacion = new List<ComprasSouvenirs>(); 
         double suma = 0;
@@ -23,6 +30,12 @@ namespace UserInterfaceZoo
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Esta clase permite serializar la venta de souvenirs
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void SerializarConfirmacion()
         {
             //creamos el formato del nombre del archivo
@@ -36,7 +49,12 @@ namespace UserInterfaceZoo
             miStreamxml.Close();
         }
 
-        //Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// <summary>
+        /// Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void DeserializarConfrimacion()
         {
             //creamos el formato del nombre del archivo
@@ -54,7 +72,12 @@ namespace UserInterfaceZoo
             }
         }
 
-        //Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// <summary>
+        /// Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Deserializar()
         {
             //string archivo = txtArchivo.Text;
@@ -209,6 +232,12 @@ namespace UserInterfaceZoo
             //txtArchivo.Text = "VentaSouvenirs" + nombrearch + "-folio[0].xml";
         }
 
+        /// <summary>
+        /// Método para buscar las compras de souvenirs con su id
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
@@ -284,6 +313,12 @@ namespace UserInterfaceZoo
             //}
         }
 
+        /// <summary>
+        /// Método que permite obtener la compra con su id
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private ComprasSouvenirs GetID(string archivo)
         {
             return confirmacion.Find(x => x.Archivo == archivo);

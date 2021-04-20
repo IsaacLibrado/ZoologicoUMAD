@@ -16,6 +16,13 @@ namespace UserInterfaceZoo
 {
     public partial class PA_02_03_Apertura_Caja : Form
     {
+        /// <summary>
+        /// Esta clase permite aperturar las cajas
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        
         //int idCajero;
         //int montoApertura;
         //bool rdbBoleto;
@@ -37,6 +44,12 @@ namespace UserInterfaceZoo
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Este metodo permite la serializacion con la informacion de las cajas
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Serializar()
         {
             //creamos el formato del nombre del archivo
@@ -50,7 +63,12 @@ namespace UserInterfaceZoo
             miStreamxml.Close();
         }
 
-        //Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// <summary>
+        /// Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Deserializar()
         {
             //creamos el formato del nombre del archivo
@@ -75,7 +93,7 @@ namespace UserInterfaceZoo
         /// <param name="e"></param>
         /// Version 1.0
         /// Fecha de creacion 29 de Marzo 2021
-        /// Creador Arturo Villegas
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             //Se cancela el proceso y regresa al menu
@@ -89,11 +107,11 @@ namespace UserInterfaceZoo
         /// <param name="e"></param>
         /// Version 1.0
         /// Fecha de creacion 29 de Marzo 2021
-        /// Creador Arturo Villegas
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnAperturar_Click(object sender, EventArgs e)
         {
             //e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back); 
-
+            //Validacion para campos vacios
             if (cmbCaja.Text == "" || cmbCajero.Text == "" || (rbBoleto.Checked == false && rbSouvenir.Checked == false) || txbMontoInicial.Text == "")
             {
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
@@ -102,7 +120,7 @@ namespace UserInterfaceZoo
             {
                 int idCajas = Convert.ToInt32(cmbCaja.Text);
                 Cajas miCaja = GetID(idCajas);
-
+                //Una caja no puede abrirse más de una vez
                 if (miCaja != null)
                 {
                     MenuPrincipal.MostrarMensaje("LA CAJA SELECCIONADA YA HA SIDO ABIERTA");
@@ -136,10 +154,27 @@ namespace UserInterfaceZoo
             }
         }
 
+        /// <summary>
+        /// Permite obtener una caja mediante su id
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private Cajas GetID(int id)
         {
             return Cajas.Find(x => x.IdCajas == id);
         }
+
+        /// <summary>
+        /// Deserialzia justo al cargar este form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void PA_02_03_Apertura_Caja_Load(object sender, EventArgs e)
         {
             //string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
@@ -147,7 +182,15 @@ namespace UserInterfaceZoo
             Deserializar();
         }
 
-        //Método para que solo ingrese numeros
+        /// <summary>
+        /// Método para que solo ingrese numeros
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+
         private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back);

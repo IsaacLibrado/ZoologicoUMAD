@@ -15,7 +15,14 @@ namespace UserInterfaceZoo
 {
     public partial class PA_02_02_Pagar_Boletos : Form
     {
-
+        /// <summary>
+        /// Esta clase permite pagar los boletos comprados
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        
+        //propiedades de acceso
         XDocument documento;
         List<Boletos> Boletos = new List<Boletos>();
         List<Cajas> Cajas = new List<Cajas>();
@@ -28,6 +35,12 @@ namespace UserInterfaceZoo
             //CalculoTotal(); 
         }
 
+        /// <summary>
+        /// Esta metodo permite serializar los documentos creados al vender boletos
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Serializar()
         {
             //creamos el formato del nombre del archivo
@@ -37,11 +50,17 @@ namespace UserInterfaceZoo
             XmlSerializer serializarequipo = new XmlSerializer(typeof(List<Boletos>));
             Stream miStreamxml = new FileStream("VentaBoletos" + nombrearch + ".xml", FileMode.Create, FileAccess.Write, FileShare.None);
             serializarequipo.Serialize(miStreamxml, Boletos);
-
+            //por seguridad se cierra el stream
             miStreamxml.Close();
         }
 
-        //Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        
+        /// <summary>
+        ///Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Deserializar()
         {
             //creamos el formato del nombre del archivo
@@ -58,7 +77,12 @@ namespace UserInterfaceZoo
             }
         }
 
-
+        /// <summary>
+        /// Esta metodo permite serializar 
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void SerializarCajas()
         {
             //creamos el formato del nombre del archivo
@@ -68,11 +92,17 @@ namespace UserInterfaceZoo
             XmlSerializer serializarequipo = new XmlSerializer(typeof(List<Cajas>));
             Stream miStreamxml = new FileStream("InfoCajas" + nombrearch + ".xml", FileMode.Create, FileAccess.Write, FileShare.None);
             serializarequipo.Serialize(miStreamxml, Cajas);
-
+            //por seguridad se cierra el stream
             miStreamxml.Close();
         }
 
-        //Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+
+        /// <summary>
+        /// Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void DeserializarCajas()
         {
             //creamos el formato del nombre del archivo
@@ -90,15 +120,22 @@ namespace UserInterfaceZoo
         }
 
 
-
+        /// <summary>
+        /// Método que completa el proceso de pago de boletos
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnPagar_Click(object sender, EventArgs e)
         {
+            //Validacion para campos vacios
             if (txtDineroPagado.Text == "" || txtFolio.Text == "" || cmbCaja.Text == "" || ((rbEfectivo.Checked == false && rbTarjeta.Checked == false)))
             {
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
             }
             else
             {
+                //Asignacion de boletos
                 int folio = Convert.ToInt32(txtFolio.Text);
                 Boletos miBoleto = GetID(folio);
 
@@ -113,6 +150,7 @@ namespace UserInterfaceZoo
                     return;
                 }
 
+                //Asignacion de variables
                 miBoleto.IdCaja = Convert.ToInt32(cmbCaja.Text);
                 miBoleto.Tarjeta = rbTarjeta.Checked;
                 miBoleto.Efectivo = rbEfectivo.Checked;
@@ -142,15 +180,19 @@ namespace UserInterfaceZoo
                         }
                         else
                         {
+                            //Asignacion de estado pagado al boleto
                             miBoleto.Pago = true;
+                            //Asignacion de campos
                             double montoTotal = miCaja.MontoCierre + miBoleto.Total;
                             miCaja.MontoCierre = montoTotal;
                             double cambio = Convert.ToDouble(txtDineroPagado.Text) - Convert.ToDouble(lbTotal.Text);
                             lbCambio.Text = cambio.ToString();
+                            //Archivos de evidencia
                             Serializar();
                             SerializarCajas();
                             MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
                         }
+                        //Validacion de boleto ya pagado
                         if (MessageBox.Show("Compra ya pagada\n Su cambio: $" + lbCambio.Text, "Compra", MessageBoxButtons.OK) == DialogResult.OK)
                         {
                             this.Close();
@@ -161,6 +203,7 @@ namespace UserInterfaceZoo
                 else
                 {
                     //Validación de campos
+                    //Pago con tarjeta
                     if (miBoleto.IdCaja < 1 || miBoleto.IdCaja > 2 || dineropagado != total || (miBoleto.Tarjeta == false && miBoleto.Efectivo == false))
                     {
                         MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
@@ -200,6 +243,12 @@ namespace UserInterfaceZoo
             }
         }
 
+        /// <summary>
+        /// Método para terminar labores en la venta de boletos y creacion de documento
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             int folio = Convert.ToInt32(txtFolio.Text);
@@ -224,22 +273,46 @@ namespace UserInterfaceZoo
             MenuPrincipal.abrirPantallas(new PA_02_01_Vender_Boletos_Entrada());
         }
 
+        /// <summary>
+        /// Método que permite obtener un boleto por su id
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private Boletos GetID(int folio)
         {
             return Boletos.Find(x => x.Folio == folio);
         }
 
+        /// <summary>
+        /// Método que permite obtener una caja por su id
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private Cajas GetIDCaja(int id)
         {
             return Cajas.Find(x => x.IdCajas == id);
         }
 
+        /// <summary>
+        /// deserializa al momento de cargar este form
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void PA_02_02_Pagar_Boletos_Load(object sender, EventArgs e)
         {
             Deserializar();
             DeserializarCajas();
         }
 
+        /// <summary>
+        /// Busqueda de un boleto no pagado por su id ingresado
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             int folio = Convert.ToInt32(txtFolio.Text);
@@ -258,6 +331,12 @@ namespace UserInterfaceZoo
             lbTotal.Text = miBoleto.Total.ToString();
         }
 
+        /// <summary>
+        /// actualiza el lbl de monto segun se ingresa una cantidad
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void txtDineroPagado_TextChanged(object sender, EventArgs e)
         {
             if (lbTotal.Text != "-")
@@ -276,11 +355,23 @@ namespace UserInterfaceZoo
             }
         }
 
+        /// <summary>
+        /// Valida el formato ingresado
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back);
         }
 
+        /// <summary>
+        /// Valida el formato de ingreso
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Dinero_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&

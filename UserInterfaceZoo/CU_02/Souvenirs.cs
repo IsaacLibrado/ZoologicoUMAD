@@ -9,6 +9,12 @@ namespace UserInterfaceZoo
     [Serializable]
     public class Souvenirs
     {
+        /// <summary>
+        /// Esta clase define las propiedades de los souvenirs
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         int codigo;
         //int folio; 
         string descripcion;
@@ -16,11 +22,23 @@ namespace UserInterfaceZoo
         //int cantidad;
         //double total;
 
+        /// <summary>
+        /// Constructor vacio a disponibilidad
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         public Souvenirs()
         {
 
         }
 
+        /// <summary>
+        /// Constructor adaptado para la asignación automatica de las propiedades del boleto
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         public Souvenirs(int cod, string desc, double pre)
             //int cant, double t, int f
         {
