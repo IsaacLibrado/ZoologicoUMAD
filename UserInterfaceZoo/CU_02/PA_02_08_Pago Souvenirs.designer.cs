@@ -107,15 +107,16 @@ namespace UserInterfaceZoo
             this.txtPagado.TabIndex = 27;
             this.txtPagado.Text = "0";
             this.txtPagado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPagado.TextChanged += new System.EventHandler(this.txtPagado_TextChanged);
             this.txtPagado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Dinero_KeyPress);
             // 
             // lbCambio
             // 
             this.lbCambio.AutoSize = true;
-            this.lbCambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCambio.Location = new System.Drawing.Point(282, 189);
             this.lbCambio.Name = "lbCambio";
-            this.lbCambio.Size = new System.Drawing.Size(12, 16);
+            this.lbCambio.Size = new System.Drawing.Size(19, 25);
             this.lbCambio.TabIndex = 26;
             this.lbCambio.Text = "-";
             // 
@@ -171,14 +172,14 @@ namespace UserInterfaceZoo
             // 
             // cmbCaja
             // 
-            this.cmbCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmbCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCaja.FormattingEnabled = true;
             this.cmbCaja.Items.AddRange(new object[] {
             "03",
             "04"});
             this.cmbCaja.Location = new System.Drawing.Point(18, 125);
             this.cmbCaja.Name = "cmbCaja";
-            this.cmbCaja.Size = new System.Drawing.Size(121, 24);
+            this.cmbCaja.Size = new System.Drawing.Size(121, 33);
             this.cmbCaja.TabIndex = 34;
             this.cmbCaja.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 

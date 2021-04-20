@@ -184,13 +184,6 @@ namespace UserInterfaceZoo
             MenuPrincipal.AsignarTitulo("Carrito de souvenirs");
         }
 
-        private void btnMembresia_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
-            MenuPrincipal.AsignarTitulo("Membresia");
-        }
-
         public static XElement ObtenerDocumentoXML()
         {
             XElement souvenirsTexto;
@@ -322,9 +315,21 @@ namespace UserInterfaceZoo
 
         private void PA_02_05_Souvenirs_Load(object sender, EventArgs e)
         {
-            Deserializar();
+            //Deserializar();
             DeserializarDocumento();
         }
+
+        private void btnMembresia_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = UserInterfaceZoo.Properties.Resources.membresia;
+            pictureBox2.Image = null;
+            pictureBox3.Image = null;
+            label2.Text = "19";
+            label3.Text = "";
+            label4.Text = "";
+
+        }
+
 
         private void btnPlayeras_Click(object sender, EventArgs e)
         {

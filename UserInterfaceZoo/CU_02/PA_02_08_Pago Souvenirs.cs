@@ -17,6 +17,7 @@ namespace UserInterfaceZoo
     {
         List<ComprasSouvenirs> comprasSouvenirs = new List<ComprasSouvenirs>();
         List<Cajas> cajas = new List<Cajas>();
+        List<ComprasSouvenirs> confirmacion = new List<ComprasSouvenirs>();
 
         public PA_02_08_Pago_Souvenirs()
         {
@@ -87,7 +88,6 @@ namespace UserInterfaceZoo
             }
         }
 
-
         /// <summary>
         /// Evento que se realizar al presionar el boton pagar
         /// </summary>
@@ -121,27 +121,82 @@ namespace UserInterfaceZoo
                 miCompra.Efectivo = rbEfectivo.Checked;
                 miCompra.Mebresia = rbMembresia.Checked;
                 miCompra.Tarjeta = rbTarjeta.Checked;
+                miCompra.Pago = true;
 
-                //Validación de campos miCompra.IdCaja < 3 || miCompra.IdCaja > 4 || 
-                if (miCompra.IdCaja < 3 || miCompra.IdCaja > 4 || dineropagado < total || (miCompra.Tarjeta == false && miCompra.Efectivo == false && miCompra.Mebresia == false))
-                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                if (miCompra.Tarjeta == true)
+                {
+                    if (miCompra.IdCaja < 3 || miCompra.IdCaja > 4 || dineropagado != total || (miCompra.Tarjeta == false && miCompra.Efectivo == false && miCompra.Mebresia == false))
+                    {
+                        MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    }
+                    else
+                    {
+                        int idcaja = Convert.ToInt32(cmbCaja.Text);
+                        Cajas miCaja = GetIDCaja(idcaja);
+                        if (miCaja == null)
+                        {
+                            MenuPrincipal.MostrarMensaje("LA CAJA NO HA SIDO APERTURADA");
+                            return;
+                        }
+                        if (miCaja.Cerrar == true)
+                        {
+                            MenuPrincipal.MostrarMensaje("LA CAJA HA SIDO CERRADA");
+                            return; 
+                        }
+                        else if (miCompra.Pago == true)
+                        {
+                            double montoTotal = miCaja.MontoCierre + miCompra.Total;
+                            miCaja.MontoCierre = montoTotal;
+                            double cambio = Convert.ToDouble(txtPagado.Text) - Convert.ToDouble(lbTotal.Text);
+                            lbCambio.Text = cambio.ToString();
+                            Serializar();
+                            SerializarCajas();
+                            MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                        }
+                        if (MessageBox.Show("Compra ya pagada\n Su cambio: $" + lbCambio.Text, "Compra", MessageBoxButtons.OK) == DialogResult.OK)
+                        {
+                            this.Close();
+                            MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
+                        }
+                    }
+                }
                 else
                 {
-                    int idcaja = Convert.ToInt32(cmbCaja.Text);
-                    Cajas miCaja = GetIDCaja(idcaja);
-
-                    double montoTotal = miCaja.MontoCierre + miCompra.Total;
-                    miCaja.MontoCierre = montoTotal;
-                    double cambio = Convert.ToDouble(txtPagado.Text) - Convert.ToDouble(lbTotal.Text);
-                    lbCambio.Text = cambio.ToString();
-                    Serializar();
-                    SerializarCajas();
-                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
-                }
-                if (MessageBox.Show("Compra", "Compra ya pagada\n Su cambio: $" + lbCambio.Text, MessageBoxButtons.OK) == DialogResult.OK)
-                {
-                    this.Close();
-                    MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
+                    //Validación de campos miCompra.IdCaja < 3 || miCompra.IdCaja > 4 || 
+                    if (miCompra.IdCaja < 3 || miCompra.IdCaja > 4 || dineropagado < total || (miCompra.Tarjeta == false && miCompra.Efectivo == false && miCompra.Mebresia == false))
+                    {
+                        MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    }
+                    else
+                    {
+                        int idcaja = Convert.ToInt32(cmbCaja.Text);
+                        Cajas miCaja = GetIDCaja(idcaja);
+                        if (miCaja == null)
+                        {
+                            MenuPrincipal.MostrarMensaje("LA CAJA NO HA SIDO APERTURADA");
+                            return;
+                        }
+                        if (miCaja.Cerrar == true)
+                        {
+                            MenuPrincipal.MostrarMensaje("LA CAJA HA SIDO CERRADA");
+                            return;
+                        }
+                        else if (miCompra.Pago == true)
+                        {
+                            double montoTotal = miCaja.MontoCierre + miCompra.Total;
+                            miCaja.MontoCierre = montoTotal;
+                            double cambio = Convert.ToDouble(txtPagado.Text) - Convert.ToDouble(lbTotal.Text);
+                            lbCambio.Text = cambio.ToString();
+                            Serializar();
+                            SerializarCajas();
+                            MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                        }
+                        if (MessageBox.Show("Compra ya pagada\n Su cambio: $" + lbCambio.Text, "Compra", MessageBoxButtons.OK) == DialogResult.OK)
+                        {
+                            this.Close();
+                            MenuPrincipal.abrirPantallas(new PA_02_05_Souvenirs());
+                        }
+                    }
                 }
             }
             
@@ -162,6 +217,16 @@ namespace UserInterfaceZoo
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
                 return;
             }
+            if(miCompra.Pago == true)
+            {
+                MenuPrincipal.MostrarMensaje("YA FUE PAGADO EL FOLIO");
+                return;
+            }
+            //if (miCompra != null)
+            //{
+            //    MenuPrincipal.MostrarMensaje("YA FUE PAGADO EL FOLIO");
+            //    return; 
+            //}
             lbTotal.Text = miCompra.Total.ToString();
         }
 
@@ -200,6 +265,21 @@ namespace UserInterfaceZoo
             if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void txtPagado_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPagado.Text == "")
+            {
+                txtPagado.Text = "0";
+            }
+            else
+            {
+                double dineropagado = Convert.ToDouble(txtPagado.Text);
+                double total = Convert.ToDouble(lbTotal.Text);
+                double cambio = dineropagado - total;
+                lbCambio.Text = cambio.ToString();
             }
         }
     }

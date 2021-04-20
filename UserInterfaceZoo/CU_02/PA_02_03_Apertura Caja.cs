@@ -118,6 +118,7 @@ namespace UserInterfaceZoo
                 miCaja.RsbSouvenir = rbSouvenir.Checked;
                 miCaja.Ganancias = 0;
                 miCaja.FaltSobra = 0;
+                miCaja.Cerrar = false; 
                 //Cajas.Add(miCaja);
                 //Serializar();
 

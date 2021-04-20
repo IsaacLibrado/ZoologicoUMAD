@@ -155,7 +155,7 @@ namespace UserInterfaceZoo
                     MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
                     return;
                 }
-                if (miCaja.Ganancias == 0)
+                if (miCaja.Cerrar == false)
                 {
                     miCaja.FaltSobra = Convert.ToDouble(txbFaltaSobra.Text);
 
@@ -168,12 +168,18 @@ namespace UserInterfaceZoo
                         lblGanancias.Text = monto.ToString();
 
                         miCaja.Ganancias = Convert.ToDouble(lblGanancias.Text);
+                        miCaja.Cerrar = true;
                         Serializar();
                     }
                 }
                 else
                     MenuPrincipal.MostrarMensaje("LA CAJA YA SE CERRÓ");
             }
+            cmbCaja.Text = "";
+            label1.Text = "";
+            lblGanancias.Text = "0.0";
+            lblMonto.Text = "0.0";
+            txbFaltaSobra.Text = ""; 
         }
 
         private void Numeros_KeyPress(object sender, KeyPressEventArgs e)

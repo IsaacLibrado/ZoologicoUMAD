@@ -35,9 +35,7 @@ namespace UserInterfaceZoo
 
         private void btnEspectaculo_Click(object sender, EventArgs e)
         {
-            this.Close();
-            MenuPrincipal.abrirPantallas(new PA_02_01_Vender_Boletos_Entrada());
-            MenuPrincipal.AsignarTitulo("Vender boletos de espectáculo");
+
         }
 
         private void btnSouvenirs_Click(object sender, EventArgs e)

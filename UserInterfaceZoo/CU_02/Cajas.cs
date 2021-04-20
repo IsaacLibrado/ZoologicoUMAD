@@ -25,7 +25,8 @@ namespace UserInterfaceZoo
         bool rdbBoleto;
         bool rsbSouvenir;
         double ganancias;
-        double faltSobra; 
+        double faltSobra;
+        bool cerrar; 
 
         public double MontoApertura { get => montoApertura; set => montoApertura = value; }
         public double MontoCierre { get => montoCierre; set => montoCierre = value; }
@@ -35,6 +36,7 @@ namespace UserInterfaceZoo
         public bool RsbSouvenir { get => rsbSouvenir; set => rsbSouvenir = value; }
         public double Ganancias { get => ganancias; set => ganancias = value; }
         public double FaltSobra { get => faltSobra; set => faltSobra = value; }
+        public bool Cerrar { get => cerrar; set => cerrar = value; }
 
         public Cajas()
         {

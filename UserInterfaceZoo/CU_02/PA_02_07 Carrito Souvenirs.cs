@@ -106,40 +106,98 @@ namespace UserInterfaceZoo
         /// Creador Karla Garcia
         private void btnPagar_Click(object sender, EventArgs e)
         {
-            DeserializarConfrimacion(); 
+            DeserializarConfrimacion();
             string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
     + "-" + DateTime.Now.Year.ToString();
             string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtArchivo.Text + ".xml";
             ComprasSouvenirs miConfirmacion = GetID(archivo);
 
-            if (miConfirmacion != null)
-            {
-                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-                return;
-            }
-
-            //folio = Convert.ToInt32(txtFolio.Text);
-            //Carrito miCarrito = GetFolio(folio);
-            //if (miCarrito != null)
+            //if (miConfirmacion != null)
             //{
             //    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+            //    //confirmacion.Clear();
+            //    //miConfirmacion.Archivo = archivo; 
             //    return;
             //}
+            //else
+            //{
+            //    //folio = Convert.ToInt32(txtFolio.Text);
+            //    //Carrito miCarrito = GetFolio(folio);
+            //    //if (miCarrito != null)
+            //    //{
+            //    //    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+            //    //    return;
+            //    //}
 
-            miConfirmacion = new ComprasSouvenirs();
-            miConfirmacion.Archivo = archivo;
-            miConfirmacion.Total = suma;
-            miConfirmacion.IdCaja = 0;
-            miConfirmacion.Efectivo = false;
-            miConfirmacion.Mebresia = false;
-            miConfirmacion.Tarjeta = false; 
-            confirmacion.Add(miConfirmacion); 
-            SerializarConfirmacion();
-            MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+            //    miConfirmacion = new ComprasSouvenirs();
+            //    miConfirmacion.Archivo = archivo;
+            //    miConfirmacion.Total = suma;
+            //    miConfirmacion.IdCaja = 0;
+            //    miConfirmacion.Efectivo = false;
+            //    miConfirmacion.Mebresia = false;
+            //    miConfirmacion.Tarjeta = false;
+            //    miConfirmacion.Pago = false;
+            //    confirmacion.Add(miConfirmacion);
+            //    SerializarConfirmacion();
+            //    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
 
-            this.Close();
-            MenuPrincipal.abrirPantallas(new PA_02_08_Pago_Souvenirs());
-            MenuPrincipal.AsignarTitulo("Pago de souvenirs");
+            //    this.Close();
+            //    MenuPrincipal.abrirPantallas(new PA_02_08_Pago_Souvenirs());
+            //    MenuPrincipal.AsignarTitulo("Pago de souvenirs");
+            //}
+            if (miConfirmacion != null)
+            {
+                if (miConfirmacion.Pago == false)
+                {
+                    miConfirmacion = new ComprasSouvenirs();
+                    miConfirmacion.Archivo = archivo;
+                    miConfirmacion.Total = suma;
+                    miConfirmacion.IdCaja = 0;
+                    miConfirmacion.Efectivo = false;
+                    miConfirmacion.Mebresia = false;
+                    miConfirmacion.Tarjeta = false;
+                    miConfirmacion.Pago = false;
+                    confirmacion.Add(miConfirmacion);
+                    SerializarConfirmacion();
+                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+
+                    this.Close();
+                    MenuPrincipal.abrirPantallas(new PA_02_08_Pago_Souvenirs());
+                    MenuPrincipal.AsignarTitulo("Pago de souvenirs");
+                }
+                else
+                {
+                    MenuPrincipal.MostrarMensaje("PROCESO INVALIDO");
+                    dataGridView1.Columns.Clear();
+                }
+            }
+            else
+            {
+                if (File.Exists(archivo))
+                {
+                    miConfirmacion = new ComprasSouvenirs();
+                    miConfirmacion.Archivo = archivo;
+                    miConfirmacion.Total = suma;
+                    miConfirmacion.IdCaja = 0;
+                    miConfirmacion.Efectivo = false;
+                    miConfirmacion.Mebresia = false;
+                    miConfirmacion.Tarjeta = false;
+                    miConfirmacion.Pago = false;
+                    confirmacion.Add(miConfirmacion);
+                    SerializarConfirmacion();
+                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+
+                    this.Close();
+                    MenuPrincipal.abrirPantallas(new PA_02_08_Pago_Souvenirs());
+                    MenuPrincipal.AsignarTitulo("Pago de souvenirs");
+                }
+                else
+                {
+                    MenuPrincipal.MostrarMensaje("FOLIO NO EXISTENTE");
+                    dataGridView1.Columns.Clear();
+                }
+            }
+
         }
 
         private void PA_02_07_Carrito_Souvenirs_Load(object sender, EventArgs e)
@@ -153,6 +211,8 @@ namespace UserInterfaceZoo
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            DataSet ds = new DataSet();
+            suma = 0;
             DeserializarConfrimacion();
             //creamos el formato del nombre del archivo
             string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
@@ -160,22 +220,68 @@ namespace UserInterfaceZoo
             string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtArchivo.Text + ".xml";
             ComprasSouvenirs miConfirmacion = GetID(archivo);
 
+            //if (miConfirmacion != null)
+            //{
+            //    if (miConfirmacion.Pago == true)
+            //    {
+            //        MenuPrincipal.MostrarMensaje("FOLIO PAGADO");
+            //    }
+            //    else
+            //    {
+            //        DataSet ds = new DataSet();
+            //        ds.ReadXml(archivo);
+            //        dataGridView1.DataSource = ds.Tables[0];
+            //        foreach (DataGridViewRow row in dataGridView1.Rows)
+            //        {
+            //            suma += Convert.ToDouble(row.Cells["Total"].Value);
+            //        }
+            //        lbTotal.Text = suma.ToString();
+            //        Deserializar();
+            //    }
+
+            //}
             if (miConfirmacion != null)
             {
-                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-                return;
+                if (miConfirmacion.Pago == false)
+                {
+                    ds.ReadXml(archivo);
+                    dataGridView1.DataSource = ds.Tables[0];
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    {
+                        suma += Convert.ToDouble(row.Cells["Total"].Value);
+                    }
+                    lbTotal.Text = suma.ToString();
+                    Deserializar();
+                }
+                else
+                {
+                    MenuPrincipal.MostrarMensaje("FOLIO PAGADO");
+                    dataGridView1.Columns.Clear();
+                }
             }
-
-            DataSet ds = new DataSet();
-            ds.ReadXml(archivo);
-            dataGridView1.DataSource = ds.Tables[0];
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            else
             {
-                suma += Convert.ToDouble(row.Cells["Total"].Value);
+                if (File.Exists(archivo))
+                {
+                    ds.ReadXml(archivo);
+                    dataGridView1.DataSource = ds.Tables[0];
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    {
+                        suma += Convert.ToDouble(row.Cells["Total"].Value);
+                    }
+                    lbTotal.Text = suma.ToString();
+                    Deserializar();
+                }
+                else
+                {
+                    MenuPrincipal.MostrarMensaje("FOLIO NO EXISTENTE");
+                    dataGridView1.Columns.Clear();
+                }
             }
-
-            lbTotal.Text = suma.ToString(); 
-            Deserializar(); 
+            //if (miConfirmacion.Pago == true)
+            //{
+            //    MenuPrincipal.MostrarMensaje("BLAAAAAA");
+            //}
         }
 
         private ComprasSouvenirs GetID(string archivo)

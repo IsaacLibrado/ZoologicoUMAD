@@ -16,7 +16,8 @@ namespace UserInterfaceZoo
         int idCaja;
         bool tarjeta;
         bool efectivo;
-        double total; 
+        double total;
+        bool pago; 
 
 
         public int BoletosAdultos { get => boletosAdultos; set => boletosAdultos = value; }
@@ -27,6 +28,7 @@ namespace UserInterfaceZoo
         public bool Efectivo { get => efectivo; set => efectivo = value; }
         public double Total { get => total; set => total = value; }
         public int Folio { get => folio; set => folio = value; }
+        public bool Pago { get => pago; set => pago = value; }
 
         public Boletos()
         {

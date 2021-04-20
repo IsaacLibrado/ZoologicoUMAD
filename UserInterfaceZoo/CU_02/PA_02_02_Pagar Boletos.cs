@@ -107,31 +107,96 @@ namespace UserInterfaceZoo
                     MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
                     return;
                 }
+                if (miBoleto.Pago == true)
+                {
+                    MenuPrincipal.MostrarMensaje("YA FUE PAGADO EL FOLIO");
+                    return;
+                }
+
                 miBoleto.IdCaja = Convert.ToInt32(cmbCaja.Text);
                 miBoleto.Tarjeta = rbTarjeta.Checked;
                 miBoleto.Efectivo = rbEfectivo.Checked;
-
                 double dineropagado = Convert.ToDouble(txtDineroPagado.Text);
                 double total = Convert.ToDouble(lbTotal.Text);
 
-                //Validación de campos
-                if (miBoleto.IdCaja < 1 || miBoleto.IdCaja > 2 || dineropagado < total || (miBoleto.Tarjeta == false && miBoleto.Efectivo == false))
-                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                if (miBoleto.Efectivo == true)
+                {
+                    //Validación de campos
+                    if (miBoleto.IdCaja < 1 || miBoleto.IdCaja > 2 || dineropagado < total || (miBoleto.Tarjeta == false && miBoleto.Efectivo == false))
+                    {
+                        MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    }
+                    else
+                    {
+                        int idcaja = Convert.ToInt32(cmbCaja.Text);
+                        Cajas miCaja = GetIDCaja(idcaja);
+                        if (miCaja == null)
+                        {
+                            MenuPrincipal.MostrarMensaje("LA CAJA NO HA SIDO APERTURADA");
+                            return;
+                        }
+                        if (miCaja.Cerrar == true)
+                        {
+                            MenuPrincipal.MostrarMensaje("LA CAJA HA SIDO CERRADA");
+                            return;
+                        }
+                        else
+                        {
+                            miBoleto.Pago = true;
+                            double montoTotal = miCaja.MontoCierre + miBoleto.Total;
+                            miCaja.MontoCierre = montoTotal;
+                            double cambio = Convert.ToDouble(txtDineroPagado.Text) - Convert.ToDouble(lbTotal.Text);
+                            lbCambio.Text = cambio.ToString();
+                            Serializar();
+                            SerializarCajas();
+                            MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                        }
+                        if (MessageBox.Show("Compra ya pagada\n Su cambio: $" + lbCambio.Text, "Compra", MessageBoxButtons.OK) == DialogResult.OK)
+                        {
+                            this.Close();
+                            MenuPrincipal.abrirPantallas(new PA_02_01_Vender_Boletos_Entrada());
+                        }
+                    }
+                }
                 else
                 {
-                    int idcaja = Convert.ToInt32(cmbCaja.Text);
-                    Cajas miCaja = GetIDCaja(idcaja);
-
-                    double montoTotal = miCaja.MontoCierre + miBoleto.Total;
-                    miCaja.MontoCierre = montoTotal;
-                    double cambio = Convert.ToDouble(txtDineroPagado.Text) - Convert.ToDouble(lbTotal.Text);
-                    lbCambio.Text = cambio.ToString();
-                    Serializar();
-                    SerializarCajas();
-                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                    //Validación de campos
+                    if (miBoleto.IdCaja < 1 || miBoleto.IdCaja > 2 || dineropagado != total || (miBoleto.Tarjeta == false && miBoleto.Efectivo == false))
+                    {
+                        MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    }
+                    else
+                    {
+                        int idcaja = Convert.ToInt32(cmbCaja.Text);
+                        Cajas miCaja = GetIDCaja(idcaja);
+                        if (miCaja == null)
+                        {
+                            MenuPrincipal.MostrarMensaje("LA CAJA NO HA SIDO APERTURADA");
+                            return;
+                        }
+                        if (miCaja.Cerrar == true)
+                        {
+                            MenuPrincipal.MostrarMensaje("LA CAJA HA SIDO CERRADA");
+                            return;
+                        }
+                        else
+                        {
+                            miBoleto.Pago = true;
+                            double montoTotal = miCaja.MontoCierre + miBoleto.Total;
+                            miCaja.MontoCierre = montoTotal;
+                            double cambio = Convert.ToDouble(txtDineroPagado.Text) - Convert.ToDouble(lbTotal.Text);
+                            lbCambio.Text = cambio.ToString();
+                            Serializar();
+                            SerializarCajas();
+                            MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                        }
+                        if (MessageBox.Show("Compra ya pagada\n Su cambio: $" + lbCambio.Text, "Compra", MessageBoxButtons.OK) == DialogResult.OK)
+                        {
+                            this.Close();
+                            MenuPrincipal.abrirPantallas(new PA_02_01_Vender_Boletos_Entrada());
+                        }
+                    }
                 }
-                this.Close();
-                MenuPrincipal.abrirPantallas(new PA_02_01_Vender_Boletos_Entrada());
             }
         }
 
@@ -185,7 +250,47 @@ namespace UserInterfaceZoo
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
                 return;
             }
+            if (miBoleto.Pago == true)
+            {
+                MenuPrincipal.MostrarMensaje("YA FUE PAGADO EL FOLIO");
+                return;
+            }
             lbTotal.Text = miBoleto.Total.ToString();
+        }
+
+        private void txtDineroPagado_TextChanged(object sender, EventArgs e)
+        {
+            if (txtDineroPagado.Text == "")
+            {
+                txtDineroPagado.Text = "0";
+            }
+            else
+            {
+                double dineropagado = Convert.ToDouble(txtDineroPagado.Text);
+                double total = Convert.ToDouble(lbTotal.Text);
+                double cambio = dineropagado - total;
+                lbCambio.Text = cambio.ToString();
+            }
+        }
+
+        private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back);
+        }
+
+        private void Dinero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

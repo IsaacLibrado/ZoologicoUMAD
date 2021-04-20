@@ -106,6 +106,8 @@ namespace UserInterfaceZoo
             this.txtDineroPagado.TabIndex = 6;
             this.txtDineroPagado.Text = "0";
             this.txtDineroPagado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDineroPagado.TextChanged += new System.EventHandler(this.txtDineroPagado_TextChanged);
+            this.txtDineroPagado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Dinero_KeyPress);
             // 
             // rbTarjeta
             // 
@@ -182,6 +184,7 @@ namespace UserInterfaceZoo
             this.cmbCaja.Name = "cmbCaja";
             this.cmbCaja.Size = new System.Drawing.Size(121, 33);
             this.cmbCaja.TabIndex = 36;
+            this.cmbCaja.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // label3
             // 
@@ -202,6 +205,7 @@ namespace UserInterfaceZoo
             this.txtFolio.TabIndex = 38;
             this.txtFolio.Text = "0";
             this.txtFolio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFolio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // label4
             // 
