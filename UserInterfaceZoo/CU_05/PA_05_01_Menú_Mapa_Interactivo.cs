@@ -25,7 +25,7 @@ namespace UserInterfaceZoo.CU_05
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            MenuPrincipal.abrirPantallas(new MenuPrincipal());
+            MenuPrincipal.abrirPantallas(new Inicio());
         }
 
         private void BtnJirafa_Click(object sender, EventArgs e)

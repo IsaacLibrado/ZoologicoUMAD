@@ -260,16 +260,19 @@ namespace UserInterfaceZoo
 
         private void txtDineroPagado_TextChanged(object sender, EventArgs e)
         {
-            if (txtDineroPagado.Text == "")
+            if (lbTotal.Text != "-")
             {
-                txtDineroPagado.Text = "0";
-            }
-            else
-            {
-                double dineropagado = Convert.ToDouble(txtDineroPagado.Text);
-                double total = Convert.ToDouble(lbTotal.Text);
-                double cambio = dineropagado - total;
-                lbCambio.Text = cambio.ToString();
+                if (txtDineroPagado.Text == "")
+                {
+                    txtDineroPagado.Text = "0";
+                }
+                else
+                {
+                    double dineropagado = Convert.ToDouble(txtDineroPagado.Text);
+                    double total = Convert.ToDouble(lbTotal.Text);
+                    double cambio = dineropagado - total;
+                    lbCambio.Text = cambio.ToString();
+                }
             }
         }
 
