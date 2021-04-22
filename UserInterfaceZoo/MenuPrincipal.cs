@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Xml.Linq;
+using System.Diagnostics;
+using System.IO;
 
 namespace UserInterfaceZoo
 {
@@ -57,8 +59,8 @@ namespace UserInterfaceZoo
             panelSideMenu.Visible = false;
 
             //evitamos que se pueda cambiar el tamaño
-            //this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            //this.MaximizeBox = false;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MaximizeBox = false;
 
             CrearBitacora();
         }
@@ -324,6 +326,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Información interactiva");
             RegistroBitacora("Mostrada la infomacion interactiva del zoologico");
+            MenuPrincipal.abrirPantallas(new CU_05.PA_05_01_Menú_Mapa_Interactivo());
         }
 
         /// <summary>
@@ -331,14 +334,19 @@ namespace UserInterfaceZoo
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        /// Version 1.0
+        /// Version 2.0
         /// Fecha de creacion 23 de Marzo 2021
+        /// Creador Isaac Librado
+        /// Fecha de modificacion 16/04/21
         /// Creador Isaac Librado
         private void btnSMVideojuego_Click(object sender, EventArgs e)
         {
             ocultarSubMenu();
             AsignarTitulo("Videojuego");
             RegistroBitacora("Abierto el videojuego");
+
+            //iniciamos el proceso
+            Process programa = Process.Start(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\UserInterfaceZoo\CU_09\VideojuegoZoo.exe");
         }
 
         #endregion
@@ -555,6 +563,8 @@ namespace UserInterfaceZoo
             //si tenemos una pantalla activa la cerramos
             if (pantallaActiva != null)
                 pantallaActiva.Close();
+
+            panelContenedor.Controls.Clear();
 
             //asignamos la pantalla activa 
             pantallaActiva = pPantalla;

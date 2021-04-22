@@ -16,6 +16,13 @@ namespace UserInterfaceZoo
 {
     public partial class PA_02_04_Cerrar_Caja : Form
     {
+        /// <summary>
+        /// Esta clase permite cerrar las cajas
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        
         //int idCajas;
         //bool rdbBoleto;
         //bool rsbSouvenir;
@@ -39,6 +46,12 @@ namespace UserInterfaceZoo
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Este metodo permite la serializacion con la informacion de las cajas
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Serializar()
         {
             //creamos el formato del nombre del archivo
@@ -52,7 +65,14 @@ namespace UserInterfaceZoo
             miStreamxml.Close();
         }
 
-        //Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+
+
+        /// <summary>
+        /// Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Deserializar()
         {
             //creamos el formato del nombre del archivo
@@ -70,91 +90,179 @@ namespace UserInterfaceZoo
         }
 
         /// <summary>
-        /// Evento que se realizar al presionar el boton abrir cajas
+        /// Metodo que permite regresar al menu anterior
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         /// Version 1.0
         /// Fecha de creacion 29 de Marzo 2021
-        /// Creador Arturo Villegas
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             //Se cancela el proceso y regresa al menu
             this.Close();
         }
 
+        /// <summary>
+        /// Metodo que permite identificar la informacion de una caja para cerrarla
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            int idcaja = Convert.ToInt32(cmbCaja.Text);
-            Cajas miCaja = GetID(idcaja);
-
-            if (miCaja == null)
+            if (cmbCaja.Text == "")
             {
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-                return;
             }
-            //lblMonto.Text = miCaja.MontoCierre.ToString();
-            //double monto = miCaja.MontoCierre - miCaja.MontoApertura;
-            //lblGanancias.Text = monto.ToString();
-
-            //miCaja.FaltSobra = Convert.ToDouble(txbFaltaSobra.Text);
-            //miCaja.Ganancias = monto; 
-            if ((miCaja.IdCajas < 1 || miCaja.IdCajas > 4))
-                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
             else
             {
+                int idcaja = Convert.ToInt32(cmbCaja.Text);
+                Cajas miCaja = GetID(idcaja);
 
-
-                if (miCaja.RdbBoleto == true)
-                    lbTipo.Text = "Boleto";
-                else
-                    lbTipo.Text = "Souvenirs";
-
-                lblMonto.Text = miCaja.MontoCierre.ToString();
-                double monto = miCaja.MontoCierre - miCaja.MontoApertura;
-                lblGanancias.Text = monto.ToString();
+                if (miCaja == null)
+                {
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    return;
+                }
+                //lblMonto.Text = miCaja.MontoCierre.ToString();
+                //double monto = miCaja.MontoCierre - miCaja.MontoApertura;
+                //lblGanancias.Text = monto.ToString();
 
                 //miCaja.FaltSobra = Convert.ToDouble(txbFaltaSobra.Text);
-                //miCaja.Ganancias = monto;
-                //Serializar();
-                MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                //miCaja.Ganancias = monto; 
+                if ((miCaja.IdCajas < 1 || miCaja.IdCajas > 4))
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                else
+                {
+
+
+                    if (miCaja.RdbBoleto == true)
+                        label1.Text = "Boleto";
+                    else
+                        label1.Text = "Souvenirs";
+
+                    lblMonto.Text = miCaja.MontoCierre.ToString();
+                    double monto = miCaja.MontoCierre - miCaja.MontoApertura;
+                    lblGanancias.Text = monto.ToString();
+
+                    //miCaja.FaltSobra = Convert.ToDouble(txbFaltaSobra.Text);
+                    //miCaja.Ganancias = monto;
+                    //Serializar();
+                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                }
             }
         }
 
+        /// <summary>
+        /// Metodo que deserializa al cargar el form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void PA_02_04_Cerrar_Caja_Load(object sender, EventArgs e)
         {
             Deserializar();
         }
 
+        /// <summary>
+        /// Metodo que permite obtener una caja mediante su id
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private Cajas GetID(int id)
         {
             return Cajas.Find(x => x.IdCajas == id);
         }
 
+        /// <summary>
+        /// Metodo que permite cerrar una caja
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnCerrar_Click_1(object sender, EventArgs e)
         {
-            int idcaja = Convert.ToInt32(cmbCaja.Text);
-            Cajas miCaja = GetID(idcaja);
-
-
-            if (miCaja == null)
+            //Validacion para campo vacio
+            if (cmbCaja.Text == "")
             {
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-                return;
             }
-
-            miCaja.FaltSobra = Convert.ToDouble(txbFaltaSobra.Text);
-
-            if (miCaja.IdCajas < 1 || miCaja.IdCajas > 4)
-                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
             else
             {
-                lblMonto.Text = miCaja.MontoCierre.ToString();
-                double monto = miCaja.MontoCierre - miCaja.MontoApertura;
-                lblGanancias.Text = monto.ToString();
+                //asignacion de variables
+                int idcaja = Convert.ToInt32(cmbCaja.Text);
+                Cajas miCaja = GetID(idcaja);
 
-                miCaja.Ganancias = Convert.ToDouble(lblGanancias.Text);
-                Serializar();
+
+                if (miCaja == null)
+                {
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    return;
+                }
+                if (miCaja.Cerrar == false)
+                {
+                    miCaja.FaltSobra = Convert.ToDouble(txbFaltaSobra.Text);
+                    //validacion de caja existente
+                    if (miCaja.IdCajas < 1 || miCaja.IdCajas > 4)
+                        MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    else
+                    {
+                        //cierre de caja
+                        lblMonto.Text = miCaja.MontoCierre.ToString();
+                        double monto = miCaja.MontoCierre - miCaja.MontoApertura;
+                        lblGanancias.Text = monto.ToString();
+
+                        miCaja.Ganancias = Convert.ToDouble(lblGanancias.Text);
+                        miCaja.Cerrar = true;
+                        Serializar();
+                    }
+                }
+                else
+                    MenuPrincipal.MostrarMensaje("LA CAJA YA SE CERRÓ");
+            }
+            //limpieza de informacion
+            cmbCaja.Text = "";
+            label1.Text = "";
+            lblGanancias.Text = "0.0";
+            lblMonto.Text = "0.0";
+            txbFaltaSobra.Text = ""; 
+        }
+
+        /// <summary>
+        /// Metodo que permite solo ingresar caracteres válidos para el proceso
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.') && (e.KeyChar != '-'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+
+            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('-') > -1))
+            {
+                e.Handled = true;
             }
         }
     }

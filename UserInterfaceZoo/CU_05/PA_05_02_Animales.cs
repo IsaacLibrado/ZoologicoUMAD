@@ -24,10 +24,12 @@ namespace UserInterfaceZoo.CU_05
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            PA_05_01_Menú_Mapa_Interactivo mapa = new PA_05_01_Menú_Mapa_Interactivo();
-            mapa.Show();
-            this.Hide();
+            MenuPrincipal.abrirPantallas(new CU_05.PA_05_01_Menú_Mapa_Interactivo());
+        }
 
+        private void BtnSiguiente_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal.abrirPantallas(new CU_05.PA_05_03_Animales());
         }
     }
 }

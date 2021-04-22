@@ -113,34 +113,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CU_02\Carrito.cs" />
-    <Compile Include="CU_02\ComprasSouvenirs.cs" />
     <Compile Include="CU_02\Boletos.cs" />
     <Compile Include="CU_02\Cajas.cs" />
-    <Compile Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.Designer.cs">
-      <DependentUpon>PA_05_01_Menú_Mapa_Interactivo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CU_05\PA_05_02_Animales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CU_05\PA_05_02_Animales.Designer.cs">
-      <DependentUpon>PA_05_02_Animales.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LogIn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LogIn.Designer.cs">
-      <DependentUpon>LogIn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuPrincipal.Designer.cs">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
-    </Compile>
+    <Compile Include="CU_02\Carrito.cs" />
+    <Compile Include="CU_02\ComprasSouvenirs.cs" />
     <Compile Include="CU_02\PA_01_02 Menu Cajero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,12 +153,6 @@
     <Compile Include="CU_02\PA_02_05_Souvenirs.designer.cs">
       <DependentUpon>PA_02_05_Souvenirs.cs</DependentUpon>
     </Compile>
-    <Compile Include="CU_02\PA_02_06_Membresia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CU_02\PA_02_06_Membresia.designer.cs">
-      <DependentUpon>PA_02_06_Membresia.cs</DependentUpon>
-    </Compile>
     <Compile Include="CU_02\PA_02_07 Carrito Souvenirs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +164,109 @@
     </Compile>
     <Compile Include="CU_02\PA_02_08_Pago Souvenirs.designer.cs">
       <DependentUpon>PA_02_08_Pago Souvenirs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_02\Souvenirs.cs" />
+    <Compile Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.Designer.cs">
+      <DependentUpon>PA_05_01_Menú_Mapa_Interactivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_02_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_02_Animales.Designer.cs">
+      <DependentUpon>PA_05_02_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_03_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_03_Animales.Designer.cs">
+      <DependentUpon>PA_05_03_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_04_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_04_Animales.Designer.cs">
+      <DependentUpon>PA_05_04_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_05_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_05_Animales.Designer.cs">
+      <DependentUpon>PA_05_05_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_06_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_06_Animales.Designer.cs">
+      <DependentUpon>PA_05_06_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_07_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_07_Animales.Designer.cs">
+      <DependentUpon>PA_05_07_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_08_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_08_Animales.Designer.cs">
+      <DependentUpon>PA_05_08_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_09_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_09_Animales.Designer.cs">
+      <DependentUpon>PA_05_09_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_10_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_10_Animales.Designer.cs">
+      <DependentUpon>PA_05_10_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_11_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_11_Animales.Designer.cs">
+      <DependentUpon>PA_05_11_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_12_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_12_Animales.Designer.cs">
+      <DependentUpon>PA_05_12_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_13_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_13_Animales.Designer.cs">
+      <DependentUpon>PA_05_13_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_14_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_14_Animales.Designer.cs">
+      <DependentUpon>PA_05_14_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_15_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_15_Animales.Designer.cs">
+      <DependentUpon>PA_05_15_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_06\PA_06_01_Orden_de_compra_informacion.cs">
       <SubType>Form</SubType>
@@ -221,19 +294,6 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="CU_02\Souvenirs.cs" />
-    <EmbeddedResource Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.resx">
-      <DependentUpon>PA_05_01_Menú_Mapa_Interactivo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CU_05\PA_05_02_Animales.resx">
-      <DependentUpon>PA_05_02_Animales.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LogIn.resx">
-      <DependentUpon>LogIn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CU_02\PA_01_02 Menu Cajero.resx">
       <DependentUpon>PA_01_02 Menu Cajero.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,14 +312,62 @@
     <EmbeddedResource Include="CU_02\PA_02_05_Souvenirs.resx">
       <DependentUpon>PA_02_05_Souvenirs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CU_02\PA_02_06_Membresia.resx">
-      <DependentUpon>PA_02_06_Membresia.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CU_02\PA_02_07 Carrito Souvenirs.resx">
       <DependentUpon>PA_02_07 Carrito Souvenirs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CU_02\PA_02_08_Pago Souvenirs.resx">
       <DependentUpon>PA_02_08_Pago Souvenirs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.resx">
+      <DependentUpon>PA_05_01_Menú_Mapa_Interactivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_02_Animales.resx">
+      <DependentUpon>PA_05_02_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_03_Animales.resx">
+      <DependentUpon>PA_05_03_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_04_Animales.resx">
+      <DependentUpon>PA_05_04_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_05_Animales.resx">
+      <DependentUpon>PA_05_05_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_06_Animales.resx">
+      <DependentUpon>PA_05_06_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_07_Animales.resx">
+      <DependentUpon>PA_05_07_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_08_Animales.resx">
+      <DependentUpon>PA_05_08_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_09_Animales.resx">
+      <DependentUpon>PA_05_09_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_10_Animales.resx">
+      <DependentUpon>PA_05_10_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_11_Animales.resx">
+      <DependentUpon>PA_05_11_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_12_Animales.resx">
+      <DependentUpon>PA_05_12_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_13_Animales.resx">
+      <DependentUpon>PA_05_13_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_14_Animales.resx">
+      <DependentUpon>PA_05_14_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_15_Animales.resx">
+      <DependentUpon>PA_05_15_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CU_06\PA_06_01_Orden_de_compra_informacion.resx">
       <DependentUpon>PA_06_01_Orden_de_compra_informacion.cs</DependentUpon>
@@ -376,6 +484,53 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\aguila.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa del zoológico.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guacamaya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tucan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jirafas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elefantes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cebra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tigre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pingüino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flamenco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Puma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jaguar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CU_09\AxInterop.WMPLib.dll" />
+    <Content Include="CU_09\Interop.WMPLib.dll" />
+    <Content Include="CU_09\VideojuegoZoo.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,9 +16,18 @@ namespace UserInterfaceZoo
 {
     public partial class PA_02_05_Souvenirs : Form
     {
+        /// <summary>
+        /// Esta clase permite la selección de souvenirs para vender
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        
         private XElement souvenirsx;
         List<Carrito> carrito = new List<Carrito>();
         List<Souvenirs> documento = new List<Souvenirs>();
+        List<ComprasSouvenirs> confirmacion = new List<ComprasSouvenirs>();
+
         int folio; 
 
         public PA_02_05_Souvenirs()
@@ -27,6 +36,12 @@ namespace UserInterfaceZoo
             souvenirsx = ObtenerDocumentoXML();
         }
 
+        /// <summary>
+        /// Este metodo permite la serializacion con la informacion de la venta de los souvenirs
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Serializar()
         {
             //creamos el formato del nombre del archivo
@@ -40,7 +55,12 @@ namespace UserInterfaceZoo
             miStreamxml.Close();
         }
 
-        //Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// <summary>
+        /// Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Deserializar()
         {
             //creamos el formato del nombre del archivo
@@ -57,6 +77,12 @@ namespace UserInterfaceZoo
             }
         }
 
+        /// <summary>
+        /// Método para serializar la informacion del souvenir
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void SerializarDocumento()
         {
             XmlSerializer serializarequipo = new XmlSerializer(typeof(List<Souvenirs>));
@@ -66,7 +92,12 @@ namespace UserInterfaceZoo
             miStreamxml.Close();
         }
 
-        //Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// <summary>
+        /// Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void DeserializarDocumento()
         {
             if (File.Exists("souvenirs.xml"))
@@ -80,48 +111,140 @@ namespace UserInterfaceZoo
             }
         }
 
+        /// <summary>
+        /// Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        private void DeserializarConfrimacion()
+        {
+            //creamos el formato del nombre del archivo
+            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+                + "-" + DateTime.Now.Year.ToString();
+            string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtFolio.Text + ".xml";
+            if (File.Exists("Compra-" + archivo))
+            {
+                XmlSerializer deserializarequipo = new XmlSerializer(typeof(List<ComprasSouvenirs>));
+
+                Stream miStream = new FileStream("Compra-" + archivo, FileMode.Open, FileAccess.Read, FileShare.None);
+
+                confirmacion = (List<ComprasSouvenirs>)deserializarequipo.Deserialize(miStream);
+                miStream.Close();
+            }
+        }
+
+        /// <summary>
+        /// Metodo que permite obtener una caja mediante su id
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private Souvenirs GetID(int codigo)
         {
             return documento.Find(x => x.Codigo == codigo);
         }
 
+        /// <summary>
+        /// Metodo que permite obtener un carrito con su folio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private Carrito GetFolio(int folio)
         {
             return carrito.Find(x => x.Folio == folio);
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Metodo que permite obtener una compra con su id
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        private ComprasSouvenirs GetID(string archivo)
         {
-            int codigo = Convert.ToInt32(txtCodigo.Text);
-            Souvenirs miSouvenir = GetID(codigo);
-
-            if (miSouvenir == null)
-            {
-                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-                return;
-            }
-
-            folio = Convert.ToInt32(txtFolio.Text);
-            Carrito miCarrito = GetFolio(folio);
-            //if (miCarrito != null)
-            //{
-            //    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
-            //    return;
-            //}
-            miCarrito = new Carrito(); 
-            miCarrito.Codigo = Convert.ToInt32(txtCodigo.Text); 
-            miCarrito.Folio = Convert.ToInt32(txtFolio.Text);
-            miCarrito.Cantidad = Convert.ToInt32(txtCantidad.Text);
-            des.Text = miSouvenir.Descripcion.ToString();
-            precio.Text = miSouvenir.Precio.ToString();
-            miCarrito.Descripcion = des.Text;
-            miCarrito.Precio = Convert.ToDouble(precio.Text);
-            miCarrito.Total = miCarrito.Precio * miCarrito.Cantidad;
-            carrito.Add(miCarrito); 
-            Serializar();
-            MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+            return confirmacion.Find(x => x.Archivo == archivo);
         }
 
+        /// <summary>
+        /// Metodo que permite agregar souvenirs al carrito
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            //validacion para campos vacios
+            if(txtFolio.Text == "" || txtCodigo.Text == "" || txtCantidad.Text == "")
+            {
+                MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+            }
+            else
+            { 
+            DeserializarConfrimacion();
+            //creamos el formato del nombre del archivo
+            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+                + "-" + DateTime.Now.Year.ToString();
+            string archivo = "VentaSouvenirs" + nombrearch + "-folio" + txtFolio.Text + ".xml";
+            ComprasSouvenirs miConfirmacion = GetID(archivo);
+
+                if (miConfirmacion != null)
+                {
+                    MenuPrincipal.MostrarMensaje("YA FUE PAGADO EL FOLIO");
+                }
+                else
+                {
+                    int codigo = Convert.ToInt32(txtCodigo.Text);
+                    Souvenirs miSouvenir = GetID(codigo);
+
+                    if (miSouvenir == null)
+                    {
+                        MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                        return;
+                    }
+
+                    folio = Convert.ToInt32(txtFolio.Text);
+                    Carrito miCarrito = GetFolio(folio);
+                    //if (miCarrito != null)
+                    //{
+                    //    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                    //    return;
+                    //}
+                    //Asignacion de variables
+                    miCarrito = new Carrito();
+                    miCarrito.Codigo = Convert.ToInt32(txtCodigo.Text);
+                    miCarrito.Folio = Convert.ToInt32(txtFolio.Text);
+                    miCarrito.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                    des.Text = miSouvenir.Descripcion.ToString();
+                    precio.Text = miSouvenir.Precio.ToString();
+                    miCarrito.Descripcion = des.Text;
+                    miCarrito.Precio = Convert.ToDouble(precio.Text);
+                    miCarrito.Total = miCarrito.Precio * miCarrito.Cantidad;
+                    //souvenir agregado al carrito
+                    carrito.Add(miCarrito);
+                    Serializar();
+                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Metodo que cerrar el form actual
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -129,6 +252,14 @@ namespace UserInterfaceZoo
             MenuPrincipal.AsignarTitulo("Menu de cajero");
         }
 
+        /// <summary>
+        /// Metodo que permite acceder a la pantalla de carrito souvenirs
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnCarrito_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -136,13 +267,14 @@ namespace UserInterfaceZoo
             MenuPrincipal.AsignarTitulo("Carrito de souvenirs");
         }
 
-        private void btnMembresia_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            MenuPrincipal.abrirPantallas(new PA_02_06_Membresia());
-            MenuPrincipal.AsignarTitulo("Membresia");
-        }
-
+        /// <summary>
+        /// Metodo que permite obtener la lista de souvenirs disponibles para su compra
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         public static XElement ObtenerDocumentoXML()
         {
             XElement souvenirsTexto;
@@ -272,12 +404,47 @@ namespace UserInterfaceZoo
             return souvenirsTexto;
         }
 
+        /// <summary>
+        /// Metodo que permite deserializar el documento
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void PA_02_05_Souvenirs_Load(object sender, EventArgs e)
         {
-            Deserializar();
+            //Deserializar();
             DeserializarDocumento();
         }
 
+        /// <summary>
+        /// Metodo que permite ajustar el menu de souvenirs a su respectivo formato
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        private void btnMembresia_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = UserInterfaceZoo.Properties.Resources.membresia;
+            pictureBox2.Image = null;
+            pictureBox3.Image = null;
+            label2.Text = "19";
+            label3.Text = "";
+            label4.Text = "";
+
+        }
+
+        /// <summary>
+        /// Metodo que permite ajustar el menu de souvenirs a su respectivo formato
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnPlayeras_Click(object sender, EventArgs e)
         {
             pictureBox1.Image = UserInterfaceZoo.Properties.Resources.playera_tigreblanco;
@@ -288,6 +455,14 @@ namespace UserInterfaceZoo
             label4.Text = "18";
         }
 
+        /// <summary>
+        /// Metodo que permite ajustar el menu de souvenirs a su respectivo formato
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnAnimFelpa_Click(object sender, EventArgs e)
         {
             pictureBox1.Image = UserInterfaceZoo.Properties.Resources.peluche_tucan;
@@ -298,6 +473,14 @@ namespace UserInterfaceZoo
             label4.Text = "03";
         }
 
+        /// <summary>
+        /// Metodo que permite ajustar el menu de souvenirs a su respectivo formato
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnGorras_Click(object sender, EventArgs e)
         {
             pictureBox1.Image = UserInterfaceZoo.Properties.Resources.gorra_panda;
@@ -308,6 +491,14 @@ namespace UserInterfaceZoo
             label4.Text = "06";
         }
 
+        /// <summary>
+        /// Metodo que permite ajustar el menu de souvenirs a su respectivo formato
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnCubrebocas_Click(object sender, EventArgs e)
         {
             pictureBox1.Image = UserInterfaceZoo.Properties.Resources.cubre_leopardo;
@@ -318,6 +509,14 @@ namespace UserInterfaceZoo
             label4.Text = "09";
         }
 
+        /// <summary>
+        /// Metodo que permite ajustar el menu de souvenirs a su respectivo formato
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnLlaveros_Click(object sender, EventArgs e)
         {
             pictureBox1.Image = UserInterfaceZoo.Properties.Resources.llave_aguila;
@@ -328,6 +527,14 @@ namespace UserInterfaceZoo
             label4.Text = "12";
         }
 
+        /// <summary>
+        /// Metodo que permite ajustar el menu de souvenirs a su respectivo formato
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnTazas_Click(object sender, EventArgs e)
         {
             pictureBox1.Image = UserInterfaceZoo.Properties.Resources.taza_zoo;
@@ -336,6 +543,19 @@ namespace UserInterfaceZoo
             label2.Text = "13";
             label3.Text = "14";
             label4.Text = "15";
+        }
+
+        /// <summary>
+        /// Metodo que permite solo el ingreso de caracteres validos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        private void Numero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back);
         }
     }
 }

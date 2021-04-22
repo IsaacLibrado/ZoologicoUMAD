@@ -92,6 +92,7 @@
             this.txbMontoInicial.Name = "txbMontoInicial";
             this.txbMontoInicial.Size = new System.Drawing.Size(108, 30);
             this.txbMontoInicial.TabIndex = 4;
+            this.txbMontoInicial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // label3
             // 
@@ -126,6 +127,7 @@
             this.cmbCaja.Name = "cmbCaja";
             this.cmbCaja.Size = new System.Drawing.Size(121, 24);
             this.cmbCaja.TabIndex = 7;
+            this.cmbCaja.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // cmbCajero
             // 
@@ -141,6 +143,7 @@
             this.cmbCajero.Name = "cmbCajero";
             this.cmbCajero.Size = new System.Drawing.Size(121, 24);
             this.cmbCajero.TabIndex = 8;
+            this.cmbCajero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // btnAperturar
             // 

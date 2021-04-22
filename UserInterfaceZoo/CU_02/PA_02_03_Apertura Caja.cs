@@ -16,6 +16,13 @@ namespace UserInterfaceZoo
 {
     public partial class PA_02_03_Apertura_Caja : Form
     {
+        /// <summary>
+        /// Esta clase permite aperturar las cajas
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+        
         //int idCajero;
         //int montoApertura;
         //bool rdbBoleto;
@@ -37,6 +44,12 @@ namespace UserInterfaceZoo
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Este metodo permite la serializacion con la informacion de las cajas
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Serializar()
         {
             //creamos el formato del nombre del archivo
@@ -50,7 +63,12 @@ namespace UserInterfaceZoo
             miStreamxml.Close();
         }
 
-        //Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// <summary>
+        /// Método para deserializar en el que aparte checará si existe el archivo que ya se creó.
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void Deserializar()
         {
             //creamos el formato del nombre del archivo
@@ -75,7 +93,7 @@ namespace UserInterfaceZoo
         /// <param name="e"></param>
         /// Version 1.0
         /// Fecha de creacion 29 de Marzo 2021
-        /// Creador Arturo Villegas
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             //Se cancela el proceso y regresa al menu
@@ -89,47 +107,93 @@ namespace UserInterfaceZoo
         /// <param name="e"></param>
         /// Version 1.0
         /// Fecha de creacion 29 de Marzo 2021
-        /// Creador Arturo Villegas
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnAperturar_Click(object sender, EventArgs e)
         {
-            int idCajas = Convert.ToInt32(cmbCaja.Text);
-            Cajas miCaja = GetID(idCajas);
-
-            miCaja = new Cajas(); 
-            //Asignación de variables
-            miCaja.IdCajas = Convert.ToInt32(cmbCaja.Text);
-            miCaja.IdCajero = Convert.ToInt32(cmbCajero.Text);
-            miCaja.MontoApertura = Convert.ToInt32(txbMontoInicial.Text);
-            miCaja.MontoCierre = Convert.ToInt32(txbMontoInicial.Text);
-            miCaja.RdbBoleto = rbBoleto.Checked;
-            miCaja.RsbSouvenir = rbSouvenir.Checked;
-            miCaja.Ganancias = 0;
-            miCaja.FaltSobra = 0; 
-            //Cajas.Add(miCaja);
-            //Serializar();
-
-            //Validación de campos
-            if ((miCaja.MontoApertura > 9999 || miCaja.MontoApertura < 7500) || (miCaja.RdbBoleto == false && miCaja.RsbSouvenir == false) || (miCaja.IdCajas < 1 || miCaja.IdCajas > 4) || (miCaja.IdCajero < 1 || miCaja.IdCajero > 5))
+            //e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back); 
+            //Validacion para campos vacios
+            if (cmbCaja.Text == "" || cmbCajero.Text == "" || (rbBoleto.Checked == false && rbSouvenir.Checked == false) || txbMontoInicial.Text == "")
+            {
                 MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+            }
             else
             {
-                //Confirmación de exito
-                MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
-                Cajas.Add(miCaja);
-                Serializar();
+                int idCajas = Convert.ToInt32(cmbCaja.Text);
+                Cajas miCaja = GetID(idCajas);
+                //Una caja no puede abrirse más de una vez
+                if (miCaja != null)
+                {
+                    MenuPrincipal.MostrarMensaje("LA CAJA SELECCIONADA YA HA SIDO ABIERTA");
+                    return;
+                }
+                miCaja = new Cajas();
+                //Asignación de variables
+                miCaja.IdCajas = Convert.ToInt32(cmbCaja.Text);
+                miCaja.IdCajero = Convert.ToInt32(cmbCajero.Text);
+                miCaja.MontoApertura = Convert.ToInt32(txbMontoInicial.Text);
+                miCaja.MontoCierre = Convert.ToInt32(txbMontoInicial.Text);
+                miCaja.RdbBoleto = rbBoleto.Checked;
+                miCaja.RsbSouvenir = rbSouvenir.Checked;
+                miCaja.Ganancias = 0;
+                miCaja.FaltSobra = 0;
+                miCaja.Cerrar = false; 
+                //Cajas.Add(miCaja);
+                //Serializar();
+
+                //Validación de campos
+                if ((miCaja.MontoApertura > 9999 || miCaja.MontoApertura < 7500) || (miCaja.RdbBoleto == false && miCaja.RsbSouvenir == false) || (miCaja.IdCajas < 1 || miCaja.IdCajas > 4) || (miCaja.IdCajero < 1 || miCaja.IdCajero > 5) || ((miCaja.IdCajas == 1 || miCaja.IdCajas == 2) && miCaja.RsbSouvenir == true) || ((miCaja.IdCajas == 3 || miCaja.IdCajas == 4) && miCaja.RdbBoleto == true))
+                    MenuPrincipal.MostrarMensaje("PROCESO INVÁLIDO INTENTE DE NUEVO");
+                else
+                {
+                    //Confirmación de exito
+                    MenuPrincipal.MostrarMensaje("ACCIÓN SOLICITADA COMPLETADA");
+                    Cajas.Add(miCaja);
+                    Serializar();
+                }
+                //Se completa el proceso y regresa al menu
             }
-            //Se completa el proceso y regresa al menu
         }
 
+        /// <summary>
+        /// Permite obtener una caja mediante su id
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private Cajas GetID(int id)
         {
             return Cajas.Find(x => x.IdCajas == id);
         }
+
+        /// <summary>
+        /// Deserialzia justo al cargar este form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void PA_02_03_Apertura_Caja_Load(object sender, EventArgs e)
         {
             //string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
             //+ "-" + DateTime.Now.Year.ToString();
             Deserializar();
+        }
+
+        /// <summary>
+        /// Método para que solo ingrese numeros
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+
+        private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back);
         }
     }
 }

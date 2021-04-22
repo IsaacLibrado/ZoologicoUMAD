@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 namespace UserInterfaceZoo
 {
     /// <summary>
-    /// Evento que se realizar al presionar el boton abrir cajas
+    /// Esta clase define las propiedades de las cajas de venta de boletos y souvenirs
     /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
     /// Version 1.0
-    /// Fecha de creacion 30 de Marzo 2021
-    /// Creador Karla Garcia
-    
+    /// Fecha de creacion 29 de Marzo 2021
+    /// Creador David Hernandez, Karla Garcia, Arturo Villegas
+
     [Serializable]
     public class Cajas
     {
@@ -25,7 +23,8 @@ namespace UserInterfaceZoo
         bool rdbBoleto;
         bool rsbSouvenir;
         double ganancias;
-        double faltSobra; 
+        double faltSobra;
+        bool cerrar; 
 
         public double MontoApertura { get => montoApertura; set => montoApertura = value; }
         public double MontoCierre { get => montoCierre; set => montoCierre = value; }
@@ -35,12 +34,25 @@ namespace UserInterfaceZoo
         public bool RsbSouvenir { get => rsbSouvenir; set => rsbSouvenir = value; }
         public double Ganancias { get => ganancias; set => ganancias = value; }
         public double FaltSobra { get => faltSobra; set => faltSobra = value; }
+        public bool Cerrar { get => cerrar; set => cerrar = value; }
 
+        /// <summary>
+        /// Constructor vacio a disponibilidad
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         public Cajas()
         {
 
         }
 
+        /// <summary>
+        /// Constructor que asigna las propiedades de la caja
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29 de Marzo 2021
+        /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         public Cajas(int idC, int idCj, double montAp, double montCierr, bool rBol, bool rSouv, double gan, double fs)
         {
             idCajas = idC;
