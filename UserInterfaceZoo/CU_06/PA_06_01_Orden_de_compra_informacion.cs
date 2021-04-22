@@ -16,19 +16,39 @@ namespace UserInterfaceZoo
         public PA_06_01_Orden_de_compra_informacion()
         {
             InitializeComponent();
+
+            
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-           
-            this.Close();
-            MenuPrincipal.abrirPantallas(new PA_06_02_Orden_de_compra_registro_articulos());
+
+            PA_06_02_Orden_de_compra_registro_articulos pa2_pa1 = new PA_06_02_Orden_de_compra_registro_articulos();
+
+            //Información de la empresa
+            pa2_pa1.lblDatosP2.Text = label4.Text;
+            //Fechas de orden compra
+            pa2_pa1.label4.Text = lblInfoE.Text;
+            pa2_pa1.lblFechaRecp_p2.Text = lblFechaRecp.Text;
+            pa2_pa1.lblNoOrden_p2.Text = lblNoOrden.Text;
+            pa2_pa1.dateTimeRecp_p2.Text = dateTimePicker1.Text;
+            pa2_pa1.dateTimePago_p2.Text = dateTimePicker2.Text;
+            //Proveedor
+            pa2_pa1.lblCompaProv_p2.Text = lblCompaProveedor.Text;
+            pa2_pa1.lblContacto_p2.Text = lblContacto.Text;
+            pa2_pa1.lblCargo_p2.Text = lblCargo.Text;
+            pa2_pa1.lblDomProv_p2.Text = lblDomProveedor.Text;
+            pa2_pa1.lblTelProv_p2.Text = lblTelProveedor.Text;
+            //Enviar a
+            pa2_pa1.listBoxCompa_p2.Text = listBoxCompañia.Text;
+            pa2_pa1.listBoxDepar_p2.Text = listBoxDepartamento.Text;
+            pa2_pa1.lblDomDepa_p2.Text = lblDomicilioDepartamento.Text;
+            pa2_pa1.lblTelDepa_p2.Text = lblTelefonoDepartamento.Text;
+            MenuPrincipal.abrirPantallas(pa2_pa1);
             MenuPrincipal.AsignarTitulo("Orden de compra registro artículos");
 
-            
-
-
         }
+
 
         private void PA_06_01_Orden_de_compra_informacion_Load(object sender, EventArgs e)
         {
@@ -38,7 +58,6 @@ namespace UserInterfaceZoo
             listClaveProveedor.Items.Add("AnimalPet");
 
             GenerarNumeroOrden();
-           
            
         }
 
@@ -71,28 +90,16 @@ namespace UserInterfaceZoo
 
         public void GenerarNumeroOrden()
         {
-            //int folio = 1;
-            //int conversion = folio + 1;
 
-            //lblNoOrden.Text = Convert.ToString(conversion);           
 
-            //int folio = int.Parse(lblNoOrden.Text);
-            //folio++;
-            //lblNoOrden.Text = folio.ToString();
-            int contador = 0;
-            int folio = 0;
-            int folio2 = 0;
+            var seed = Environment.TickCount;
+            var random = new Random(seed);
 
-            contador++;
-            lblNoOrden.Text = Convert.ToString(contador);
-            folio += Convert.ToInt32(lblNoOrden.Text);
+            var value = random.Next(1, 100);
+            lblNoOrden.Text = Convert.ToString(value);
 
 
 
-            folio++;
-            folio2 = folio;
-
-            MessageBox.Show(folio2.ToString());
         }
 
         private void listBoxDepartamento_SelectedIndexChanged(object sender, EventArgs e)

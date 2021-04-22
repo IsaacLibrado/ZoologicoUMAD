@@ -27,20 +27,39 @@ namespace UserInterfaceZoo
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
 
+            PA_06_03_Orden_de_compra_totales pa3 = new PA_06_03_Orden_de_compra_totales();
 
-
-
+            //Información de la empresa
+            pa3.lblDatosP3.Text = label4.Text;
+            //Fechas de orden compra
+            pa3.labelFechasP1.Text = lblDatosP2.Text;
+            pa3.lblFechaRecp_p3.Text = lblFechaRecp_p2.Text;
+            pa3.lblNoOrden_p3.Text = lblNoOrden_p2.Text;
+            pa3.dateTimeRecp_p3.Text = dateTimeRecp_p2.Text;
+            pa3.dateTimePago_p3.Text = dateTimePago_p2.Text;
+            //Proveedor
+            pa3.lblCompaProv_p3.Text = lblCompaProv_p2.Text;
+            pa3.lblContacto_p3.Text = lblContacto_p2.Text;
+            pa3.lblCargo_p3.Text = lblCargo_p2.Text;
+            pa3.lblDomProv_p3.Text = lblDomProv_p2.Text;
+            pa3.lblTelProv_p3.Text = lblTelProv_p2.Text;
+            //Enviar a
+            pa3.listBoxCompa_p3.Text = listBoxCompa_p2.Text;
+            pa3.listBoxDepa_p3.Text = listBoxDepar_p2.Text;
+            pa3.lblDomDepa_p3.Text = lblDomDepa_p2.Text;
+            pa3.lblTelDepa_p3.Text = lblTelDepa_p2.Text;
+            //Articulos
             
-            MenuPrincipal.abrirPantallas(new PA_06_03_Orden_de_compra_totales(lblTotal.Text));
+            pa3.txtNumArt_p3.Text = txtNumeroArticulo.Text;
+            pa3.lblDescArt_p3.Text = lblDescripcionArticulo.Text;
+            pa3.txtCant_p3.Text = txtCantidad.Text;
+            pa3.txtUPeso_p3.Text = txtUnidadPeso.Text;
+            pa3.lblPUnitario_p3.Text = lblPrecioUnitario.Text;
+            pa3.lblTotal_p3.Text = lblTotal.Text;
+            pa3.lblSubtotal.Text = lblTotal.Text;
+
+            MenuPrincipal.abrirPantallas(pa3);
             MenuPrincipal.AsignarTitulo("Orden de compra Totales");
-
-            string texto = lblTotal.Text;
-            PA_06_03_Orden_de_compra_totales m = new PA_06_03_Orden_de_compra_totales(texto);
-            m.Show();
-            this.Close();
-            //
-            //PA_06_02_Orden_de_compra_registro_articulos total = new PA_06_02_Orden_de_compra_registro_articulos(Convert.ToInt32( lblTotal.Text));
-
 
         }
 
@@ -94,7 +113,7 @@ namespace UserInterfaceZoo
             dataGridViewArticulos.Rows[producto].Cells[2].Value = txtCantidad.Text;
             dataGridViewArticulos.Rows[producto].Cells[3].Value = lblPrecioUnitario.Text;
             dataGridViewArticulos.Rows[producto].Cells[4].Value = lblTotal.Text;
-
+            
         }
     }
 }
