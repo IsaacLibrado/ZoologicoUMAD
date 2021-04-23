@@ -201,5 +201,21 @@ namespace UserInterfaceZoo
                 txbUsuario.Focus();
             }
         }
+
+        /// <summary>
+        /// Cambia al passwordbox después de dar enter en el textbox del usuario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23/04/21
+        /// Creador Isaac Librado
+        private void txbUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txbContra.Focus();
+            }
+        }
     }
 }
