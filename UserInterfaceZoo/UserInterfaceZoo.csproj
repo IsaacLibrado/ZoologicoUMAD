@@ -113,6 +113,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CU_01\PA_01_06_Pantalla sin avisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_01\PA_01_06_Pantalla sin avisos.Designer.cs">
+      <DependentUpon>PA_01_06_Pantalla sin avisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_01\PA_01_07_Aviso para mantener sana distancia en filas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_01\PA_01_07_Aviso para mantener sana distancia en filas.Designer.cs">
+      <DependentUpon>PA_01_07_Aviso para mantener sana distancia en filas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_01\PA_01_08_ Aviso de cuando la temperatura es mayor a la permitida para el guardia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_01\PA_01_08_ Aviso de cuando la temperatura es mayor a la permitida para el guardia.Designer.cs">
+      <DependentUpon>PA_01_08_ Aviso de cuando la temperatura es mayor a la permitida para el guardia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_01\PA_01_09_ Conteo de personas al entrar al zoológico para el guardia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_01\PA_01_09_ Conteo de personas al entrar al zoológico para el guardia.Designer.cs">
+      <DependentUpon>PA_01_09_ Conteo de personas al entrar al zoológico para el guardia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_01\PA_01_10_ Conteo de personas para cuando salgan del zoológico para el guardia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_01\PA_01_10_ Conteo de personas para cuando salgan del zoológico para el guardia.Designer.cs">
+      <DependentUpon>PA_01_10_ Conteo de personas para cuando salgan del zoológico para el guardia.cs</DependentUpon>
+    </Compile>
     <Compile Include="CU_02\Boletos.cs" />
     <Compile Include="CU_02\Cajas.cs" />
     <Compile Include="CU_02\Carrito.cs" />
@@ -294,6 +324,18 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CU_01\PA_01_06_Pantalla sin avisos.resx">
+      <DependentUpon>PA_01_06_Pantalla sin avisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_01\PA_01_07_Aviso para mantener sana distancia en filas.resx">
+      <DependentUpon>PA_01_07_Aviso para mantener sana distancia en filas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_01\PA_01_09_ Conteo de personas al entrar al zoológico para el guardia.resx">
+      <DependentUpon>PA_01_09_ Conteo de personas al entrar al zoológico para el guardia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_01\PA_01_10_ Conteo de personas para cuando salgan del zoológico para el guardia.resx">
+      <DependentUpon>PA_01_10_ Conteo de personas para cuando salgan del zoológico para el guardia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CU_02\PA_01_02 Menu Cajero.resx">
       <DependentUpon>PA_01_02 Menu Cajero.cs</DependentUpon>
     </EmbeddedResource>

@@ -311,6 +311,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Sanitizacion");
             RegistroBitacora("Realizado el control de sanitizacion");
+            MenuPrincipal.abrirPantallas(new CU_01.PA_01_06_Pantalla_sin_avisos());
         }
 
         /// <summary>
