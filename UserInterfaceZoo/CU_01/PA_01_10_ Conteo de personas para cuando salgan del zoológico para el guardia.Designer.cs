@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIngresar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -53,17 +53,17 @@
             this.txtCantidad.Size = new System.Drawing.Size(74, 20);
             this.txtCantidad.TabIndex = 1;
             // 
-            // button1
+            // btnIngresar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(259, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnIngresar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnIngresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIngresar.Location = new System.Drawing.Point(259, 171);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(75, 23);
+            this.btnIngresar.TabIndex = 2;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click_1);
             // 
             // label2
             // 
@@ -102,7 +102,7 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.label1);
             this.Name = "PA_01_10__Conteo_de_personas_para_cuando_salgan_del_zoológico_para_el_guardia";
@@ -116,7 +116,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Button btnSalir;

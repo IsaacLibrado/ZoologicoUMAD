@@ -29,32 +29,39 @@ namespace UserInterfaceZoo.CU_01
         /// Creador Manuel Rangel
         public void btnIngresar_Click(object sender, EventArgs e)
         {
-            //Validamos si el conteo es mayor o igual a 9000
-            if (conteo >= 9000)
+            if (txtCantPersonas.Text == "")
             {
-                //Si no mandamos un mensaje
-                MenuPrincipal.MostrarMensaje("El zoológico llego a su capacidad máxima no se pueden agregar a más de 9000 personas, tiempo estimado 30min");
-                txtCantPersonas.Clear();
+                MenuPrincipal.MostrarMensaje("Debes de ingresar algun valor");
             }
             else
             {
-                //Acomulamos el conteo que el usuario vaya agregando
-                conteo = conteo + Convert.ToInt32(txtCantPersonas.Text);
-                if (conteo > 9000)
+                //Validamos si el conteo es mayor o igual a 9000
+                if (conteo >= 9000)
                 {
-                    //Le quitamos la cantidad erronea
-                    conteo = conteo - Convert.ToInt32(txtCantPersonas.Text);
                     //Si no mandamos un mensaje
-                    MenuPrincipal.MostrarMensaje("No se pueden agregar a más de 9000 personas");
+                    MenuPrincipal.MostrarMensaje("El zoológico llego a su capacidad máxima no se pueden agregar a más de 9000 personas, tiempo estimado 30min");
+                    txtCantPersonas.Clear();
                 }
                 else
                 {
-                    // Si no es mayor lo asignamos el valor al label
-                    lblTotal.Text = conteo.ToString();
-                    //Si no mandamos un mensaje
-                    MenuPrincipal.MostrarMensaje("Se han ingresado las personas al sistema, pueden pasar al zoológico");
-                    //Limpiamos el text box
-                    txtCantPersonas.Clear();
+                    //Acomulamos el conteo que el usuario vaya agregando
+                    conteo = conteo + Convert.ToInt32(txtCantPersonas.Text);
+                    if (conteo > 9000)
+                    {
+                        //Le quitamos la cantidad erronea
+                        conteo = conteo - Convert.ToInt32(txtCantPersonas.Text);
+                        //Si no mandamos un mensaje
+                        MenuPrincipal.MostrarMensaje("No se pueden agregar a más de 9000 personas");
+                    }
+                    else
+                    {
+                        // Si no es mayor lo asignamos el valor al label
+                        lblTotal.Text = conteo.ToString();
+                        //Si no mandamos un mensaje
+                        MenuPrincipal.MostrarMensaje("Se han ingresado las personas al sistema, pueden pasar al zoológico");
+                        //Limpiamos el text box
+                        txtCantPersonas.Clear();
+                    }
                 }
             }
         }
