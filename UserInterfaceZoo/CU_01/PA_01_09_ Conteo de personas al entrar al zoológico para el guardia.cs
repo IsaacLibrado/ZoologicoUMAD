@@ -33,7 +33,7 @@ namespace UserInterfaceZoo.CU_01
             if (conteo >= 9000)
             {
                 //Si no mandamos un mensaje
-                MessageBox.Show("El zoológico llego a su capacidad máxima no se pueden agregar a más de 9000 personas, tiempo estimado 30min");
+                MenuPrincipal.MostrarMensaje("El zoológico llego a su capacidad máxima no se pueden agregar a más de 9000 personas, tiempo estimado 30min");
                 txtCantPersonas.Clear();
             }
             else
@@ -45,18 +45,24 @@ namespace UserInterfaceZoo.CU_01
                     //Le quitamos la cantidad erronea
                     conteo = conteo - Convert.ToInt32(txtCantPersonas.Text);
                     //Si no mandamos un mensaje
-                    MessageBox.Show("No se pueden agregar a más de 9000 personas");
+                    MenuPrincipal.MostrarMensaje("No se pueden agregar a más de 9000 personas");
                 }
                 else
                 {
                     // Si no es mayor lo asignamos el valor al label
                     lblTotal.Text = conteo.ToString();
                     //Si no mandamos un mensaje
-                    MessageBox.Show("Se han ingresado las personas al sistema, pueden pasar al zoológico");
+                    MenuPrincipal.MostrarMensaje("Se han ingresado las personas al sistema, pueden pasar al zoológico");
                     //Limpiamos el text box
                     txtCantPersonas.Clear();
                 }
             }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_01_06_Pantalla_sin_avisos());
         }
     }
 }

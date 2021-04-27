@@ -25,9 +25,7 @@ namespace UserInterfaceZoo.CU_01
         /// Creador Manuel Rangel
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            this.Close();
-            MessageBox.Show("Las autoridades del zoológico se acercan a la zona");
-            MenuPrincipal.abrirPantallas(new PA_01_06_Pantalla_sin_avisos());
+            MenuPrincipal.MostrarMensaje("Las autoridades del zoológico se acercan a la zona");
         }
         /// <summary>
         /// Metodo para validar el boton para cancelar la instrucción
@@ -37,8 +35,12 @@ namespace UserInterfaceZoo.CU_01
         /// Creador Manuel Rangel
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            MenuPrincipal.MostrarMensaje("Se cancelo la instrucción");
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
             this.Close();
-            MessageBox.Show("Se cancelo la instrucción");
             MenuPrincipal.abrirPantallas(new PA_01_06_Pantalla_sin_avisos());
         }
     }

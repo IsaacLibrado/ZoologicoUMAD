@@ -33,10 +33,16 @@ namespace UserInterfaceZoo.CU_01
             //Le damos valor al label
             lblTotal.Text = conteo.ToString();
             //Mandamos un mensaje
-            MessageBox.Show("Se a retirado cliente del zoológico pueden acceder " + conteo + " personas de la entrada");
+            MenuPrincipal.MostrarMensaje("Se a retirado cliente del zoológico pueden acceder " + txtCantidad.Text + " personas de la entrada");
             //Limpiamos el textbox
             txtCantidad.Clear();
 
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuPrincipal.abrirPantallas(new PA_01_06_Pantalla_sin_avisos());
         }
     }
 }
