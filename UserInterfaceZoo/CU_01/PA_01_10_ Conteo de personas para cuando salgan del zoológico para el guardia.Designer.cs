@@ -30,44 +30,45 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIngresar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(152, 121);
+            this.label1.Location = new System.Drawing.Point(140, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 20);
+            this.label1.Size = new System.Drawing.Size(205, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Personas al salir:";
+            this.label1.Text = "Conteo de personas al salir:";
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(282, 121);
+            this.txtCantidad.Location = new System.Drawing.Point(308, 121);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(100, 20);
+            this.txtCantidad.Size = new System.Drawing.Size(74, 20);
             this.txtCantidad.TabIndex = 1;
             // 
-            // button1
+            // btnIngresar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(259, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnIngresar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnIngresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIngresar.Location = new System.Drawing.Point(259, 171);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(75, 23);
+            this.btnIngresar.TabIndex = 2;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click_1);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(345, 288);
+            this.label2.Location = new System.Drawing.Point(274, 264);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 13);
             this.label2.TabIndex = 3;
@@ -76,19 +77,32 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(443, 288);
+            this.lblTotal.Location = new System.Drawing.Point(372, 264);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(0, 13);
             this.lblTotal.TabIndex = 4;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSalir.Location = new System.Drawing.Point(426, 285);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(80, 28);
+            this.btnSalir.TabIndex = 5;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // PA_01_10__Conteo_de_personas_para_cuando_salgan_del_zoológico_para_el_guardia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 351);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.label1);
             this.Name = "PA_01_10__Conteo_de_personas_para_cuando_salgan_del_zoológico_para_el_guardia";
@@ -102,8 +116,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

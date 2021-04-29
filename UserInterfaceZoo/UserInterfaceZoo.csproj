@@ -330,6 +330,9 @@
     <EmbeddedResource Include="CU_01\PA_01_07_Aviso para mantener sana distancia en filas.resx">
       <DependentUpon>PA_01_07_Aviso para mantener sana distancia en filas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CU_01\PA_01_08_ Aviso de cuando la temperatura es mayor a la permitida para el guardia.resx">
+      <DependentUpon>PA_01_08_ Aviso de cuando la temperatura es mayor a la permitida para el guardia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CU_01\PA_01_09_ Conteo de personas al entrar al zoológico para el guardia.resx">
       <DependentUpon>PA_01_09_ Conteo de personas al entrar al zoológico para el guardia.cs</DependentUpon>
     </EmbeddedResource>
