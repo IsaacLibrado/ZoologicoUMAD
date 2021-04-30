@@ -41,10 +41,21 @@ namespace UserInterfaceZoo
 
         private void btnGenerarReporte_Click(object sender, EventArgs e)
         {
-            crearPDF();
-            MessageBox.Show("Reporte creado exitosamente", "Orden de compra");
-            this.Close();
-            MenuPrincipal.abrirPantallas(new PA_06_01_Orden_de_compra_informacion());
+
+            if (txtResponsable.Text == "")
+            {
+                MenuPrincipal.MostrarMensaje("SE NECESITA ASIGNAR UN RESPONSABLE");
+            }
+
+            else
+            {
+                crearPDF();
+                MenuPrincipal.MostrarMensaje("REPORTE CREADO EXITOSAMENTE");
+                this.Close();
+                MenuPrincipal.abrirPantallas(new PA_06_01_Orden_de_compra_informacion());
+            }
+
+ 
 
 
         }
@@ -52,9 +63,9 @@ namespace UserInterfaceZoo
         private void crearPDF()
         {
             PA_06_01_Orden_de_compra_informacion a = new PA_06_01_Orden_de_compra_informacion();
+            
 
-
-            PdfWriter pdfWriter = new PdfWriter("ReporteOC.pdf");
+            PdfWriter pdfWriter = new PdfWriter("ReporteOC  .pdf");
             PdfDocument pdf = new PdfDocument(pdfWriter);
 
             Document documento = new Document(pdf, PageSize.LETTER);
@@ -268,22 +279,77 @@ namespace UserInterfaceZoo
 
         private void txtDescuento_TextChanged(object sender, EventArgs e)
         {
-            double descuento = Convert.ToDouble(txtDescuento.Text);
-            descuento = descuento / 100;
-            int total = Convert.ToInt32(lblSubtotal.Text);
+            
 
-            lblSubtotalDescuento.Text = Convert.ToString(descuento*total);
-            double subtotal = Convert.ToDouble(lblSubtotalDescuento.Text);
-            double iva = 0.16;
-            lblTotalImpuestos.Text = Convert.ToString(subtotal*iva+(subtotal));
-            lblTasaImpuestos.Text = "16";
-            double tasaImpuesto = Convert.ToDouble(lblTasaImpuestos.Text);
+            if (txtDescuento.Text == "")
+            {
+                MenuPrincipal.MostrarMensaje("DATOS INCORRECTOS INTENTE OTRA VEZ");
+            }
 
-            double totalImpuestos = Convert.ToDouble(lblTotalImpuestos.Text);
-            lblEnvioAlmacen.Text = Convert.ToString(totalImpuestos * 0.25 + tasaImpuesto);
+            else
+            {
+                MenuPrincipal.MostrarMensaje("");
 
-            double grantotal = Convert.ToDouble(lblEnvioAlmacen.Text);
-            lblGranTotal.Text = Convert.ToString(grantotal + totalImpuestos);
+                int desc = Convert.ToInt32(txtDescuento.Text);
+
+                if (desc < 0 || desc > 100)
+                {
+                    MenuPrincipal.MostrarMensaje("DATOS INCORRECTOS INTENTE OTRA VEZ");
+                }
+
+                else
+                {
+
+                    double descuento = Convert.ToDouble(txtDescuento.Text);
+                    descuento = descuento / 100;
+                    int total = Convert.ToInt32(lblSubtotal.Text);
+
+                    lblSubtotalDescuento.Text = Convert.ToString(descuento * total);
+                    double subtotal = Convert.ToDouble(lblSubtotalDescuento.Text);
+                    double iva = 0.16;
+                    lblTotalImpuestos.Text = Convert.ToString(subtotal * iva + (subtotal));
+                    lblTasaImpuestos.Text = "16";
+                    double tasaImpuesto = Convert.ToDouble(lblTasaImpuestos.Text);
+
+                    double totalImpuestos = Convert.ToDouble(lblTotalImpuestos.Text);
+                    lblEnvioAlmacen.Text = Convert.ToString(totalImpuestos * 0.25 + tasaImpuesto);
+
+                    double grantotal = Convert.ToDouble(lblEnvioAlmacen.Text);
+                    lblGranTotal.Text = Convert.ToString(grantotal + totalImpuestos);
+
+                }
+            }
+            
+        }
+
+        private void txtResponsable_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtResponsable.Text = "";
+        }
+
+        private void txtResponsable_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtDescuento_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtDescuento.Text = "";
         }
     }
 }

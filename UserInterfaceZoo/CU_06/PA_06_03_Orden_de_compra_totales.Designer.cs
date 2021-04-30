@@ -141,45 +141,40 @@
             this.lblSubtotalDescuento.AutoSize = true;
             this.lblSubtotalDescuento.Location = new System.Drawing.Point(169, 130);
             this.lblSubtotalDescuento.Name = "lblSubtotalDescuento";
-            this.lblSubtotalDescuento.Size = new System.Drawing.Size(46, 17);
+            this.lblSubtotalDescuento.Size = new System.Drawing.Size(0, 17);
             this.lblSubtotalDescuento.TabIndex = 9;
-            this.lblSubtotalDescuento.Text = "label8";
             // 
             // lblTasaImpuestos
             // 
             this.lblTasaImpuestos.AutoSize = true;
             this.lblTasaImpuestos.Location = new System.Drawing.Point(169, 167);
             this.lblTasaImpuestos.Name = "lblTasaImpuestos";
-            this.lblTasaImpuestos.Size = new System.Drawing.Size(46, 17);
+            this.lblTasaImpuestos.Size = new System.Drawing.Size(0, 17);
             this.lblTasaImpuestos.TabIndex = 10;
-            this.lblTasaImpuestos.Text = "label9";
             // 
             // lblTotalImpuestos
             // 
             this.lblTotalImpuestos.AutoSize = true;
             this.lblTotalImpuestos.Location = new System.Drawing.Point(169, 203);
             this.lblTotalImpuestos.Name = "lblTotalImpuestos";
-            this.lblTotalImpuestos.Size = new System.Drawing.Size(54, 17);
+            this.lblTotalImpuestos.Size = new System.Drawing.Size(0, 17);
             this.lblTotalImpuestos.TabIndex = 11;
-            this.lblTotalImpuestos.Text = "label10";
             // 
             // lblEnvioAlmacen
             // 
             this.lblEnvioAlmacen.AutoSize = true;
             this.lblEnvioAlmacen.Location = new System.Drawing.Point(151, 238);
             this.lblEnvioAlmacen.Name = "lblEnvioAlmacen";
-            this.lblEnvioAlmacen.Size = new System.Drawing.Size(54, 17);
+            this.lblEnvioAlmacen.Size = new System.Drawing.Size(0, 17);
             this.lblEnvioAlmacen.TabIndex = 12;
-            this.lblEnvioAlmacen.Text = "label11";
             // 
             // lblGranTotal
             // 
             this.lblGranTotal.AutoSize = true;
             this.lblGranTotal.Location = new System.Drawing.Point(76, 268);
             this.lblGranTotal.Name = "lblGranTotal";
-            this.lblGranTotal.Size = new System.Drawing.Size(54, 17);
+            this.lblGranTotal.Size = new System.Drawing.Size(0, 17);
             this.lblGranTotal.TabIndex = 13;
-            this.lblGranTotal.Text = "label12";
             // 
             // rtbObservaciones
             // 
@@ -197,7 +192,8 @@
             this.txtResponsable.Name = "txtResponsable";
             this.txtResponsable.Size = new System.Drawing.Size(195, 22);
             this.txtResponsable.TabIndex = 15;
-            this.txtResponsable.Text = "Ingresa responsable";
+            this.txtResponsable.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtResponsable_MouseClick);
+            this.txtResponsable.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtResponsable_KeyPress);
             // 
             // btnRegresar
             // 
@@ -223,12 +219,14 @@
             // 
             // txtDescuento
             // 
+            this.txtDescuento.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtDescuento.Location = new System.Drawing.Point(128, 98);
             this.txtDescuento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.Size = new System.Drawing.Size(163, 22);
             this.txtDescuento.TabIndex = 18;
-            this.txtDescuento.Text = "Ingresa % descuento";
+            this.txtDescuento.Text = "0";
+            this.txtDescuento.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtDescuento_MouseClick);
             this.txtDescuento.TextChanged += new System.EventHandler(this.txtDescuento_TextChanged);
             // 
             // label6
