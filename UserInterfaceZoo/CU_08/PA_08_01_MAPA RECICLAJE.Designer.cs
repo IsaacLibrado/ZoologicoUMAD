@@ -39,7 +39,7 @@ namespace UserInterfaceZoo.CU_08
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(471, 277);
+            this.btnSalir.Location = new System.Drawing.Point(442, 277);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 1;
@@ -71,7 +71,7 @@ namespace UserInterfaceZoo.CU_08
             this.pictureBoxMapa.Image = global::UserInterfaceZoo.Properties.Resources.mapa_editado_CU_08;
             this.pictureBoxMapa.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxMapa.Name = "pictureBoxMapa";
-            this.pictureBoxMapa.Size = new System.Drawing.Size(550, 300);
+            this.pictureBoxMapa.Size = new System.Drawing.Size(526, 296);
             this.pictureBoxMapa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMapa.TabIndex = 0;
             this.pictureBoxMapa.TabStop = false;
@@ -89,7 +89,7 @@ namespace UserInterfaceZoo.CU_08
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 390);
+            this.ClientSize = new System.Drawing.Size(550, 320);
             this.Controls.Add(this.btnBasura);
             this.Controls.Add(this.btnRestaurante);
             this.Controls.Add(this.btnInformacion);

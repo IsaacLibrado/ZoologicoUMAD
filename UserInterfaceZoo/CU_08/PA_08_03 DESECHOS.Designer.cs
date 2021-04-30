@@ -47,7 +47,7 @@ namespace UserInterfaceZoo.CU_08
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(613, 355);
+            this.btnSalir.Location = new System.Drawing.Point(463, 285);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 0;
@@ -58,9 +58,9 @@ namespace UserInterfaceZoo.CU_08
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.desechos;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(347, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(334, 204);
+            this.pictureBox1.Size = new System.Drawing.Size(191, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -68,7 +68,7 @@ namespace UserInterfaceZoo.CU_08
             // lblDesechos
             // 
             this.lblDesechos.AutoSize = true;
-            this.lblDesechos.Location = new System.Drawing.Point(363, 12);
+            this.lblDesechos.Location = new System.Drawing.Point(12, 9);
             this.lblDesechos.Name = "lblDesechos";
             this.lblDesechos.Size = new System.Drawing.Size(177, 13);
             this.lblDesechos.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace UserInterfaceZoo.CU_08
             // lblDesechos2
             // 
             this.lblDesechos2.AutoSize = true;
-            this.lblDesechos2.Location = new System.Drawing.Point(363, 35);
+            this.lblDesechos2.Location = new System.Drawing.Point(12, 32);
             this.lblDesechos2.Name = "lblDesechos2";
             this.lblDesechos2.Size = new System.Drawing.Size(161, 13);
             this.lblDesechos2.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace UserInterfaceZoo.CU_08
             // lblDesechos3
             // 
             this.lblDesechos3.AutoSize = true;
-            this.lblDesechos3.Location = new System.Drawing.Point(363, 62);
+            this.lblDesechos3.Location = new System.Drawing.Point(12, 59);
             this.lblDesechos3.Name = "lblDesechos3";
             this.lblDesechos3.Size = new System.Drawing.Size(121, 13);
             this.lblDesechos3.TabIndex = 4;
@@ -95,7 +95,7 @@ namespace UserInterfaceZoo.CU_08
             // lblDesechos4
             // 
             this.lblDesechos4.AutoSize = true;
-            this.lblDesechos4.Location = new System.Drawing.Point(363, 87);
+            this.lblDesechos4.Location = new System.Drawing.Point(12, 84);
             this.lblDesechos4.Name = "lblDesechos4";
             this.lblDesechos4.Size = new System.Drawing.Size(61, 13);
             this.lblDesechos4.TabIndex = 5;
@@ -104,7 +104,7 @@ namespace UserInterfaceZoo.CU_08
             // lblDesechos6
             // 
             this.lblDesechos6.AutoSize = true;
-            this.lblDesechos6.Location = new System.Drawing.Point(363, 136);
+            this.lblDesechos6.Location = new System.Drawing.Point(12, 133);
             this.lblDesechos6.Name = "lblDesechos6";
             this.lblDesechos6.Size = new System.Drawing.Size(126, 13);
             this.lblDesechos6.TabIndex = 6;
@@ -113,7 +113,7 @@ namespace UserInterfaceZoo.CU_08
             // lblDesechos5
             // 
             this.lblDesechos5.AutoSize = true;
-            this.lblDesechos5.Location = new System.Drawing.Point(363, 110);
+            this.lblDesechos5.Location = new System.Drawing.Point(12, 107);
             this.lblDesechos5.Name = "lblDesechos5";
             this.lblDesechos5.Size = new System.Drawing.Size(55, 13);
             this.lblDesechos5.TabIndex = 7;
@@ -122,7 +122,7 @@ namespace UserInterfaceZoo.CU_08
             // lblDesechos7
             // 
             this.lblDesechos7.AutoSize = true;
-            this.lblDesechos7.Location = new System.Drawing.Point(363, 164);
+            this.lblDesechos7.Location = new System.Drawing.Point(12, 161);
             this.lblDesechos7.Name = "lblDesechos7";
             this.lblDesechos7.Size = new System.Drawing.Size(104, 13);
             this.lblDesechos7.TabIndex = 8;
@@ -131,7 +131,7 @@ namespace UserInterfaceZoo.CU_08
             // lblDesechos8
             // 
             this.lblDesechos8.AutoSize = true;
-            this.lblDesechos8.Location = new System.Drawing.Point(363, 193);
+            this.lblDesechos8.Location = new System.Drawing.Point(12, 190);
             this.lblDesechos8.Name = "lblDesechos8";
             this.lblDesechos8.Size = new System.Drawing.Size(80, 13);
             this.lblDesechos8.TabIndex = 9;
@@ -140,7 +140,7 @@ namespace UserInterfaceZoo.CU_08
             // lblDesechos9
             // 
             this.lblDesechos9.AutoSize = true;
-            this.lblDesechos9.Location = new System.Drawing.Point(363, 223);
+            this.lblDesechos9.Location = new System.Drawing.Point(12, 220);
             this.lblDesechos9.Name = "lblDesechos9";
             this.lblDesechos9.Size = new System.Drawing.Size(53, 13);
             this.lblDesechos9.TabIndex = 10;
@@ -149,7 +149,7 @@ namespace UserInterfaceZoo.CU_08
             // lblDesechos10
             // 
             this.lblDesechos10.AutoSize = true;
-            this.lblDesechos10.Location = new System.Drawing.Point(363, 251);
+            this.lblDesechos10.Location = new System.Drawing.Point(12, 248);
             this.lblDesechos10.Name = "lblDesechos10";
             this.lblDesechos10.Size = new System.Drawing.Size(72, 13);
             this.lblDesechos10.TabIndex = 11;
@@ -158,7 +158,7 @@ namespace UserInterfaceZoo.CU_08
             // lblDesechos11
             // 
             this.lblDesechos11.AutoSize = true;
-            this.lblDesechos11.Location = new System.Drawing.Point(363, 275);
+            this.lblDesechos11.Location = new System.Drawing.Point(12, 272);
             this.lblDesechos11.Name = "lblDesechos11";
             this.lblDesechos11.Size = new System.Drawing.Size(162, 13);
             this.lblDesechos11.TabIndex = 12;
@@ -168,7 +168,7 @@ namespace UserInterfaceZoo.CU_08
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 390);
+            this.ClientSize = new System.Drawing.Size(550, 320);
             this.Controls.Add(this.lblDesechos11);
             this.Controls.Add(this.lblDesechos10);
             this.Controls.Add(this.lblDesechos9);

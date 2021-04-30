@@ -30,7 +30,6 @@ namespace UserInterfaceZoo.CU_08
         private void InitializeComponent()
         {
             this.btnSalir = new System.Windows.Forms.Button();
-            this.lblInfo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblInfo2 = new System.Windows.Forms.Label();
             this.lblInfo3 = new System.Windows.Forms.Label();
@@ -41,22 +40,13 @@ namespace UserInterfaceZoo.CU_08
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(613, 355);
+            this.btnSalir.Location = new System.Drawing.Point(463, 285);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // lblInfo
-            // 
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(12, 212);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(115, 13);
-            this.lblInfo.TabIndex = 2;
-            this.lblInfo.Text = "Información Reciclaje: ";
             // 
             // label1
             // 
@@ -69,17 +59,17 @@ namespace UserInterfaceZoo.CU_08
             // lblInfo2
             // 
             this.lblInfo2.AutoSize = true;
-            this.lblInfo2.Location = new System.Drawing.Point(12, 225);
+            this.lblInfo2.Location = new System.Drawing.Point(9, 145);
             this.lblInfo2.Name = "lblInfo2";
-            this.lblInfo2.Size = new System.Drawing.Size(572, 13);
+            this.lblInfo2.Size = new System.Drawing.Size(543, 13);
             this.lblInfo2.TabIndex = 4;
-            this.lblInfo2.Text = "El reciclaje es la mejor manera de sacar provecho a los materiales usados porque " +
-    "con ellos se crean nuevos materiales. ";
+            this.lblInfo2.Text = "El reciclaje es la mejor manera de aprovechar los materiales usados porque con el" +
+    "los se crean nuevos materiales. ";
             // 
             // lblInfo3
             // 
             this.lblInfo3.AutoSize = true;
-            this.lblInfo3.Location = new System.Drawing.Point(9, 252);
+            this.lblInfo3.Location = new System.Drawing.Point(9, 192);
             this.lblInfo3.Name = "lblInfo3";
             this.lblInfo3.Size = new System.Drawing.Size(441, 13);
             this.lblInfo3.TabIndex = 5;
@@ -89,19 +79,19 @@ namespace UserInterfaceZoo.CU_08
             // lblInfo4
             // 
             this.lblInfo4.AutoSize = true;
-            this.lblInfo4.Location = new System.Drawing.Point(21, 277);
+            this.lblInfo4.Location = new System.Drawing.Point(9, 237);
             this.lblInfo4.Name = "lblInfo4";
-            this.lblInfo4.Size = new System.Drawing.Size(644, 13);
+            this.lblInfo4.Size = new System.Drawing.Size(525, 13);
             this.lblInfo4.TabIndex = 6;
-            this.lblInfo4.Text = "por este motivo, sigue siendo y será la mejor ayuda para la conservación del plan" +
-    "eta tanto para el hombre como para el medioambiente.";
+            this.lblInfo4.Text = "Por ello es la mejor ayuda para la conservación del planeta tanto para el hombre " +
+    "como para el medioambiente.";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.reciclaje;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(297, 197);
+            this.pictureBox1.Size = new System.Drawing.Size(525, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -110,12 +100,11 @@ namespace UserInterfaceZoo.CU_08
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 390);
+            this.ClientSize = new System.Drawing.Size(550, 320);
             this.Controls.Add(this.lblInfo4);
             this.Controls.Add(this.lblInfo3);
             this.Controls.Add(this.lblInfo2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -131,7 +120,6 @@ namespace UserInterfaceZoo.CU_08
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblInfo2;
         private System.Windows.Forms.Label lblInfo3;
