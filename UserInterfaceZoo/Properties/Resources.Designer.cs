@@ -123,6 +123,16 @@ namespace UserInterfaceZoo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap desechos {
+            get {
+                object obj = ResourceManager.GetObject("desechos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e5ba79334133d2cb362dd639f755a392 {
             get {
                 object obj = ResourceManager.GetObject("e5ba79334133d2cb362dd639f755a392", resourceCulture);
@@ -293,6 +303,16 @@ namespace UserInterfaceZoo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mapa_editado_CU_08 {
+            get {
+                object obj = ResourceManager.GetObject("mapa editado CU_08", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap membresia {
             get {
                 object obj = ResourceManager.GetObject("membresia", resourceCulture);
@@ -386,6 +406,16 @@ namespace UserInterfaceZoo.Properties {
         internal static System.Drawing.Bitmap Puma {
             get {
                 object obj = ResourceManager.GetObject("Puma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reciclaje {
+            get {
+                object obj = ResourceManager.GetObject("reciclaje", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
