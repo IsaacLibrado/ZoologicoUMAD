@@ -162,5 +162,10 @@ namespace UserInterfaceZoo
                 MenuPrincipal.MostrarMensaje("LA FECHA SELECCIONADA ES MENOR A LA FECHA DEL SISTEMA");
             }
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

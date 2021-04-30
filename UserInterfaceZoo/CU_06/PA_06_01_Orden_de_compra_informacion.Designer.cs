@@ -54,6 +54,7 @@
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.fechaRecepcion = new System.Windows.Forms.Timer(this.components);
             this.lblDatosP1 = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -269,13 +270,14 @@
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Location = new System.Drawing.Point(533, 341);
+            this.btnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
+            this.btnSiguiente.Location = new System.Drawing.Point(583, 341);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(115, 37);
             this.btnSiguiente.TabIndex = 22;
             this.btnSiguiente.Text = "Siguiente";
-            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.UseVisualStyleBackColor = false;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // fechaRecepcion
@@ -291,11 +293,24 @@
             this.lblDatosP1.Size = new System.Drawing.Size(0, 17);
             this.lblDatosP1.TabIndex = 23;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
+            this.btnSalir.Location = new System.Drawing.Point(462, 341);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(115, 37);
+            this.btnSalir.TabIndex = 24;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // PA_06_01_Orden_de_compra_informacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 390);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblDatosP1);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.lblTelefonoDepartamento);
@@ -356,5 +371,6 @@
         public System.Windows.Forms.ListBox listBoxDepartamento;
         public System.Windows.Forms.Label lblDomicilioDepartamento;
         public System.Windows.Forms.Label lblTelefonoDepartamento;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
