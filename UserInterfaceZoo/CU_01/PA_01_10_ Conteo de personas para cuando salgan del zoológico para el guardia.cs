@@ -19,7 +19,9 @@ namespace UserInterfaceZoo.CU_01
         public PA_01_10__Conteo_de_personas_para_cuando_salgan_del_zoológico_para_el_guardia()
         {
             InitializeComponent();
+            //Agregamos unn valor inicial y que solo puedas poner 5 numeros
             txtCantidad.Text = "0";
+            txtCantidad.MaxLength = 5;
         }
         /// <summary>
         /// Metodo para validar el boton para cuando salgan las personas
