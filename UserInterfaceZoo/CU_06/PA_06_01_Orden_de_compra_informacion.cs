@@ -46,7 +46,7 @@ namespace UserInterfaceZoo
             pa2_pa1.lblTelDepa_p2.Text = lblTelefonoDepartamento.Text;
 
 
-            if (dateTimePicker1.Value.Date < DateTime.Now.Date && dateTimePicker2.Value.Date < DateTime.Now.Date)
+            if (dateTimePicker1.Value.Date < DateTime.Now.Date || dateTimePicker2.Value.Date < DateTime.Now.Date)
             {
                 MenuPrincipal.MostrarMensaje("LA FECHA SELECCIONADA ES MENOR A LA FECHA DEL SISTEMA");
             }
