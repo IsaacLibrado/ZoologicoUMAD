@@ -153,8 +153,6 @@ namespace UserInterfaceZoo
         private void btnInteractivo_Click(object sender, EventArgs e)
         {
             mostrarSubMenu(panelInteractivoSubMenu);
-
-
         }
 
         /// <summary>
@@ -585,7 +583,7 @@ namespace UserInterfaceZoo
             //mostramos la pantalla activa
             pantallaActiva.Show();
 
-            MostrarMensaje("");
+            MostrarMensaje(string.Empty);
         }
 
         /// <summary>
@@ -621,6 +619,12 @@ namespace UserInterfaceZoo
         {
             //obtenemos la instancia del menu principal para colocar el texto en su control
             MenuPrincipal formActual = (MenuPrincipal)ActiveForm;
+
+            //para que sea más demostrativo
+            if (formActual.lblMensajes.Text == pMensaje && formActual.lblMensajes.Text != string.Empty)
+            {
+                pMensaje = "NUEVO MENSAJE: " + pMensaje;
+            }
             formActual.lblMensajes.Text = pMensaje;
         }
 

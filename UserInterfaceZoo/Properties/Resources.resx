@@ -166,8 +166,8 @@
   <data name="bufanda_leopardo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bufanda_leopardo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tucan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tucan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Leon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Flamenco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flamenco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,11 +205,14 @@
   <data name="peluche_leon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\peluche_leon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jirafas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jirafas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Tucan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tucan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="taza_puma" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\taza_puma.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jirafas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jirafas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo zootopia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo zootopia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,7 +229,7 @@
   <data name="oso" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Leon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Leon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

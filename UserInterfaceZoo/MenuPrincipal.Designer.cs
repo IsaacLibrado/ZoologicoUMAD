@@ -93,7 +93,7 @@
             // 
             // panelSideMenu
             // 
-            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.panelSideMenu.Controls.Add(this.panelUsuario);
             this.panelSideMenu.Controls.Add(this.panelSubMenus);
             this.panelSideMenu.Controls.Add(this.panelLogo);
@@ -105,7 +105,7 @@
             // 
             // panelUsuario
             // 
-            this.panelUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.panelUsuario.Controls.Add(this.btnSalir);
             this.panelUsuario.Controls.Add(this.lblIp);
             this.panelUsuario.Controls.Add(this.lblCargo);
@@ -119,7 +119,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Location = new System.Drawing.Point(172, 62);
@@ -135,7 +135,7 @@
             // 
             this.lblIp.AutoSize = true;
             this.lblIp.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblIp.Location = new System.Drawing.Point(0, 79);
+            this.lblIp.Location = new System.Drawing.Point(0, 81);
             this.lblIp.Name = "lblIp";
             this.lblIp.Size = new System.Drawing.Size(83, 17);
             this.lblIp.TabIndex = 3;
@@ -173,6 +173,7 @@
             // panelSubMenus
             // 
             this.panelSubMenus.AutoScroll = true;
+            this.panelSubMenus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(203)))), ((int)(((byte)(0)))));
             this.panelSubMenus.Controls.Add(this.panelInteractivoSubMenu);
             this.panelSubMenus.Controls.Add(this.btnInteractivo);
             this.panelSubMenus.Controls.Add(this.panelGestionSubMenu);
@@ -189,7 +190,7 @@
             // 
             // panelInteractivoSubMenu
             // 
-            this.panelInteractivoSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelInteractivoSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(203)))), ((int)(((byte)(0)))));
             this.panelInteractivoSubMenu.Controls.Add(this.btnSMVideojuego);
             this.panelInteractivoSubMenu.Controls.Add(this.btnSMInformacion);
             this.panelInteractivoSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
@@ -232,7 +233,7 @@
             // 
             // btnInteractivo
             // 
-            this.btnInteractivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnInteractivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnInteractivo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInteractivo.FlatAppearance.BorderSize = 0;
             this.btnInteractivo.ForeColor = System.Drawing.Color.White;
@@ -248,7 +249,7 @@
             // 
             // panelGestionSubMenu
             // 
-            this.panelGestionSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelGestionSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(203)))), ((int)(((byte)(0)))));
             this.panelGestionSubMenu.Controls.Add(this.btnSMSanitizar);
             this.panelGestionSubMenu.Controls.Add(this.btnSMReciclado);
             this.panelGestionSubMenu.Controls.Add(this.btnSMMaquinaExp);
@@ -308,7 +309,7 @@
             // 
             // btnGestion
             // 
-            this.btnGestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnGestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnGestion.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGestion.FlatAppearance.BorderSize = 0;
             this.btnGestion.ForeColor = System.Drawing.Color.White;
@@ -324,7 +325,7 @@
             // 
             // panelComprasSubMenu
             // 
-            this.panelComprasSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelComprasSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(203)))), ((int)(((byte)(0)))));
             this.panelComprasSubMenu.Controls.Add(this.btnSMAlimento);
             this.panelComprasSubMenu.Controls.Add(this.btnSMInventario);
             this.panelComprasSubMenu.Controls.Add(this.btnSMOrdenCompra);
@@ -384,7 +385,7 @@
             // 
             // btnCompras
             // 
-            this.btnCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnCompras.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCompras.FlatAppearance.BorderSize = 0;
             this.btnCompras.ForeColor = System.Drawing.Color.White;
@@ -400,7 +401,7 @@
             // 
             // panelVentasSubMenu
             // 
-            this.panelVentasSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelVentasSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(203)))), ((int)(((byte)(0)))));
             this.panelVentasSubMenu.Controls.Add(this.btnSMApartarBoletos);
             this.panelVentasSubMenu.Controls.Add(this.btnSMVender);
             this.panelVentasSubMenu.Controls.Add(this.btnSMCerrarCaja);
@@ -477,9 +478,11 @@
             // 
             // btnVentas
             // 
-            this.btnVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnVentas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnVentas.FlatAppearance.BorderSize = 0;
+            this.btnVentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
+            this.btnVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnVentas.ForeColor = System.Drawing.Color.White;
             this.btnVentas.Location = new System.Drawing.Point(0, 0);
             this.btnVentas.Name = "btnVentas";
@@ -493,6 +496,7 @@
             // 
             // panelLogo
             // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.panelLogo.Controls.Add(this.pbLogo);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
@@ -513,7 +517,9 @@
             // 
             // panelDatos
             // 
-            this.panelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelDatos.BackColor = System.Drawing.Color.Transparent;
+            this.panelDatos.BackgroundImage = global::UserInterfaceZoo.Properties.Resources.fondo;
+            this.panelDatos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelDatos.Controls.Add(this.pbLogoTemp);
             this.panelDatos.Controls.Add(this.panelFecha);
             this.panelDatos.Controls.Add(this.lblNombreZoo);
@@ -579,7 +585,7 @@
             // 
             // panelBase
             // 
-            this.panelBase.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panelBase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(240)))), ((int)(((byte)(43)))));
             this.panelBase.Controls.Add(this.lblMensajes);
             this.panelBase.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelBase.Location = new System.Drawing.Point(234, 520);
@@ -591,7 +597,7 @@
             // 
             this.lblMensajes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMensajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensajes.ForeColor = System.Drawing.Color.Red;
+            this.lblMensajes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(46)))), ((int)(((byte)(0)))));
             this.lblMensajes.Location = new System.Drawing.Point(0, 5);
             this.lblMensajes.Name = "lblMensajes";
             this.lblMensajes.Size = new System.Drawing.Size(697, 27);
@@ -601,7 +607,7 @@
             // 
             // panelTitulo
             // 
-            this.panelTitulo.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panelTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(240)))), ((int)(((byte)(43)))));
             this.panelTitulo.Controls.Add(this.lblTitulo);
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.Location = new System.Drawing.Point(234, 100);
@@ -613,7 +619,7 @@
             // 
             this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.Red;
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(54)))), ((int)(((byte)(255)))));
             this.lblTitulo.Location = new System.Drawing.Point(29, 3);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(650, 27);
