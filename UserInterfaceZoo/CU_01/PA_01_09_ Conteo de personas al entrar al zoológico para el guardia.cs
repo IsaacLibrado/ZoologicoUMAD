@@ -14,7 +14,7 @@ namespace UserInterfaceZoo.CU_01
     {
         //Variable en uso
         int conteo = 0;
-        int total = 0;
+
 
         public PA_01_09__Conteo_de_personas_al_entrar_al_zoológico_para_el_guardia()
         {
@@ -66,10 +66,33 @@ namespace UserInterfaceZoo.CU_01
             }
         }
 
+        /// <summary>
+        /// Metodo del boton para salir de la pantalla
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29/04/21
+        /// Creador Manuel Rangel
         private void btnSalir_Click(object sender, EventArgs e)
         {
+            //Cerramos la pantalla y la cambiamos
             this.Close();
             MenuPrincipal.abrirPantallas(new PA_01_06_Pantalla_sin_avisos());
+        }
+        /// <summary>
+        /// Asignamos el evento KeyPress
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 07/04/21
+        /// Creador Manuel Rangel
+        private void txtCantPersonas_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Hacemos la validacion para que no acepte letras ni caracteres
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47 || (e.KeyChar >= 58 && e.KeyChar <= 255)))
+            {
+                MenuPrincipal.MostrarMensaje("Solo se aceptan numeros");
+                e.Handled = true;
+                return;
+            }
         }
     }
 }

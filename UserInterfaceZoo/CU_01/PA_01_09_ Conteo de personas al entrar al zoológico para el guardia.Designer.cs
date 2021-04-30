@@ -52,6 +52,7 @@
             this.txtCantPersonas.Name = "txtCantPersonas";
             this.txtCantPersonas.Size = new System.Drawing.Size(58, 20);
             this.txtCantPersonas.TabIndex = 1;
+            this.txtCantPersonas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantPersonas_KeyPress);
             // 
             // btnIngresar
             // 
