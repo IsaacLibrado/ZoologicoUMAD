@@ -47,7 +47,7 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnRegresar.Location = new System.Drawing.Point(412, 184);
@@ -60,7 +60,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnCerrar.Location = new System.Drawing.Point(412, 120);
@@ -177,7 +177,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnBuscar.Location = new System.Drawing.Point(20, 95);

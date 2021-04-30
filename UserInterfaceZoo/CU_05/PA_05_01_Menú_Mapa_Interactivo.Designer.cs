@@ -49,23 +49,24 @@ namespace UserInterfaceZoo.CU_05
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(846, 436);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(634, 354);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 0;
             this.button1.Text = "Salir ";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(613, 356);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
+            this.btnSalir.Location = new System.Drawing.Point(460, 289);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(56, 19);
             this.btnSalir.TabIndex = 2;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnGuacamaya
@@ -78,10 +79,10 @@ namespace UserInterfaceZoo.CU_05
             this.btnGuacamaya.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuacamaya.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuacamaya.ForeColor = System.Drawing.Color.Black;
-            this.btnGuacamaya.Location = new System.Drawing.Point(123, 53);
-            this.btnGuacamaya.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnGuacamaya.Location = new System.Drawing.Point(92, 43);
+            this.btnGuacamaya.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnGuacamaya.Name = "btnGuacamaya";
-            this.btnGuacamaya.Size = new System.Drawing.Size(126, 46);
+            this.btnGuacamaya.Size = new System.Drawing.Size(94, 37);
             this.btnGuacamaya.TabIndex = 4;
             this.btnGuacamaya.Text = "Santuario de aves (Tucanes, guacamayas y loros)";
             this.btnGuacamaya.UseVisualStyleBackColor = false;
@@ -90,10 +91,10 @@ namespace UserInterfaceZoo.CU_05
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Mapa_del_zoológico;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 30);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(675, 293);
+            this.pictureBox1.Size = new System.Drawing.Size(506, 238);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -108,10 +109,10 @@ namespace UserInterfaceZoo.CU_05
             this.BtnElefante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnElefante.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnElefante.ForeColor = System.Drawing.Color.Black;
-            this.BtnElefante.Location = new System.Drawing.Point(450, 52);
-            this.BtnElefante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnElefante.Location = new System.Drawing.Point(338, 42);
+            this.BtnElefante.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnElefante.Name = "BtnElefante";
-            this.BtnElefante.Size = new System.Drawing.Size(93, 48);
+            this.BtnElefante.Size = new System.Drawing.Size(70, 39);
             this.BtnElefante.TabIndex = 5;
             this.BtnElefante.Text = "Elefantes ";
             this.BtnElefante.UseVisualStyleBackColor = false;
@@ -127,10 +128,10 @@ namespace UserInterfaceZoo.CU_05
             this.BtnCebra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCebra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCebra.ForeColor = System.Drawing.Color.Black;
-            this.BtnCebra.Location = new System.Drawing.Point(574, 84);
-            this.BtnCebra.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnCebra.Location = new System.Drawing.Point(430, 68);
+            this.BtnCebra.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnCebra.Name = "BtnCebra";
-            this.BtnCebra.Size = new System.Drawing.Size(62, 27);
+            this.BtnCebra.Size = new System.Drawing.Size(46, 22);
             this.BtnCebra.TabIndex = 6;
             this.BtnCebra.Text = "Cebras";
             this.BtnCebra.UseVisualStyleBackColor = false;
@@ -146,10 +147,10 @@ namespace UserInterfaceZoo.CU_05
             this.BtnPuma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPuma.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPuma.ForeColor = System.Drawing.Color.Black;
-            this.BtnPuma.Location = new System.Drawing.Point(566, 267);
-            this.BtnPuma.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnPuma.Location = new System.Drawing.Point(424, 217);
+            this.BtnPuma.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnPuma.Name = "BtnPuma";
-            this.BtnPuma.Size = new System.Drawing.Size(59, 27);
+            this.BtnPuma.Size = new System.Drawing.Size(44, 22);
             this.BtnPuma.TabIndex = 7;
             this.BtnPuma.Text = "Pumas";
             this.BtnPuma.UseVisualStyleBackColor = false;
@@ -165,10 +166,10 @@ namespace UserInterfaceZoo.CU_05
             this.BtnJaguar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnJaguar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnJaguar.ForeColor = System.Drawing.Color.Black;
-            this.BtnJaguar.Location = new System.Drawing.Point(450, 280);
-            this.BtnJaguar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnJaguar.Location = new System.Drawing.Point(338, 228);
+            this.BtnJaguar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnJaguar.Name = "BtnJaguar";
-            this.BtnJaguar.Size = new System.Drawing.Size(78, 27);
+            this.BtnJaguar.Size = new System.Drawing.Size(58, 22);
             this.BtnJaguar.TabIndex = 8;
             this.BtnJaguar.Text = "Jaguares";
             this.BtnJaguar.UseVisualStyleBackColor = false;
@@ -184,10 +185,10 @@ namespace UserInterfaceZoo.CU_05
             this.BtnLeon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLeon.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLeon.ForeColor = System.Drawing.Color.Black;
-            this.BtnLeon.Location = new System.Drawing.Point(349, 267);
-            this.BtnLeon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnLeon.Location = new System.Drawing.Point(262, 217);
+            this.BtnLeon.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnLeon.Name = "BtnLeon";
-            this.BtnLeon.Size = new System.Drawing.Size(61, 27);
+            this.BtnLeon.Size = new System.Drawing.Size(46, 22);
             this.BtnLeon.TabIndex = 9;
             this.BtnLeon.Text = "Leones";
             this.BtnLeon.UseVisualStyleBackColor = false;
@@ -203,10 +204,10 @@ namespace UserInterfaceZoo.CU_05
             this.BtnTigre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnTigre.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnTigre.ForeColor = System.Drawing.Color.Black;
-            this.BtnTigre.Location = new System.Drawing.Point(410, 172);
-            this.BtnTigre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnTigre.Location = new System.Drawing.Point(308, 140);
+            this.BtnTigre.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnTigre.Name = "BtnTigre";
-            this.BtnTigre.Size = new System.Drawing.Size(42, 27);
+            this.BtnTigre.Size = new System.Drawing.Size(32, 22);
             this.BtnTigre.TabIndex = 10;
             this.BtnTigre.Text = "Tigres";
             this.BtnTigre.UseVisualStyleBackColor = false;
@@ -222,10 +223,10 @@ namespace UserInterfaceZoo.CU_05
             this.BtnFlamenco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFlamenco.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFlamenco.ForeColor = System.Drawing.Color.Black;
-            this.BtnFlamenco.Location = new System.Drawing.Point(538, 172);
-            this.BtnFlamenco.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnFlamenco.Location = new System.Drawing.Point(404, 140);
+            this.BtnFlamenco.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnFlamenco.Name = "BtnFlamenco";
-            this.BtnFlamenco.Size = new System.Drawing.Size(54, 27);
+            this.BtnFlamenco.Size = new System.Drawing.Size(40, 22);
             this.BtnFlamenco.TabIndex = 11;
             this.BtnFlamenco.Text = "Flamencos";
             this.BtnFlamenco.UseVisualStyleBackColor = false;
@@ -241,10 +242,10 @@ namespace UserInterfaceZoo.CU_05
             this.BtnOso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnOso.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnOso.ForeColor = System.Drawing.Color.Black;
-            this.BtnOso.Location = new System.Drawing.Point(478, 221);
-            this.BtnOso.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnOso.Location = new System.Drawing.Point(358, 180);
+            this.BtnOso.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnOso.Name = "BtnOso";
-            this.BtnOso.Size = new System.Drawing.Size(39, 21);
+            this.BtnOso.Size = new System.Drawing.Size(29, 17);
             this.BtnOso.TabIndex = 12;
             this.BtnOso.Text = "osos";
             this.BtnOso.UseVisualStyleBackColor = false;
@@ -260,10 +261,10 @@ namespace UserInterfaceZoo.CU_05
             this.BtnAguia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAguia.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAguia.ForeColor = System.Drawing.Color.Black;
-            this.BtnAguia.Location = new System.Drawing.Point(470, 126);
-            this.BtnAguia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnAguia.Location = new System.Drawing.Point(352, 102);
+            this.BtnAguia.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnAguia.Name = "BtnAguia";
-            this.BtnAguia.Size = new System.Drawing.Size(47, 21);
+            this.BtnAguia.Size = new System.Drawing.Size(35, 17);
             this.BtnAguia.TabIndex = 13;
             this.BtnAguia.Text = "aguila";
             this.BtnAguia.UseVisualStyleBackColor = false;
@@ -279,10 +280,10 @@ namespace UserInterfaceZoo.CU_05
             this.BtnJirafa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnJirafa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnJirafa.ForeColor = System.Drawing.Color.Black;
-            this.BtnJirafa.Location = new System.Drawing.Point(361, 84);
-            this.BtnJirafa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnJirafa.Location = new System.Drawing.Point(271, 68);
+            this.BtnJirafa.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnJirafa.Name = "BtnJirafa";
-            this.BtnJirafa.Size = new System.Drawing.Size(49, 27);
+            this.BtnJirafa.Size = new System.Drawing.Size(37, 22);
             this.BtnJirafa.TabIndex = 14;
             this.BtnJirafa.Text = "jirafas";
             this.BtnJirafa.UseVisualStyleBackColor = false;
@@ -298,10 +299,10 @@ namespace UserInterfaceZoo.CU_05
             this.BtnPinguino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPinguino.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPinguino.ForeColor = System.Drawing.Color.Black;
-            this.BtnPinguino.Location = new System.Drawing.Point(470, 172);
-            this.BtnPinguino.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnPinguino.Location = new System.Drawing.Point(352, 140);
+            this.BtnPinguino.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnPinguino.Name = "BtnPinguino";
-            this.BtnPinguino.Size = new System.Drawing.Size(54, 27);
+            this.BtnPinguino.Size = new System.Drawing.Size(40, 22);
             this.BtnPinguino.TabIndex = 15;
             this.BtnPinguino.Text = "pingüino";
             this.BtnPinguino.UseVisualStyleBackColor = false;
@@ -309,9 +310,9 @@ namespace UserInterfaceZoo.CU_05
             // 
             // PA_05_01_Menú_Mapa_Interactivo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 389);
+            this.ClientSize = new System.Drawing.Size(526, 316);
             this.Controls.Add(this.BtnPinguino);
             this.Controls.Add(this.BtnJirafa);
             this.Controls.Add(this.BtnAguia);
@@ -328,7 +329,7 @@ namespace UserInterfaceZoo.CU_05
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "PA_05_01_Menú_Mapa_Interactivo";
             this.Text = "PA_05_01_Menú_Mapa_Interactivo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
