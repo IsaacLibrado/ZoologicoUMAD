@@ -45,14 +45,21 @@ namespace UserInterfaceZoo
             pa2_pa1.lblDomDepa_p2.Text = lblDomicilioDepartamento.Text;
             pa2_pa1.lblTelDepa_p2.Text = lblTelefonoDepartamento.Text;
 
-
-            if (dateTimePicker1.Value.Date < DateTime.Now.Date || dateTimePicker2.Value.Date < DateTime.Now.Date)
+            if(lblCompaProveedor.Text==""||lblDomicilioDepartamento.Text=="")
             {
-                MenuPrincipal.MostrarMensaje("LA FECHA SELECCIONADA ES MENOR A LA FECHA DEL SISTEMA");
+                MenuPrincipal.MostrarMensaje("DEBE LLENAR TODOS LOS CAMPOS DE LA PANTALLA");
             }
             else
-                MenuPrincipal.abrirPantallas(pa2_pa1); 
+            {
+                if (dateTimePicker1.Value.Date < DateTime.Now.Date || dateTimePicker2.Value.Date < DateTime.Now.Date)
+                {
+                    MenuPrincipal.MostrarMensaje("LA FECHA SELECCIONADA ES MENOR A LA FECHA DEL SISTEMA");
+                }
+                else
+                    MenuPrincipal.abrirPantallas(pa2_pa1);
                 MenuPrincipal.AsignarTitulo("Orden de compra registro artículos");
+            }
+            
         }
 
 

@@ -60,6 +60,9 @@
             this.listBoxDepar_p2 = new System.Windows.Forms.Label();
             this.lblDomDepa_p2 = new System.Windows.Forms.Label();
             this.lblTelDepa_p2 = new System.Windows.Forms.Label();
+            this.resultadoTotal = new System.Windows.Forms.Label();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArticulos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,7 +198,7 @@
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
-            this.btnAgregar.Location = new System.Drawing.Point(446, 71);
+            this.btnAgregar.Location = new System.Drawing.Point(442, 23);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(133, 38);
@@ -207,7 +210,7 @@
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
-            this.btnRegresar.Location = new System.Drawing.Point(400, 140);
+            this.btnRegresar.Location = new System.Drawing.Point(389, 141);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(100, 38);
@@ -219,7 +222,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
-            this.btnSiguiente.Location = new System.Drawing.Point(542, 140);
+            this.btnSiguiente.Location = new System.Drawing.Point(531, 141);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(91, 38);
@@ -378,11 +381,43 @@
             this.lblTelDepa_p2.Text = "label5";
             this.lblTelDepa_p2.Visible = false;
             // 
+            // resultadoTotal
+            // 
+            this.resultadoTotal.AutoSize = true;
+            this.resultadoTotal.Location = new System.Drawing.Point(642, 226);
+            this.resultadoTotal.Name = "resultadoTotal";
+            this.resultadoTotal.Size = new System.Drawing.Size(0, 17);
+            this.resultadoTotal.TabIndex = 30;
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
+            this.btnCalcular.Location = new System.Drawing.Point(442, 81);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(133, 38);
+            this.btnCalcular.TabIndex = 31;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(455, 226);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(181, 17);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "Total articulos acumulados:";
+            // 
             // PA_06_02_Orden_de_compra_registro_articulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 390);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.resultadoTotal);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnAgregar);
@@ -453,5 +488,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioUnitario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
+        public System.Windows.Forms.Label resultadoTotal;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label label5;
     }
 }

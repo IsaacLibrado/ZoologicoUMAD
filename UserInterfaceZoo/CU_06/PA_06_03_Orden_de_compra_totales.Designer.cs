@@ -45,7 +45,6 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnGenerarReporte = new System.Windows.Forms.Button();
             this.txtDescuento = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.lblDatosP3 = new System.Windows.Forms.Label();
             this.labelFechasP1 = new System.Windows.Forms.Label();
             this.lblFechaRecp_p3 = new System.Windows.Forms.Label();
@@ -230,15 +229,7 @@
             this.txtDescuento.Text = "0";
             this.txtDescuento.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtDescuento_MouseClick);
             this.txtDescuento.TextChanged += new System.EventHandler(this.txtDescuento_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "label6";
+            this.txtDescuento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescuento_KeyPress);
             // 
             // lblDatosP3
             // 
@@ -465,7 +456,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 390);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtDescuento);
             this.Controls.Add(this.btnGenerarReporte);
             this.Controls.Add(this.btnRegresar);
@@ -532,7 +522,6 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnGenerarReporte;
         private System.Windows.Forms.TextBox txtDescuento;
-        private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label lblDatosP3;
         public System.Windows.Forms.Label labelFechasP1;
         public System.Windows.Forms.Label lblFechaRecp_p3;

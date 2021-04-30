@@ -62,10 +62,16 @@ namespace UserInterfaceZoo
 
         private void crearPDF()
         {
+            //creamos el formato del nombre del archivo
+            string nombrearch = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString()
+                + "-" + DateTime.Now.Year.ToString() + "_" + DateTime.Now.Hour.ToString()
+                + "_" + DateTime.Now.Minute.ToString() + "_" + DateTime.Now.Second.ToString();
+
+
             PA_06_01_Orden_de_compra_informacion a = new PA_06_01_Orden_de_compra_informacion();
             
 
-            PdfWriter pdfWriter = new PdfWriter("ReporteOC  .pdf");
+            PdfWriter pdfWriter = new PdfWriter("ReporteOC"+nombrearch+".pdf");
             PdfDocument pdf = new PdfDocument(pdfWriter);
 
             Document documento = new Document(pdf, PageSize.LETTER);
@@ -350,6 +356,25 @@ namespace UserInterfaceZoo
         private void txtDescuento_MouseClick(object sender, MouseEventArgs e)
         {
             txtDescuento.Text = "";
+        }
+
+        private void txtDescuento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+
+                e.Handled = true;
+                MenuPrincipal.MostrarMensaje("NO SE ACEPTAN LETRAS, SOLO NÚMEROS");
+            }
         }
     }
 }

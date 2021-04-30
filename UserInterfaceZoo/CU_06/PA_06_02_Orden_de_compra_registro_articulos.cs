@@ -56,17 +56,23 @@ namespace UserInterfaceZoo
             //pa3.txtUPeso_p3.Text = txtUnidadPeso.Text;
             pa3.lblPUnitario_p3.Text = lblPrecioUnitario.Text;
             pa3.lblTotal_p3.Text = lblTotal.Text;
-            pa3.lblSubtotal.Text = lblTotal.Text;
+            pa3.lblSubtotal.Text = resultadoTotal.Text;
 
-            MenuPrincipal.abrirPantallas(pa3);
-            MenuPrincipal.AsignarTitulo("Orden de compra Totales");
+            if (resultadoTotal.Text == ""||resultadoTotal.Text=="0")
+            {
+                MenuPrincipal.MostrarMensaje("DEBE GENERAR EL TOTAL DE ARTICULOS ACUMULADOS");
+            }
+            else
+            {
+                MenuPrincipal.abrirPantallas(pa3);
+                MenuPrincipal.AsignarTitulo("Orden de compra Totales");
+
+            }           
 
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            
-
+        {          
 
             if (txtNumeroArticulo.Text == "" || txtCantidad.Text == "" )
             {
@@ -190,6 +196,17 @@ namespace UserInterfaceZoo
         private void txtCantidad_MouseClick(object sender, MouseEventArgs e)
         {
             txtCantidad.Text = "";
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            double total = 0;
+
+            foreach (DataGridViewRow row in dataGridViewArticulos.Rows)
+            {
+                total += Convert.ToDouble(row.Cells["Total"].Value);
+            }
+            resultadoTotal.Text = total.ToString();
         }
     }
 }
