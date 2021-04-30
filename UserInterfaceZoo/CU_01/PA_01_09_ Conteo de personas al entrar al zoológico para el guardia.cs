@@ -18,8 +18,10 @@ namespace UserInterfaceZoo.CU_01
 
         public PA_01_09__Conteo_de_personas_al_entrar_al_zoológico_para_el_guardia()
         {
+            //Agregamos unn valor inicial y que solo puedas poner 5 numeros
             InitializeComponent();
             txtCantPersonas.Text = "0";
+            txtCantPersonas.MaxLength = 5;
         }
         /// <summary>
         /// Metodo para validar el boton para validar el boton de ingresar datos

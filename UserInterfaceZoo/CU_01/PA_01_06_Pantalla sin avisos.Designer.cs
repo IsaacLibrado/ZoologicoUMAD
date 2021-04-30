@@ -48,7 +48,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnSalir.Location = new System.Drawing.Point(443, 284);
             this.btnSalir.Name = "btnSalir";
@@ -106,7 +106,7 @@
             this.btnTemExcedida.UseVisualStyleBackColor = false;
             this.btnTemExcedida.Click += new System.EventHandler(this.btnTemExcedida_Click);
             // 
-            // PA_01_06__Pantalla_sin_avisos
+            // PA_01_06_Pantalla_sin_avisos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -117,7 +117,7 @@
             this.Controls.Add(this.btnPersonasEntrada);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label1);
-            this.Name = "PA_01_06__Pantalla_sin_avisos";
+            this.Name = "PA_01_06_Pantalla_sin_avisos";
             this.Text = "PA_01_06__Pantalla_sin_avisos";
             this.ResumeLayout(false);
             this.PerformLayout();
