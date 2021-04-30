@@ -58,7 +58,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnAceptar.Location = new System.Drawing.Point(75, 188);
             this.btnAceptar.Name = "btnAceptar";
@@ -70,7 +70,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCancelar.Location = new System.Drawing.Point(424, 188);
             this.btnCancelar.Name = "btnCancelar";
@@ -82,7 +82,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnSalir.Location = new System.Drawing.Point(424, 266);
             this.btnSalir.Name = "btnSalir";

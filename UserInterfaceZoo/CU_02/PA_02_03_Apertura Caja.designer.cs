@@ -147,7 +147,7 @@
             // 
             // btnAperturar
             // 
-            this.btnAperturar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnAperturar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnAperturar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnAperturar.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnAperturar.Location = new System.Drawing.Point(400, 68);
@@ -160,7 +160,7 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnRegresar.Location = new System.Drawing.Point(400, 211);

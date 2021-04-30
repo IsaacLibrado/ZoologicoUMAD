@@ -60,7 +60,7 @@
             // 
             // btnPersonasEntrada
             // 
-            this.btnPersonasEntrada.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnPersonasEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnPersonasEntrada.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnPersonasEntrada.Location = new System.Drawing.Point(12, 127);
             this.btnPersonasEntrada.Name = "btnPersonasEntrada";
@@ -72,7 +72,7 @@
             // 
             // btnPersonasSalida
             // 
-            this.btnPersonasSalida.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnPersonasSalida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnPersonasSalida.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnPersonasSalida.Location = new System.Drawing.Point(12, 171);
             this.btnPersonasSalida.Name = "btnPersonasSalida";
@@ -84,7 +84,7 @@
             // 
             // btnAvisoFilas
             // 
-            this.btnAvisoFilas.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAvisoFilas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnAvisoFilas.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnAvisoFilas.Location = new System.Drawing.Point(12, 12);
             this.btnAvisoFilas.Name = "btnAvisoFilas";
@@ -96,7 +96,7 @@
             // 
             // btnTemExcedida
             // 
-            this.btnTemExcedida.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnTemExcedida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnTemExcedida.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnTemExcedida.Location = new System.Drawing.Point(12, 71);
             this.btnTemExcedida.Name = "btnTemExcedida";
@@ -106,7 +106,7 @@
             this.btnTemExcedida.UseVisualStyleBackColor = false;
             this.btnTemExcedida.Click += new System.EventHandler(this.btnTemExcedida_Click);
             // 
-            // PA_01_06__Pantalla_sin_avisos
+            // PA_01_06_Pantalla_sin_avisos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -117,7 +117,7 @@
             this.Controls.Add(this.btnPersonasEntrada);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label1);
-            this.Name = "PA_01_06__Pantalla_sin_avisos";
+            this.Name = "PA_01_06_Pantalla_sin_avisos";
             this.Text = "PA_01_06__Pantalla_sin_avisos";
             this.ResumeLayout(false);
             this.PerformLayout();
