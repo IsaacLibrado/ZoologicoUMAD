@@ -41,6 +41,7 @@ namespace UserInterfaceZoo.CU_01
         /// Creador Manuel Rangel
         private void btnIngresar_Click_1(object sender, EventArgs e)
         {
+            //Agregamos la validacion para el textbox vacio
             if (txtCantidad.Text == "")
             {
                 MenuPrincipal.MostrarMensaje("Debes de ingresar algun valor");
@@ -54,6 +55,22 @@ namespace UserInterfaceZoo.CU_01
                 MenuPrincipal.MostrarMensaje("Se a retirado cliente del zoológico pueden acceder " + txtCantidad.Text + " personas de la entrada");
                 //Limpiamos el textbox
                 txtCantidad.Clear();
+            }
+        }
+        /// <summary>
+        /// Hacemos la creacion del evento KeyPress
+        /// </summary>
+        /// Version 1.0
+        /// Fecha de creacion 29/04/21
+        /// Creador Manuel Rangel
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Hacemos una validacion para que acepte solo numeros y no letras ni caracteres
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47 || (e.KeyChar >= 58 && e.KeyChar <= 255)))
+            {
+                MenuPrincipal.MostrarMensaje("Solo se aceptan numeros");
+                e.Handled = true;
+                return;
             }
         }
     }
