@@ -294,6 +294,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Reciclado");
             RegistroBitacora("Realizada la gestion del reciclado");
+            MenuPrincipal.abrirPantallas(new CU_08.PA_08_01_MAPA_RECICLAJE());
         }
 
         /// <summary>

@@ -286,6 +286,24 @@
     <Compile Include="CU_05\PA_05_15_Animales.Designer.cs">
       <DependentUpon>PA_05_15_Animales.cs</DependentUpon>
     </Compile>
+    <Compile Include="CU_08\PA_08_01_MAPA RECICLAJE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_08\PA_08_01_MAPA RECICLAJE.Designer.cs">
+      <DependentUpon>PA_08_01_MAPA RECICLAJE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_08\PA_08_02 INFORMACION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_08\PA_08_02 INFORMACION.Designer.cs">
+      <DependentUpon>PA_08_02 INFORMACION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_08\PA_08_03 DESECHOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_08\PA_08_03 DESECHOS.Designer.cs">
+      <DependentUpon>PA_08_03 DESECHOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -407,6 +425,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CU_05\PA_05_15_Animales.resx">
       <DependentUpon>PA_05_15_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_08\PA_08_01_MAPA RECICLAJE.resx">
+      <DependentUpon>PA_08_01_MAPA RECICLAJE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_08\PA_08_02 INFORMACION.resx">
+      <DependentUpon>PA_08_02 INFORMACION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_08\PA_08_03 DESECHOS.resx">
+      <DependentUpon>PA_08_03 DESECHOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
@@ -576,6 +603,9 @@
     <Content Include="CU_09\AxInterop.WMPLib.dll" />
     <Content Include="CU_09\Interop.WMPLib.dll" />
     <Content Include="CU_09\VideojuegoZoo.exe" />
+    <None Include="Resources\desechos.jpg" />
+    <None Include="Resources\reciclaje.jfif" />
+    <None Include="Resources\mapa editado CU_08.png" />
     <None Include="Resources\fondo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
