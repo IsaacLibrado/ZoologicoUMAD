@@ -60,7 +60,7 @@
             // 
             // btnPersonasEntrada
             // 
-            this.btnPersonasEntrada.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnPersonasEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnPersonasEntrada.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnPersonasEntrada.Location = new System.Drawing.Point(12, 127);
             this.btnPersonasEntrada.Name = "btnPersonasEntrada";
@@ -72,7 +72,7 @@
             // 
             // btnPersonasSalida
             // 
-            this.btnPersonasSalida.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnPersonasSalida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnPersonasSalida.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnPersonasSalida.Location = new System.Drawing.Point(12, 171);
             this.btnPersonasSalida.Name = "btnPersonasSalida";
@@ -84,7 +84,7 @@
             // 
             // btnAvisoFilas
             // 
-            this.btnAvisoFilas.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAvisoFilas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnAvisoFilas.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnAvisoFilas.Location = new System.Drawing.Point(12, 12);
             this.btnAvisoFilas.Name = "btnAvisoFilas";
@@ -96,7 +96,7 @@
             // 
             // btnTemExcedida
             // 
-            this.btnTemExcedida.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnTemExcedida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btnTemExcedida.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnTemExcedida.Location = new System.Drawing.Point(12, 71);
             this.btnTemExcedida.Name = "btnTemExcedida";

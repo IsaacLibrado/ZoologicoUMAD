@@ -44,9 +44,15 @@ namespace UserInterfaceZoo
             pa2_pa1.listBoxDepar_p2.Text = listBoxDepartamento.Text;
             pa2_pa1.lblDomDepa_p2.Text = lblDomicilioDepartamento.Text;
             pa2_pa1.lblTelDepa_p2.Text = lblTelefonoDepartamento.Text;
-            MenuPrincipal.abrirPantallas(pa2_pa1);
-            MenuPrincipal.AsignarTitulo("Orden de compra registro artículos");
 
+
+            if (dateTimePicker1.Value.Date < DateTime.Now.Date || dateTimePicker2.Value.Date < DateTime.Now.Date)
+            {
+                MenuPrincipal.MostrarMensaje("LA FECHA SELECCIONADA ES MENOR A LA FECHA DEL SISTEMA");
+            }
+            else
+                MenuPrincipal.abrirPantallas(pa2_pa1); 
+                MenuPrincipal.AsignarTitulo("Orden de compra registro artículos");
         }
 
 
@@ -137,6 +143,29 @@ namespace UserInterfaceZoo
             {
                 listBoxDepartamento.SelectedIndex=1;
             }         
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            if (dateTimePicker1.Value.Date < DateTime.Now.Date)
+            {
+                MenuPrincipal.MostrarMensaje("LA FECHA SELECCIONADA ES MENOR A LA FECHA DEL SISTEMA");
+            }
+
+
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            if (dateTimePicker2.Value.Date < DateTime.Now.Date)
+            {
+                MenuPrincipal.MostrarMensaje("LA FECHA SELECCIONADA ES MENOR A LA FECHA DEL SISTEMA");
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

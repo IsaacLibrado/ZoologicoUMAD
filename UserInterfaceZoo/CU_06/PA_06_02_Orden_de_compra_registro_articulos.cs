@@ -53,7 +53,7 @@ namespace UserInterfaceZoo
             pa3.txtNumArt_p3.Text = txtNumeroArticulo.Text;
             pa3.lblDescArt_p3.Text = lblDescripcionArticulo.Text;
             pa3.txtCant_p3.Text = txtCantidad.Text;
-            pa3.txtUPeso_p3.Text = txtUnidadPeso.Text;
+            //pa3.txtUPeso_p3.Text = txtUnidadPeso.Text;
             pa3.lblPUnitario_p3.Text = lblPrecioUnitario.Text;
             pa3.lblTotal_p3.Text = lblTotal.Text;
             pa3.lblSubtotal.Text = lblTotal.Text;
@@ -65,55 +65,131 @@ namespace UserInterfaceZoo
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            int producto = dataGridViewArticulos.Rows.Add();
-
             
 
-            if (txtNumeroArticulo.Text=="121212" || txtNumeroArticulo.Text=="Carne")
-            {
-                lblDescripcionArticulo.Text = "Carne de jabali para animales carnivoros";
-                lblPrecioUnitario.Text = "120";
-                int cantidad = Convert.ToInt32(txtCantidad.Text);
-                int total = Convert.ToInt32(lblPrecioUnitario.Text);
-                lblTotal.Text =Convert.ToString( cantidad*total);
 
+            if (txtNumeroArticulo.Text == "" || txtCantidad.Text == "" )
+            {
+                MenuPrincipal.MostrarMensaje("LOS CAMPOS NO PUEDEN ESTAR VACIOS");
             }
 
-            if (txtNumeroArticulo.Text == "12345" || txtNumeroArticulo.Text == "Semillas")
+            else
             {
-                lblDescripcionArticulo.Text = "Semillas para todo tipo de Aves";
-                lblPrecioUnitario.Text = "12";
-                int cantidad = Convert.ToInt32(txtCantidad.Text);
-                int total = Convert.ToInt32(lblPrecioUnitario.Text);
-                lblTotal.Text = Convert.ToString(cantidad * total);
+                
 
+                int producto = dataGridViewArticulos.Rows.Add();
+
+                dataGridViewArticulos.Rows[producto].Cells[0].Value = txtNumeroArticulo.Text;
+                dataGridViewArticulos.Rows[producto].Cells[1].Value = lblDescripcionArticulo.Text;
+                dataGridViewArticulos.Rows[producto].Cells[2].Value = txtCantidad.Text;
+                dataGridViewArticulos.Rows[producto].Cells[3].Value = lblPrecioUnitario.Text;
+                dataGridViewArticulos.Rows[producto].Cells[4].Value = lblTotal.Text;
             }
-
-            if (txtNumeroArticulo.Text == "223344" || txtNumeroArticulo.Text == "Vegetales")
-            {
-                lblDescripcionArticulo.Text = "Vegetales de la mejor calidad para herbivoros";
-                lblPrecioUnitario.Text = "10";
-                int cantidad = Convert.ToInt32(txtCantidad.Text);
-                int total = Convert.ToInt32(lblPrecioUnitario.Text);
-                lblTotal.Text = Convert.ToString(cantidad * total);
-
-            }
-
-            if (txtNumeroArticulo.Text == "1234" || txtNumeroArticulo.Text == "Alfalfa")
-            {
-                lblDescripcionArticulo.Text = "Alfalfa fresca para animales";
-                lblPrecioUnitario.Text = "6";
-                int cantidad = Convert.ToInt32(txtCantidad.Text);
-                int total = Convert.ToInt32(lblPrecioUnitario.Text);
-                lblTotal.Text = Convert.ToString(cantidad * total);
-
-            }
-            dataGridViewArticulos.Rows[producto].Cells[0].Value = txtNumeroArticulo.Text;
-            dataGridViewArticulos.Rows[producto].Cells[1].Value = lblDescripcionArticulo.Text;
-            dataGridViewArticulos.Rows[producto].Cells[2].Value = txtCantidad.Text;
-            dataGridViewArticulos.Rows[producto].Cells[3].Value = lblPrecioUnitario.Text;
-            dataGridViewArticulos.Rows[producto].Cells[4].Value = lblTotal.Text;
             
+        }
+
+        private void txtNumeroArticulo_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNumeroArticulo.Text == "")
+            {
+                MenuPrincipal.MostrarMensaje("NO SE ENCONTRÓ");
+            }
+
+            else
+            {
+
+                MenuPrincipal.MostrarMensaje("");
+                if (txtNumeroArticulo.Text == "121212" || txtNumeroArticulo.Text == "Carne")
+                {
+
+                    
+                    lblDescripcionArticulo.Text = "Carne de jabali para animales carnivoros";
+                    lblPrecioUnitario.Text = "120";
+                    int cantidad = Convert.ToInt32(txtCantidad.Text);
+
+
+                }
+
+                if (txtNumeroArticulo.Text == "12345" || txtNumeroArticulo.Text == "Semillas")
+                {
+                    lblDescripcionArticulo.Text = "Semillas para todo tipo de Aves";
+                    lblPrecioUnitario.Text = "12";
+                    int cantidad = Convert.ToInt32(txtCantidad.Text);
+                    int total = Convert.ToInt32(lblPrecioUnitario.Text);
+                    lblTotal.Text = Convert.ToString(cantidad * total);
+
+                }
+
+                if (txtNumeroArticulo.Text == "223344" || txtNumeroArticulo.Text == "Vegetales")
+                {
+                    lblDescripcionArticulo.Text = "Vegetales de la mejor calidad para herbivoros";
+                    lblPrecioUnitario.Text = "10";
+                    int cantidad = Convert.ToInt32(txtCantidad.Text);
+                    int total = Convert.ToInt32(lblPrecioUnitario.Text);
+                    lblTotal.Text = Convert.ToString(cantidad * total);
+
+                }
+
+                if (txtNumeroArticulo.Text == "1234" || txtNumeroArticulo.Text == "Alfalfa")
+                {
+                    lblDescripcionArticulo.Text = "Alfalfa fresca para animales";
+                    lblPrecioUnitario.Text = "6";
+                    int cantidad = Convert.ToInt32(txtCantidad.Text);
+                    int total = Convert.ToInt32(lblPrecioUnitario.Text);
+                    lblTotal.Text = Convert.ToString(cantidad * total);
+
+                }
+            }
+        }
+
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+
+            if (Char.IsNumber(e.KeyChar)) 
+            {
+                e.Handled = false; 
+                
+            }
+            else if (Char.IsControl(e.KeyChar)) 
+            {
+                e.Handled = false; 
+            }
+            else 
+            {
+
+                e.Handled = true; 
+                MenuPrincipal.MostrarMensaje("NO SE ACEPTAN LETRAS, SOLO NÚMEROS");
+            }
+        }
+
+
+        private void txtCantidad_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCantidad.Text == "")
+            {
+                MenuPrincipal.MostrarMensaje("ESTE CAMPO NO PUEDE ESTAR VACIO");
+
+            }
+
+            else
+            {
+                MenuPrincipal.MostrarMensaje("");
+
+                int cantidad = Convert.ToInt32(txtCantidad.Text);
+                int total = Convert.ToInt32(lblPrecioUnitario.Text);
+                lblTotal.Text = Convert.ToString(cantidad * total);
+            }
+        }
+
+        private void txtNumeroArticulo_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtNumeroArticulo.Text = "";
+        }
+
+        private void txtCantidad_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtCantidad.Text = "";
         }
     }
 }
