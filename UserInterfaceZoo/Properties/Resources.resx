@@ -160,11 +160,11 @@
   <data name="Jaguar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jaguar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reciclaje" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reciclaje.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="llave_flamenco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\llave_flamenco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +172,8 @@
   <data name="bufanda_leopardo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bufanda_leopardo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="llave_aguila" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\llave_aguila.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Leon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Flamenco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flamenco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,6 +202,9 @@
   <data name="peluche_tucan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\peluche_tucan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="desechos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desechos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cubre_leopardo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cubre_leopardo.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -226,8 +229,8 @@
   <data name="logo zootopia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo zootopia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Leon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Leon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="llave_aguila" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\llave_aguila.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gorra_jirafa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gorra_jirafa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,10 +238,10 @@
   <data name="cubre_gorila" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cubre_gorila.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="oso" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\oso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reciclaje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reciclaje.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="desechos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\desechos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MAPA CU_08 REMASTERIZADO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MAPA CU_08 REMASTERIZADO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

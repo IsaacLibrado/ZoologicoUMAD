@@ -603,6 +603,7 @@
     <Content Include="CU_09\AxInterop.WMPLib.dll" />
     <Content Include="CU_09\Interop.WMPLib.dll" />
     <Content Include="CU_09\VideojuegoZoo.exe" />
+    <None Include="Resources\MAPA CU_08 REMASTERIZADO.png" />
     <None Include="Resources\desechos.jpg" />
     <None Include="Resources\reciclaje.jfif" />
     <None Include="Resources\mapa editado CU_08.png" />

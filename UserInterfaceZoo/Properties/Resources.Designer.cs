@@ -293,6 +293,16 @@ namespace UserInterfaceZoo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MAPA_CU_08_REMASTERIZADO {
+            get {
+                object obj = ResourceManager.GetObject("MAPA CU_08 REMASTERIZADO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mapa_del_zoológico {
             get {
                 object obj = ResourceManager.GetObject("Mapa del zoológico", resourceCulture);
