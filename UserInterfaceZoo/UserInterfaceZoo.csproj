@@ -304,6 +304,12 @@
     <Compile Include="CU_08\PA_08_03 DESECHOS.Designer.cs">
       <DependentUpon>PA_08_03 DESECHOS.cs</DependentUpon>
     </Compile>
+    <Compile Include="CU_08\PA_08_04 SIMBOLOGIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_08\PA_08_04 SIMBOLOGIA.Designer.cs">
+      <DependentUpon>PA_08_04 SIMBOLOGIA.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -434,6 +440,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CU_08\PA_08_03 DESECHOS.resx">
       <DependentUpon>PA_08_03 DESECHOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_08\PA_08_04 SIMBOLOGIA.resx">
+      <DependentUpon>PA_08_04 SIMBOLOGIA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
@@ -603,6 +612,10 @@
     <Content Include="CU_09\AxInterop.WMPLib.dll" />
     <Content Include="CU_09\Interop.WMPLib.dll" />
     <Content Include="CU_09\VideojuegoZoo.exe" />
+    <None Include="Resources\expendedora.png" />
+    <None Include="Resources\MAPA CU_08 VERSION FINAL.png" />
+    <None Include="Resources\actividad.png" />
+    <None Include="Resources\bote de basura.png" />
     <None Include="Resources\MAPA CU_08 REMASTERIZADO.png" />
     <None Include="Resources\desechos.jpg" />
     <None Include="Resources\reciclaje.jfif" />

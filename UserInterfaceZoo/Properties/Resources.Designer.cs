@@ -63,9 +63,29 @@ namespace UserInterfaceZoo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap actividad {
+            get {
+                object obj = ResourceManager.GetObject("actividad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aguila {
             get {
                 object obj = ResourceManager.GetObject("aguila", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bote_de_basura {
+            get {
+                object obj = ResourceManager.GetObject("bote de basura", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +166,16 @@ namespace UserInterfaceZoo.Properties {
         internal static System.Drawing.Bitmap Elefantes {
             get {
                 object obj = ResourceManager.GetObject("Elefantes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap expendedora {
+            get {
+                object obj = ResourceManager.GetObject("expendedora", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -296,6 +326,16 @@ namespace UserInterfaceZoo.Properties {
         internal static System.Drawing.Bitmap MAPA_CU_08_REMASTERIZADO {
             get {
                 object obj = ResourceManager.GetObject("MAPA CU_08 REMASTERIZADO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAPA_CU_08_VERSION_FINAL {
+            get {
+                object obj = ResourceManager.GetObject("MAPA CU_08 VERSION FINAL", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -32,8 +32,8 @@ namespace UserInterfaceZoo.CU_08
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnInformacion = new System.Windows.Forms.Button();
             this.btnRestaurante = new System.Windows.Forms.Button();
+            this.btnSimbologia = new System.Windows.Forms.Button();
             this.pictureBoxMapa = new System.Windows.Forms.PictureBox();
-            this.btnBasura = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMapa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,6 +45,7 @@ namespace UserInterfaceZoo.CU_08
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
             // 
             // btnInformacion
             // 
@@ -66,9 +67,19 @@ namespace UserInterfaceZoo.CU_08
             this.btnRestaurante.UseVisualStyleBackColor = true;
             this.btnRestaurante.Click += new System.EventHandler(this.btnRestaurante_Click);
             // 
+            // btnSimbologia
+            // 
+            this.btnSimbologia.Location = new System.Drawing.Point(92, 230);
+            this.btnSimbologia.Name = "btnSimbologia";
+            this.btnSimbologia.Size = new System.Drawing.Size(89, 23);
+            this.btnSimbologia.TabIndex = 4;
+            this.btnSimbologia.Text = "Simbología ♻️";
+            this.btnSimbologia.UseVisualStyleBackColor = true;
+            this.btnSimbologia.Click += new System.EventHandler(this.btnBasura_Click);
+            // 
             // pictureBoxMapa
             // 
-            this.pictureBoxMapa.Image = global::UserInterfaceZoo.Properties.Resources.MAPA_CU_08_REMASTERIZADO;
+            this.pictureBoxMapa.Image = global::UserInterfaceZoo.Properties.Resources.MAPA_CU_08_VERSION_FINAL;
             this.pictureBoxMapa.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxMapa.Name = "pictureBoxMapa";
             this.pictureBoxMapa.Size = new System.Drawing.Size(526, 296);
@@ -76,21 +87,12 @@ namespace UserInterfaceZoo.CU_08
             this.pictureBoxMapa.TabIndex = 0;
             this.pictureBoxMapa.TabStop = false;
             // 
-            // btnBasura
-            // 
-            this.btnBasura.Location = new System.Drawing.Point(106, 230);
-            this.btnBasura.Name = "btnBasura";
-            this.btnBasura.Size = new System.Drawing.Size(75, 23);
-            this.btnBasura.TabIndex = 4;
-            this.btnBasura.Text = "Basura ♻️";
-            this.btnBasura.UseVisualStyleBackColor = true;
-            // 
             // PA_08_01_MAPA_RECICLAJE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 320);
-            this.Controls.Add(this.btnBasura);
+            this.Controls.Add(this.btnSimbologia);
             this.Controls.Add(this.btnRestaurante);
             this.Controls.Add(this.btnInformacion);
             this.Controls.Add(this.btnSalir);
@@ -109,6 +111,6 @@ namespace UserInterfaceZoo.CU_08
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnInformacion;
         private System.Windows.Forms.Button btnRestaurante;
-        private System.Windows.Forms.Button btnBasura;
+        private System.Windows.Forms.Button btnSimbologia;
     }
 }

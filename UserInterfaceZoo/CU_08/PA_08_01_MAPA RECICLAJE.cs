@@ -17,11 +17,6 @@ namespace UserInterfaceZoo.CU_08
             InitializeComponent();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal.abrirPantallas(new Inicio());
-        }
-
         private void btnInformacion_Click(object sender, EventArgs e)
         {
             MenuPrincipal.abrirPantallas(new CU_08.PA_08_02_INFORMACION());
@@ -30,6 +25,16 @@ namespace UserInterfaceZoo.CU_08
         private void btnRestaurante_Click(object sender, EventArgs e)
         {
             MenuPrincipal.abrirPantallas(new CU_08.PA_08_03_DESECHOS());
+        }
+
+        private void btnBasura_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal.abrirPantallas(new CU_08.PA_08_04_SIMBOLOGIA());
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            MenuPrincipal.abrirPantallas(new Inicio());
         }
     }
 }
