@@ -217,5 +217,18 @@ namespace UserInterfaceZoo
                 txbContra.Focus();
             }
         }
+
+        /// <summary>
+        /// Metodo para colocar al usuario directamente en el textbox del usuario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// Version 1.0
+        /// Fecha de creacion 23/04/21
+        /// Creador Isaac Librado
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+            txbUsuario.Focus();
+        }
     }
 }

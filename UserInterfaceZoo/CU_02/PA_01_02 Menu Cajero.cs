@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using UserInterfaceZoo.CU_SinDefinir;
 
 namespace UserInterfaceZoo
 {
@@ -60,7 +61,8 @@ namespace UserInterfaceZoo
         /// Creador David Hernandez, Karla Garcia, Arturo Villegas
         private void btnEspectaculo_Click(object sender, EventArgs e)
         {
-
+            MenuPrincipal.AsignarTitulo("Vender Boletos de Espectaculo");
+            MenuPrincipal.abrirPantallas(new CU_03_ApartadoBoletos());
         }
 
         /// <summary>

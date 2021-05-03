@@ -11,6 +11,7 @@ using System.Net;
 using System.Xml.Linq;
 using System.Diagnostics;
 using System.IO;
+using UserInterfaceZoo.CU_SinDefinir;
 
 namespace UserInterfaceZoo
 {
@@ -234,6 +235,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Apartar Boletos");
             RegistroBitacora("Realizado el apartado de boleto");
+            abrirPantallas(new CU_03_ApartadoBoletos());
         }
 
         /// <summary>
@@ -249,6 +251,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Inventario");
             RegistroBitacora("Mostrado el inventario en pantalla");
+            abrirPantallas(new CU_04_ComprarComida());
         }
 
         /// <summary>
@@ -264,6 +267,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Compra de alimento");
             RegistroBitacora("Comprado alimento para animales");
+            abrirPantallas(new CU_04_ComprarComida());
         }
 
         /// <summary>
@@ -279,6 +283,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Maquina expendedora");
             RegistroBitacora("Realizada la gestion a la maquina expendedora");
+            abrirPantallas(new CU_07_GestionarMaquina());
         }
 
         /// <summary>

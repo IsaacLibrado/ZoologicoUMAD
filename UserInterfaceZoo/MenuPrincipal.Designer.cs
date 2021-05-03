@@ -59,12 +59,6 @@
             this.btnVentas = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.panelDatos = new System.Windows.Forms.Panel();
-            this.pbLogoTemp = new System.Windows.Forms.PictureBox();
-            this.panelFecha = new System.Windows.Forms.Panel();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.lblNombreZoo = new System.Windows.Forms.Label();
             this.panelBase = new System.Windows.Forms.Panel();
             this.lblMensajes = new System.Windows.Forms.Label();
             this.panelTitulo = new System.Windows.Forms.Panel();
@@ -72,6 +66,12 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
+            this.panelDatos = new System.Windows.Forms.Panel();
+            this.pbLogoTemp = new System.Windows.Forms.PictureBox();
+            this.panelFecha = new System.Windows.Forms.Panel();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblNombreZoo = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerfil)).BeginInit();
@@ -82,13 +82,13 @@
             this.panelVentasSubMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            this.panelDatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoTemp)).BeginInit();
-            this.panelFecha.SuspendLayout();
             this.panelBase.SuspendLayout();
             this.panelTitulo.SuspendLayout();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoTemp)).BeginInit();
+            this.panelFecha.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -378,7 +378,7 @@
             this.btnSMOrdenCompra.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnSMOrdenCompra.Size = new System.Drawing.Size(217, 40);
             this.btnSMOrdenCompra.TabIndex = 0;
-            this.btnSMOrdenCompra.Text = "OrdenCompra";
+            this.btnSMOrdenCompra.Text = "Orden Compra";
             this.btnSMOrdenCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSMOrdenCompra.UseVisualStyleBackColor = true;
             this.btnSMOrdenCompra.Click += new System.EventHandler(this.btnSMOrdenCompra_Click);
@@ -515,74 +515,6 @@
             this.pbLogo.TabIndex = 0;
             this.pbLogo.TabStop = false;
             // 
-            // panelDatos
-            // 
-            this.panelDatos.BackColor = System.Drawing.Color.Transparent;
-            this.panelDatos.BackgroundImage = global::UserInterfaceZoo.Properties.Resources.fondo;
-            this.panelDatos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelDatos.Controls.Add(this.pbLogoTemp);
-            this.panelDatos.Controls.Add(this.panelFecha);
-            this.panelDatos.Controls.Add(this.lblNombreZoo);
-            this.panelDatos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDatos.Location = new System.Drawing.Point(234, 0);
-            this.panelDatos.Name = "panelDatos";
-            this.panelDatos.Size = new System.Drawing.Size(700, 100);
-            this.panelDatos.TabIndex = 1;
-            // 
-            // pbLogoTemp
-            // 
-            this.pbLogoTemp.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbLogoTemp.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
-            this.pbLogoTemp.Location = new System.Drawing.Point(0, 0);
-            this.pbLogoTemp.Name = "pbLogoTemp";
-            this.pbLogoTemp.Size = new System.Drawing.Size(142, 100);
-            this.pbLogoTemp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogoTemp.TabIndex = 2;
-            this.pbLogoTemp.TabStop = false;
-            // 
-            // panelFecha
-            // 
-            this.panelFecha.Controls.Add(this.lblFecha);
-            this.panelFecha.Controls.Add(this.lblHora);
-            this.panelFecha.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelFecha.Location = new System.Drawing.Point(553, 0);
-            this.panelFecha.Name = "panelFecha";
-            this.panelFecha.Size = new System.Drawing.Size(147, 100);
-            this.panelFecha.TabIndex = 1;
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(0, 50);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(67, 25);
-            this.lblFecha.TabIndex = 1;
-            this.lblFecha.Text = "Fecha";
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(0, 75);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(54, 25);
-            this.lblHora.TabIndex = 0;
-            this.lblHora.Text = "Hora";
-            // 
-            // lblNombreZoo
-            // 
-            this.lblNombreZoo.AutoSize = true;
-            this.lblNombreZoo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreZoo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNombreZoo.Location = new System.Drawing.Point(162, 36);
-            this.lblNombreZoo.Name = "lblNombreZoo";
-            this.lblNombreZoo.Size = new System.Drawing.Size(350, 39);
-            this.lblNombreZoo.TabIndex = 0;
-            this.lblNombreZoo.Text = "Zootopia S.A. de C.V.";
-            // 
             // panelBase
             // 
             this.panelBase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(240)))), ((int)(((byte)(43)))));
@@ -653,6 +585,74 @@
             this.horaFecha.Enabled = true;
             this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
             // 
+            // panelDatos
+            // 
+            this.panelDatos.BackColor = System.Drawing.Color.Transparent;
+            this.panelDatos.BackgroundImage = global::UserInterfaceZoo.Properties.Resources.fondo;
+            this.panelDatos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelDatos.Controls.Add(this.pbLogoTemp);
+            this.panelDatos.Controls.Add(this.panelFecha);
+            this.panelDatos.Controls.Add(this.lblNombreZoo);
+            this.panelDatos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDatos.Location = new System.Drawing.Point(234, 0);
+            this.panelDatos.Name = "panelDatos";
+            this.panelDatos.Size = new System.Drawing.Size(700, 100);
+            this.panelDatos.TabIndex = 1;
+            // 
+            // pbLogoTemp
+            // 
+            this.pbLogoTemp.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbLogoTemp.Image = global::UserInterfaceZoo.Properties.Resources.logo_zootopia;
+            this.pbLogoTemp.Location = new System.Drawing.Point(0, 0);
+            this.pbLogoTemp.Name = "pbLogoTemp";
+            this.pbLogoTemp.Size = new System.Drawing.Size(142, 100);
+            this.pbLogoTemp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogoTemp.TabIndex = 2;
+            this.pbLogoTemp.TabStop = false;
+            // 
+            // panelFecha
+            // 
+            this.panelFecha.Controls.Add(this.lblFecha);
+            this.panelFecha.Controls.Add(this.lblHora);
+            this.panelFecha.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelFecha.Location = new System.Drawing.Point(553, 0);
+            this.panelFecha.Name = "panelFecha";
+            this.panelFecha.Size = new System.Drawing.Size(147, 100);
+            this.panelFecha.TabIndex = 1;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(0, 50);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(67, 25);
+            this.lblFecha.TabIndex = 1;
+            this.lblFecha.Text = "Fecha";
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Location = new System.Drawing.Point(0, 75);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(54, 25);
+            this.lblHora.TabIndex = 0;
+            this.lblHora.Text = "Hora";
+            // 
+            // lblNombreZoo
+            // 
+            this.lblNombreZoo.AutoSize = true;
+            this.lblNombreZoo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreZoo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblNombreZoo.Location = new System.Drawing.Point(162, 36);
+            this.lblNombreZoo.Name = "lblNombreZoo";
+            this.lblNombreZoo.Size = new System.Drawing.Size(350, 39);
+            this.lblNombreZoo.TabIndex = 0;
+            this.lblNombreZoo.Text = "Zootopia S.A. de C.V.";
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -681,15 +681,15 @@
             this.panelVentasSubMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            this.panelBase.ResumeLayout(false);
+            this.panelTitulo.ResumeLayout(false);
+            this.panelContenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoTemp)).EndInit();
             this.panelFecha.ResumeLayout(false);
             this.panelFecha.PerformLayout();
-            this.panelBase.ResumeLayout(false);
-            this.panelTitulo.ResumeLayout(false);
-            this.panelContenedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

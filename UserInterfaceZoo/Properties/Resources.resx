@@ -133,6 +133,12 @@
   <data name="taza_elefante" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\taza_elefante.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CU_04_DA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CU_04_DA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reciclaje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reciclaje.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="e5ba79334133d2cb362dd639f755a392" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e5ba79334133d2cb362dd639f755a392.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,11 +154,20 @@
   <data name="Puma" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Puma.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CU_03_DA_FA_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CU_03_DA_FA_03.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CU_03_Pantallas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CU_03_Pantallas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Pingüino" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pingüino.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bote de basura" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bote de basura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CU_04_PANTALLAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CU_04_PANTALLAS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="membresia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\membresia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,17 +184,17 @@
   <data name="llave_flamenco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\llave_flamenco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="oso" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\oso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bufanda_leopardo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bufanda_leopardo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Leon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Leon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="llave_aguila" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\llave_aguila.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CU_04_DA_FA_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CU_04_DA_FA_01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Flamenco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flamenco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,14 +220,23 @@
   <data name="taza_zoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\taza_zoo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CU_03_Pantallas2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CU_03_Pantallas2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="peluche_tucan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\peluche_tucan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="desechos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\desechos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logo zootopia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo zootopia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cubre_leopardo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cubre_leopardo.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CU_03_DA_FA_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CU_03_DA_FA_01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cebra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cebra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,14 +259,23 @@
   <data name="MAPA CU_08 VERSION FINAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MAPA CU_08 VERSION FINAL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo zootopia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo zootopia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CU_03_DA_FA_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CU_03_DA_FA_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="llave_aguila" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\llave_aguila.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Leon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="expendedora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\expendedora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CU_03_DA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CU_03_DA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="actividad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\actividad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CU_04_DA_FA_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CU_04_DA_FA_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gorra_jirafa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gorra_jirafa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,10 +283,10 @@
   <data name="cubre_gorila" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cubre_gorila.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reciclaje" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reciclaje.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="oso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="expendedora" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\expendedora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CU_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CU_07.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
