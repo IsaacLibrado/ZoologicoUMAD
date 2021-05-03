@@ -30,7 +30,6 @@ namespace UserInterfaceZoo.CU_08
         private void InitializeComponent()
         {
             this.btnSalir = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblDesechos = new System.Windows.Forms.Label();
             this.lblDesechos2 = new System.Windows.Forms.Label();
             this.lblDesechos3 = new System.Windows.Forms.Label();
@@ -42,12 +41,13 @@ namespace UserInterfaceZoo.CU_08
             this.lblDesechos9 = new System.Windows.Forms.Label();
             this.lblDesechos10 = new System.Windows.Forms.Label();
             this.lblDesechos11 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(463, 285);
+            this.btnSalir.Location = new System.Drawing.Point(376, 263);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 0;
@@ -55,20 +55,10 @@ namespace UserInterfaceZoo.CU_08
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.desechos;
-            this.pictureBox1.Location = new System.Drawing.Point(347, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(191, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // lblDesechos
             // 
             this.lblDesechos.AutoSize = true;
-            this.lblDesechos.Location = new System.Drawing.Point(12, 9);
+            this.lblDesechos.Location = new System.Drawing.Point(12, 12);
             this.lblDesechos.Name = "lblDesechos";
             this.lblDesechos.Size = new System.Drawing.Size(177, 13);
             this.lblDesechos.TabIndex = 2;
@@ -163,6 +153,16 @@ namespace UserInterfaceZoo.CU_08
             this.lblDesechos11.Size = new System.Drawing.Size(162, 13);
             this.lblDesechos11.TabIndex = 12;
             this.lblDesechos11.Text = "10. Analítica y control de calidad";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.desechos;
+            this.pictureBox1.Location = new System.Drawing.Point(303, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(191, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // PA_08_03_DESECHOS
             // 

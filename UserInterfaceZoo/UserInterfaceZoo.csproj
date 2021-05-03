@@ -612,6 +612,7 @@
     <Content Include="CU_09\AxInterop.WMPLib.dll" />
     <Content Include="CU_09\Interop.WMPLib.dll" />
     <Content Include="CU_09\VideojuegoZoo.exe" />
+    <None Include="Resources\bote reciclaje.png" />
     <None Include="Resources\MAPA CU_08 TESTED CORREGIDO.png" />
     <None Include="Resources\expendedora.png" />
     <None Include="Resources\MAPA CU_08 VERSION FINAL.png" />

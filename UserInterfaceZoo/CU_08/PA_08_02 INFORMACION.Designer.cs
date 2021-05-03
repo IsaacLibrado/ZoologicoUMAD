@@ -80,11 +80,11 @@ namespace UserInterfaceZoo.CU_08
             // lblInfo4
             // 
             this.lblInfo4.AutoSize = true;
-            this.lblInfo4.Location = new System.Drawing.Point(9, 226);
+            this.lblInfo4.Location = new System.Drawing.Point(34, 209);
             this.lblInfo4.Name = "lblInfo4";
-            this.lblInfo4.Size = new System.Drawing.Size(387, 13);
+            this.lblInfo4.Size = new System.Drawing.Size(386, 13);
             this.lblInfo4.TabIndex = 6;
-            this.lblInfo4.Text = "Por ello es la mejor ayuda para la conservación del planeta tanto para el hombre " +
+            this.lblInfo4.Text = "por ello es la mejor ayuda para la conservación del planeta tanto para el hombre " +
     "";
             // 
             // pictureBox1
@@ -109,7 +109,7 @@ namespace UserInterfaceZoo.CU_08
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(305, 239);
+            this.label3.Location = new System.Drawing.Point(278, 228);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(145, 13);
             this.label3.TabIndex = 8;
