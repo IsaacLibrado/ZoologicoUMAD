@@ -171,7 +171,7 @@ namespace UserInterfaceZoo
             //Tabla
 
 
-            Text tituloArticulos = new Text("Articulos").SetFont(fontTitulos).SetFontSize(16);
+            Text tituloArticulos = new Text("Artículos").SetFont(fontTitulos).SetFontSize(16);
             Paragraph tArt = new Paragraph().Add(tituloArticulos);
             tArt.SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER);
 
