@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Gozan de un muy buen olfato con el que son capaces de detectar a kilómetros un pequeño rastro de comida.  Pueden llegar a medir 2,80 metros de largo y pesan alrededor 500 kilos aproximadamente. A pesar de su aspecto tosco y lento, son muy ágiles y sigilosos en caso de necesidad.
+</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Los osos o úrsidos son una familia de mamíferos omnívoros.​ Son animales de gran tamaño, generalmente omnívoros ya que, a pesar de su temible dentadura, comen frutos, raíces e insectos, además de carne.</value>
+  </data>
 </root>

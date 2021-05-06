@@ -38,6 +38,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -196,95 +197,173 @@
       <DependentUpon>PA_02_08_Pago Souvenirs.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_02\Souvenirs.cs" />
-    <Compile Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.cs">
+    <Compile Include="CU_05\PA_05_01_Ubicación.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.Designer.cs">
-      <DependentUpon>PA_05_01_Menú_Mapa_Interactivo.cs</DependentUpon>
+    <Compile Include="CU_05\PA_05_01_Ubicación.designer.cs">
+      <DependentUpon>PA_05_01_Ubicación.cs</DependentUpon>
     </Compile>
-    <Compile Include="CU_05\PA_05_02_Animales.cs">
+    <Compile Include="CU_05\PA_05_02_Menú_Mapa_Interactivo_Ubicacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_02_Animales.Designer.cs">
-      <DependentUpon>PA_05_02_Animales.cs</DependentUpon>
+    <Compile Include="CU_05\PA_05_02_Menú_Mapa_Interactivo_Ubicacion.designer.cs">
+      <DependentUpon>PA_05_02_Menú_Mapa_Interactivo_Ubicacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="CU_05\PA_05_03_Animales.cs">
+    <Compile Include="CU_05\PA_05_03_Menú_Mapa_Interactivo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_03_Animales.Designer.cs">
-      <DependentUpon>PA_05_03_Animales.cs</DependentUpon>
+    <Compile Include="CU_05\PA_05_03_Menú_Mapa_Interactivo.designer.cs">
+      <DependentUpon>PA_05_03_Menú_Mapa_Interactivo.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_04_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_04_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_04_Animales.designer.cs">
       <DependentUpon>PA_05_04_Animales.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_05_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_05_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_05_Animales.designer.cs">
       <DependentUpon>PA_05_05_Animales.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_06_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_06_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_06_Animales.designer.cs">
       <DependentUpon>PA_05_06_Animales.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_07_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_07_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_07_Animales.designer.cs">
       <DependentUpon>PA_05_07_Animales.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_08_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_08_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_08_Animales.designer.cs">
       <DependentUpon>PA_05_08_Animales.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_09_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_09_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_09_Animales.designer.cs">
       <DependentUpon>PA_05_09_Animales.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_10_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_10_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_10_Animales.designer.cs">
       <DependentUpon>PA_05_10_Animales.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_11_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_11_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_11_Animales.designer.cs">
       <DependentUpon>PA_05_11_Animales.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_12_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_12_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_12_Animales.designer.cs">
       <DependentUpon>PA_05_12_Animales.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_13_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_13_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_13_Animales.designer.cs">
       <DependentUpon>PA_05_13_Animales.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_14_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_14_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_14_Animales.designer.cs">
       <DependentUpon>PA_05_14_Animales.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_05\PA_05_15_Animales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU_05\PA_05_15_Animales.Designer.cs">
+    <Compile Include="CU_05\PA_05_15_Animales.designer.cs">
       <DependentUpon>PA_05_15_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_16_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_16_Animales.designer.cs">
+      <DependentUpon>PA_05_16_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_17_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_17_Animales.designer.cs">
+      <DependentUpon>PA_05_17_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_18_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_18_Animales.designer.cs">
+      <DependentUpon>PA_05_18_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_19_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_19_Animales.designer.cs">
+      <DependentUpon>PA_05_19_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_20_Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_20_Animales.designer.cs">
+      <DependentUpon>PA_05_20_Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_21_Caja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_21_Caja.designer.cs">
+      <DependentUpon>PA_05_21_Caja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_22_Restaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_22_Restaurante.designer.cs">
+      <DependentUpon>PA_05_22_Restaurante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_23_Tienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_23_Tienda.designer.cs">
+      <DependentUpon>PA_05_23_Tienda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_24_Taquilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_24_Taquilla.designer.cs">
+      <DependentUpon>PA_05_24_Taquilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_25_Foro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_25_Foro.designer.cs">
+      <DependentUpon>PA_05_25_Foro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_26_Salir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_26_Salir.designer.cs">
+      <DependentUpon>PA_05_26_Salir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_27_Emergencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_27_Emergencias.designer.cs">
+      <DependentUpon>PA_05_27_Emergencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_05\PA_05_28_Evacacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU_05\PA_05_28_Evacacion.designer.cs">
+      <DependentUpon>PA_05_28_Evacacion.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_08\PA_08_01_MAPA RECICLAJE.cs">
       <SubType>Form</SubType>
@@ -405,14 +484,14 @@
     <EmbeddedResource Include="CU_02\PA_02_08_Pago Souvenirs.resx">
       <DependentUpon>PA_02_08_Pago Souvenirs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CU_05\PA_05_01_Menú_Mapa_Interactivo.resx">
-      <DependentUpon>PA_05_01_Menú_Mapa_Interactivo.cs</DependentUpon>
+    <EmbeddedResource Include="CU_05\PA_05_01_Ubicación.resx">
+      <DependentUpon>PA_05_01_Ubicación.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CU_05\PA_05_02_Animales.resx">
-      <DependentUpon>PA_05_02_Animales.cs</DependentUpon>
+    <EmbeddedResource Include="CU_05\PA_05_02_Menú_Mapa_Interactivo_Ubicacion.resx">
+      <DependentUpon>PA_05_02_Menú_Mapa_Interactivo_Ubicacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CU_05\PA_05_03_Animales.resx">
-      <DependentUpon>PA_05_03_Animales.cs</DependentUpon>
+    <EmbeddedResource Include="CU_05\PA_05_03_Menú_Mapa_Interactivo.resx">
+      <DependentUpon>PA_05_03_Menú_Mapa_Interactivo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CU_05\PA_05_04_Animales.resx">
       <DependentUpon>PA_05_04_Animales.cs</DependentUpon>
@@ -449,6 +528,45 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CU_05\PA_05_15_Animales.resx">
       <DependentUpon>PA_05_15_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_16_Animales.resx">
+      <DependentUpon>PA_05_16_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_17_Animales.resx">
+      <DependentUpon>PA_05_17_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_18_Animales.resx">
+      <DependentUpon>PA_05_18_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_19_Animales.resx">
+      <DependentUpon>PA_05_19_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_20_Animales.resx">
+      <DependentUpon>PA_05_20_Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_21_Caja.resx">
+      <DependentUpon>PA_05_21_Caja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_22_Restaurante.resx">
+      <DependentUpon>PA_05_22_Restaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_23_Tienda.resx">
+      <DependentUpon>PA_05_23_Tienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_24_Taquilla.resx">
+      <DependentUpon>PA_05_24_Taquilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_25_Foro.resx">
+      <DependentUpon>PA_05_25_Foro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_26_Salir.resx">
+      <DependentUpon>PA_05_26_Salir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_27_Emergencias.resx">
+      <DependentUpon>PA_05_27_Emergencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_05\PA_05_28_Evacacion.resx">
+      <DependentUpon>PA_05_28_Evacacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CU_08\PA_08_01_MAPA RECICLAJE.resx">
       <DependentUpon>PA_08_01_MAPA RECICLAJE.cs</DependentUpon>
@@ -639,6 +757,11 @@
     <Content Include="CU_09\AxInterop.WMPLib.dll" />
     <Content Include="CU_09\Interop.WMPLib.dll" />
     <Content Include="CU_09\VideojuegoZoo.exe" />
+    <None Include="Resources\Pavo real.jpg" />
+    <None Include="Resources\Oso Hormiguero.jpg" />
+    <None Include="Resources\Oso Polar.jpg" />
+    <None Include="Resources\Emergencia.png" />
+    <None Include="Resources\Marca de ubicacion.png" />
     <None Include="Resources\CU_07.jpg" />
     <None Include="Resources\CU_04_PANTALLAS.jpg" />
     <None Include="Resources\CU_04_DA_FA_02.jpg" />

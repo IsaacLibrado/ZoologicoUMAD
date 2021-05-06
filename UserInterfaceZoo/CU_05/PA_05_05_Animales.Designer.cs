@@ -39,57 +39,38 @@ namespace UserInterfaceZoo.CU_05
             // 
             // label2
             // 
-            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(12, 286);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(595, 72);
-            this.label2.TabIndex = 11;
-            this.label2.Text = resources.GetString("label2.Text");
             // 
             // label1
             // 
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(12, 243);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(660, 56);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Los loros conforman una orden muy amplia que incluye a más de 350 aves, como guac" +
-    "amayos, amazonas, loriquitos, agapornis y cacatúas.";
             // 
             // BtnSalir
             // 
-            this.BtnSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnSalir.Location = new System.Drawing.Point(613, 347);
+            resources.ApplyResources(this.BtnSalir, "BtnSalir");
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
-            this.BtnSalir.TabIndex = 8;
-            this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = true;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Loro;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(173, 21);
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.aguila;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(334, 193);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // PA_05_05_Animales
+            // PA_05_03_Animales
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 390);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PA_05_05_Animales";
-            this.Text = "PA_05_05_Animales";
+            this.Name = "PA_05_03_Animales";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

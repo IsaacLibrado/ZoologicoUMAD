@@ -118,10 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>A pesar de que no pueden volar, son grandes nadadores, por ello sus aletas se han adaptado al medio acuático, donde pueden llegar a alcanzar los 50 km/h. La cola les ayuda a mantener el equilibrio cuando caminan por tierra, y también pueden deslizarse por el hielo para ahorrar energía. 
-</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Los pingüinos son una familia de aves, la única del orden Sphenisciformes. Son aves marinas, no voladoras, que se distribuyen casi exclusivamente en el hemisferio sur, exceptuando el pingüino de las islas Galápagos.</value>
+    <value>Las cebras deben vigilar en todo momento para evitar a hienas y leones. En una manada hay muchos ojos para detectar el peligro. Si un animal es atacado, su familia acudir en su defensa, rodeando a la cebra herida e intentando repeler a los depredadores.</value>
   </data>
 </root>

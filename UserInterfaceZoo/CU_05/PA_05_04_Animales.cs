@@ -17,14 +17,21 @@ namespace UserInterfaceZoo.CU_05
             InitializeComponent();
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            MenuPrincipal.abrirPantallas(new CU_05.PA_05_01_Menú_Mapa_Interactivo());
+
         }
 
+        //Regresa a la Pantalla anterior 
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal.abrirPantallas(new CU_05.PA_05_03_Menú_Mapa_Interactivo());
+        }
+
+        //Muestra Pantalla
         private void BtnSiguiente_Click(object sender, EventArgs e)
         {
-            MenuPrincipal.abrirPantallas(new CU_05.PA_05_05_Animales());
+            MenuPrincipal.abrirPantallas(new CU_05.PA_05_06_Animales());
         }
     }
 }

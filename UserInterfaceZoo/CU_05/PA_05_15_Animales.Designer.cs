@@ -29,7 +29,6 @@ namespace UserInterfaceZoo.CU_05
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PA_05_15_Animales));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnSalir = new System.Windows.Forms.Button();
@@ -40,21 +39,23 @@ namespace UserInterfaceZoo.CU_05
             // label2
             // 
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(12, 309);
+            this.label2.Location = new System.Drawing.Point(12, 276);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(595, 61);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Los varones jóvenes sin embargo tarde o temprano abandonan el grupo o son expulsa" +
-    "dos y establecen su propia manada.\r\n";
+            this.label2.TabIndex = 15;
+            this.label2.Text = "El puma es una especie nativa para Norte América. La longitud total del cuerpo va" +
+    "ría de 1.05 a 1.95 m, la cola puede medir de 66 a 78 cm de largo y el peso varía" +
+    " de 67 a 103 Kg en machos.";
             // 
             // label1
             // 
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(12, 234);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(660, 75);
-            this.label1.TabIndex = 18;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Size = new System.Drawing.Size(660, 42);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "El puma, león de montaña o león americano ​ es un mamífero carnívoro de la famili" +
+    "a Felidae nativo de América.";
             // 
             // BtnSalir
             // 
@@ -62,23 +63,23 @@ namespace UserInterfaceZoo.CU_05
             this.BtnSalir.Location = new System.Drawing.Point(613, 347);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(75, 23);
-            this.BtnSalir.TabIndex = 16;
+            this.BtnSalir.TabIndex = 12;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = true;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Leon;
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Puma;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(173, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(334, 193);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // PA_05_15_Animales
+            // PA_05_13_Animales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,8 +89,8 @@ namespace UserInterfaceZoo.CU_05
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PA_05_15_Animales";
-            this.Text = "PA_05_15_Animales";
+            this.Name = "PA_05_13_Animales";
+            this.Text = "PA_05_13_Animales";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

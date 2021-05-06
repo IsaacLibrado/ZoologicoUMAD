@@ -40,20 +40,21 @@ namespace UserInterfaceZoo.CU_05
             // label2
             // 
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(12, 289);
+            this.label2.Location = new System.Drawing.Point(12, 279);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(595, 81);
-            this.label2.TabIndex = 15;
+            this.label2.Size = new System.Drawing.Size(595, 59);
+            this.label2.TabIndex = 11;
             this.label2.Text = resources.GetString("label2.Text");
             // 
             // label1
             // 
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(12, 234);
+            this.label1.Location = new System.Drawing.Point(12, 238);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(660, 55);
-            this.label1.TabIndex = 14;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Size = new System.Drawing.Size(660, 56);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Las cebras son animales sociales que viven en manadas. Pacen en grupo, normalment" +
+    "e hierba, e incluso se acicalan unas a otras.";
             // 
             // BtnSalir
             // 
@@ -61,23 +62,23 @@ namespace UserInterfaceZoo.CU_05
             this.BtnSalir.Location = new System.Drawing.Point(613, 347);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(75, 23);
-            this.BtnSalir.TabIndex = 12;
+            this.BtnSalir.TabIndex = 8;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = true;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Pingüino;
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.cebra;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(173, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(334, 193);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // PA_05_10_Animales
+            // PA_05_08_Animales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -87,8 +88,8 @@ namespace UserInterfaceZoo.CU_05
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PA_05_10_Animales";
-            this.Text = "PA_05_10_Animales";
+            this.Name = "PA_05_08_Animales";
+            this.Text = "PA_05_08_Animales";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

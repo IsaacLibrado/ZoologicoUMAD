@@ -40,20 +40,21 @@ namespace UserInterfaceZoo.CU_05
             // label2
             // 
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(12, 300);
+            this.label2.Location = new System.Drawing.Point(12, 286);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(595, 59);
+            this.label2.Size = new System.Drawing.Size(595, 72);
             this.label2.TabIndex = 11;
             this.label2.Text = resources.GetString("label2.Text");
             // 
             // label1
             // 
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(12, 244);
+            this.label1.Location = new System.Drawing.Point(12, 243);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(660, 56);
             this.label1.TabIndex = 10;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Text = "Los loros conforman una orden muy amplia que incluye a más de 350 aves, como guac" +
+    "amayos, amazonas, loriquitos, agapornis y cacatúas.";
             // 
             // BtnSalir
             // 
@@ -68,7 +69,7 @@ namespace UserInterfaceZoo.CU_05
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Elefantes;
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Loro;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(173, 21);
             this.pictureBox1.Name = "pictureBox1";
@@ -77,7 +78,7 @@ namespace UserInterfaceZoo.CU_05
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // PA_05_07_Animales
+            // PA_05_05_Animales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -87,8 +88,8 @@ namespace UserInterfaceZoo.CU_05
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PA_05_07_Animales";
-            this.Text = "PA_05_07_Animales";
+            this.Name = "PA_05_05_Animales";
+            this.Text = "PA_05_05_Animales";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

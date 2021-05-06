@@ -40,28 +40,30 @@ namespace UserInterfaceZoo.CU_05
             // label2
             // 
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(12, 276);
+            this.label2.Location = new System.Drawing.Point(9, 244);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(595, 61);
+            this.label2.Size = new System.Drawing.Size(446, 48);
             this.label2.TabIndex = 11;
             this.label2.Text = resources.GetString("label2.Text");
             // 
             // label1
             // 
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(12, 234);
+            this.label1.Location = new System.Drawing.Point(9, 198);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(660, 42);
+            this.label1.Size = new System.Drawing.Size(495, 46);
             this.label1.TabIndex = 10;
-            this.label1.Text = "El tigre (Panthera tigris) es una de las especies​ de la subfamilia de los panter" +
-    "inos (familia Felidae) pertenecientes al género Panthera. ";
+            this.label1.Text = resources.GetString("label1.Text");
             // 
             // BtnSalir
             // 
             this.BtnSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnSalir.Location = new System.Drawing.Point(613, 347);
+            this.BtnSalir.Location = new System.Drawing.Point(460, 282);
+            this.BtnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnSalir.Size = new System.Drawing.Size(56, 19);
             this.BtnSalir.TabIndex = 8;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = true;
@@ -69,27 +71,29 @@ namespace UserInterfaceZoo.CU_05
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.tigre;
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Elefantes;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(173, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(130, 17);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(334, 193);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 157);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
             // PA_05_09_Animales
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 390);
+            this.ClientSize = new System.Drawing.Size(525, 317);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PA_05_09_Animales";
-            this.Text = "PA_05_09_Animales";
+            this.Text = "PA_05_07_Animales";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

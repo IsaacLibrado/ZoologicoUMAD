@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Los ranfástidos, conocidos comúnmente como tucanes, diotedé o diostedé son una familia de aves ranfástidas del orden de los piciformes es muy amplia ya que alberga seis géneros y cuarenta y dos especies diferentes de tucanes. </value>
+  </data>
 </root>

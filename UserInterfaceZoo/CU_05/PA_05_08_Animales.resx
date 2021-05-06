@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Las cebras deben vigilar en todo momento para evitar a hienas y leones. En una manada hay muchos ojos para detectar el peligro. Si un animal es atacado, su familia acudir en su defensa, rodeando a la cebra herida e intentando repeler a los depredadores.</value>
-  </data>
 </root>

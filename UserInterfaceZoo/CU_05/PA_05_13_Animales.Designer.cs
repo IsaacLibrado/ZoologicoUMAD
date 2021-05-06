@@ -43,19 +43,18 @@ namespace UserInterfaceZoo.CU_05
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(595, 61);
             this.label2.TabIndex = 15;
-            this.label2.Text = "El puma es una especie nativa para Norte América. La longitud total del cuerpo va" +
-    "ría de 1.05 a 1.95 m, la cola puede medir de 66 a 78 cm de largo y el peso varía" +
-    " de 67 a 103 Kg en machos.";
+            this.label2.Text = "Son aves que se distribuyen tanto por el hemisferio occidental como por el hemisf" +
+    "erio oriental; existen dos especies en América y una en el Viejo Mundo.";
             // 
             // label1
             // 
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(12, 234);
+            this.label1.Location = new System.Drawing.Point(12, 246);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(660, 42);
             this.label1.TabIndex = 14;
-            this.label1.Text = "El puma, león de montaña o león americano ​ es un mamífero carnívoro de la famili" +
-    "a Felidae nativo de América.";
+            this.label1.Text = "Los flamencos mayores son un género de aves neognatas de la familia Phoenicopteri" +
+    "dae.";
             // 
             // BtnSalir
             // 
@@ -70,7 +69,7 @@ namespace UserInterfaceZoo.CU_05
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Puma;
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Flamenco;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(173, 21);
             this.pictureBox1.Name = "pictureBox1";
@@ -79,7 +78,7 @@ namespace UserInterfaceZoo.CU_05
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // PA_05_13_Animales
+            // PA_05_11_Animales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -89,8 +88,8 @@ namespace UserInterfaceZoo.CU_05
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PA_05_13_Animales";
-            this.Text = "PA_05_13_Animales";
+            this.Name = "PA_05_11_Animales";
+            this.Text = "PA_05_11_Animales";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

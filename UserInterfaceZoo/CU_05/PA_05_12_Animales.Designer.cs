@@ -42,7 +42,7 @@ namespace UserInterfaceZoo.CU_05
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label2.Location = new System.Drawing.Point(12, 289);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(595, 71);
+            this.label2.Size = new System.Drawing.Size(595, 81);
             this.label2.TabIndex = 15;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -68,7 +68,7 @@ namespace UserInterfaceZoo.CU_05
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.oso;
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Pingüino;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(173, 21);
             this.pictureBox1.Name = "pictureBox1";
@@ -77,7 +77,7 @@ namespace UserInterfaceZoo.CU_05
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // PA_05_12_Animales
+            // PA_05_10_Animales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -87,8 +87,8 @@ namespace UserInterfaceZoo.CU_05
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PA_05_12_Animales";
-            this.Text = "PA_05_12_Animales";
+            this.Name = "PA_05_10_Animales";
+            this.Text = "PA_05_10_Animales";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -118,7 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>Se encuentra solamente en el continente asiático; es un predador carnívoro y es la especie de félido más grande del mundo junto con el león pudiendo alcanzar ambos un tamaño comparable al de los fósiles de félidos de mayor tamaño.
-</value>
+    <value>La trompa de un elefante cuenta con alrededor de 40,000 músculos. El humano, por ejemplo, tiene más de 600 músculos en todo su cuerpo. Los elefantes utilizan sus trompas para recoger objetos, emitir sonidos de alerta y saludarse entre sí.</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Los elefantes o elefántidos son una familia de mamíferos placentarios del orden Proboscidea. Antiguamente se clasificaban, junto con otros mamíferos de piel gruesa, en el orden, ahora inválido, de los paquidermos. </value>
   </data>
 </root>

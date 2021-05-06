@@ -283,6 +283,16 @@ namespace UserInterfaceZoo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Emergencia {
+            get {
+                object obj = ResourceManager.GetObject("Emergencia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap expendedora {
             get {
                 object obj = ResourceManager.GetObject("expendedora", resourceCulture);
@@ -473,6 +483,16 @@ namespace UserInterfaceZoo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Marca_de_ubicacion {
+            get {
+                object obj = ResourceManager.GetObject("Marca de ubicacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap membresia {
             get {
                 object obj = ResourceManager.GetObject("membresia", resourceCulture);
@@ -486,6 +506,36 @@ namespace UserInterfaceZoo.Properties {
         internal static System.Drawing.Bitmap oso {
             get {
                 object obj = ResourceManager.GetObject("oso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Oso_Hormiguero {
+            get {
+                object obj = ResourceManager.GetObject("Oso Hormiguero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Oso_Polar {
+            get {
+                object obj = ResourceManager.GetObject("Oso Polar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pavo_real {
+            get {
+                object obj = ResourceManager.GetObject("Pavo real", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

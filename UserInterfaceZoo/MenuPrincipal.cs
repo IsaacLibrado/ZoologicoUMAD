@@ -331,7 +331,7 @@ namespace UserInterfaceZoo
             ocultarSubMenu();
             AsignarTitulo("Información interactiva");
             RegistroBitacora("Mostrada la infomacion interactiva del zoologico");
-            MenuPrincipal.abrirPantallas(new CU_05.PA_05_01_Menú_Mapa_Interactivo());
+            MenuPrincipal.abrirPantallas(new CU_05.PA_05_01_Ubicación());
         }
 
         /// <summary>

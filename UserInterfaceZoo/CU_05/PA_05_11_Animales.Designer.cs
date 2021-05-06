@@ -29,6 +29,7 @@ namespace UserInterfaceZoo.CU_05
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PA_05_11_Animales));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnSalir = new System.Windows.Forms.Button();
@@ -42,19 +43,18 @@ namespace UserInterfaceZoo.CU_05
             this.label2.Location = new System.Drawing.Point(12, 276);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(595, 61);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Son aves que se distribuyen tanto por el hemisferio occidental como por el hemisf" +
-    "erio oriental; existen dos especies en América y una en el Viejo Mundo.";
+            this.label2.TabIndex = 11;
+            this.label2.Text = resources.GetString("label2.Text");
             // 
             // label1
             // 
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(12, 246);
+            this.label1.Location = new System.Drawing.Point(12, 234);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(660, 42);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Los flamencos mayores son un género de aves neognatas de la familia Phoenicopteri" +
-    "dae.";
+            this.label1.TabIndex = 10;
+            this.label1.Text = "El tigre (Panthera tigris) es una de las especies​ de la subfamilia de los panter" +
+    "inos (familia Felidae) pertenecientes al género Panthera. ";
             // 
             // BtnSalir
             // 
@@ -62,23 +62,23 @@ namespace UserInterfaceZoo.CU_05
             this.BtnSalir.Location = new System.Drawing.Point(613, 347);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(75, 23);
-            this.BtnSalir.TabIndex = 12;
+            this.BtnSalir.TabIndex = 8;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = true;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.Flamenco;
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.tigre;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(173, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(334, 193);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // PA_05_11_Animales
+            // PA_05_09_Animales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,8 +88,8 @@ namespace UserInterfaceZoo.CU_05
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PA_05_11_Animales";
-            this.Text = "PA_05_11_Animales";
+            this.Name = "PA_05_09_Animales";
+            this.Text = "PA_05_09_Animales";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
