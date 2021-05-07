@@ -79,7 +79,7 @@ namespace UserInterfaceZoo.CU_08
             // 
             // pictureBoxMapa
             // 
-            this.pictureBoxMapa.Image = global::UserInterfaceZoo.Properties.Resources.MAPA_CU_08_VERSION_FINAL;
+            this.pictureBoxMapa.Image = global::UserInterfaceZoo.Properties.Resources.MAPA_CU_08_TESTED_CORREGIDO;
             this.pictureBoxMapa.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxMapa.Name = "pictureBoxMapa";
             this.pictureBoxMapa.Size = new System.Drawing.Size(500, 265);

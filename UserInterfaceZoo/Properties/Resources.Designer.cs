@@ -453,6 +453,16 @@ namespace UserInterfaceZoo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MAPA_CU_08_TESTED_CORREGIDO {
+            get {
+                object obj = ResourceManager.GetObject("MAPA CU_08 TESTED CORREGIDO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MAPA_CU_08_VERSION_FINAL {
             get {
                 object obj = ResourceManager.GetObject("MAPA CU_08 VERSION FINAL", resourceCulture);
