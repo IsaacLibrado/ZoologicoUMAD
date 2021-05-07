@@ -34,10 +34,10 @@ namespace UserInterfaceZoo.CU_08
             this.lblInfo2 = new System.Windows.Forms.Label();
             this.lblInfo3 = new System.Windows.Forms.Label();
             this.lblInfo4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,16 +88,6 @@ namespace UserInterfaceZoo.CU_08
             this.lblInfo4.Text = "por ello es la mejor ayuda para la conservación del planeta tanto para el hombre " +
     "";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.reciclaje;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(438, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -125,6 +115,17 @@ namespace UserInterfaceZoo.CU_08
             this.linkLabel1.TabIndex = 10;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "https://www.youtube.com/watch?v=-UFFFUTMlCw";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.reciclaje;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(438, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // PA_08_02_INFORMACION
             // 
