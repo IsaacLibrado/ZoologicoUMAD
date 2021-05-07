@@ -22,6 +22,11 @@ namespace UserInterfaceZoo.CU_05
 
         private void DisenioInicial()
         {
+            if (MenuPrincipal.iniciado)
+            {
+                BtnSalir.Enabled = false;
+            }
+
             TxtContra.PasswordChar = '*';
             TxtContra.MaxLength = 12;
             TxtUsuario.MaxLength = 10;
@@ -50,20 +55,24 @@ namespace UserInterfaceZoo.CU_05
 
         private void Salir()
         {
-            do
+            if ((TxtUsuario.Text == "system") && (TxtContra.Text == "admin123"))
             {
-                if ((TxtUsuario.Text == "system") && (TxtContra.Text == "admin123"))
+                if (MenuPrincipal.iniciado)
                 {
                     this.Close();
                 }
-                else if ((TxtUsuario.Text != "system") && (TxtContra.Text != "admin123"))
+                else
                 {
-                    MenuPrincipal.MostrarMensaje("DATOS INCORRECTOS INTENTE OTRA VEZ");
-                    TxtContra.Clear();
-                    TxtContra.Clear();
-                    TxtUsuario.Focus();
+                    MenuPrincipal.abrirPantallas(new LogIn());
                 }
-            } while ((TxtUsuario.Text == "system") && (TxtContra.Text == "admin123"));
+            }
+            else if ((TxtUsuario.Text != "system") && (TxtContra.Text != "admin123"))
+            {
+                MenuPrincipal.MostrarMensaje("DATOS INCORRECTOS INTENTE OTRA VEZ");
+                TxtContra.Clear();
+                TxtContra.Clear();
+                TxtUsuario.Focus();
+            }
         }
     }
 }

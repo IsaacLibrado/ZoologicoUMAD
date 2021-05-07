@@ -23,6 +23,8 @@ namespace UserInterfaceZoo
     /// Creador Isaac Librado
     public partial class MenuPrincipal : Form
     {
+        public static bool iniciado=false;
+
         //La pantalla que se muestra en el contenedor central
         private Form pantallaActiva = null;
 
@@ -54,7 +56,7 @@ namespace UserInterfaceZoo
 
             //Inicializamos textos
             lblMensajes.Text = " ";
-            lblTitulo.Text = "Presiona el icono para iniciar sesión";
+            lblTitulo.Text = "";
 
             //Ocultamos los botones
             panelSideMenu.Visible = false;
@@ -455,6 +457,8 @@ namespace UserInterfaceZoo
                         ((XElement)formActual.bitacora.FirstNode.NextNode.NextNode).Add(formActual.lblIp.Text);
                         ((XElement)formActual.bitacora.LastNode.PreviousNode).Add(pUserName);
 
+                        iniciado = true;
+
                         formActual.pbLogoTemp.Visible = false;
 
                         //validamos el tipo de usuario para saber qué mostrar
@@ -635,19 +639,6 @@ namespace UserInterfaceZoo
         }
 
         /// <summary>
-        /// Metodo para mostrar al cargar el cu_05
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// Version 1.0
-        /// Fecha de creacion 23/03/21
-        /// Creador Isaac Librado
-        private void MenuPrincipal_Load(object sender, EventArgs e)
-        {
-            //Aqui agregamos el CU_05
-        }
-
-        /// <summary>
         /// Metodo para el boton salir
         /// </summary>
         /// <param name="sender"></param>
@@ -659,8 +650,12 @@ namespace UserInterfaceZoo
         {
             this.Close();
         }
+
         #endregion
 
-
+        private void MenuPrincipal_MouseMove(object sender, MouseEventArgs e)
+        {
+            abrirPantallas(new CU_05.PA_05_01_Ubicación());
+        }
     }
 }

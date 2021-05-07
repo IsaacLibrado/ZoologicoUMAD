@@ -64,7 +64,6 @@
             this.panelTitulo = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.panelDatos = new System.Windows.Forms.Panel();
             this.pbLogoTemp = new System.Windows.Forms.PictureBox();
@@ -84,8 +83,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelBase.SuspendLayout();
             this.panelTitulo.SuspendLayout();
-            this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoTemp)).BeginInit();
             this.panelFecha.SuspendLayout();
@@ -561,24 +558,12 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.Controls.Add(this.pictureBox1);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(234, 130);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(700, 390);
             this.panelContenedor.TabIndex = 4;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.e5ba79334133d2cb362dd639f755a392;
-            this.pictureBox1.Location = new System.Drawing.Point(154, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(377, 301);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.panelContenedor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuPrincipal_MouseMove);
             // 
             // horaFecha
             // 
@@ -669,7 +654,7 @@
             this.Name = "MenuPrincipal";
             this.Text = "SIstema Administrador Zootopia";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuPrincipal_FormClosing);
-            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuPrincipal_MouseMove);
             this.panelSideMenu.ResumeLayout(false);
             this.panelUsuario.ResumeLayout(false);
             this.panelUsuario.PerformLayout();
@@ -683,8 +668,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelBase.ResumeLayout(false);
             this.panelTitulo.ResumeLayout(false);
-            this.panelContenedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoTemp)).EndInit();
@@ -710,7 +693,6 @@
         private System.Windows.Forms.Panel panelTitulo;
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Panel panelSubMenus;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblMensajes;
         private System.Windows.Forms.Panel panelUsuario;
