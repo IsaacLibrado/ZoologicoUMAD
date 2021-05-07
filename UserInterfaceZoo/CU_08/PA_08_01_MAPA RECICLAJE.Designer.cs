@@ -39,7 +39,7 @@ namespace UserInterfaceZoo.CU_08
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(442, 277);
+            this.btnSalir.Location = new System.Drawing.Point(437, 283);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 1;
@@ -49,9 +49,9 @@ namespace UserInterfaceZoo.CU_08
             // 
             // btnInformacion
             // 
-            this.btnInformacion.Location = new System.Drawing.Point(220, 94);
+            this.btnInformacion.Location = new System.Drawing.Point(107, 283);
             this.btnInformacion.Name = "btnInformacion";
-            this.btnInformacion.Size = new System.Drawing.Size(94, 20);
+            this.btnInformacion.Size = new System.Drawing.Size(94, 23);
             this.btnInformacion.TabIndex = 2;
             this.btnInformacion.Text = "Información ♻️";
             this.btnInformacion.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@ namespace UserInterfaceZoo.CU_08
             // 
             // btnRestaurante
             // 
-            this.btnRestaurante.Location = new System.Drawing.Point(220, 195);
+            this.btnRestaurante.Location = new System.Drawing.Point(207, 283);
             this.btnRestaurante.Name = "btnRestaurante";
-            this.btnRestaurante.Size = new System.Drawing.Size(94, 20);
+            this.btnRestaurante.Size = new System.Drawing.Size(94, 23);
             this.btnRestaurante.TabIndex = 3;
             this.btnRestaurante.Text = "Desechos ♻️";
             this.btnRestaurante.UseVisualStyleBackColor = true;
@@ -69,7 +69,7 @@ namespace UserInterfaceZoo.CU_08
             // 
             // btnSimbologia
             // 
-            this.btnSimbologia.Location = new System.Drawing.Point(92, 230);
+            this.btnSimbologia.Location = new System.Drawing.Point(12, 283);
             this.btnSimbologia.Name = "btnSimbologia";
             this.btnSimbologia.Size = new System.Drawing.Size(89, 23);
             this.btnSimbologia.TabIndex = 4;
@@ -82,7 +82,7 @@ namespace UserInterfaceZoo.CU_08
             this.pictureBoxMapa.Image = global::UserInterfaceZoo.Properties.Resources.MAPA_CU_08_VERSION_FINAL;
             this.pictureBoxMapa.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxMapa.Name = "pictureBoxMapa";
-            this.pictureBoxMapa.Size = new System.Drawing.Size(526, 296);
+            this.pictureBoxMapa.Size = new System.Drawing.Size(500, 265);
             this.pictureBoxMapa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMapa.TabIndex = 0;
             this.pictureBoxMapa.TabStop = false;
