@@ -93,6 +93,16 @@ namespace UserInterfaceZoo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bote_reciclaje {
+            get {
+                object obj = ResourceManager.GetObject("bote reciclaje", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bufanda_leopardo {
             get {
                 object obj = ResourceManager.GetObject("bufanda_leopardo", resourceCulture);
