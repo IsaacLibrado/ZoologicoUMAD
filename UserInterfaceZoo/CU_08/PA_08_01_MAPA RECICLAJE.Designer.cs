@@ -49,7 +49,7 @@ namespace UserInterfaceZoo.CU_08
             // 
             // btnInformacion
             // 
-            this.btnInformacion.Location = new System.Drawing.Point(107, 283);
+            this.btnInformacion.Location = new System.Drawing.Point(12, 283);
             this.btnInformacion.Name = "btnInformacion";
             this.btnInformacion.Size = new System.Drawing.Size(94, 23);
             this.btnInformacion.TabIndex = 2;
@@ -59,7 +59,7 @@ namespace UserInterfaceZoo.CU_08
             // 
             // btnRestaurante
             // 
-            this.btnRestaurante.Location = new System.Drawing.Point(207, 283);
+            this.btnRestaurante.Location = new System.Drawing.Point(112, 283);
             this.btnRestaurante.Name = "btnRestaurante";
             this.btnRestaurante.Size = new System.Drawing.Size(94, 23);
             this.btnRestaurante.TabIndex = 3;
@@ -69,7 +69,7 @@ namespace UserInterfaceZoo.CU_08
             // 
             // btnSimbologia
             // 
-            this.btnSimbologia.Location = new System.Drawing.Point(12, 283);
+            this.btnSimbologia.Location = new System.Drawing.Point(212, 283);
             this.btnSimbologia.Name = "btnSimbologia";
             this.btnSimbologia.Size = new System.Drawing.Size(89, 23);
             this.btnSimbologia.TabIndex = 4;
