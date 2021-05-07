@@ -37,6 +37,7 @@ namespace UserInterfaceZoo.CU_08
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,11 +81,11 @@ namespace UserInterfaceZoo.CU_08
             // lblInfo4
             // 
             this.lblInfo4.AutoSize = true;
-            this.lblInfo4.Location = new System.Drawing.Point(9, 226);
+            this.lblInfo4.Location = new System.Drawing.Point(26, 212);
             this.lblInfo4.Name = "lblInfo4";
-            this.lblInfo4.Size = new System.Drawing.Size(387, 13);
+            this.lblInfo4.Size = new System.Drawing.Size(386, 13);
             this.lblInfo4.TabIndex = 6;
-            this.lblInfo4.Text = "Por ello es la mejor ayuda para la conservación del planeta tanto para el hombre " +
+            this.lblInfo4.Text = "por ello es la mejor ayuda para la conservación del planeta tanto para el hombre " +
     "";
             // 
             // pictureBox1
@@ -109,17 +110,28 @@ namespace UserInterfaceZoo.CU_08
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(305, 239);
+            this.label3.Location = new System.Drawing.Point(304, 228);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(145, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "como para el medioambiente.";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(26, 261);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(253, 13);
+            this.linkLabel1.TabIndex = 10;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "https://www.youtube.com/watch?v=-UFFFUTMlCw";
             // 
             // PA_08_02_INFORMACION
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(520, 320);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblInfo4);
@@ -147,5 +159,6 @@ namespace UserInterfaceZoo.CU_08
         private System.Windows.Forms.Label lblInfo4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
