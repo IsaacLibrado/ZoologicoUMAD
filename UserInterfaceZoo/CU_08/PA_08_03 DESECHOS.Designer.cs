@@ -42,12 +42,13 @@ namespace UserInterfaceZoo.CU_08
             this.lblDesechos9 = new System.Windows.Forms.Label();
             this.lblDesechos10 = new System.Windows.Forms.Label();
             this.lblDesechos11 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(463, 285);
+            this.btnSalir.Location = new System.Drawing.Point(363, 267);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 0;
@@ -58,7 +59,7 @@ namespace UserInterfaceZoo.CU_08
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UserInterfaceZoo.Properties.Resources.desechos;
-            this.pictureBox1.Location = new System.Drawing.Point(347, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(280, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(191, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -164,11 +165,22 @@ namespace UserInterfaceZoo.CU_08
             this.lblDesechos11.TabIndex = 12;
             this.lblDesechos11.Text = "10. Analítica y control de calidad";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(221, 190);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(250, 13);
+            this.linkLabel1.TabIndex = 13;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "https://www.youtube.com/watch?v=8wGg3lo-SVU";
+            // 
             // PA_08_03_DESECHOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 320);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lblDesechos11);
             this.Controls.Add(this.lblDesechos10);
             this.Controls.Add(this.lblDesechos9);
@@ -206,5 +218,6 @@ namespace UserInterfaceZoo.CU_08
         private System.Windows.Forms.Label lblDesechos9;
         private System.Windows.Forms.Label lblDesechos10;
         private System.Windows.Forms.Label lblDesechos11;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
