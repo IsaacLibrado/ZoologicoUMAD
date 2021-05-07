@@ -61,6 +61,9 @@
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\ZootopiaIcon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.8.9\lib\net40\BouncyCastle.Crypto.dll</HintPath>
@@ -757,6 +760,7 @@
     <Content Include="CU_09\AxInterop.WMPLib.dll" />
     <Content Include="CU_09\Interop.WMPLib.dll" />
     <Content Include="CU_09\VideojuegoZoo.exe" />
+    <None Include="Resources\ZootopiaIcon.ico" />
     <None Include="Resources\bote reciclaje.png" />
     <None Include="Resources\MAPA CU_08 TESTED CORREGIDO.png" />
     <None Include="Resources\Pavo real.jpg" />

@@ -699,5 +699,15 @@ namespace UserInterfaceZoo.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon ZootopiaIcon {
+            get {
+                object obj = ResourceManager.GetObject("ZootopiaIcon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }

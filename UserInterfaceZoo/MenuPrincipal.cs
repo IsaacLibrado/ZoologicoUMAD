@@ -34,6 +34,9 @@ namespace UserInterfaceZoo
             //inicializamos lo básico
             InitializeComponent();
             PersonalizarDisenio();
+
+            //Establecemos el ícono del programa
+            this.Icon = Properties.Resources.ZootopiaIcon;
         }
 
         #region disenio
@@ -352,6 +355,9 @@ namespace UserInterfaceZoo
 
             //iniciamos el proceso
             Process programa = Process.Start(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\UserInterfaceZoo\CU_09\VideojuegoZoo.exe");
+
+            //Usado para el ejecutable:
+            //programa = Process.Start(Directory.GetCurrentDirectory() + @"\Videojuego\VideojuegoZoo.exe");
         }
 
         #endregion
