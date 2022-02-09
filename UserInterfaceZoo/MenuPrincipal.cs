@@ -527,13 +527,9 @@ namespace UserInterfaceZoo
         /// Creador Isaac Librado
         private void ocultarSubMenu()
         {
-            if (panelVentasSubMenu.Visible == true)
                 panelVentasSubMenu.Visible = false;
-            if (panelComprasSubMenu.Visible == true)
                 panelComprasSubMenu.Visible = false;
-            if (panelGestionSubMenu.Visible == true)
                 panelGestionSubMenu.Visible = false;
-            if (panelInteractivoSubMenu.Visible == true)
                 panelInteractivoSubMenu.Visible = false;
         }
 
@@ -599,6 +595,8 @@ namespace UserInterfaceZoo
             //mostramos la pantalla activa
             pantallaActiva.Show();
 
+            //pryabva
+
             MostrarMensaje(string.Empty);
         }
 
@@ -662,6 +660,11 @@ namespace UserInterfaceZoo
         private void MenuPrincipal_MouseMove(object sender, MouseEventArgs e)
         {
             abrirPantallas(new CU_05.PA_05_01_Ubicación());
+        }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
